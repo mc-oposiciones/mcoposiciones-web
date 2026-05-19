@@ -54,11 +54,10 @@ const faqItems = [
 							Clases online en directo con Mª Carmen. Método especializado para Administrativo del Estado (C1) y Seguridad Social. Grupos reducidos, temario actualizado y planificación real.
 						</p>
 						<div class="mt-10 flex flex-col gap-4 sm:flex-row">
-							<a href="/cursos-precios/" class="group relative overflow-hidden rounded-2xl bg-secondary px-8 py-4 text-center font-bold text-white no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+							<a href="/cursos-precios/" class="group relative overflow-hidden rounded-xl bg-secondary px-8 py-4 text-center font-bold text-white no-underline transition-all hover:-translate-y-1 hover:bg-accent">
 								<span class="relative z-10">Ver cursos disponibles</span>
-								<div class="absolute inset-0 z-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] transition-transform duration-500 group-hover:translate-x-[100%]"></div>
 							</a>
-							<a href="/clases-muestra/" class="rounded-2xl border-2 border-secondary/20 bg-white px-8 py-4 text-center font-bold text-secondary no-underline transition-all hover:-translate-y-1 hover:border-secondary hover:bg-secondary/5">
+							<a href="/clases-muestra/" class="rounded-xl border border-secondary/25 bg-white px-8 py-4 text-center font-bold text-secondary no-underline transition-all hover:-translate-y-1 hover:border-secondary hover:bg-secondary/5">
 								Clase de muestra gratis
 							</a>
 						</div>
@@ -75,10 +74,9 @@ const faqItems = [
 						</div>
 					</div>
 					<div class="relative lg:ml-10">
-						<div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-secondary/20 to-accent/20 blur-2xl"></div>
-						<div class="relative overflow-hidden rounded-[2rem] border border-white/50 bg-white/50 p-2 shadow-premium backdrop-blur-sm">
-							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones" width={600} height={600} loading="eager" fetchpriority="high" class="rounded-[1.5rem] object-cover shadow-inner" />
-							<div class="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/20 bg-white/80 p-4 shadow-lg backdrop-blur-md">
+						<div class="relative overflow-hidden rounded-2xl border border-primary/10 bg-white p-2 shadow-premium">
+							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones" width={600} height={600} loading="eager" fetchpriority="high" class="rounded-xl object-cover" />
+							<div class="absolute bottom-6 left-6 right-6 rounded-xl border border-white/30 bg-white/85 p-4 shadow-premium backdrop-blur-md">
 								<p class="text-sm font-bold text-primary">Próximos grupos: Septiembre 2026</p>
 								<p class="text-xs text-text-muted">Plazas limitadas por riguroso orden de inscripción</p>
 							</div>
@@ -91,27 +89,25 @@ const faqItems = [
 		<!-- Strategy Section -->
 		<section class="bg-white px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="rounded-[3rem] bg-bg-dark/40 px-8 py-16 md:px-16 lg:py-24">
-					<div class="mx-auto max-w-4xl text-center">
+				<div class="mx-auto max-w-4xl text-center">
 						<h2 class="text-3xl font-extrabold text-primary md:text-5xl">La única preparadora que te prepara para <span class="text-secondary">ambas oposiciones</span> a la vez</h2>
 						<p class="mt-8 text-lg leading-relaxed text-text-main md:text-xl">
 							El 75% del temario es común. No malgastes tu tiempo estudiando lo mismo dos veces. Mi método te permite <a href="/preparar-age-y-seguridad-social/" class="font-bold text-secondary underline decoration-accent decoration-2 underline-offset-4">preparar AGE y Seguridad Social simultáneamente</a>, duplicando tus opciones de plaza con el mismo esfuerzo.
 						</p>
-						<div class="mt-12 grid gap-6 sm:grid-cols-3">
-							<div class="rounded-2xl bg-white p-6 shadow-premium transition-transform hover:-translate-y-1">
+						<div class="mt-12 grid gap-6 border-y border-primary/10 py-8 sm:grid-cols-3">
+							<div>
 								<div class="text-3xl font-bold text-secondary">75%</div>
 								<p class="mt-2 text-sm font-bold text-primary">Temario Común</p>
 							</div>
-							<div class="rounded-2xl bg-white p-6 shadow-premium transition-transform hover:-translate-y-1">
+							<div>
 								<div class="text-3xl font-bold text-secondary">x2</div>
 								<p class="mt-2 text-sm font-bold text-primary">Oportunidades</p>
 							</div>
-							<div class="rounded-2xl bg-white p-6 shadow-premium transition-transform hover:-translate-y-1">
+							<div>
 								<div class="text-3xl font-bold text-secondary">100%</div>
 								<p class="mt-2 text-sm font-bold text-primary">Actualizado 2026</p>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -128,15 +124,8 @@ const faqItems = [
 					<CourseCard title="Administrativo Seguridad Social (C1)" description="1.456 plazas. Examen previsto para junio 2026." price="100€" priceType="/mes" href="/oposiciones-seguridad-social/" features={['Sin prueba de ofimática', 'Legislación específica SS', 'Supuestos desde el día 1']} />
 					<CourseCard title="Pack AGE + SS" description="La opción inteligente: dobla tus posibilidades reales." price="Precio especial" priceType="Pack" badge="RECOMENDADO" href="/preparar-age-y-seguridad-social/" features={['Temario común una vez', '13 temas específicos SS', 'Ofimática completa AGE']} />
 				</div>
-				<div class="mt-10 grid gap-4 rounded-2xl bg-white p-6 shadow-sm md:grid-cols-2">
-					<a href="/preparadora-age/" class="rounded-xl border border-primary/5 p-5 no-underline transition-all hover:-translate-y-1 hover:border-secondary/30 hover:shadow-premium">
-						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Buscas preparadora AGE?</p>
-						<h3 class="mt-2 text-xl font-bold text-primary">Preparadora para Administrativo del Estado</h3>
-					</a>
-					<a href="/preparadora-seguridad-social/" class="rounded-xl border border-primary/5 p-5 no-underline transition-all hover:-translate-y-1 hover:border-secondary/30 hover:shadow-premium">
-						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Buscas preparadora SS?</p>
-						<h3 class="mt-2 text-xl font-bold text-primary">Preparadora para Seguridad Social</h3>
-					</a>
+				<div class="mt-10 text-center text-sm font-semibold text-text-muted">
+					Si buscas trato directo, también puedes ver la preparación personal para <a href="/preparadora-age/" class="font-bold">AGE</a> o <a href="/preparadora-seguridad-social/" class="font-bold">Seguridad Social</a>.
 				</div>
 			</div>
 		</section>
@@ -161,7 +150,7 @@ const faqItems = [
 						</div>
 					</div>
 					<div class="order-1 lg:order-2">
-						<div class="aspect-square overflow-hidden rounded-[3rem] shadow-premium">
+						<div class="aspect-square overflow-hidden rounded-2xl shadow-premium">
 							<Image src={mariaCarmenImage} alt="Mª Carmen" width={500} height={500} class="h-full w-full object-cover transition-transform duration-700 hover:scale-110" />
 						</div>
 					</div>
@@ -180,15 +169,15 @@ const faqItems = [
 					<a href="/blog/" class="rounded-xl border-2 border-secondary/10 px-6 py-3 font-bold text-secondary no-underline transition-all hover:bg-secondary hover:text-white">Ir al Blog</a>
 				</div>
 				<div class="grid gap-6 md:grid-cols-3">
-					<a href="/blog/temario-administrativo-estado-age-2026/" class="group rounded-2xl bg-white p-8 no-underline shadow-premium transition-all hover:-translate-y-2 hover:shadow-premium-hover">
+					<a href="/blog/mejor-preparadora-age/" class="group rounded-xl border border-primary/10 bg-white p-7 no-underline shadow-premium transition-all hover:-translate-y-1 hover:border-secondary/25 hover:shadow-premium-hover">
 						<p class="text-xs font-bold uppercase tracking-widest text-secondary">Guía Temario</p>
-						<h3 class="mt-4 text-xl font-bold text-primary group-hover:text-secondary">Temario Administrativo del Estado AGE 2026</h3>
+						<h3 class="mt-4 text-xl font-bold text-primary group-hover:text-secondary">Mejor preparadora AGE: como elegir bien</h3>
 					</a>
-					<a href="/blog/supuesto-practico-administrativo-seguridad-social/" class="group rounded-2xl bg-white p-8 no-underline shadow-premium transition-all hover:-translate-y-2 hover:shadow-premium-hover">
+					<a href="/blog/preparadora-oposiciones-seguridad-social/" class="group rounded-xl border border-primary/10 bg-white p-7 no-underline shadow-premium transition-all hover:-translate-y-1 hover:border-secondary/25 hover:shadow-premium-hover">
 						<p class="text-xs font-bold uppercase tracking-widest text-secondary">Examen</p>
-						<h3 class="mt-4 text-xl font-bold text-primary group-hover:text-secondary">Claves del Supuesto práctico de Seguridad Social</h3>
+						<h3 class="mt-4 text-xl font-bold text-primary group-hover:text-secondary">Preparadora de Seguridad Social: que mirar</h3>
 					</a>
-					<a href="/blog/age-vs-seguridad-social/" class="group rounded-2xl bg-white p-8 no-underline shadow-premium transition-all hover:-translate-y-2 hover:shadow-premium-hover">
+					<a href="/blog/age-vs-seguridad-social/" class="group rounded-xl border border-primary/10 bg-white p-7 no-underline shadow-premium transition-all hover:-translate-y-1 hover:border-secondary/25 hover:shadow-premium-hover">
 						<p class="text-xs font-bold uppercase tracking-widest text-secondary">Comparativa</p>
 						<h3 class="mt-4 text-xl font-bold text-primary group-hover:text-secondary">¿AGE o Seguridad Social? Cuál elegir</h3>
 					</a>
@@ -197,7 +186,7 @@ const faqItems = [
 		</section>
 
 		<!-- Testimonials -->
-		<section class="bg-bg-dark/30 px-4 py-24 sm:px-6 lg:px-8">
+		<section id="opiniones" class="bg-bg-dark/30 px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<div class="mb-16 text-center">
 					<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Resultados reales</h2>

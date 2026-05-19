@@ -2,6 +2,7 @@
 const currentPath = Astro.url.pathname;
 const normalizePath = (path: string) => (path === '/' ? '/' : path.replace(/\/$/, ''));
 const isActive = (href: string) => {
+	if (href.includes('#')) return false;
 	const normalizedCurrent = normalizePath(currentPath);
 	const normalizedHref = normalizePath(href);
 	return normalizedHref === '/'
@@ -9,82 +10,84 @@ const isActive = (href: string) => {
 		: normalizedCurrent === normalizedHref || normalizedCurrent.startsWith(`${normalizedHref}/`);
 };
 
-const courses = [
-	{ label: 'Administrativo AGE C1', href: '/oposiciones-administrativo-estado/' },
-	{ label: 'Seguridad Social C1', href: '/oposiciones-seguridad-social/' },
-	{ label: 'Preparadora AGE', href: '/preparadora-age/' },
-	{ label: 'Preparadora Seguridad Social', href: '/preparadora-seguridad-social/' },
-	{ label: '⭐ Pack AGE + SS (Exclusivo)', href: '/preparar-age-y-seguridad-social/', badge: 'EXCLUSIVO', featured: true },
-	{ label: 'Ver todos los precios', href: '/cursos-precios/' },
+const oppositionLinks = [
+	{ label: 'AGE C1', description: 'Administrativo del Estado', href: '/oposiciones-administrativo-estado/' },
+	{ label: 'Seguridad Social C1', description: 'Administrativo SS', href: '/oposiciones-seguridad-social/' },
+	{ label: 'Pack AGE + SS', description: 'Preparación conjunta', href: '/preparar-age-y-seguridad-social/', badge: 'Doble vía', featured: true },
 ];
+
 const navLinks = [
-	{ label: 'Clases Gratuitas', href: '/clases-muestra/' },
+	{ label: 'Precios', href: '/cursos-precios/' },
+	{ label: 'Clases gratis', href: '/clases-muestra/' },
+	{ label: 'Opiniones', href: '/#opiniones' },
 	{ label: 'Blog', href: '/blog/' },
-	{ label: 'Sobre Mí', href: '/preparadora-oposiciones/' },
+	{ label: 'Sobre mí', href: '/preparadora-oposiciones/' },
 ];
-const coursesActive = courses.some((item) => isActive(item.href));
+
+const oppositionsActive = oppositionLinks.some((item) => isActive(item.href));
 ---
 
 <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
 	<div class="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-		<nav class="flex items-center justify-between rounded-2xl border border-white/20 bg-white/70 px-4 py-2 shadow-premium backdrop-blur-md lg:px-6" aria-label="Navegación principal">
+		<nav class="flex items-center justify-between rounded-xl border border-primary/10 bg-white/85 px-4 py-2 shadow-premium backdrop-blur-md lg:px-5" aria-label="Navegacion principal">
 			<a href="/" class="flex items-center no-underline transition-transform hover:scale-[1.02]" aria-label="MC Oposiciones">
 				<img src="/logo.png" alt="MC Oposiciones" width="300" height="80" loading="eager" fetchpriority="high" class="h-9 w-auto md:h-10" />
 			</a>
 
-			<!-- Desktop Menu -->
-			<div id="site-menu" class="hidden items-center gap-1 md:flex">
-				<a href="/" class:list={['relative rounded-xl px-3 py-2 text-sm font-semibold no-underline transition-all hover:bg-bg-light', isActive('/') ? 'text-secondary' : 'text-primary']}>
+			<div id="site-menu" class="hidden items-center gap-1 lg:flex">
+				<a href="/" class:list={['relative rounded-lg px-3 py-2 text-sm font-semibold no-underline transition-all hover:bg-bg-light', isActive('/') ? 'text-secondary' : 'text-primary']}>
 					Inicio
 					{isActive('/') && <span class="absolute bottom-1 left-3 right-3 h-0.5 rounded-full bg-accent animate-in fade-in zoom-in duration-300"></span>}
 				</a>
 
 				<div class="group relative">
-					<button id="courses-menu-button" type="button" class:list={['flex items-center gap-1.5 rounded-xl px-3 py-2 text-sm font-semibold transition-all hover:bg-bg-light', coursesActive ? 'text-secondary' : 'text-primary']} aria-expanded="false" aria-controls="courses-menu">
-						Cursos
+					<button id="oppositions-menu-button" type="button" class:list={['flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold transition-all hover:bg-bg-light', oppositionsActive ? 'text-secondary' : 'text-primary']} aria-expanded="false" aria-controls="oppositions-menu">
+						Oposiciones
 						<svg class="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.938a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd" /></svg>
 					</button>
-					<div id="courses-menu" class="invisible absolute left-0 top-full w-80 translate-y-2 rounded-2xl border border-primary/5 bg-white p-2 opacity-0 shadow-premium transition-all duration-300 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100">
-						{courses.map((item) => (
-							<a href={item.href} class:list={['flex items-center justify-between gap-3 rounded-xl px-4 py-3 text-sm no-underline transition-colors', item.featured ? 'bg-accent-light/30 font-bold text-primary hover:bg-accent-light/50' : 'text-primary hover:bg-bg-light', isActive(item.href) && 'text-secondary bg-bg-light']}>
-								<span>{item.label}</span>
-								{item.badge && <span class="rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold text-primary uppercase tracking-wider">{item.badge}</span>}
+					<div id="oppositions-menu" class="invisible absolute left-0 top-full w-80 translate-y-2 rounded-xl border border-primary/10 bg-white p-2 opacity-0 shadow-premium transition-all duration-300 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100">
+						{oppositionLinks.map((item) => (
+							<a href={item.href} class:list={['flex items-center justify-between gap-3 rounded-lg px-4 py-3 text-sm no-underline transition-colors', item.featured ? 'bg-accent-light/30 font-bold text-primary hover:bg-accent-light/50' : 'text-primary hover:bg-bg-light', isActive(item.href) && 'text-secondary bg-bg-light']}>
+								<span>
+									<span class="block font-bold">{item.label}</span>
+									<span class="block text-xs font-medium text-text-muted">{item.description}</span>
+								</span>
+								{item.badge && <span class="rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">{item.badge}</span>}
 							</a>
 						))}
 					</div>
 				</div>
 
 				{navLinks.map((item) => (
-					<a href={item.href} class:list={['relative rounded-xl px-3 py-2 text-sm font-semibold no-underline transition-all hover:bg-bg-light', isActive(item.href) ? 'text-secondary' : 'text-primary']}>
+					<a href={item.href} class:list={['relative rounded-lg px-3 py-2 text-sm font-semibold no-underline transition-all hover:bg-bg-light', isActive(item.href) ? 'text-secondary' : 'text-primary']}>
 						{item.label}
 						{isActive(item.href) && <span class="absolute bottom-1 left-3 right-3 h-0.5 rounded-full bg-accent animate-in fade-in zoom-in duration-300"></span>}
 					</a>
 				))}
 
-				<div class="ml-2 h-6 w-px bg-primary/10"></div>
-
-				<a href="/contacto/" class:list={['ml-2 rounded-xl px-5 py-2.5 text-sm font-bold text-white no-underline shadow-premium transition-all hover:-translate-y-0.5 hover:shadow-premium-hover', isActive('/contacto/') ? 'bg-accent' : 'bg-secondary hover:bg-accent']}>
+				<a href="/contacto/" class:list={['ml-2 rounded-lg px-5 py-2.5 text-sm font-bold text-white no-underline transition-all hover:-translate-y-0.5', isActive('/contacto/') ? 'bg-accent' : 'bg-secondary hover:bg-accent']}>
 					Contacto
 				</a>
 			</div>
 
-			<!-- Mobile Toggle -->
-			<button id="mobile-menu-button" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-primary/10 text-primary md:hidden" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
+			<button id="mobile-menu-button" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-primary/10 text-primary lg:hidden" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
 				<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
 			</button>
 		</nav>
 	</div>
 
-	<!-- Mobile Menu -->
-	<div id="mobile-menu" class="fixed inset-0 z-[-1] hidden bg-bg-light/95 backdrop-blur-xl animate-in fade-in slide-in-from-top-4 duration-300 md:hidden">
+	<div id="mobile-menu" class="fixed inset-0 z-[-1] hidden bg-bg-light/95 backdrop-blur-xl animate-in fade-in slide-in-from-top-4 duration-300 lg:hidden">
 		<div class="flex h-full flex-col p-6 pt-24">
 			<div class="flex flex-col gap-2">
 				<a href="/" class:list={['rounded-xl px-4 py-3 text-lg font-bold no-underline', isActive('/') ? 'bg-secondary text-white' : 'text-primary hover:bg-white']}>Inicio</a>
 				<div class="flex flex-col gap-1">
-					<p class="px-4 py-2 text-xs font-bold uppercase tracking-wider text-text-muted">Cursos</p>
-					{courses.map((item) => (
+					<p class="px-4 py-2 text-xs font-bold uppercase tracking-wider text-text-muted">Oposiciones</p>
+					{oppositionLinks.map((item) => (
 						<a href={item.href} class:list={['flex items-center justify-between rounded-xl px-4 py-3 text-base font-semibold no-underline', isActive(item.href) ? 'bg-secondary/10 text-secondary' : 'text-primary hover:bg-white']}>
-							{item.label}
+							<span>
+								<span class="block">{item.label}</span>
+								<span class="block text-xs font-medium text-text-muted">{item.description}</span>
+							</span>
 							{item.badge && <span class="rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold text-primary">{item.badge}</span>}
 						</a>
 					))}
@@ -94,7 +97,7 @@ const coursesActive = courses.some((item) => isActive(item.href));
 				))}
 			</div>
 			<div class="mt-auto pb-10">
-				<a href="/contacto/" class="flex w-full items-center justify-center rounded-2xl bg-secondary py-4 text-lg font-bold text-white no-underline shadow-premium">
+				<a href="/contacto/" class="flex w-full items-center justify-center rounded-xl bg-secondary py-4 text-lg font-bold text-white no-underline">
 					Contactar con Mª Carmen
 				</a>
 			</div>
@@ -106,7 +109,6 @@ const coursesActive = courses.some((item) => isActive(item.href));
 	const header = document.getElementById('site-header');
 	const mobileButton = document.getElementById('mobile-menu-button');
 	const mobileMenu = document.getElementById('mobile-menu');
-	const coursesButton = document.getElementById('courses-menu-button');
 
 	const setScrolledState = () => {
 		const isScrolled = window.scrollY > 20;
@@ -123,8 +125,7 @@ const coursesActive = courses.some((item) => isActive(item.href));
 		document.body.classList.toggle('overflow-hidden', !expanded);
 	});
 
-	// Close mobile menu on link click
-	mobileMenu?.querySelectorAll('a').forEach(link => {
+	mobileMenu?.querySelectorAll('a').forEach((link) => {
 		link.addEventListener('click', () => {
 			mobileButton?.setAttribute('aria-expanded', 'false');
 			mobileMenu?.classList.add('hidden');

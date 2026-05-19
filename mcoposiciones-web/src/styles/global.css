@@ -17,8 +17,8 @@
 
 	/* Sistema de Sombras y Bordes Modernos */
 	--radius-2xl: 1rem; /* 16px */
-	--shadow-premium: 0 10px 30px -10px rgba(90, 78, 78, 0.1), 0 4px 6px -4px rgba(90, 78, 78, 0.05);
-	--shadow-premium-hover: 0 20px 40px -15px rgba(42, 157, 143, 0.15), 0 8px 12px -6px rgba(42, 157, 143, 0.08);
+	--shadow-premium: 0 8px 24px -18px rgba(45, 40, 40, 0.28);
+	--shadow-premium-hover: 0 18px 36px -24px rgba(42, 157, 143, 0.32);
 }
 
 /* TODO: Añadir @font-face local cuando existan /public/fonts/montserrat.woff2 e /public/fonts/inter.woff2. */
@@ -43,7 +43,7 @@
 		font-family: var(--font-display);
 		font-weight: 700;
 		line-height: 1.2;
-		letter-spacing: -0.02em;
+		letter-spacing: 0;
 	}
 
 	h1 { font-weight: 800; }

@@ -11,16 +11,16 @@ const isPrimary = variant === 'primary';
 ---
 
 <div class:list={[
-	'relative overflow-hidden rounded-[2.5rem] px-8 py-12 md:px-16 md:py-16 transition-all duration-300', 
-	isPrimary ? 'bg-secondary/10 border border-secondary/10' : 'bg-bg-dark/40 border border-primary/5'
+	'relative overflow-hidden rounded-2xl px-7 py-10 md:px-12 md:py-12 transition-all duration-300',
+	isPrimary ? 'bg-secondary/10 border border-secondary/15' : 'bg-bg-dark/40 border border-primary/10'
 ]}>
 	<div class="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 		<div class="max-w-3xl text-center lg:text-left">
-			<h2 class="text-3xl font-black md:text-4xl tracking-tight leading-tight text-primary">{title}</h2>
+			<h2 class="text-3xl font-black leading-tight text-primary md:text-4xl">{title}</h2>
 			<p class="mt-4 text-lg font-medium leading-relaxed text-text-main">{subtitle}</p>
 		</div>
 		<div class="flex justify-center shrink-0">
-			<a href={ctaHref} class="inline-flex items-center justify-center rounded-2xl bg-secondary px-8 py-4 text-lg font-bold text-white no-underline shadow-premium transition-all hover:bg-accent hover:-translate-y-1 active:scale-95">
+			<a href={ctaHref} class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-lg font-bold text-white no-underline transition-all hover:-translate-y-1 hover:bg-accent active:scale-95">
 				{ctaText}
 			</a>
 		</div>

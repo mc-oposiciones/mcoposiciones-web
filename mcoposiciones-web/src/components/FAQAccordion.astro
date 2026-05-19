@@ -22,7 +22,7 @@ const faqSchema = {
 
 <div class="faq-accordion space-y-4">
 	{items.map((item, index) => (
-		<div class="overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium transition-all duration-300 hover:shadow-premium-hover">
+		<div class="overflow-hidden rounded-xl border border-primary/10 bg-white transition-all duration-300 hover:border-secondary/25">
 			<button type="button" class="faq-trigger group flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-bold text-primary transition-colors hover:text-secondary" aria-expanded={index === 0 ? 'true' : 'false'} aria-controls={`faq-panel-${index}`}>
 				<span class="text-lg md:text-xl">{item.question}</span>
 				<span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-bg-light text-secondary transition-transform duration-300 group-aria-expanded:rotate-180" aria-hidden="true">
