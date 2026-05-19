@@ -6,29 +6,9 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import { Image } from 'astro:assets';
 import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
+import { createHomeSchema } from '../lib/schema';
 
-const schemaJson = JSON.stringify({
-	'@context': 'https://schema.org',
-	'@type': 'EducationalOrganization',
-	name: 'MC Oposiciones',
-	url: 'https://mcoposiciones.com',
-	logo: 'https://mcoposiciones.com/logo.png',
-	description: 'Preparadora especializada en oposiciones de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1. Clases online en directo.',
-	telephone: '+34642170664',
-	email: 'infomcoposiciones@gmail.com',
-	sameAs: [
-		'https://www.youtube.com/@mcoposiciones',
-		'https://www.instagram.com/mcoposiciones',
-		'https://www.tiktok.com/@mcoposiciones',
-	],
-	aggregateRating: {
-		'@type': 'AggregateRating',
-		ratingValue: '5.0',
-		reviewCount: '27',
-		bestRating: '5',
-		worstRating: '1',
-	},
-});
+const schemaJson = JSON.stringify(createHomeSchema());
 
 const faqItems = [
 	{
@@ -147,6 +127,16 @@ const faqItems = [
 					<CourseCard title="Administrativo del Estado (AGE C1)" description="2.512 plazas ofertadas. Enfoque total en el examen de 2026." price="100€" priceType="/mes" href="/oposiciones-administrativo-estado/" features={['Clases online en directo', 'Ofimática Word, Excel, Access', 'Simulacros examen real']} />
 					<CourseCard title="Administrativo Seguridad Social (C1)" description="1.456 plazas. Examen previsto para junio 2026." price="100€" priceType="/mes" href="/oposiciones-seguridad-social/" features={['Sin prueba de ofimática', 'Legislación específica SS', 'Supuestos desde el día 1']} />
 					<CourseCard title="Pack AGE + SS" description="La opción inteligente: dobla tus posibilidades reales." price="Precio especial" priceType="Pack" badge="RECOMENDADO" href="/preparar-age-y-seguridad-social/" features={['Temario común una vez', '13 temas específicos SS', 'Ofimática completa AGE']} />
+				</div>
+				<div class="mt-10 grid gap-4 rounded-2xl bg-white p-6 shadow-sm md:grid-cols-2">
+					<a href="/preparadora-age/" class="rounded-xl border border-primary/5 p-5 no-underline transition-all hover:-translate-y-1 hover:border-secondary/30 hover:shadow-premium">
+						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Buscas preparadora AGE?</p>
+						<h3 class="mt-2 text-xl font-bold text-primary">Preparadora para Administrativo del Estado</h3>
+					</a>
+					<a href="/preparadora-seguridad-social/" class="rounded-xl border border-primary/5 p-5 no-underline transition-all hover:-translate-y-1 hover:border-secondary/30 hover:shadow-premium">
+						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Buscas preparadora SS?</p>
+						<h3 class="mt-2 text-xl font-bold text-primary">Preparadora para Seguridad Social</h3>
+					</a>
 				</div>
 			</div>
 		</section>

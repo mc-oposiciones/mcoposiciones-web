@@ -6,6 +6,8 @@ const staticUrls = [
 	{ path: '/', priority: '1.0' },
 	{ path: '/oposiciones-administrativo-estado/', priority: '0.9' },
 	{ path: '/oposiciones-seguridad-social/', priority: '0.9' },
+	{ path: '/preparadora-age/', priority: '0.9' },
+	{ path: '/preparadora-seguridad-social/', priority: '0.9' },
 	{ path: '/preparar-age-y-seguridad-social/', priority: '0.9' },
 	{ path: '/cursos-precios/', priority: '0.9' },
 	{ path: '/blog/', priority: '0.8' },
