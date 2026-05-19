@@ -1,8 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import CourseCard from '../components/CourseCard.astro';
-import TestimonialWidget from '../components/TestimonialWidget.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import { createCoursePageSchema } from '../lib/schema';
@@ -14,11 +12,34 @@ const schemaJson = JSON.stringify(createCoursePageSchema({
 	courseName: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
 	courseDescription: 'Preparacion online en directo para Administrativo de la Seguridad Social C1. Incluye temario especifico, test, simulacros y supuesto practico.',
 }));
+
+const examFacts = [
+	'1.456 plazas libres',
+	'Examen: 28 junio 2026',
+	'Sin méritos: solo nota',
+	'Sin prueba de ofimática',
+];
+
+const preparationBlocks = [
+	{
+		title: 'Temario específico',
+		text: 'Legislación propia de Seguridad Social explicada con estructura, ejemplos y enfoque de examen.',
+	},
+	{
+		title: 'Supuesto práctico',
+		text: 'Entrenamiento progresivo de casos para entender la lógica del ejercicio y no limitarse a memorizar.',
+	},
+	{
+		title: 'Plan para aprovechar AGE',
+		text: 'Si ya vienes de Administrativo del Estado, se priorizan las diferencias reales para no duplicar estudio.',
+	},
+];
+
 const faqItems = [
 	{ question: '¿Cuándo es el examen de Administrativo de Seguridad Social 2026?', answer: 'El examen está fijado para el 28 de junio de 2026. Ambas partes del ejercicio se realizan el mismo día.' },
-	{ question: '¿Es difícil el supuesto práctico de Seguridad Social?', answer: 'Es la parte que más preocupa a los opositores. En MC Oposiciones trabajamos el supuesto práctico desde el primer mes para que llegues al examen con confianza total. Lee nuestro artículo sobre cómo prepararlo.' },
-	{ question: '¿Se puede preparar Seguridad Social a la vez que AGE?', answer: 'Sí, y es la opción más inteligente. El 75% del temario es el mismo. Ver el Pack Doble.' },
-	{ question: '¿Qué diferencia hay entre el temario de AGE y el de SS?', answer: 'El temario general es prácticamente idéntico. La diferencia está en que el AGE tiene ofimática y SS tiene un temario específico de legislación de Seguridad Social de 13 temas.' },
+	{ question: '¿Es difícil el supuesto práctico de Seguridad Social?', answer: 'Es la parte que más preocupa a los opositores. En MC Oposiciones trabajamos el supuesto práctico desde el primer mes para que llegues al examen con confianza total.' },
+	{ question: '¿Se puede preparar Seguridad Social a la vez que AGE?', answer: 'Sí. Es una opción muy interesante porque una parte importante del temario se aprovecha entre ambas oposiciones.' },
+	{ question: '¿Qué diferencia hay entre el temario de AGE y el de SS?', answer: 'El temario general es muy parecido. La diferencia principal es que AGE incluye ofimática y Seguridad Social tiene temario específico y supuesto práctico propio.' },
 ];
 ---
 
@@ -33,13 +54,19 @@ const faqItems = [
 			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Oposiciones Seguridad Social C1', href: '' }]} />
 				<header class="mt-12 max-w-4xl">
-					<h1 class="text-4xl font-extrabold text-primary md:text-6xl leading-tight">Administrativo de la <span class="text-secondary">Seguridad Social</span></h1>
+					<p class="text-sm font-bold uppercase tracking-widest text-secondary">Administración de la Seguridad Social</p>
+					<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Administrativo de la <span class="text-secondary">Seguridad Social</span></h1>
 					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
-						Preparación especializada 2026. Sin prueba de ofimática y con un temario legislativo apasionante y muy específico.
+						Preparación especializada para una oposición C1 sin ofimática, con temario propio y una fecha de examen ya definida.
 					</p>
-					<a href="/preparadora-seguridad-social/" class="mt-6 inline-flex font-bold text-secondary no-underline hover:text-accent">
-						Ver preparadora especializada en Seguridad Social
-					</a>
+					<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+						<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
+							Ver cursos y precios
+						</a>
+						<a href="/preparadora-seguridad-social/" class="inline-flex justify-center rounded-xl border border-secondary px-6 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
+							Preparadora especializada en SS
+						</a>
+					</div>
 				</header>
 			</div>
 		</section>
@@ -48,31 +75,32 @@ const faqItems = [
 			<div class="mx-auto max-w-7xl">
 				<div class="grid gap-12 lg:grid-cols-2 lg:items-center">
 					<div>
-						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Convocatoria SS 2026</h2>
+						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Convocatoria Seguridad Social 2026</h2>
 						<p class="mt-6 text-lg leading-relaxed text-text-muted">
-							Trabajar en la Seguridad Social (INSS, Tesorería) significa gestionar las prestaciones más importantes del país en un entorno profesional de alto nivel.
+							Trabajar en la Seguridad Social significa gestionar prestaciones y procedimientos clave en organismos como INSS o Tesorería.
 						</p>
 						<div class="mt-10 grid gap-4 sm:grid-cols-2">
-							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary">1.456 plazas libres</div>
-							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary text-secondary">Examen: 28 Junio 2026</div>
-							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary">Sin méritos (Solo nota)</div>
-							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary">Sin Ofimática</div>
+							{examFacts.map((item, index) => (
+								<div class={`rounded-xl border border-primary/10 bg-bg-light/40 p-4 font-bold ${index === 1 ? 'text-secondary' : 'text-primary'}`}>
+									{item}
+								</div>
+							))}
 						</div>
 					</div>
-					<div class="rounded-[2.5rem] bg-secondary/10 p-8 md:p-12 border border-secondary/20">
+					<div class="rounded-2xl border border-secondary/20 bg-secondary/10 p-8 md:p-12">
 						<h3 class="text-xl font-bold text-primary">Estructura del examen</h3>
-						<ul class="mt-6 space-y-4">
+						<ul class="mt-6 space-y-5">
 							<li class="flex gap-4">
 								<span class="font-black text-secondary">01</span>
-								<p class="text-sm text-text-main"><strong>Parte Test:</strong> 70 preguntas sobre temario general y específico.</p>
+								<p class="text-sm leading-relaxed text-text-main"><strong>Parte test:</strong> 70 preguntas sobre temario general y específico.</p>
 							</li>
 							<li class="flex gap-4">
 								<span class="font-black text-secondary">02</span>
-								<p class="text-sm text-text-main"><strong>Supuesto Práctico:</strong> 15 preguntas sobre casos reales de SS.</p>
+								<p class="text-sm leading-relaxed text-text-main"><strong>Supuesto práctico:</strong> 15 preguntas sobre casos de Seguridad Social.</p>
 							</li>
 							<li class="flex gap-4">
 								<span class="font-black text-secondary">03</span>
-								<p class="text-sm text-text-main"><strong>Tiempo:</strong> 120 minutos para completar ambas partes del ejercicio.</p>
+								<p class="text-sm leading-relaxed text-text-main"><strong>Tiempo:</strong> 120 minutos para completar ambas partes del ejercicio.</p>
 							</li>
 						</ul>
 					</div>
@@ -82,14 +110,26 @@ const faqItems = [
 
 		<section class="px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-16 text-center">
-					<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Opciones de preparación</h2>
-					<p class="mt-4 text-text-muted">Especialización total en el temario específico de la Seguridad Social.</p>
+				<div class="mb-12 max-w-3xl">
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Cómo se prepara Seguridad Social</h2>
+					<p class="mt-4 text-text-muted">Aquí el foco está en entender la oposición. Las modalidades económicas se consultan de forma centralizada en la página de precios.</p>
 				</div>
-				<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-					<CourseCard title="Mensual" description="Acceso a clases en directo y todo el material actualizado mes a mes." price="100€" priceType="/mes" href="/cursos-precios/" features={['Directo + Grabaciones', 'Resolución de dudas', 'Material incluido']} />
-					<CourseCard title="Completo" description="Acceso ilimitado hasta el día del examen. El plan más seguro." price="475€" priceType="pago único" href="/cursos-precios/" features={['Curso completo SS', 'Simulacros examen', 'Soporte prioritario']} />
-					<CourseCard title="Parte Específica" description="Solo los 13 temas exclusivos de SS. Ideal si ya vienes de preparar AGE." price="300€" priceType="pago único" href="/cursos-precios/" features={['Temario específico', 'Supuestos prácticos SS', 'Material PDF']} />
+				<div class="grid gap-5 md:grid-cols-3">
+					{preparationBlocks.map((block) => (
+						<article class="rounded-2xl border border-primary/10 bg-white p-6">
+							<h3 class="text-xl font-extrabold text-primary">{block.title}</h3>
+							<p class="mt-4 leading-relaxed text-text-muted">{block.text}</p>
+						</article>
+					))}
+				</div>
+				<div class="mt-10 rounded-2xl border border-secondary/20 bg-secondary/5 p-6 md:flex md:items-center md:justify-between md:gap-8">
+					<div>
+						<h3 class="text-2xl font-extrabold text-primary">¿Vienes de preparar AGE?</h3>
+						<p class="mt-3 text-text-muted">Puede ser más eficiente completar solo la parte específica de Seguridad Social o plantear una preparación conjunta.</p>
+					</div>
+					<a href="/cursos-precios/" class="mt-6 inline-flex rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary md:mt-0">
+						Ver modalidades
+					</a>
 				</div>
 			</div>
 		</section>
@@ -103,11 +143,11 @@ const faqItems = [
 
 		<section class="px-4 pb-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-5xl">
-				<CTABanner 
-					title="¿Preparamos tu plaza en la Seguridad Social?" 
-					subtitle="Quedan pocos meses para el examen de junio. ¡Es el momento de empezar!" 
-					ctaText="Quiero información" 
-					ctaHref="/contacto/" 
+				<CTABanner
+					title="¿Preparamos tu plaza en la Seguridad Social?"
+					subtitle="Escríbeme y vemos si te conviene curso completo, parte específica o preparación combinada con AGE."
+					ctaText="Quiero información"
+					ctaHref="/contacto/"
 					variant="primary"
 				/>
 			</div>
