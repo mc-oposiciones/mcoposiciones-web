@@ -26,6 +26,7 @@ const {
 } = Astro.props;
 
 const parsedSchema = schemaJson ? JSON.parse(schemaJson) : null;
+const isStagingBuild = import.meta.env.PUBLIC_SITE_ENV === 'staging';
 const absoluteOgImage = ogImage.startsWith('http')
 	? ogImage
 	: new URL(ogImage, 'https://mcoposiciones.com').toString();
@@ -54,7 +55,7 @@ const absoluteOgImage = ogImage.startsWith('http')
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={absoluteOgImage} />
-		{noindex && <meta name="robots" content="noindex, nofollow" />}
+		{(noindex || isStagingBuild) && <meta name="robots" content="noindex, nofollow" />}
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
