@@ -9,6 +9,6 @@ const widgetSrc = variant === 'grid'
 	: 'https://cdn.trustindex.io/loader.js?d4cd7e27268d3191eb564e83a7b';
 ---
 
-<section class="overflow-hidden rounded-xl border border-primary/10 bg-white p-4 shadow-md md:p-6" data-review-widget={variant}>
+<div class="trustindex-widget" data-review-widget={variant}>
 	<script defer async src={widgetSrc}></script>
-</section>
+</div>
