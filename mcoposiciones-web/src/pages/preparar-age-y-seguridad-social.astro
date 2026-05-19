@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTABanner from '../components/CTABanner.astro';
+
+const schemaJson = JSON.stringify([
+	{ '@context': 'https://schema.org', '@type': 'Course', name: 'Preparación Oposiciones Administrativo del Estado AGE C1 2026', provider: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' } },
+	{ '@context': 'https://schema.org', '@type': 'Course', name: 'Preparación Oposiciones Administrativo Seguridad Social C1 2026', provider: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' } },
+	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Pack Doble AGE + Seguridad Social', price: '699', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
+]);
+const faqItems = [
+	{ question: '¿Se puede llevar bien el ritmo de preparar las dos oposiciones a la vez?', answer: 'Sí. El método está diseñado para ello. El temario compartido se estudia una sola vez. Solo hay que añadir las clases específicas de SS y la ofimática de AGE, que se trabajan de forma paralela y organizada.' },
+	{ question: '¿Los exámenes son el mismo día?', answer: 'No. El examen de Seguridad Social está fijado para el 28 de junio de 2026. El de AGE tiene fecha distinta. Puedes presentarte a los dos.' },
+	{ question: '¿Cuántas horas semanales necesito?', answer: 'Entre 18 y 25 horas semanales para llevar bien las dos preparaciones. Mª Carmen te diseña un plan personalizado.' },
+	{ question: '¿Qué pasa si apruebo la primera y no necesito presentarme a la segunda?', answer: 'Estupendo, ese es el objetivo. El acceso al curso se mantiene hasta el examen de cada oposición independientemente.' },
+];
+---
+
+<BaseLayout
+	title="Preparar AGE y Seguridad Social a la vez — Doble Oportunidad | MC Oposiciones"
+	description="El 75% del temario de AGE y Seguridad Social es idéntico. Prepara las dos oposiciones simultáneamente con Mª Carmen y multiplica tus opciones de plaza. Pack Doble exclusivo."
+	canonicalUrl="https://mcoposiciones.com/preparar-age-y-seguridad-social/"
+	schemaJson={schemaJson}
+>
+	<main class="overflow-x-hidden pt-24">
+		<section class="px-4 py-16 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-6xl">
+				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Pack AGE + Seguridad Social', href: '' }]} />
+				<header class="mt-12 text-center lg:text-left">
+					<h1 class="text-4xl font-extrabold leading-tight text-primary md:text-6xl">Prepara AGE y Seguridad Social <span class="text-secondary">a la vez</span></h1>
+					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
+						Mismo temario, doble oportunidad de plaza. La estrategia más inteligente para opositores C1 en 2026.
+					</p>
+				</header>
+
+				<div class="mt-16 overflow-hidden rounded-[2.5rem] bg-accent/10 border border-accent/20 p-8 md:p-12 shadow-premium relative">
+					<div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-accent blur-3xl opacity-20"></div>
+					<div class="relative z-10">
+						<p class="text-2xl font-black text-primary md:text-3xl">El dato que lo cambia todo:</p>
+						<p class="mt-6 text-xl font-bold text-secondary">El 75% del temario de Administrativo del Estado y Administrativo de la Seguridad Social es IDÉNTICO.</p>
+						<p class="mt-6 text-lg leading-relaxed text-text-main md:text-xl">
+							Los 23 temas generales de Seguridad Social son prácticamente iguales a los bloques I-V del Estado. Solo cambian 13 temas específicos y la ofimática. Con mi método, aprovechas el esfuerzo compartido para presentarte a dos exámenes distintos.
+						</p>
+					</div>
+				</div>
+
+				<div class="mt-32 space-y-32">
+					<section>
+						<h2 class="text-center text-3xl font-extrabold text-primary md:text-5xl">¿Qué incluye el Pack Doble?</h2>
+						<div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+							{[
+								'Todo el temario general compartido',
+								'Clases específicas de SS (13 temas)',
+								'Ofimática completa para AGE',
+								'Test diferenciados por oposición',
+								'Supuestos prácticos de ambos cuerpos',
+								'Simulacros cronometrados reales',
+								'Acceso hasta el último examen',
+								'Planificación combinada estratégica'
+							].map((item) => (
+								<div class="flex items-center gap-4 rounded-2xl bg-white p-6 shadow-premium border border-primary/5">
+									<span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary text-white font-bold">✓</span>
+									<span class="font-bold text-primary">{item}</span>
+								</div>
+							))}
+						</div>
+					</section>
+
+					<section>
+						<div class="grid gap-16 lg:grid-cols-2 lg:items-center">
+							<div>
+								<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Doble oportunidad, <span class="text-secondary">mismo ahorro</span></h2>
+								<p class="mt-8 text-lg leading-relaxed text-text-muted">
+									Preparar por separado supone pagar dos cursos independientes. Con el Pack Doble, no solo ahorras cientos de euros, sino que optimizas cada hora de estudio.
+								</p>
+								<div class="mt-10 overflow-hidden rounded-3xl border border-primary/5 bg-white shadow-premium">
+									<table class="w-full text-left">
+										<tbody class="divide-y divide-primary/5">
+											<tr><th class="p-6 font-bold text-primary">Preparar por separado</th><td class="p-6 text-text-muted">950€</td></tr>
+											<tr class="bg-bg-dark/20"><th class="p-6 font-black text-primary">Pack Doble AGE + SS</th><td class="p-6 font-black text-secondary text-xl">699€</td></tr>
+											<tr class="bg-secondary/10"><th class="p-6 font-bold text-secondary">Tu ahorro directo</th><td class="p-6 font-black text-secondary">251€</td></tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="space-y-6">
+								<div class="rounded-[2rem] bg-white border border-primary/5 p-8 shadow-premium">
+									<h3 class="text-xl font-extrabold text-primary">Fechas clave 2026</h3>
+									<div class="mt-6 space-y-4">
+										<div class="rounded-xl bg-bg-light p-4 border-l-4 border-secondary">
+											<p class="text-sm font-bold text-primary">Examen Seguridad Social:</p>
+											<p class="text-lg font-black text-secondary">28 de junio de 2026</p>
+										</div>
+										<div class="rounded-xl bg-bg-light p-4 border-l-4 border-accent">
+											<p class="text-sm font-bold text-primary">Examen AGE:</p>
+											<p class="text-lg font-black text-accent">Próxima publicación</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="max-w-4xl mx-auto">
+						<h2 class="text-center text-3xl font-extrabold text-primary md:text-5xl">Preguntas del Pack Doble</h2>
+						<div class="mt-16">
+							<FAQAccordion items={faqItems} />
+						</div>
+					</section>
+
+					<section class="pb-24">
+						<CTABanner 
+							title="¿Doblamos tus opciones de plaza?" 
+							subtitle="Hablamos sobre cómo encajar este pack en tu disponibilidad diaria." 
+							ctaText="Información Pack Doble" 
+							ctaHref="/contacto/" 
+							variant="primary"
+						/>
+					</section>
+				</div>
+			</div>
+		</section>
+	</main>
+</BaseLayout>

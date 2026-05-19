@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+	title="Política de Cookies | MC Oposiciones"
+	description="Política de cookies de MC Oposiciones: cookies técnicas, cookies analíticas de Google Analytics 4 y gestión del consentimiento."
+	canonicalUrl="https://mcoposiciones.com/politica-cookies/"
+	noindex={true}
+>
+	<main class="px-4 py-16 sm:px-6 lg:px-8">
+		<article class="prose prose-lg mx-auto max-w-4xl">
+			<h1>Política de Cookies</h1>
+			<p>Esta política explica qué cookies y tecnologías similares se utilizan en mcoposiciones.com y cómo puedes aceptar o rechazar su uso.</p>
+
+			<h2>Qué son las cookies</h2>
+			<p>Las cookies son pequeños archivos que se almacenan en el navegador de la persona usuaria cuando visita una página web. Sirven para recordar preferencias, permitir funciones técnicas o analizar el uso del sitio.</p>
+
+			<h2>Cookies técnicas necesarias</h2>
+			<p>Este sitio puede utilizar cookies técnicas o almacenamiento local necesario para recordar preferencias del usuario, como la elección sobre el consentimiento de cookies.</p>
+			<p>Estas cookies son necesarias para el funcionamiento básico del sitio y no requieren consentimiento previo.</p>
+
+			<h2>Cookies analíticas</h2>
+			<p>Este sitio puede utilizar Google Analytics 4 para analizar de forma estadística el uso del sitio web. Google Analytics puede usar identificadores como <code>_ga</code> para distinguir usuarios y generar métricas agregadas de navegación.</p>
+			<p>La finalidad de estas cookies es conocer cómo se utiliza la web, qué páginas se visitan y cómo mejorar los contenidos y la experiencia de usuario.</p>
+			<p>Las cookies analíticas solo se activan si aceptas expresamente su uso desde el banner de cookies.</p>
+
+			<h2>Cómo aceptar o rechazar cookies</h2>
+			<p>Al acceder al sitio, puedes elegir entre "Aceptar todas" o "Solo necesarias". Si aceptas todas, se activará Google Analytics 4. Si eliges solo necesarias, no se cargarán cookies analíticas. Puedes volver a la <a href="#gestion-cookies">herramienta de gestión de cookies</a> desde esta página.</p>
+			<p>La elección se guarda en tu navegador mediante <code>localStorage</code> con la clave <code>cookie_consent</code>.</p>
+
+			<h2 id="gestion-cookies">Herramienta de gestión de cookies</h2>
+			<p>Puedes cambiar tu elección borrando los datos del sitio desde la configuración de tu navegador. Al volver a visitar la web, aparecerá de nuevo el banner de cookies.</p>
+			<p><button id="reset-cookie-consent" type="button" class="rounded-xl bg-secondary px-5 py-3 text-sm font-bold text-white">Cambiar preferencias de cookies</button></p>
+			<p>También puedes bloquear o eliminar cookies desde la configuración del navegador que utilices.</p>
+
+			<h2>Cookies de terceros</h2>
+			<p>Si aceptas las cookies analíticas, Google podrá tratar información técnica asociada al uso del sitio conforme a sus propias políticas. Puedes consultar más información en la documentación de privacidad de Google.</p>
+
+			<h2>Actualización de la política</h2>
+			<p>Esta política puede actualizarse si cambian las cookies utilizadas, las herramientas de análisis o la normativa aplicable.</p>
+		</article>
+	</main>
+	<script>
+		document.getElementById('reset-cookie-consent')?.addEventListener('click', () => {
+			localStorage.removeItem('cookie_consent');
+			window.location.reload();
+		});
+	</script>
+</BaseLayout>

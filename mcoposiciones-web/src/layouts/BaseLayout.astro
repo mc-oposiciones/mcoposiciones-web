@@ -1,0 +1,132 @@
+---
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+import SchemaOrg from '../components/SchemaOrg.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+
+interface Props {
+	title: string;
+	description: string;
+	canonicalUrl: string;
+	ogImage?: string;
+	ogType?: 'website' | 'article' | string;
+	schemaJson?: string;
+	noindex?: boolean;
+}
+
+const {
+	title,
+	description,
+	canonicalUrl,
+	ogImage = '/og-default.jpg',
+	ogType = 'website',
+	schemaJson = '',
+	noindex = false,
+} = Astro.props;
+
+const parsedSchema = schemaJson ? JSON.parse(schemaJson) : null;
+const absoluteOgImage = ogImage.startsWith('http')
+	? ogImage
+	: new URL(ogImage, 'https://mcoposiciones.com').toString();
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="alternate" hreflang="es" href="https://mcoposiciones.com" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content={absoluteOgImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:type" content={ogType} />
+		<meta property="og:site_name" content="MC Oposiciones" />
+		<meta property="og:locale" content="es_ES" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={absoluteOgImage} />
+		{noindex && <meta name="robots" content="noindex, nofollow" />}
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="dns-prefetch" href="https://img.youtube.com" />
+		<!-- TODO: Preload /fonts/montserrat.woff2 y /fonts/inter.woff2 cuando se incorporen los archivos reales. -->
+		<!-- El CSS global se importa en este layout para que Astro lo procese y lo incluya en todas las paginas. -->
+		<SchemaOrg schema={parsedSchema} />
+	</head>
+	<body class="min-h-screen bg-bg-light text-text-main font-body selection:bg-secondary/20 selection:text-secondary">
+		<Navbar />
+		<slot />
+		<Footer />
+		<script is:inline>
+			(() => {
+				const measurementId = 'G-XXXXXXXXXX'; // TODO: sustituir G-XXXXXXXXXX por el Measurement ID real de GA4 creado en analytics.google.com.
+
+				window.loadGoogleAnalytics = function () {
+					if (window.__mcGoogleAnalyticsLoaded) return;
+					window.__mcGoogleAnalyticsLoaded = true;
+
+					window.dataLayer = window.dataLayer || [];
+					window.gtag = function gtag(){ window.dataLayer.push(arguments); };
+
+					const gaScript = document.createElement('script');
+					gaScript.async = true;
+					gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+					document.head.appendChild(gaScript);
+
+					window.gtag('js', new Date());
+					window.gtag('config', measurementId);
+				};
+
+				const hasConsent = () => {
+					try {
+						return localStorage.getItem('cookie_consent') === 'accepted';
+					} catch {
+						return false;
+					}
+				};
+				const track = (eventName, params) => {
+					if (typeof window.gtag === 'function') {
+						window.gtag('event', eventName, params);
+					}
+				};
+
+				if (hasConsent()) {
+					window.loadGoogleAnalytics();
+				}
+
+				document.addEventListener('submit', (event) => {
+					if (event.target instanceof HTMLFormElement && event.target.id === 'contact-form') {
+						track('form_submit', { event_category: 'contacto', event_label: 'formulario_contacto' });
+					}
+				}, true);
+
+				document.addEventListener('click', (event) => {
+					const link = event.target instanceof Element ? event.target.closest('a') : null;
+					if (!link) return;
+
+					const href = link.getAttribute('href') || '';
+					if (href.startsWith('tel:')) {
+						track('click_phone');
+					}
+					if (href.startsWith('mailto:')) {
+						track('click_email');
+					}
+					if (href === '/contacto/' || href === 'https://mcoposiciones.com/contacto/') {
+						track('cta_click');
+					}
+				});
+			})();
+		</script>
+		<CookieBanner />
+	</body>
+</html>

@@ -1,0 +1,73 @@
+---
+import SchemaOrg from './SchemaOrg.astro';
+
+interface FAQItem {
+	question: string;
+	answer: string;
+}
+interface Props {
+	items: FAQItem[];
+}
+const { items } = Astro.props;
+const faqSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: items.map((item) => ({
+		'@type': 'Question',
+		name: item.question,
+		acceptedAnswer: { '@type': 'Answer', text: item.answer },
+	})),
+};
+---
+
+<div class="faq-accordion space-y-4">
+	{items.map((item, index) => (
+		<div class="overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium transition-all duration-300 hover:shadow-premium-hover">
+			<button type="button" class="faq-trigger group flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-bold text-primary transition-colors hover:text-secondary" aria-expanded={index === 0 ? 'true' : 'false'} aria-controls={`faq-panel-${index}`}>
+				<span class="text-lg md:text-xl">{item.question}</span>
+				<span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-bg-light text-secondary transition-transform duration-300 group-aria-expanded:rotate-180" aria-hidden="true">
+					<svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.938a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd" /></svg>
+				</span>
+			</button>
+			<div id={`faq-panel-${index}`} class:list={['faq-panel overflow-hidden px-6 text-text-muted transition-all duration-500 ease-in-out', index === 0 ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 pb-0 opacity-0']}>
+				<p class="text-base leading-relaxed md:text-lg">{item.answer}</p>
+			</div>
+		</div>
+	))}
+</div>
+<SchemaOrg schema={faqSchema} />
+
+<script>
+	document.querySelectorAll('.faq-accordion').forEach((accordion) => {
+		const triggers = accordion.querySelectorAll('.faq-trigger');
+		triggers.forEach((trigger) => {
+			trigger.addEventListener('click', () => {
+				const panelId = trigger.getAttribute('aria-controls');
+				const panel = panelId ? document.getElementById(panelId) : null;
+				const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+				// Close all other panels
+				triggers.forEach((otherTrigger) => {
+					if (otherTrigger !== trigger) {
+						const otherPanelId = otherTrigger.getAttribute('aria-controls');
+						const otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+						otherTrigger.setAttribute('aria-expanded', 'false');
+						otherPanel?.classList.remove('max-h-[500px]', 'pb-6', 'opacity-100');
+						otherPanel?.classList.add('max-h-0', 'pb-0', 'opacity-0');
+					}
+				});
+
+				// Toggle current panel
+				if (!isOpen) {
+					trigger.setAttribute('aria-expanded', 'true');
+					panel?.classList.remove('max-h-0', 'pb-0', 'opacity-0');
+					panel?.classList.add('max-h-[500px]', 'pb-6', 'opacity-100');
+				} else {
+					trigger.setAttribute('aria-expanded', 'false');
+					panel?.classList.remove('max-h-[500px]', 'pb-6', 'opacity-100');
+					panel?.classList.add('max-h-0', 'pb-0', 'opacity-0');
+				}
+			});
+		});
+	});
+</script>

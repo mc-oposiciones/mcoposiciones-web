@@ -1,0 +1,34 @@
+---
+import SchemaOrg from './SchemaOrg.astro';
+
+interface BreadcrumbItem {
+	label: string;
+	href?: string;
+}
+interface Props {
+	items: BreadcrumbItem[];
+}
+const { items } = Astro.props;
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: items.map((item, index) => ({
+		'@type': 'ListItem',
+		position: index + 1,
+		name: item.label,
+		item: item.href ? new URL(item.href, 'https://mcoposiciones.com').toString() : undefined,
+	})),
+};
+---
+
+<nav aria-label="Migas de pan" class="text-sm text-text-muted">
+	<ol class="flex flex-wrap items-center gap-2">
+		{items.map((item, index) => (
+			<li class="flex items-center gap-2">
+				{index > 0 && <span aria-hidden="true">/</span>}
+				{index === items.length - 1 || !item.href ? <span class="font-semibold text-primary" aria-current="page">{item.label}</span> : <a href={item.href} class="font-semibold no-underline">{item.label}</a>}
+			</li>
+		))}
+	</ol>
+</nav>
+<SchemaOrg schema={schema} />

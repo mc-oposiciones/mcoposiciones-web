@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+);
+
+const categories = [...new Set(posts.map((post) => post.data.category))];
+const categorySlug = (category: string) =>
+	category
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/^-|-$/g, '');
+---
+
+<BaseLayout
+	title="Blog sobre Oposiciones AGE y Seguridad Social | MC Oposiciones"
+	description="Artículos sobre las oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social. Temario, convocatorias, supuestos prácticos y consejos de preparación."
+	canonicalUrl="https://mcoposiciones.com/blog/"
+>
+	<main class="overflow-x-hidden pt-20">
+		<section class="px-4 py-16 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="max-w-4xl">
+					<h1 class="text-4xl font-extrabold text-primary md:text-6xl">Blog Oposiciones</h1>
+					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
+						Recursos, guías y consejos estratégicos para dominar el temario y aprobar tu examen de Administrativo (AGE y SS).
+					</p>
+				</div>
+
+				<div class="mt-12 flex flex-wrap gap-3" aria-label="Filtrar por categoría">
+					<a href="/blog/" class="rounded-xl border border-primary/5 bg-white px-5 py-2.5 text-sm font-bold text-primary no-underline shadow-premium transition-all hover:-translate-y-1 hover:bg-secondary hover:text-white" data-category-filter="all">Todas</a>
+					{categories.map((category) => (
+						<a href={`/blog/?categoria=${categorySlug(category)}`} class="rounded-xl border border-primary/5 bg-white px-5 py-2.5 text-sm font-bold text-primary no-underline shadow-premium transition-all hover:-translate-y-1 hover:bg-secondary hover:text-white" data-category-filter={categorySlug(category)}>
+							{category}
+						</a>
+					))}
+				</div>
+
+				<section id="blog-grid" class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+					{posts.map((post) => (
+						<article class="blog-card group flex h-full flex-col overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium transition-all duration-300 hover:-translate-y-2 hover:shadow-premium-hover" data-category={categorySlug(post.data.category)}>
+							{post.data.image && (
+								<div class="aspect-video overflow-hidden">
+									<img src={post.data.image} alt={post.data.imageAlt} width="800" height="450" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+								</div>
+							)}
+							<div class="flex flex-1 flex-col p-8">
+								<p class="text-xs font-extrabold uppercase tracking-widest text-secondary">{post.data.category}</p>
+								<h2 class="mt-4 text-2xl font-bold leading-tight text-primary group-hover:text-secondary transition-colors">{post.data.h1}</h2>
+								<p class="mt-4 flex-1 text-sm leading-relaxed text-text-muted line-clamp-3">{post.data.excerpt}</p>
+								<div class="mt-8 flex items-center justify-between border-t border-primary/5 pt-6">
+									<span class="text-xs font-bold text-text-muted">{post.data.pubDate.toLocaleDateString('es-ES')}</span>
+									<a href={`/blog/${post.id}/`} class="text-sm font-black text-secondary no-underline hover:text-accent">Leer artículo</a>
+								</div>
+							</div>
+						</article>
+					))}
+				</section>
+			</div>
+		</section>
+	</main>
+	<script>
+		const params = new URLSearchParams(window.location.search);
+		const selected = params.get('categoria');
+		if (selected) {
+			document.querySelectorAll('.blog-card').forEach((card) => {
+				card.classList.toggle('hidden', card.getAttribute('data-category') !== selected);
+			});
+		}
+	</script>
+</BaseLayout>

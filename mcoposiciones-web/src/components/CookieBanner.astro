@@ -1,0 +1,61 @@
+<div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[60] hidden border-t border-white/10 bg-gray-950 px-4 py-5 text-white shadow-2xl sm:px-6 lg:px-8" role="region" aria-label="Aviso de cookies">
+	<div class="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+		<p class="max-w-3xl text-sm leading-6 text-white/85">
+			Usamos cookies propias y de terceros (Google Analytics) para analizar el uso del sitio. Puedes aceptarlas o rechazarlas.
+			<a href="/politica-cookies/" class="font-bold text-accent no-underline hover:text-white">Política de cookies</a>.
+		</p>
+		<div class="flex shrink-0 flex-col gap-3 sm:flex-row">
+			<button id="cookie-accept" type="button" class="rounded-xl bg-secondary px-5 py-3 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-accent hover:text-white">
+				Aceptar todas
+			</button>
+			<button id="cookie-reject" type="button" class="rounded-xl border border-white/30 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-accent hover:text-accent">
+				Solo necesarias
+			</button>
+		</div>
+	</div>
+</div>
+
+<script is:inline>
+	(() => {
+		const banner = document.getElementById('cookie-banner');
+		const acceptButton = document.getElementById('cookie-accept');
+		const rejectButton = document.getElementById('cookie-reject');
+		const getConsent = () => {
+			try {
+				return localStorage.getItem('cookie_consent');
+			} catch {
+				return null;
+			}
+		};
+		const setConsent = (value) => {
+			try {
+				localStorage.setItem('cookie_consent', value);
+			} catch {
+				// Si localStorage no está disponible, se respeta la elección solo durante la sesión actual.
+			}
+		};
+		const hideBanner = () => banner?.classList.add('hidden');
+		const showBanner = () => banner?.classList.remove('hidden');
+
+		const consent = getConsent();
+		if (consent === 'accepted') {
+			hideBanner();
+			window.loadGoogleAnalytics?.();
+		} else if (consent === 'rejected') {
+			hideBanner();
+		} else {
+			showBanner();
+		}
+
+		acceptButton?.addEventListener('click', () => {
+			setConsent('accepted');
+			hideBanner();
+			window.loadGoogleAnalytics?.();
+		});
+
+		rejectButton?.addEventListener('click', () => {
+			setConsent('rejected');
+			hideBanner();
+		});
+	})();
+</script>

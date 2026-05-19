@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import TestimonialWidget from '../components/TestimonialWidget.astro';
+import CTABanner from '../components/CTABanner.astro';
+import { Image } from 'astro:assets';
+import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
+const schemaJson = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Person', name: 'María Carmen ', jobTitle: 'Preparadora de Oposiciones', worksFor: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' }, url: 'https://mcoposiciones.com/preparadora-oposiciones/' });
+---
+<BaseLayout
+	title="Mª Carmen — Preparadora de Oposiciones AGE y Seguridad Social | MC Oposiciones"
+	description="Conoce a Mª Carmen, preparadora especializada en oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social (C1). Método riguroso, grupos reducidos y acompañamiento real."
+	canonicalUrl="https://mcoposiciones.com/preparadora-oposiciones/"
+	schemaJson={schemaJson}
+>
+	<main class="overflow-x-hidden pt-24">
+		<section class="px-4 py-16 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Preparadora de oposiciones', href: '' }]} />
+				<div class="mt-12 grid gap-16 lg:grid-cols-[450px_1fr] lg:items-center">
+					<div class="relative">
+						<div class="absolute -inset-4 rounded-[3rem] bg-secondary/10 blur-2xl"></div>
+						<div class="relative overflow-hidden rounded-[2.5rem] shadow-premium">
+							<Image src={mariaCarmenImage} alt="Mª Carmen" width={600} height={600} loading="eager" fetchpriority="high" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+						</div>
+					</div>
+					<div>
+						<h1 class="text-4xl font-extrabold text-primary md:text-6xl">Hola, soy Mª Carmen</h1>
+						<p class="mt-8 text-xl font-medium text-secondary">Tu preparadora especializada en AGE y Seguridad Social</p>
+						<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
+							No entiendo la preparación de oposiciones como una simple transmisión de leyes. Para mí, prepararte es darte la estrategia, el material y el apoyo emocional necesario para que mantengas el ritmo hasta el día del examen.
+						</p>
+						<div class="mt-10 flex flex-wrap gap-4">
+							<div class="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm border border-primary/5">
+								<span class="text-secondary">✓</span> Grupos reducidos
+							</div>
+							<div class="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm border border-primary/5">
+								<span class="text-secondary">✓</span> Atención directa
+							</div>
+							<div class="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm border border-primary/5">
+								<span class="text-secondary">✓</span> Método probado
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="mb-16 text-center">
+					<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Mi método de trabajo</h2>
+					<p class="mt-4 text-lg text-text-muted">Un sistema diseñado para que aproveches cada minuto de estudio.</p>
+				</div>
+				<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+					{[
+						{ title: 'Clases en directo', desc: 'Explicaciones claras y directas al grano, centradas en lo que realmente cae en el examen.' },
+						{ title: 'Grabaciones 24/7', desc: '¿No puedes asistir? La clase se graba y está disponible en tu panel al instante.' },
+						{ title: 'Material Propio', desc: 'Temarios actualizados 2026, esquemas de apoyo y resúmenes de leyes complejas.' },
+						{ title: 'Batería de Test', desc: 'Test por temas y bloques para que midas tu evolución de forma constante.' },
+						{ title: 'Supuestos Reales', desc: 'Trabajamos el supuesto práctico desde el primer mes, sin esperar al final.' },
+						{ title: 'Planificación Real', desc: 'Te ayudo a organizar tus semanas según el tiempo real del que dispones.' }
+					].map((item) => (
+						<div class="rounded-2xl border border-primary/5 bg-bg-light/30 p-8 shadow-sm transition-all hover:-translate-y-1 hover:bg-white hover:shadow-premium">
+							<h3 class="text-xl font-bold text-primary">{item.title}</h3>
+							<p class="mt-4 text-sm leading-relaxed text-text-muted">{item.desc}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-5xl text-center">
+				<h2 class="text-3xl font-extrabold text-primary md:text-5xl">La clave del éxito</h2>
+				<p class="mt-8 text-xl leading-relaxed text-text-main">
+					"Preparar una oposición es una carrera de fondo. Mi trabajo es evitar que te desvíes del camino y asegurar que, cuando llegues a la meta, lo hagas con la mejor preparación técnica del mercado."
+				</p>
+				<div class="mt-12 flex justify-center">
+					<div class="h-1 w-20 rounded-full bg-secondary"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-bg-dark/30 px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="mb-16 text-center">
+					<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Lo que dicen los alumnos</h2>
+				</div>
+				<div class="rounded-[2.5rem] bg-white p-8 shadow-premium md:p-16">
+					<TestimonialWidget />
+				</div>
+			</div>
+		</section>
+
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-5xl">
+				<CTABanner 
+					title="¿Quieres que preparemos tu plaza?" 
+					subtitle="Hablamos sobre tu situación y te explico cómo podemos empezar a trabajar juntos." 
+					ctaText="Contactar ahora" 
+					ctaHref="/contacto/" 
+				/>
+			</div>
+		</section>
+	</main>
+</BaseLayout>

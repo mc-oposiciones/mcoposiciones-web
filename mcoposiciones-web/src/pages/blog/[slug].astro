@@ -1,0 +1,122 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CTABanner from '../../components/CTABanner.astro';
+import LeadMagnet from '../../components/LeadMagnet.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({ params: { slug: post.id } }));
+}
+
+const slug = Astro.params.slug ?? '';
+const entry = await getEntry('blog', slug);
+
+if (!entry) {
+	return Astro.redirect('/blog/');
+}
+
+const { Content } = await render(entry);
+const allPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const sameCategoryPosts = allPosts
+	.filter((post) => post.id !== entry.id && post.data.category === entry.data.category)
+	.slice(0, 3);
+const fallbackPosts = allPosts.filter((post) => post.id !== entry.id && !sameCategoryPosts.some((relatedPost) => relatedPost.id === post.id));
+const relatedPosts = [...sameCategoryPosts, ...fallbackPosts].slice(0, 3);
+const courseLinks = [
+	{ href: '/oposiciones-administrativo-estado/', label: 'Preparación Administrativo del Estado (AGE C1)' },
+	{ href: '/oposiciones-seguridad-social/', label: 'Preparación Administrativo de la Seguridad Social' },
+	{ href: '/preparar-age-y-seguridad-social/', label: 'Pack AGE + SS' },
+];
+
+const canonicalUrl = `https://mcoposiciones.com/blog/${entry.id}/`;
+const schemaJson = JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'BlogPosting',
+	headline: entry.data.h1,
+	description: entry.data.description,
+	author: { '@type': 'Person', name: entry.data.author },
+	datePublished: entry.data.pubDate.toISOString(),
+	dateModified: (entry.data.updatedDate ?? entry.data.pubDate).toISOString(),
+	publisher: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' },
+	mainEntityOfPage: canonicalUrl,
+});
+---
+
+<BaseLayout
+	title={entry.data.title}
+	description={entry.data.description}
+	canonicalUrl={canonicalUrl}
+	ogType="article"
+	ogImage={entry.data.image}
+	schemaJson={schemaJson}
+>
+	<main class="overflow-x-hidden pt-24">
+		<article class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+			<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: entry.data.h1, href: '' }]} />
+			
+			<header class="py-12 md:py-16">
+				<p class="text-xs font-extrabold uppercase tracking-[0.2em] text-secondary">{entry.data.category}</p>
+				<h1 class="mt-6 text-balance text-4xl font-extrabold leading-tight text-primary md:text-6xl">{entry.data.h1}</h1>
+				<div class="mt-8 flex items-center gap-4 border-y border-primary/5 py-6">
+					<div class="h-12 w-12 rounded-full bg-bg-dark border-2 border-white shadow-sm"></div>
+					<div class="text-sm">
+						<p class="font-bold text-primary">{entry.data.author}</p>
+						<p class="text-text-muted">Actualizado el {entry.data.pubDate.toLocaleDateString('es-ES')}</p>
+					</div>
+				</div>
+				{entry.data.image && (
+					<div class="mt-12 overflow-hidden rounded-[2.5rem] shadow-premium">
+						<img src={entry.data.image} alt={entry.data.imageAlt} width="1200" height="675" loading="eager" class="aspect-video w-full object-cover" />
+					</div>
+				)}
+			</header>
+
+			<div class="prose prose-premium mx-auto">
+				<Content />
+			</div>
+
+			<section class="mt-20 overflow-hidden rounded-[2.5rem] bg-bg-dark/40 px-8 py-12 md:px-12">
+				<h2 class="text-2xl font-extrabold text-primary md:text-3xl text-center">Impulsa tu preparación</h2>
+				<p class="mt-4 text-center text-text-muted">Formación especializada con Mª Carmen para asegurar tu plaza.</p>
+				<div class="mt-10 grid gap-6 md:grid-cols-3">
+					{courseLinks.map((link) => (
+						<a href={link.href} class="flex h-full items-center justify-center rounded-2xl bg-white p-6 text-center text-sm font-bold text-primary no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover hover:text-secondary">
+							{link.label}
+						</a>
+					))}
+				</div>
+			</section>
+
+			<div class="mt-20">
+				<LeadMagnet />
+			</div>
+
+			<div class="mt-20">
+				<CTABanner 
+					title="¿Hablamos sobre tu plaza?" 
+					subtitle="Cuéntame tu objetivo y te ayudaré a trazar el mejor plan de estudio." 
+					ctaText="Contactar con Mª Carmen" 
+					ctaHref="/contacto/" 
+					variant="primary"
+				/>
+			</div>
+
+			{relatedPosts.length > 0 && (
+				<section class="mt-32 pb-20">
+					<h2 class="text-3xl font-extrabold text-primary">También te puede interesar</h2>
+					<div class="mt-10 grid gap-8 md:grid-cols-3">
+						{relatedPosts.map((post) => (
+							<a href={`/blog/${post.id}/`} class="group flex h-full flex-col rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+								<p class="text-[10px] font-extrabold uppercase tracking-widest text-secondary">{post.data.category}</p>
+								<h3 class="mt-4 text-lg font-bold leading-snug text-primary group-hover:text-secondary transition-colors">{post.data.h1}</h3>
+								<span class="mt-auto pt-6 text-xs font-black text-secondary uppercase tracking-tighter">Leer más →</span>
+							</a>
+						))}
+					</div>
+				</section>
+			)}
+		</article>
+	</main>
+</BaseLayout>

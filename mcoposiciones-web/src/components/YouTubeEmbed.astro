@@ -1,0 +1,41 @@
+---
+interface Props {
+	videoId: string;
+	title: string;
+	description: string;
+}
+const { videoId, title, description } = Astro.props;
+const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+---
+
+<figure class="youtube-embed overflow-hidden rounded-xl border border-primary/10 bg-black shadow-md" data-video-id={videoId} data-title={title}>
+	<button type="button" class="youtube-play group relative block w-full" aria-label={`Reproducir video: ${title}`}>
+		<img src={thumbnail} alt={description} width="480" height="360" loading="lazy" class="aspect-video w-full object-cover opacity-90 transition group-hover:opacity-100" />
+		<span class="absolute inset-0 flex items-center justify-center">
+			<span class="flex h-16 w-16 items-center justify-center rounded-full bg-secondary text-white shadow-lg transition group-hover:scale-105 group-hover:bg-accent">
+				<svg class="ml-1 h-8 w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7L8 5Z" /></svg>
+			</span>
+		</span>
+	</button>
+</figure>
+
+<script>
+	document.querySelectorAll('.youtube-embed').forEach((embed) => {
+		const button = embed.querySelector('.youtube-play');
+		button?.addEventListener('click', () => {
+			const videoId = embed.getAttribute('data-video-id');
+			const title = embed.getAttribute('data-title') || 'Video de YouTube';
+			if (!videoId) return;
+			const iframe = document.createElement('iframe');
+			iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+			iframe.title = title;
+			iframe.loading = 'lazy';
+			iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+			iframe.allowFullscreen = true;
+			iframe.className = 'aspect-video w-full';
+			iframe.width = '560';
+			iframe.height = '315';
+			embed.replaceChildren(iframe);
+		});
+	});
+</script>

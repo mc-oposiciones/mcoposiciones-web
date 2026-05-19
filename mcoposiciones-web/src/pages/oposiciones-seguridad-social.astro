@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CourseCard from '../components/CourseCard.astro';
+import TestimonialWidget from '../components/TestimonialWidget.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTABanner from '../components/CTABanner.astro';
+
+const schemaJson = JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'Course',
+	name: 'Preparación Oposiciones Administrativo Seguridad Social C1 2026',
+	description: 'Preparación online en directo para las oposiciones de Administrativo de la Seguridad Social C1. Test, simulacros, supuesto práctico y temario específico actualizado.',
+	provider: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' },
+	offers: { '@type': 'Offer', price: '100', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
+	educationalLevel: 'C1',
+	inLanguage: 'es',
+});
+const faqItems = [
+	{ question: '¿Cuándo es el examen de Administrativo de Seguridad Social 2026?', answer: 'El examen está fijado para el 28 de junio de 2026. Ambas partes del ejercicio se realizan el mismo día.' },
+	{ question: '¿Es difícil el supuesto práctico de Seguridad Social?', answer: 'Es la parte que más preocupa a los opositores. En MC Oposiciones trabajamos el supuesto práctico desde el primer mes para que llegues al examen con confianza total. Lee nuestro artículo sobre cómo prepararlo.' },
+	{ question: '¿Se puede preparar Seguridad Social a la vez que AGE?', answer: 'Sí, y es la opción más inteligente. El 75% del temario es el mismo. Ver el Pack Doble.' },
+	{ question: '¿Qué diferencia hay entre el temario de AGE y el de SS?', answer: 'El temario general es prácticamente idéntico. La diferencia está en que el AGE tiene ofimática y SS tiene un temario específico de legislación de Seguridad Social de 13 temas.' },
+];
+---
+
+<BaseLayout
+	title="Preparadora Oposiciones Administrativo Seguridad Social C1 2026 | MC Oposiciones"
+	description="Prepara con Mª Carmen las oposiciones de Administrativo de la Seguridad Social (C1) 2026. 1.456 plazas, sin ofimática, examen 28 junio 2026. Clases online en directo con temario específico SS actualizado."
+	canonicalUrl="https://mcoposiciones.com/oposiciones-seguridad-social/"
+	schemaJson={schemaJson}
+>
+	<main class="overflow-x-hidden pt-24">
+		<section class="px-4 py-16 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Oposiciones Seguridad Social C1', href: '' }]} />
+				<header class="mt-12 max-w-4xl">
+					<h1 class="text-4xl font-extrabold text-primary md:text-6xl leading-tight">Administrativo de la <span class="text-secondary">Seguridad Social</span></h1>
+					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
+						Preparación especializada 2026. Sin prueba de ofimática y con un temario legislativo apasionante y muy específico.
+					</p>
+				</header>
+			</div>
+		</section>
+
+		<section class="bg-white px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+					<div>
+						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Convocatoria SS 2026</h2>
+						<p class="mt-6 text-lg leading-relaxed text-text-muted">
+							Trabajar en la Seguridad Social (INSS, Tesorería) significa gestionar las prestaciones más importantes del país en un entorno profesional de alto nivel.
+						</p>
+						<div class="mt-10 grid gap-4 sm:grid-cols-2">
+							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary">1.456 plazas libres</div>
+							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary text-secondary">Examen: 28 Junio 2026</div>
+							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary">Sin méritos (Solo nota)</div>
+							<div class="rounded-xl border border-primary/5 bg-bg-light/30 p-4 font-bold text-primary">Sin Ofimática</div>
+						</div>
+					</div>
+					<div class="rounded-[2.5rem] bg-secondary/10 p-8 md:p-12 border border-secondary/20">
+						<h3 class="text-xl font-bold text-primary">Estructura del examen</h3>
+						<ul class="mt-6 space-y-4">
+							<li class="flex gap-4">
+								<span class="font-black text-secondary">01</span>
+								<p class="text-sm text-text-main"><strong>Parte Test:</strong> 70 preguntas sobre temario general y específico.</p>
+							</li>
+							<li class="flex gap-4">
+								<span class="font-black text-secondary">02</span>
+								<p class="text-sm text-text-main"><strong>Supuesto Práctico:</strong> 15 preguntas sobre casos reales de SS.</p>
+							</li>
+							<li class="flex gap-4">
+								<span class="font-black text-secondary">03</span>
+								<p class="text-sm text-text-main"><strong>Tiempo:</strong> 120 minutos para completar ambas partes del ejercicio.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="mb-16 text-center">
+					<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Opciones de preparación</h2>
+					<p class="mt-4 text-text-muted">Especialización total en el temario específico de la Seguridad Social.</p>
+				</div>
+				<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+					<CourseCard title="Mensual" description="Acceso a clases en directo y todo el material actualizado mes a mes." price="100€" priceType="/mes" href="/cursos-precios/" features={['Directo + Grabaciones', 'Resolución de dudas', 'Material incluido']} />
+					<CourseCard title="Completo" description="Acceso ilimitado hasta el día del examen. El plan más seguro." price="475€" priceType="pago único" href="/cursos-precios/" features={['Curso completo SS', 'Simulacros examen', 'Soporte prioritario']} />
+					<CourseCard title="Parte Específica" description="Solo los 13 temas exclusivos de SS. Ideal si ya vienes de preparar AGE." price="300€" priceType="pago único" href="/cursos-precios/" features={['Temario específico', 'Supuestos prácticos SS', 'Material PDF']} />
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-4xl">
+				<h2 class="mb-12 text-center text-3xl font-extrabold text-primary md:text-4xl">Dudas sobre Seguridad Social</h2>
+				<FAQAccordion items={faqItems} />
+			</div>
+		</section>
+
+		<section class="px-4 pb-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-5xl">
+				<CTABanner 
+					title="¿Preparamos tu plaza en la Seguridad Social?" 
+					subtitle="Quedan pocos meses para el examen de junio. ¡Es el momento de empezar!" 
+					ctaText="Quiero información" 
+					ctaHref="/contacto/" 
+					variant="primary"
+				/>
+			</div>
+		</section>
+	</main>
+</BaseLayout>

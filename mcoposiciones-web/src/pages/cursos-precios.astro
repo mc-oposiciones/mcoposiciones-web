@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CourseCard from '../components/CourseCard.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+const schemaJson = JSON.stringify([
+	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Curso Mensual', price: '100', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
+	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Curso Completo', price: '475', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
+	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Parte General', price: '250', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
+	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Parte Específica SS', price: '300', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
+	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Pack AGE + SS', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/preparar-age-y-seguridad-social/' },
+]);
+const faqItems = [
+	{ question: '¿Hay permanencia?', answer: 'No. La modalidad mensual no tiene compromiso de permanencia.' },
+	{ question: '¿Qué incluye el pago único?', answer: 'Incluye acceso al curso, clases en directo, grabaciones, material, test y simulacros hasta el examen.' },
+	{ question: '¿Puedo cambiar de modalidad?', answer: 'Sí, puedes consultar tu caso con Mª Carmen para elegir la modalidad que más te convenga.' },
+];
+---
+<BaseLayout
+	title="Cursos y Precios — Preparación Oposiciones AGE y Seguridad Social | MC Oposiciones"
+	description="Consulta los cursos disponibles para preparar las oposiciones de Administrativo del Estado y Seguridad Social. Desde 100€/mes o 475€ pago único. Sin compromiso de permanencia."
+	canonicalUrl="https://mcoposiciones.com/cursos-precios/"
+	schemaJson={schemaJson}
+>
+	<main class="overflow-x-hidden pt-20">
+		<section class="px-4 py-16 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Cursos y precios', href: '' }]} />
+				<div class="mt-10 max-w-4xl">
+					<h1 class="text-4xl font-extrabold text-primary md:text-6xl">Cursos disponibles y precios</h1>
+					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
+						Elige la modalidad que mejor se adapte a tu ritmo. Sin permanencia, con material actualizado y acompañamiento directo.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="px-4 py-12 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+					<CourseCard title="Curso Mensual" description="Para AGE o SS, ideal para ir paso a paso sin compromisos de larga duración." price="100€" priceType="/mes" href="/contacto/" features={['Clases online en directo', 'Grabaciones 24/7', 'Material y test por tema']} />
+					<CourseCard title="Curso Completo" description="Para AGE o SS. La opción más rentable si planeas preparar a largo plazo." price="475€" priceType="pago único" href="/contacto/" features={['Acceso hasta el examen', 'Material completo incluido', 'Simulacros de examen real']} />
+					<CourseCard title="Pack AGE + SS" description="Nuestra especialidad: dobla tus posibilidades con una planificación conjunta." price="Consultar" priceType="Pack" badge="RECOMENDADO" href="/preparar-age-y-seguridad-social/" features={['Doble oportunidad de plaza', 'Temario común una sola vez', 'Ahorro masivo de tiempo']} />
+					<CourseCard title="Parte General" description="Bloques I-V del Estado o temario común de Seguridad Social." price="250€" priceType="pago único" href="/contacto/" features={['Solo temario general', 'Batería de test', 'Clases grabadas']} />
+					<CourseCard title="Parte Específica SS" description="Los 13 temas exclusivos de Seguridad Social para opositores de AGE." price="300€" priceType="pago único" href="/contacto/" features={['Legislación específica SS', 'Supuestos prácticos SS', 'Esquemas de apoyo']} />
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="mb-12 text-center">
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Comparativa de planes</h2>
+					<p class="mt-4 text-text-muted">Todos los planes incluyen la misma calidad docente y material actualizado.</p>
+				</div>
+				<div class="overflow-hidden rounded-3xl border border-primary/5 bg-white shadow-premium">
+					<div class="overflow-x-auto">
+						<table class="w-full text-left text-sm md:text-base">
+							<thead>
+								<tr class="bg-bg-dark/30">
+									<th class="p-6 font-extrabold text-primary">Concepto</th>
+									<th class="p-6 font-extrabold text-primary">Mensual</th>
+									<th class="p-6 font-extrabold text-primary">Pago Único</th>
+									<th class="p-6 font-extrabold text-primary">Módulos</th>
+								</tr>
+							</thead>
+							<tbody class="divide-y divide-primary/5">
+								<tr>
+									<td class="p-6 font-bold text-primary">Clases en directo</td>
+									<td class="p-6 text-secondary">✓</td>
+									<td class="p-6 text-secondary">✓</td>
+									<td class="p-6 text-text-muted">Grabadas</td>
+								</tr>
+								<tr>
+									<td class="p-6 font-bold text-primary">Resolución de dudas</td>
+									<td class="p-6 text-secondary">✓ Directa</td>
+									<td class="p-6 text-secondary">✓ Prioritaria</td>
+									<td class="p-6 text-secondary">✓ Email</td>
+								</tr>
+								<tr>
+									<td class="p-6 font-bold text-primary">Acceso material</td>
+									<td class="p-6 text-text-muted">Mes a mes</td>
+									<td class="p-6 text-secondary font-bold">Ilimitado</td>
+									<td class="p-6 text-text-muted">Por módulo</td>
+								</tr>
+								<tr>
+									<td class="p-6 font-bold text-primary">Simulacros examen</td>
+									<td class="p-6 text-secondary">✓</td>
+									<td class="p-6 text-secondary">✓</td>
+									<td class="p-6 text-text-muted">—</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-4xl">
+				<h2 class="mb-12 text-center text-3xl font-extrabold text-primary md:text-4xl">Dudas sobre las modalidades</h2>
+				<FAQAccordion items={faqItems} />
+			</div>
+		</section>
+
+		<section class="px-4 pb-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-5xl">
+				<div class="rounded-[3rem] bg-secondary px-8 py-16 text-center text-white shadow-premium">
+					<h2 class="text-3xl font-extrabold md:text-4xl">¿No sabes qué plan elegir?</h2>
+					<p class="mt-6 text-lg text-white/90">Cuéntame tu situación (tiempo disponible, experiencia previa) y te aconsejaré la mejor opción.</p>
+					<div class="mt-10">
+						<a href="/contacto/" class="inline-flex rounded-2xl bg-white px-8 py-4 text-lg font-bold text-secondary no-underline shadow-lg transition-transform hover:scale-105">
+							Consultar con Mª Carmen
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</BaseLayout>

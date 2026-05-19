@@ -1,0 +1,30 @@
+---
+const testUrl = '#';
+---
+
+<section class="rounded-xl bg-gradient-to-br from-primary via-slate-900 to-secondary p-8 text-white shadow-lg md:p-10">
+	<div class="mx-auto max-w-3xl text-center">
+		<h2 class="text-3xl font-bold leading-tight md:text-4xl">¿Cuánto sabes ya sobre las oposiciones de Administrativo?</h2>
+		<p class="mt-4 text-lg leading-8 text-white/85">Haz el test diagnóstico gratuito y descubre tu nivel real en 5 minutos</p>
+		<!-- TODO: sustituir el href del botón por la URL del test cuando esté creado en Google Forms o Typeform. -->
+		<a href={testUrl} target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex rounded-xl bg-white px-6 py-3 text-center font-bold text-primary no-underline shadow-md transition hover:-translate-y-0.5 hover:bg-accent hover:text-white">
+			Hacer el test gratuito
+		</a>
+		<p class="mt-4 text-sm font-semibold text-white/75">Sin registro previo. 10 preguntas. Resultado inmediato.</p>
+	</div>
+
+	<!--
+	TODO: integrar Mailchimp o Brevo cuando la cuenta esté configurada.
+	Pega aquí el embed code completo que proporciona Mailchimp o Brevo para el formulario de suscripción.
+	Si el proveedor entrega una etiqueta <script>, colócala al final de este bloque comentado una vez descomentado.
+
+	Nota para el desarrollador: el test se puede crear gratuitamente en Typeform (typeform.com) o en Google Forms (forms.google.com).
+	Una vez creado, sustituir el href del botón por la URL del formulario.
+	Si se usa Typeform, también existe la opción de embebido como modal que se abre al hacer clic en el botón.
+
+	Ejemplo de ubicación:
+	<div id="mc_embed_shell">
+		Pegar aquí el formulario embed de Mailchimp o Brevo.
+	</div>
+	-->
+</section>

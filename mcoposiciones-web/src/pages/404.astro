@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+	title="Página no encontrada | MC Oposiciones"
+	description="La página que buscas no existe o ha cambiado de ubicación. Vuelve a las secciones principales de MC Oposiciones."
+	canonicalUrl="https://mcoposiciones.com/404/"
+	noindex={true}
+>
+	<main class="overflow-x-hidden pt-32 pb-24 px-4 sm:px-6 lg:px-8">
+		<section class="mx-auto max-w-4xl text-center">
+			<div class="inline-flex h-20 w-20 items-center justify-center rounded-full bg-secondary/10 text-secondary mb-8">
+				<svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></svg>
+			</div>
+			<p class="text-sm font-black uppercase tracking-[0.2em] text-secondary">Error 404</p>
+			<h1 class="mt-6 text-4xl font-extrabold text-primary md:text-6xl">Vaya, te has perdido</h1>
+			<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
+				La página que buscas no existe o ha sido movida. Pero no te preocupes, aquí tienes los accesos directos para retomar tu preparación:
+			</p>
+			
+			<div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+				<a href="/" class="group rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+					<h2 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">Inicio</h2>
+				</a>
+				<a href="/cursos-precios/" class="group rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+					<h2 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">Cursos y precios</h2>
+				</a>
+				<a href="/oposiciones-administrativo-estado/" class="group rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+					<h2 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">Oposiciones AGE</h2>
+				</a>
+				<a href="/oposiciones-seguridad-social/" class="group rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+					<h2 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">Oposiciones Seg. Social</h2>
+				</a>
+				<a href="/preparar-age-y-seguridad-social/" class="group rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+					<h2 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">Pack Doble AGE+SS</h2>
+				</a>
+				<a href="/blog/" class="group rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
+					<h2 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">Blog Estratégico</h2>
+				</a>
+			</div>
+
+			<div class="mt-16 rounded-[2.5rem] bg-bg-dark/40 p-10 md:p-12">
+				<p class="text-xl font-bold text-primary">¿Tienes alguna duda específica?</p>
+				<a href="/contacto/" class="mt-8 inline-flex rounded-2xl bg-secondary px-8 py-4 text-lg font-bold text-white no-underline shadow-premium transition-all hover:scale-105 hover:bg-accent">
+					Contactar con Mª Carmen
+				</a>
+			</div>
+		</section>
+	</main>
+</BaseLayout>
