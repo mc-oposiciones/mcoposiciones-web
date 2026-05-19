@@ -1,11 +1,14 @@
 ---
 interface Props {
-	scriptCode?: string;
+	variant?: 'slider' | 'grid';
 }
-const { scriptCode = '' } = Astro.props;
+
+const { variant = 'slider' } = Astro.props;
+const widgetSrc = variant === 'grid'
+	? 'https://cdn.trustindex.io/loader.js?8215c7c72db2320b39167e0823a'
+	: 'https://cdn.trustindex.io/loader.js?d4cd7e27268d3191eb564e83a7b';
 ---
 
-<section class="rounded-xl border border-primary/10 bg-white p-6 shadow-md">
-	<!-- TODO: Pegar aqui el codigo del widget de Trustindex obtenido en trustindex.io. -->
-	{scriptCode ? <div class="trustindex-widget" set:html={scriptCode} /> : <p class="text-sm text-text-muted">Reseñas de alumnas disponibles próximamente.</p>}
+<section class="overflow-hidden rounded-xl border border-primary/10 bg-white p-4 shadow-md md:p-6" data-review-widget={variant}>
+	<script defer async src={widgetSrc}></script>
 </section>
