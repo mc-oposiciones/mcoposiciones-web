@@ -5,7 +5,9 @@ import TestimonialWidget from '../components/TestimonialWidget.astro';
 import CTABanner from '../components/CTABanner.astro';
 import { Image } from 'astro:assets';
 import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
-const schemaJson = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Person', name: 'María Carmen ', jobTitle: 'Preparadora de Oposiciones', worksFor: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' }, url: 'https://mcoposiciones.com/preparadora-oposiciones/' });
+import { createPersonSchema } from '../lib/schema';
+
+const schemaJson = JSON.stringify(createPersonSchema());
 ---
 <BaseLayout
 	title="Mª Carmen — Preparadora de Oposiciones AGE y Seguridad Social | MC Oposiciones"

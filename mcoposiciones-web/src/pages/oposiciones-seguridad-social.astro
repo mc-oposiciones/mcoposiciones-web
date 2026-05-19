@@ -5,17 +5,15 @@ import CourseCard from '../components/CourseCard.astro';
 import TestimonialWidget from '../components/TestimonialWidget.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
+import { createCoursePageSchema } from '../lib/schema';
 
-const schemaJson = JSON.stringify({
-	'@context': 'https://schema.org',
-	'@type': 'Course',
-	name: 'Preparación Oposiciones Administrativo Seguridad Social C1 2026',
-	description: 'Preparación online en directo para las oposiciones de Administrativo de la Seguridad Social C1. Test, simulacros, supuesto práctico y temario específico actualizado.',
-	provider: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' },
-	offers: { '@type': 'Offer', price: '100', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
-	educationalLevel: 'C1',
-	inLanguage: 'es',
-});
+const schemaJson = JSON.stringify(createCoursePageSchema({
+	url: 'https://mcoposiciones.com/oposiciones-seguridad-social/',
+	pageName: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
+	pageDescription: 'Preparacion online para Administrativo de la Seguridad Social C1 con temario especifico, test, supuesto practico y clases en directo.',
+	courseName: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
+	courseDescription: 'Preparacion online en directo para Administrativo de la Seguridad Social C1. Incluye temario especifico, test, simulacros y supuesto practico.',
+}));
 const faqItems = [
 	{ question: '¿Cuándo es el examen de Administrativo de Seguridad Social 2026?', answer: 'El examen está fijado para el 28 de junio de 2026. Ambas partes del ejercicio se realizan el mismo día.' },
 	{ question: '¿Es difícil el supuesto práctico de Seguridad Social?', answer: 'Es la parte que más preocupa a los opositores. En MC Oposiciones trabajamos el supuesto práctico desde el primer mes para que llegues al examen con confianza total. Lee nuestro artículo sobre cómo prepararlo.' },

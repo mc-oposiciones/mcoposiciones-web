@@ -5,23 +5,15 @@ import CourseCard from '../components/CourseCard.astro';
 import TestimonialWidget from '../components/TestimonialWidget.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
+import { createCoursePageSchema } from '../lib/schema';
 
-const schemaJson = JSON.stringify({
-	'@context': 'https://schema.org',
-	'@type': 'Course',
-	name: 'Preparación Oposiciones Administrativo del Estado AGE C1 2026',
-	description: 'Preparación online en directo para las oposiciones de Administrativo del Estado (Grupo C1). Temario completo en 6 bloques, test, simulacros y supuesto práctico.',
-	provider: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' },
-	offers: {
-		'@type': 'Offer',
-		price: '100',
-		priceCurrency: 'EUR',
-		availability: 'https://schema.org/InStock',
-		priceSpecification: { '@type': 'UnitPriceSpecification', price: '100', priceCurrency: 'EUR', unitText: 'MONTH' },
-	},
-	educationalLevel: 'C1',
-	inLanguage: 'es',
-});
+const schemaJson = JSON.stringify(createCoursePageSchema({
+	url: 'https://mcoposiciones.com/oposiciones-administrativo-estado/',
+	pageName: 'Preparacion oposiciones Administrativo del Estado AGE C1',
+	pageDescription: 'Preparacion online para las oposiciones de Administrativo del Estado AGE C1 con clases en directo, temario actualizado, test, simulacros y ofimatica.',
+	courseName: 'Preparacion oposiciones Administrativo del Estado AGE C1',
+	courseDescription: 'Preparacion online en directo para Administrativo del Estado AGE C1. Incluye temario, test, simulacros, supuesto practico y ofimatica.',
+}));
 
 const faqItems = [
 	{ question: '¿Cuánto tiempo se tarda en preparar el AGE?', answer: 'Entre 8 y 14 meses según la dedicación semanal. Trabajando a jornada completa, con 15 horas semanales, la preparación media es de 12 meses.' },

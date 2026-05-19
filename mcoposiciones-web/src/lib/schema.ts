@@ -120,3 +120,136 @@ export function createPreparadoraLandingSchema({
 		],
 	};
 }
+
+export function createCoursePageSchema({
+	url,
+	pageName,
+	pageDescription,
+	courseName,
+	courseDescription,
+	price = '100',
+}: {
+	url: string;
+	pageName: string;
+	pageDescription: string;
+	courseName: string;
+	courseDescription: string;
+	price?: string;
+}) {
+	return {
+		'@context': 'https://schema.org',
+		'@graph': [
+			organization,
+			person,
+			{
+				'@type': 'WebPage',
+				'@id': `${url}#webpage`,
+				url,
+				name: pageName,
+				description: pageDescription,
+				about: { '@id': `${url}#course` },
+				inLanguage: 'es',
+			},
+			{
+				'@type': 'Course',
+				'@id': `${url}#course`,
+				name: courseName,
+				description: courseDescription,
+				provider: { '@id': `${siteUrl}/#organization` },
+				educationalLevel: 'C1',
+				inLanguage: 'es',
+				offers: {
+					'@type': 'Offer',
+					price,
+					priceCurrency: 'EUR',
+					availability: 'https://schema.org/InStock',
+					url,
+				},
+			},
+		],
+	};
+}
+
+export function createDualCoursePageSchema({
+	url,
+	pageName,
+	pageDescription,
+}: {
+	url: string;
+	pageName: string;
+	pageDescription: string;
+}) {
+	return {
+		'@context': 'https://schema.org',
+		'@graph': [
+			organization,
+			person,
+			{
+				'@type': 'WebPage',
+				'@id': `${url}#webpage`,
+				url,
+				name: pageName,
+				description: pageDescription,
+				about: [
+					{ '@id': `${siteUrl}/oposiciones-administrativo-estado/#course` },
+					{ '@id': `${siteUrl}/oposiciones-seguridad-social/#course` },
+				],
+				inLanguage: 'es',
+			},
+			{
+				'@type': 'Course',
+				'@id': `${siteUrl}/oposiciones-administrativo-estado/#course`,
+				name: 'Preparacion oposiciones Administrativo del Estado AGE C1',
+				description: 'Preparacion online para Administrativo del Estado AGE C1 con clases, temario, test, simulacros y ofimatica.',
+				provider: { '@id': `${siteUrl}/#organization` },
+				educationalLevel: 'C1',
+				inLanguage: 'es',
+			},
+			{
+				'@type': 'Course',
+				'@id': `${siteUrl}/oposiciones-seguridad-social/#course`,
+				name: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
+				description: 'Preparacion online para Administrativo de la Seguridad Social C1 con temario especifico, test y supuesto practico.',
+				provider: { '@id': `${siteUrl}/#organization` },
+				educationalLevel: 'C1',
+				inLanguage: 'es',
+			},
+		],
+	};
+}
+
+export function createPricingPageSchema() {
+	const url = `${siteUrl}/cursos-precios/`;
+	const offers = [
+		{ name: 'Curso Mensual', price: '100', url },
+		{ name: 'Curso Completo', price: '475', url },
+		{ name: 'Parte General', price: '250', url },
+		{ name: 'Parte Especifica Seguridad Social', price: '300', url },
+		{ name: 'Pack AGE + Seguridad Social', url: `${siteUrl}/preparar-age-y-seguridad-social/` },
+	];
+
+	return {
+		'@context': 'https://schema.org',
+		'@graph': [
+			organization,
+			{
+				'@type': 'WebPage',
+				'@id': `${url}#webpage`,
+				url,
+				name: 'Cursos y precios de oposiciones AGE y Seguridad Social',
+				description: 'Planes y precios para preparar Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1.',
+				about: { '@id': `${siteUrl}/#organization` },
+				inLanguage: 'es',
+			},
+			...offers.map((offer) => ({
+				'@type': 'Offer',
+				name: offer.name,
+				price: offer.price,
+				priceCurrency: 'EUR',
+				availability: 'https://schema.org/InStock',
+				url: offer.url,
+				seller: { '@id': `${siteUrl}/#organization` },
+			})),
+		],
+	};
+}

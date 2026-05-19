@@ -3,12 +3,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
+import { createDualCoursePageSchema } from '../lib/schema';
 
-const schemaJson = JSON.stringify([
-	{ '@context': 'https://schema.org', '@type': 'Course', name: 'Preparación Oposiciones Administrativo del Estado AGE C1 2026', provider: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' } },
-	{ '@context': 'https://schema.org', '@type': 'Course', name: 'Preparación Oposiciones Administrativo Seguridad Social C1 2026', provider: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' } },
-	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Pack Doble AGE + Seguridad Social', price: '699', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
-]);
+const schemaJson = JSON.stringify(createDualCoursePageSchema({
+	url: 'https://mcoposiciones.com/preparar-age-y-seguridad-social/',
+	pageName: 'Preparar AGE y Seguridad Social a la vez',
+	pageDescription: 'Preparacion conjunta de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 aprovechando el temario comun.',
+}));
 const faqItems = [
 	{ question: '¿Se puede llevar bien el ritmo de preparar las dos oposiciones a la vez?', answer: 'Sí. El método está diseñado para ello. El temario compartido se estudia una sola vez. Solo hay que añadir las clases específicas de SS y la ofimática de AGE, que se trabajan de forma paralela y organizada.' },
 	{ question: '¿Los exámenes son el mismo día?', answer: 'No. El examen de Seguridad Social está fijado para el 28 de junio de 2026. El de AGE tiene fecha distinta. Puedes presentarte a los dos.' },

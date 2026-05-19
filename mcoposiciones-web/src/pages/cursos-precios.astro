@@ -3,13 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CourseCard from '../components/CourseCard.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
-const schemaJson = JSON.stringify([
-	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Curso Mensual', price: '100', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
-	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Curso Completo', price: '475', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
-	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Parte General', price: '250', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
-	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Parte Específica SS', price: '300', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/cursos-precios/' },
-	{ '@context': 'https://schema.org', '@type': 'Offer', name: 'Pack AGE + SS', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: 'https://mcoposiciones.com/preparar-age-y-seguridad-social/' },
-]);
+import { createPricingPageSchema } from '../lib/schema';
+
+const schemaJson = JSON.stringify(createPricingPageSchema());
 const faqItems = [
 	{ question: '¿Hay permanencia?', answer: 'No. La modalidad mensual no tiene compromiso de permanencia.' },
 	{ question: '¿Qué incluye el pago único?', answer: 'Incluye acceso al curso, clases en directo, grabaciones, material, test y simulacros hasta el examen.' },
