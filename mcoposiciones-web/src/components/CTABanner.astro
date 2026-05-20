@@ -11,10 +11,9 @@ const isPrimary = variant === 'primary';
 ---
 
 <div class:list={[
-	'relative overflow-hidden rounded-[2rem] border p-8 md:p-12 shadow-premium',
-	isPrimary ? 'border-secondary/15 bg-gradient-to-br from-bg-light via-white to-secondary/[0.03]' : 'border-primary/5 bg-gradient-to-br from-white to-bg-light/30'
+	'relative overflow-hidden rounded-[2rem] border p-8 md:p-12 shadow-premium bg-white',
+	isPrimary ? 'border-secondary/20' : 'border-primary/10'
 ]}>
-	<div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-secondary/5 blur-3xl opacity-60"></div>
 	<div class="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 		<div class="max-w-2xl text-center lg:text-left">
 			<h2 class="text-3xl font-extrabold leading-tight text-primary md:text-4xl tracking-tight">{title}</h2>
