@@ -89,14 +89,14 @@ const oppositionsActive = oppositionLinks.some((item) => isActive(item.href));
 						{oppositionLinks.map((item) => (
 							<a href={item.href} class:list={[
 								'flex items-center justify-between gap-2 rounded-lg px-3 py-1.5 text-sm no-underline transition-all',
-								item.featured ? 'bg-orange-50 text-orange-700 hover:bg-orange-100' : 'text-primary/85 hover:bg-white',
-								isActive(item.href) && (item.featured ? 'bg-orange-100 text-orange-800 ring-1 ring-orange-200' : 'bg-secondary/10 text-secondary ring-1 ring-secondary/20')
+								item.featured ? 'bg-accent-light/20 font-bold text-primary hover:bg-accent-light/40' : 'text-primary/85 hover:bg-white',
+								isActive(item.href) && (item.featured ? 'bg-accent-light/40 text-primary ring-1 ring-accent/25' : 'bg-secondary/10 text-secondary ring-1 ring-secondary/20')
 							]}>
 								<span>
-									<span class:list={['block text-sm font-bold leading-snug', item.featured ? 'text-orange-800' : 'text-primary/90']}>{item.label}</span>
-									<span class:list={['block text-[11px] font-medium leading-tight', item.featured ? 'text-orange-700/80' : 'text-text-muted/75']}>{item.description}</span>
+									<span class:list={['block text-sm font-bold leading-snug', item.featured ? 'text-primary' : 'text-primary/90']}>{item.label}</span>
+									<span class="block text-[11px] font-medium leading-tight text-text-muted/75">{item.description}</span>
 								</span>
-								{item.featured && <span class="text-sm leading-none text-orange-500" aria-label="Recomendado">&#9733;</span>}
+								{item.featured && <span class="text-sm leading-none text-accent" aria-label="Recomendado">&#9733;</span>}
 							</a>
 						))}
 					</div>
