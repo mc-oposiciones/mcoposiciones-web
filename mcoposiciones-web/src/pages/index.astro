@@ -114,34 +114,64 @@ const faqItems = [
 								Consultar mi caso
 							</a>
 						</div>
-						<div class="mt-12 grid grid-cols-3 gap-4 border-y border-primary/5 py-6 sm:py-8 text-center sm:text-left">
-							<div>
-								<p class="text-2xl font-extrabold tracking-tight text-secondary sm:text-3xl">AGE + SS</p>
-								<p class="mt-1 text-[9px] font-bold uppercase tracking-widest text-primary/60 sm:text-xs">Especialización C1</p>
+						<div class="mt-12 flex flex-wrap items-center gap-x-10 gap-y-6 border-t border-primary/10 pt-8">
+							<div class="flex items-center gap-3.5">
+								<div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary/5 text-secondary">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+								</div>
+								<div class="flex flex-col justify-center">
+									<p class="mb-0 text-[13px] font-bold leading-none text-primary">Doble Oportunidad</p>
+									<p class="mb-0 mt-1.5 text-xs leading-none text-text-muted">AGE + Seguridad Social</p>
+								</div>
 							</div>
-							<div>
-								<p class="text-2xl font-extrabold tracking-tight text-secondary sm:text-3xl">Directo</p>
-								<p class="mt-1 text-[9px] font-bold uppercase tracking-widest text-primary/60 sm:text-xs">Clases online</p>
+							<div class="flex items-center gap-3.5">
+								<div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary/5 text-secondary">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.934a.5.5 0 0 0-.777-.416L16 11"/><rect width="14" height="12" x="2" y="6" rx="2"/></svg>
+								</div>
+								<div class="flex flex-col justify-center">
+									<p class="mb-0 text-[13px] font-bold leading-none text-primary">Clases en Directo</p>
+									<p class="mb-0 mt-1.5 text-xs leading-none text-text-muted">Interacción real online</p>
+								</div>
 							</div>
-							<div>
-								<p class="text-2xl font-extrabold tracking-tight text-secondary sm:text-3xl">5.0</p>
-								<p class="mt-1 text-[9px] font-bold uppercase tracking-widest text-primary/60 sm:text-xs">Reseñas Google</p>
+							<div class="flex items-center gap-3.5">
+								<div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary/5 text-secondary">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+								</div>
+								<div class="flex flex-col justify-center">
+									<p class="mb-0 text-[13px] font-bold leading-none text-primary">Calidad 5.0</p>
+									<p class="mb-0 mt-1.5 text-xs leading-none text-text-muted">Reseñas en Google</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="lg:pl-8">
 						<div class="relative">
-							<div class="absolute -inset-4 rounded-[2rem] bg-secondary/5 blur-2xl"></div>
 							<div class="relative overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium">
 								<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones AGE y Seguridad Social" width={600} height={600} loading="eager" fetchpriority="high" class="aspect-[4/3] h-full w-full object-cover transition-transform duration-700 hover:scale-105 lg:aspect-square" />
 							</div>
-						</div>
-						<div class="mt-6 rounded-2xl border border-secondary/10 bg-white p-5 shadow-sm">
-							<div class="flex items-center gap-3">
-								<span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
-								<p class="font-bold text-primary tracking-tight">Plazas limitadas para 2026</p>
+							
+							<!-- Nuevo bloque de disponibilidad refinado -->
+							<div class="absolute -bottom-6 -left-6 hidden max-w-[250px] rounded-xl border border-primary/10 bg-white p-5 shadow-premium sm:block">
+								<div class="flex items-center gap-2.5">
+									<span class="relative flex h-2 w-2">
+										<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
+										<span class="relative inline-flex h-2 w-2 rounded-full bg-secondary"></span>
+									</span>
+									<p class="mb-0 text-[10px] font-bold uppercase tracking-[0.1em] leading-none text-secondary">Disponibilidad 2026</p>
+								</div>
+								<p class="mb-0 mt-3 text-[14px] font-semibold leading-tight text-primary">Plazas limitadas para garantizar seguimiento personal</p>
 							</div>
-							<p class="mt-2 text-sm leading-relaxed text-text-muted/80">Los grupos se mantienen reducidos para garantizar un seguimiento real y personal.</p>
+						</div>
+						<!-- Mobile version of the availability block -->
+						<div class="mt-8 rounded-xl border border-primary/10 bg-white p-5 shadow-sm sm:hidden">
+							<div class="flex items-center gap-2.5">
+								<span class="relative flex h-2 w-2">
+									<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
+									<span class="relative inline-flex h-2 w-2 rounded-full bg-secondary"></span>
+								</span>
+								<p class="mb-0 text-[10px] font-bold uppercase tracking-[0.1em] leading-none text-secondary">Disponibilidad 2026</p>
+							</div>
+							<p class="mb-0 mt-2 text-[14px] font-semibold leading-tight text-primary">Plazas limitadas para garantizar seguimiento personal</p>
 						</div>
 					</div>
 				</div>
