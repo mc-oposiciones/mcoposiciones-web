@@ -142,7 +142,7 @@ const faqItems = [
 			</div>
 		</section>
 
-		<section class="px-4 py-20 sm:px-6 lg:px-8">
+		<section class="bg-white px-4 py-20 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<div class="mb-12 max-w-3xl">
 					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Elige la oposición que quieres preparar</h2>
@@ -150,7 +150,7 @@ const faqItems = [
 				</div>
 				<div class="grid gap-5 lg:grid-cols-[1fr_1fr_1.08fr] lg:items-stretch">
 					{routes.map((route) => (
-						<article class={`relative flex h-full flex-col rounded-2xl border bg-white p-6 ${route.highlight ? 'border-secondary/60 ring-1 ring-secondary/25 lg:-mt-3 lg:pb-9' : 'border-primary/10'}`}>
+						<article class={`relative flex h-full flex-col rounded-2xl border p-6 shadow-[0_16px_42px_-34px_rgba(45,40,40,0.45)] ${route.highlight ? 'border-secondary/60 bg-bg-light/70 ring-1 ring-secondary/25 lg:-mt-3 lg:pb-9' : 'border-primary/10 bg-white'}`}>
 							{route.highlight && (
 								<span class="absolute right-5 top-5 rounded-full bg-secondary px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">Recomendado</span>
 							)}
@@ -190,7 +190,7 @@ const faqItems = [
 			</div>
 		</section>
 
-		<section id="opiniones" class="bg-white px-4 py-24 sm:px-6 lg:px-8">
+		<section id="opiniones" class="bg-white px-4 py-20 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<div class="mb-12 max-w-3xl">
 					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Opiniones de alumnos</h2>
