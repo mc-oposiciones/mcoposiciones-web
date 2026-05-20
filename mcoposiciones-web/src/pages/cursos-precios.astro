@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import CTABanner from '../components/CTABanner.astro';
 import { createPricingPageSchema } from '../lib/schema';
 
 const schemaJson = JSON.stringify(createPricingPageSchema());
@@ -179,15 +180,15 @@ const faqItems = [
 			</div>
 		</section>
 
-		<section class="px-4 pb-24 sm:px-6 lg:px-8">
-			<div class="mx-auto max-w-5xl rounded-2xl bg-secondary px-8 py-12 text-center text-white">
-				<h2 class="text-3xl font-extrabold md:text-4xl">¿No sabes qué plan elegir?</h2>
-				<p class="mt-6 text-lg text-white/90">Cuéntame tu situación y te recomendaré la opción más razonable según tiempo disponible, experiencia previa y oposición objetivo.</p>
-				<div class="mt-10">
-					<a href="/contacto/" class="inline-flex rounded-xl bg-white px-8 py-4 text-lg font-bold text-secondary no-underline transition-transform hover:scale-105">
-						Consultar con Mª Carmen
-					</a>
-				</div>
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-5xl">
+				<CTABanner
+					title="¿No sabes qué plan elegir?"
+					subtitle="Cuéntame tu situación y te recomendaré la opción más razonable según tiempo disponible, experiencia previa y oposición objetivo."
+					ctaText="Consultar con Mª Carmen"
+					ctaHref="/contacto/"
+					variant="primary"
+				/>
 			</div>
 		</section>
 	</main>

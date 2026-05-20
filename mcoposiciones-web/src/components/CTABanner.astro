@@ -11,8 +11,8 @@ const isPrimary = variant === 'primary';
 ---
 
 <div class:list={[
-	'relative overflow-hidden rounded-2xl px-7 py-10 md:px-12 md:py-12 transition-all duration-300',
-	isPrimary ? 'bg-secondary/10 border border-secondary/15' : 'bg-bg-dark/40 border border-primary/10'
+	'relative border-y px-0 py-10 md:py-12',
+	isPrimary ? 'border-secondary/20' : 'border-primary/10'
 ]}>
 	<div class="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 		<div class="max-w-3xl text-center lg:text-left">
@@ -20,7 +20,7 @@ const isPrimary = variant === 'primary';
 			<p class="mt-4 text-lg font-medium leading-relaxed text-text-main">{subtitle}</p>
 		</div>
 		<div class="flex justify-center shrink-0">
-			<a href={ctaHref} class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-lg font-bold text-white no-underline transition-all hover:-translate-y-1 hover:bg-accent active:scale-95">
+			<a href={ctaHref} class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-lg font-bold text-white no-underline transition-colors hover:bg-primary active:scale-95">
 				{ctaText}
 			</a>
 		</div>
