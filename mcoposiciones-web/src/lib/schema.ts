@@ -5,7 +5,7 @@ const organization = {
 	'@id': `${siteUrl}/#organization`,
 	name: 'MC Oposiciones',
 	url: siteUrl,
-	logo: `${siteUrl}/logo.png`,
+	logo: `${siteUrl}/logo-icon.png`,
 	description:
 		'Preparacion online para oposiciones de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1.',
 	telephone: '+34642170664',
