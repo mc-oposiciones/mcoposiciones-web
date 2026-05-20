@@ -31,7 +31,7 @@ const oppositionsActive = oppositionLinks.some((item) => isActive(item.href));
 	<div class="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
 		<nav class="flex items-center justify-between rounded-xl border border-primary/5 bg-white/80 px-4 py-2 shadow-premium backdrop-blur-md lg:px-5" aria-label="Navegacion principal">
 			<a href="/" class="flex items-center no-underline transition-opacity duration-200 hover:opacity-90" aria-label="MC Oposiciones">
-				<img src="/logo-icon.png" alt="MC Oposiciones" width="192" height="192" loading="eager" decoding="sync" fetchpriority="high" class="h-11 w-11 object-contain md:h-12 md:w-12" />
+				<img src="/logo-icon.png" alt="MC Oposiciones" width="192" height="192" loading="eager" decoding="sync" fetchpriority="high" class="h-11 w-11 object-contain md:h-12 md:w-12" transition:persist="site-logo" />
 			</a>
 
 			<div id="site-menu" class="hidden items-center gap-1.5 lg:flex">
@@ -52,7 +52,7 @@ const oppositionsActive = oppositionLinks.some((item) => isActive(item.href));
 									<span class="block font-bold tracking-tight">{item.label}</span>
 									<span class="block text-xs font-medium text-text-muted/80">{item.description}</span>
 								</span>
-								{item.featured && <span class="text-sm leading-none text-accent" aria-label="Recomendado">★</span>}
+								{item.featured && <span class="text-sm leading-none text-accent" aria-label="Recomendado">&#9733;</span>}
 							</a>
 						))}
 					</div>
@@ -92,7 +92,7 @@ const oppositionsActive = oppositionLinks.some((item) => isActive(item.href));
 								<span class:list={['block text-sm font-bold leading-snug', item.featured ? 'text-primary' : 'text-primary/90']}>{item.label}</span>
 								<span class="block text-[11px] font-medium leading-tight text-text-muted/75">{item.description}</span>
 							</span>
-							{item.featured && <span class="text-sm leading-none text-accent" aria-label="Recomendado">★</span>}
+							{item.featured && <span class="text-sm leading-none text-accent" aria-label="Recomendado">&#9733;</span>}
 						</a>
 					))}
 				</div>
@@ -112,29 +112,42 @@ const oppositionsActive = oppositionLinks.some((item) => isActive(item.href));
 </header>
 
 <script>
-	const header = document.getElementById('site-header');
-	const mobileButton = document.getElementById('mobile-menu-button');
-	const mobileMenu = document.getElementById('mobile-menu');
-
 	const setScrolledState = () => {
+		const header = document.getElementById('site-header');
 		const isScrolled = window.scrollY > 20;
 		header?.classList.toggle('py-2', isScrolled);
 	};
 
-	window.addEventListener('scroll', setScrolledState, { passive: true });
+	const closeMobileMenu = () => {
+		const mobileButton = document.getElementById('mobile-menu-button');
+		const mobileMenu = document.getElementById('mobile-menu');
+		mobileButton?.setAttribute('aria-expanded', 'false');
+		mobileMenu?.classList.add('hidden');
+		document.body.classList.remove('overflow-hidden');
+	};
 
-	mobileButton?.addEventListener('click', () => {
-		const expanded = mobileButton.getAttribute('aria-expanded') === 'true';
-		mobileButton.setAttribute('aria-expanded', String(!expanded));
-		mobileMenu?.classList.toggle('hidden', expanded);
-		document.body.classList.toggle('overflow-hidden', !expanded);
-	});
+	if (!window.__mcNavbarBound) {
+		window.__mcNavbarBound = true;
+		window.addEventListener('scroll', setScrolledState, { passive: true });
+		document.addEventListener('click', (event) => {
+			const target = event.target instanceof Element ? event.target : null;
+			const mobileButton = target?.closest('#mobile-menu-button');
+			const mobileMenuLink = target?.closest('#mobile-menu a');
 
-	mobileMenu?.querySelectorAll('a').forEach((link) => {
-		link.addEventListener('click', () => {
-			mobileButton?.setAttribute('aria-expanded', 'false');
-			mobileMenu?.classList.add('hidden');
-			document.body.classList.remove('overflow-hidden');
+			if (mobileButton) {
+				const mobileMenu = document.getElementById('mobile-menu');
+				const expanded = mobileButton.getAttribute('aria-expanded') === 'true';
+				mobileButton.setAttribute('aria-expanded', String(!expanded));
+				mobileMenu?.classList.toggle('hidden', expanded);
+				document.body.classList.toggle('overflow-hidden', !expanded);
+			}
+
+			if (mobileMenuLink) {
+				closeMobileMenu();
+			}
 		});
-	});
+		document.addEventListener('astro:page-load', setScrolledState);
+	}
+
+	setScrolledState();
 </script>
