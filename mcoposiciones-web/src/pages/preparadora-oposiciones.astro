@@ -8,6 +8,48 @@ import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
 import { createPersonSchema } from '../lib/schema';
 
 const schemaJson = JSON.stringify(createPersonSchema());
+
+const trustItems = [
+	'Preparación especializada en AGE C1 y Seguridad Social C1',
+	'Grupos reducidos y atención directa durante el proceso',
+	'Clases online en directo, grabaciones y material actualizado',
+];
+
+const methodItems = [
+	{
+		title: 'Explicar antes de memorizar',
+		desc: 'El temario se trabaja con contexto y ejemplos para que puedas contestar con criterio, no solo repetir artículos.',
+	},
+	{
+		title: 'Entrenar el examen desde el principio',
+		desc: 'Test, supuestos y repasos se integran en la preparación para llegar con técnica, ritmo y control del tiempo.',
+	},
+	{
+		title: 'Planificar con realismo',
+		desc: 'La preparación se adapta al tiempo disponible. El objetivo es sostener el estudio sin perder foco.',
+	},
+];
+
+const routes = [
+	{
+		title: 'Administrativo del Estado',
+		text: 'AGE C1 con temario legislativo, ofimática y entrenamiento de examen.',
+		href: '/oposiciones-administrativo-estado/',
+		cta: 'Ver AGE C1',
+	},
+	{
+		title: 'Seguridad Social',
+		text: 'Preparación C1 con temario específico y supuesto práctico desde el inicio.',
+		href: '/oposiciones-seguridad-social/',
+		cta: 'Ver Seguridad Social',
+	},
+	{
+		title: 'AGE + Seguridad Social',
+		text: 'Preparación conjunta para aprovechar el temario común y ampliar opciones.',
+		href: '/preparar-age-y-seguridad-social/',
+		cta: 'Ver pack conjunto',
+	},
+];
 ---
 <BaseLayout
 	title="Mª Carmen — Preparadora de Oposiciones AGE y Seguridad Social | MC Oposiciones"
@@ -19,28 +61,33 @@ const schemaJson = JSON.stringify(createPersonSchema());
 		<section class="px-4 py-16 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Preparadora de oposiciones', href: '' }]} />
-				<div class="mt-12 grid gap-16 lg:grid-cols-[450px_1fr] lg:items-center">
-					<div class="relative">
-						<div class="relative overflow-hidden rounded-2xl shadow-premium">
-							<Image src={mariaCarmenImage} alt="Mª Carmen" width={600} height={600} loading="eager" fetchpriority="high" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+				<div class="mt-12 grid gap-12 lg:grid-cols-[380px_1fr] lg:items-center">
+					<div class="relative max-w-sm">
+						<div class="relative overflow-hidden rounded-2xl border border-primary/10 bg-white">
+							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones" width={600} height={600} loading="eager" fetchpriority="high" class="aspect-square h-full w-full object-cover" />
 						</div>
 					</div>
 					<div>
-						<h1 class="text-4xl font-extrabold text-primary md:text-6xl">Hola, soy Mª Carmen</h1>
-						<p class="mt-8 text-xl font-medium text-secondary">Tu preparadora especializada en AGE y Seguridad Social</p>
-						<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
-							No entiendo la preparación de oposiciones como una simple transmisión de leyes. Para mí, prepararte es darte la estrategia, el material y el apoyo emocional necesario para que mantengas el ritmo hasta el día del examen.
+						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Preparadora de oposiciones online</p>
+						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Hola, soy Mª Carmen</h1>
+						<p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted md:text-xl">
+							Preparo opositores de Administrativo del Estado y Seguridad Social con una metodología cercana, exigente y centrada en el examen. Mi trabajo es ayudarte a estudiar con estructura, resolver dudas y mantener una estrategia realista hasta la convocatoria.
 						</p>
-						<div class="mt-10 flex flex-wrap gap-4">
-							<div class="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm border border-primary/5">
-								<span class="text-secondary">✓</span> Grupos reducidos
-							</div>
-							<div class="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm border border-primary/5">
-								<span class="text-secondary">✓</span> Atención directa
-							</div>
-							<div class="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm border border-primary/5">
-								<span class="text-secondary">✓</span> Método probado
-							</div>
+						<div class="mt-8 grid gap-3">
+							{trustItems.map((item) => (
+								<div class="flex gap-3 rounded-xl border border-primary/10 bg-white px-4 py-3 text-sm font-bold text-primary">
+									<span class="text-secondary">✓</span>
+									<span>{item}</span>
+								</div>
+							))}
+						</div>
+						<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+							<a href="/contacto/" class="inline-flex justify-center rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
+								Contactar
+							</a>
+							<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl border border-secondary px-6 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
+								Ver cursos y precios
+							</a>
 						</div>
 					</div>
 				</div>
@@ -49,44 +96,46 @@ const schemaJson = JSON.stringify(createPersonSchema());
 
 		<section class="bg-white px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-16 text-center">
-					<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Mi método de trabajo</h2>
-					<p class="mt-4 text-lg text-text-muted">Un sistema diseñado para que aproveches cada minuto de estudio.</p>
+				<div class="mb-12 max-w-3xl">
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Mi forma de preparar</h2>
+					<p class="mt-4 text-lg leading-relaxed text-text-muted">La preparación combina explicación, práctica y seguimiento. No se trata de acumular material, sino de saber qué estudiar, cuándo repasarlo y cómo entrenar el examen.</p>
 				</div>
-				<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-					{[
-						{ title: 'Clases en directo', desc: 'Explicaciones claras y directas al grano, centradas en lo que realmente cae en el examen.' },
-						{ title: 'Grabaciones 24/7', desc: '¿No puedes asistir? La clase se graba y está disponible en tu panel al instante.' },
-						{ title: 'Material Propio', desc: 'Temarios actualizados 2026, esquemas de apoyo y resúmenes de leyes complejas.' },
-						{ title: 'Batería de Test', desc: 'Test por temas y bloques para que midas tu evolución de forma constante.' },
-						{ title: 'Supuestos Reales', desc: 'Trabajamos el supuesto práctico desde el primer mes, sin esperar al final.' },
-						{ title: 'Planificación Real', desc: 'Te ayudo a organizar tus semanas según el tiempo real del que dispones.' }
-					].map((item) => (
-						<div class="rounded-2xl border border-primary/5 bg-bg-light/30 p-8 shadow-sm transition-all hover:-translate-y-1 hover:bg-white hover:shadow-premium">
-							<h3 class="text-xl font-bold text-primary">{item.title}</h3>
-							<p class="mt-4 text-sm leading-relaxed text-text-muted">{item.desc}</p>
-						</div>
+				<div class="grid gap-5 md:grid-cols-3">
+					{methodItems.map((item) => (
+						<article class="rounded-2xl border border-primary/10 bg-bg-light/40 p-6">
+							<h3 class="text-xl font-extrabold text-primary">{item.title}</h3>
+							<p class="mt-4 leading-relaxed text-text-muted">{item.desc}</p>
+						</article>
 					))}
 				</div>
 			</div>
 		</section>
 
 		<section class="px-4 py-24 sm:px-6 lg:px-8">
-			<div class="mx-auto max-w-5xl text-center">
-				<h2 class="text-3xl font-extrabold text-primary md:text-5xl">La clave del éxito</h2>
-				<p class="mt-8 text-xl leading-relaxed text-text-main">
-					"Preparar una oposición es una carrera de fondo. Mi trabajo es evitar que te desvíes del camino y asegurar que, cuando llegues a la meta, lo hagas con la mejor preparación técnica del mercado."
-				</p>
-				<div class="mt-12 flex justify-center">
-					<div class="h-1 w-20 rounded-full bg-secondary"></div>
+			<div class="mx-auto max-w-7xl">
+				<div class="mb-12 max-w-3xl">
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Elige tu camino de preparación</h2>
+					<p class="mt-4 text-lg leading-relaxed text-text-muted">Cada oposición tiene una página específica para consultar estructura, enfoque y modalidades relacionadas.</p>
+				</div>
+				<div class="grid gap-5 md:grid-cols-3">
+					{routes.map((route) => (
+						<article class="flex h-full flex-col rounded-2xl border border-primary/10 bg-white p-6">
+							<h3 class="text-xl font-extrabold text-primary">{route.title}</h3>
+							<p class="mt-4 grow leading-relaxed text-text-muted">{route.text}</p>
+							<a href={route.href} class="mt-6 inline-flex justify-center rounded-xl border border-secondary px-5 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
+								{route.cta}
+							</a>
+						</article>
+					))}
 				</div>
 			</div>
 		</section>
 
 		<section class="bg-bg-dark/30 px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-16 text-center">
-					<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Lo que dicen los alumnos</h2>
+				<div class="mb-12 max-w-3xl">
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Lo que dicen los alumnos</h2>
+					<p class="mt-4 text-lg leading-relaxed text-text-muted">Las reseñas ayudan a contrastar el método con experiencias reales de alumnos.</p>
 				</div>
 				<div class="mx-auto max-w-6xl">
 					<TestimonialWidget variant="grid" />
@@ -96,11 +145,11 @@ const schemaJson = JSON.stringify(createPersonSchema());
 
 		<section class="px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-5xl">
-				<CTABanner 
-					title="¿Quieres que preparemos tu plaza?" 
-					subtitle="Hablamos sobre tu situación y te explico cómo podemos empezar a trabajar juntos." 
-					ctaText="Contactar ahora" 
-					ctaHref="/contacto/" 
+				<CTABanner
+					title="¿Quieres que preparemos tu plaza?"
+					subtitle="Hablamos sobre tu situación y vemos qué modalidad encaja mejor con tu punto de partida."
+					ctaText="Contactar ahora"
+					ctaHref="/contacto/"
 				/>
 			</div>
 		</section>
