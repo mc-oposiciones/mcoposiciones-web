@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import TestimonialWidget from '../components/TestimonialWidget.astro';
 import CTABanner from '../components/CTABanner.astro';
+import PreparationRouteCard from '../components/PreparationRouteCard.astro';
 import { Image } from 'astro:assets';
 import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
 import { createPersonSchema } from '../lib/schema';
@@ -33,18 +34,21 @@ const methodItems = [
 const routes = [
 	{
 		title: 'Administrativo del Estado',
+		kicker: 'AGE C1',
 		text: 'AGE C1 con temario legislativo, ofimática y entrenamiento de examen.',
 		href: '/oposiciones-administrativo-estado/',
 		cta: 'Ver AGE C1',
 	},
 	{
 		title: 'Seguridad Social',
+		kicker: 'Seguridad Social C1',
 		text: 'Preparación C1 con temario específico y supuesto práctico desde el inicio.',
 		href: '/oposiciones-seguridad-social/',
 		cta: 'Ver Seguridad Social',
 	},
 	{
 		title: 'AGE + Seguridad Social',
+		kicker: 'PreparaciÃ³n conjunta',
 		text: 'Preparación conjunta para aprovechar el temario común y ampliar opciones.',
 		href: '/preparar-age-y-seguridad-social/',
 		cta: 'Ver pack conjunto',
@@ -125,16 +129,7 @@ const routes = [
 				</div>
 				<div class="grid gap-6 md:grid-cols-3">
 					{routes.map((route) => (
-						<article class={`group relative flex h-full flex-col rounded-2xl border bg-white p-8 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-2 ${route.highlight ? 'border-accent/40 ring-1 ring-accent/20 shadow-premium-hover' : 'border-primary/5 shadow-premium hover:shadow-premium-hover hover:border-secondary/20'}`}>
-							{route.highlight && (
-								<span class="absolute right-6 top-6 rounded-full bg-accent/15 border border-accent/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary">Recomendado</span>
-							)}
-							<h3 class="text-xl font-extrabold tracking-tight text-primary group-hover:text-secondary transition-colors">{route.title}</h3>
-							<p class="mt-4 grow leading-relaxed text-text-muted/90">{route.text}</p>
-							<a href={route.href} class={`mt-8 inline-flex justify-center rounded-xl px-6 py-3.5 font-bold no-underline shadow-button transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${route.highlight ? 'bg-accent text-primary hover:bg-primary hover:text-white' : 'border border-secondary/30 text-secondary hover:bg-secondary hover:text-white'}`}>
-								{route.cta}
-							</a>
-						</article>
+						<PreparationRouteCard {...route} />
 					))}
 				</div>
 			</div>

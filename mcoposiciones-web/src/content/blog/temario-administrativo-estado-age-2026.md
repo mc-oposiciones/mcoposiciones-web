@@ -82,7 +82,7 @@ Si empiezas desde cero, no te compares con quien ya usa Excel o Access en el tra
 
 ## Enlace de descarga del tema de muestra
 
-Puedes descargar aquí el material gratuito: [Descargar tema de muestra del Bloque I](/resources/tema1age.pdf).
+Puedes descargar aquí el material gratuito: [Descargar tema de muestra del Bloque I](/resources/tema-muestra-age.pdf).
 
 ## Diferencias entre el temario AGE y el de Seguridad Social
 
