@@ -59,34 +59,37 @@ const routes = [
 	schemaJson={schemaJson}
 >
 	<main class="overflow-x-hidden pt-24">
-		<section class="px-4 py-16 sm:px-6 lg:px-8">
+		<section class="px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
 			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Preparadora de oposiciones', href: '' }]} />
-				<div class="mt-12 grid gap-12 lg:grid-cols-[380px_1fr] lg:items-center">
-					<div class="relative max-w-sm">
-						<div class="relative overflow-hidden rounded-2xl border border-primary/10 bg-white">
-							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones" width={600} height={600} loading="eager" fetchpriority="high" class="aspect-square h-full w-full object-cover" />
+				<div class="mt-12 grid gap-16 lg:grid-cols-[420px_1fr] lg:items-center">
+					<div class="relative max-w-md">
+						<div class="absolute -inset-4 rounded-[2rem] bg-secondary/5 blur-2xl"></div>
+						<div class="relative overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium">
+							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones" width={600} height={600} loading="eager" fetchpriority="high" class="aspect-square h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
 						</div>
 					</div>
 					<div>
-						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Preparadora de oposiciones online</p>
-						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Hola, soy Mª Carmen</h1>
-						<p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted md:text-xl">
-							Preparo opositores de Administrativo del Estado y Seguridad Social con una metodología cercana, exigente y centrada en el examen. Mi trabajo es ayudarte a estudiar con estructura, resolver dudas y mantener una estrategia realista hasta la convocatoria.
+						<p class="text-sm font-extrabold uppercase tracking-[0.2em] text-secondary/90">Preparadora de oposiciones online</p>
+						<h1 class="mt-6 text-4xl font-extrabold leading-[1.1] text-primary md:text-6xl lg:text-7xl">Hola, soy Mª Carmen</h1>
+						<p class="mt-8 max-w-3xl text-lg leading-relaxed text-text-muted/90 md:text-xl">
+							Preparo opositores de Administrativo del Estado y Seguridad Social con una metodología cercana, exigente y centrada en el examen real. Mi trabajo es ayudarte a estudiar con estructura y mantener una estrategia sólida hasta la convocatoria.
 						</p>
-						<div class="mt-8 grid gap-3">
+						<div class="mt-10 grid gap-4">
 							{trustItems.map((item) => (
-								<div class="flex gap-3 rounded-xl border border-primary/10 bg-white px-4 py-3 text-sm font-bold text-primary">
-									<span class="text-secondary">✓</span>
-									<span>{item}</span>
+								<div class="flex items-center gap-4 rounded-xl border border-primary/5 bg-white px-5 py-4 text-sm font-bold text-primary shadow-sm transition-all duration-300 hover:shadow-premium hover:-translate-y-0.5">
+									<span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/10 text-secondary">
+										<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" /></svg>
+									</span>
+									<span class="tracking-tight">{item}</span>
 								</div>
 							))}
 						</div>
-						<div class="mt-8 flex flex-col gap-3 sm:flex-row">
-							<a href="/contacto/" class="inline-flex justify-center rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
+						<div class="mt-10 flex flex-col gap-4 sm:flex-row">
+							<a href="/contacto/" class="inline-flex justify-center rounded-xl bg-secondary px-8 py-4 font-bold text-white no-underline shadow-button transition-all duration-300 hover:bg-primary hover:scale-[1.02] active:scale-[0.98]">
 								Contactar
 							</a>
-							<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl border border-secondary px-6 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
+							<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl border border-secondary/30 px-8 py-4 font-bold text-secondary no-underline transition-all duration-300 hover:bg-secondary/5 hover:border-secondary hover:scale-[1.02] active:scale-[0.98]">
 								Ver cursos y precios
 							</a>
 						</div>
@@ -95,38 +98,41 @@ const routes = [
 			</div>
 		</section>
 
-		<section class="bg-white px-4 py-20 sm:px-6 lg:px-8">
+		<section class="bg-white/50 px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-12 max-w-3xl">
-					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Mi forma de preparar</h2>
-					<p class="mt-4 text-lg leading-relaxed text-text-muted">La preparación combina explicación, práctica y seguimiento. No se trata de acumular material, sino de saber qué estudiar, cuándo repasarlo y cómo entrenar el examen.</p>
+				<div class="mb-16 max-w-3xl">
+					<h2 class="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">Mi forma de preparar</h2>
+					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">La preparación combina explicación, práctica y seguimiento continuo. No se trata de acumular material, sino de saber qué estudiar y cómo entrenar el examen.</p>
 				</div>
-				<div class="grid gap-5 md:grid-cols-3">
+				<div class="grid gap-6 md:grid-cols-3">
 					{methodItems.map((item) => (
-						<article class="rounded-2xl border border-primary/10 bg-bg-light/40 p-6">
-							<h3 class="text-xl font-extrabold text-primary">{item.title}</h3>
-							<p class="mt-4 leading-relaxed text-text-muted">{item.desc}</p>
+						<article class="group rounded-2xl border border-primary/5 bg-white p-8 shadow-premium transition-all duration-500 hover:-translate-y-2 hover:shadow-premium-hover hover:border-secondary/20">
+							<div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary/5 text-secondary transition-colors group-hover:bg-secondary group-hover:text-white">
+								<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+							</div>
+							<h3 class="text-xl font-extrabold tracking-tight text-primary group-hover:text-secondary transition-colors">{item.title}</h3>
+							<p class="mt-4 leading-relaxed text-text-muted/80">{item.desc}</p>
 						</article>
 					))}
 				</div>
 			</div>
 		</section>
 
-		<section class="px-4 py-20 sm:px-6 lg:px-8">
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-12 max-w-3xl">
-					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Elige tu camino de preparación</h2>
-					<p class="mt-4 text-lg leading-relaxed text-text-muted">Cada oposición tiene una página específica para consultar estructura, enfoque y modalidades relacionadas.</p>
+				<div class="mb-16 max-w-3xl">
+					<h2 class="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">Elige tu camino</h2>
+					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">Cada oposición tiene una página específica para consultar estructura, enfoque y modalidades.</p>
 				</div>
-				<div class="grid gap-5 md:grid-cols-3">
+				<div class="grid gap-6 md:grid-cols-3">
 					{routes.map((route) => (
-						<article class={`relative flex h-full flex-col rounded-2xl border bg-white p-6 shadow-[0_16px_42px_-34px_rgba(45,40,40,0.45)] ${route.highlight ? 'border-accent/80 ring-1 ring-accent/35 shadow-[0_24px_58px_-38px_rgba(254,172,124,0.95)]' : 'border-secondary/35'}`}>
+						<article class={`group relative flex h-full flex-col rounded-2xl border bg-white p-8 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-2 ${route.highlight ? 'border-accent/40 ring-1 ring-accent/20 shadow-premium-hover' : 'border-primary/5 shadow-premium hover:shadow-premium-hover hover:border-secondary/20'}`}>
 							{route.highlight && (
-								<span class="absolute right-5 top-5 rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">Recomendado</span>
+								<span class="absolute right-6 top-6 rounded-full bg-accent/15 border border-accent/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary">Recomendado</span>
 							)}
-							<h3 class="text-xl font-extrabold text-primary">{route.title}</h3>
-							<p class="mt-4 grow leading-relaxed text-text-muted">{route.text}</p>
-							<a href={route.href} class={`mt-6 inline-flex justify-center rounded-xl px-5 py-3 font-bold no-underline transition-colors ${route.highlight ? 'bg-accent text-primary hover:bg-primary hover:text-white' : 'border border-secondary text-secondary hover:bg-secondary hover:text-white'}`}>
+							<h3 class="text-xl font-extrabold tracking-tight text-primary group-hover:text-secondary transition-colors">{route.title}</h3>
+							<p class="mt-4 grow leading-relaxed text-text-muted/90">{route.text}</p>
+							<a href={route.href} class={`mt-8 inline-flex justify-center rounded-xl px-6 py-3.5 font-bold no-underline shadow-button transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${route.highlight ? 'bg-accent text-primary hover:bg-primary hover:text-white' : 'border border-secondary/30 text-secondary hover:bg-secondary hover:text-white'}`}>
 								{route.cta}
 							</a>
 						</article>
@@ -135,11 +141,11 @@ const routes = [
 			</div>
 		</section>
 
-		<section class="bg-white px-4 py-20 sm:px-6 lg:px-8">
+		<section class="bg-white/50 px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-12 max-w-3xl">
-					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Lo que dicen los alumnos</h2>
-					<p class="mt-4 text-lg leading-relaxed text-text-muted">Las reseñas ayudan a contrastar el método con experiencias reales de alumnos.</p>
+				<div class="mb-16 max-w-3xl">
+					<h2 class="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">Lo que dicen los alumnos</h2>
+					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">Las reseñas ayudan a contrastar el método con experiencias reales.</p>
 				</div>
 				<div class="mx-auto max-w-6xl">
 					<TestimonialWidget variant="grid" />
@@ -147,7 +153,7 @@ const routes = [
 			</div>
 		</section>
 
-		<section class="px-4 py-20 sm:px-6 lg:px-8">
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-5xl">
 				<CTABanner
 					title="¿Quieres que preparemos tu plaza?"
