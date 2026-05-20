@@ -11,16 +11,17 @@ const isPrimary = variant === 'primary';
 ---
 
 <div class:list={[
-	'relative border-y px-0 py-10 md:py-12',
-	isPrimary ? 'border-secondary/20' : 'border-primary/10'
+	'relative overflow-hidden rounded-[2rem] border p-8 md:p-12 shadow-premium',
+	isPrimary ? 'border-secondary/15 bg-gradient-to-br from-bg-light via-white to-secondary/[0.03]' : 'border-primary/5 bg-gradient-to-br from-white to-bg-light/30'
 ]}>
+	<div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-secondary/5 blur-3xl opacity-60"></div>
 	<div class="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-		<div class="max-w-3xl text-center lg:text-left">
-			<h2 class="text-3xl font-black leading-tight text-primary md:text-4xl">{title}</h2>
-			<p class="mt-4 text-lg font-medium leading-relaxed text-text-main">{subtitle}</p>
+		<div class="max-w-2xl text-center lg:text-left">
+			<h2 class="text-3xl font-extrabold leading-tight text-primary md:text-4xl tracking-tight">{title}</h2>
+			<p class="mt-4 text-base font-medium leading-relaxed text-text-muted">{subtitle}</p>
 		</div>
 		<div class="flex justify-center shrink-0">
-			<a href={ctaHref} class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-lg font-bold text-white no-underline transition-colors hover:bg-primary active:scale-95">
+			<a href={ctaHref} class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-base font-bold text-white no-underline shadow-button transition-all duration-300 hover:scale-[1.02] hover:bg-primary active:scale-[0.98] cursor-pointer">
 				{ctaText}
 			</a>
 		</div>

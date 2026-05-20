@@ -66,10 +66,20 @@ const categorySlug = (category: string) =>
 	<script>
 		const params = new URLSearchParams(window.location.search);
 		const selected = params.get('categoria');
+		
+		// 1. Filtrar las tarjetas del blog
 		if (selected) {
 			document.querySelectorAll('.blog-card').forEach((card) => {
 				card.classList.toggle('hidden', card.getAttribute('data-category') !== selected);
 			});
+		}
+
+		// 2. Estilizar el botón activo del filtro
+		const activeFilter = selected || 'all';
+		const activeBtn = document.querySelector(`[data-category-filter="${activeFilter}"]`);
+		if (activeBtn) {
+			activeBtn.classList.remove('bg-white', 'text-primary', 'border-primary/5');
+			activeBtn.classList.add('bg-secondary', 'text-white', 'border-secondary', 'shadow-premium-hover');
 		}
 	</script>
 </BaseLayout>
