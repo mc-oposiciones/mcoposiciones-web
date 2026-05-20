@@ -120,16 +120,13 @@ const routes = [
 				</div>
 				<div class="grid gap-5 md:grid-cols-3">
 					{routes.map((route) => (
-						<article class={`relative flex h-full flex-col overflow-hidden rounded-2xl border p-6 shadow-[0_16px_42px_-34px_rgba(45,40,40,0.45)] ${route.highlight ? 'border-secondary/70 bg-[linear-gradient(135deg,#fff5ee_0%,#f4faf5_100%)] ring-1 ring-secondary/30 shadow-[0_24px_58px_-36px_rgba(127,69,51,0.7)]' : 'border-primary/10 bg-white'}`}>
+						<article class={`relative flex h-full flex-col rounded-2xl border bg-white p-6 shadow-[0_16px_42px_-34px_rgba(45,40,40,0.45)] ${route.highlight ? 'border-accent/80 ring-1 ring-accent/35 shadow-[0_24px_58px_-38px_rgba(254,172,124,0.95)]' : 'border-secondary/35'}`}>
 							{route.highlight && (
-								<>
-									<span class="absolute inset-x-0 top-0 h-1.5 bg-secondary"></span>
-									<span class="absolute right-5 top-5 rounded-full bg-primary px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">Recomendado</span>
-								</>
+								<span class="absolute right-5 top-5 rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">Recomendado</span>
 							)}
 							<h3 class="text-xl font-extrabold text-primary">{route.title}</h3>
 							<p class="mt-4 grow leading-relaxed text-text-muted">{route.text}</p>
-							<a href={route.href} class={`mt-6 inline-flex justify-center rounded-xl px-5 py-3 font-bold no-underline transition-colors ${route.highlight ? 'bg-secondary text-white hover:bg-primary' : 'border border-secondary text-secondary hover:bg-secondary hover:text-white'}`}>
+							<a href={route.href} class={`mt-6 inline-flex justify-center rounded-xl px-5 py-3 font-bold no-underline transition-colors ${route.highlight ? 'bg-accent text-primary hover:bg-primary hover:text-white' : 'border border-secondary text-secondary hover:bg-secondary hover:text-white'}`}>
 								{route.cta}
 							</a>
 						</article>
