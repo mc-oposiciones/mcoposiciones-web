@@ -4,90 +4,97 @@ const socialLinks = [
 		label: 'TikTok',
 		href: 'https://www.tiktok.com/@mcoposiciones',
 		paths: ['M14 3c.4 2.7 1.9 4.4 4.5 4.7v3.1a8 8 0 0 1-4.4-1.3v5.8a5.7 5.7 0 1 1-5.7-5.7h.8v3.2a2.5 2.5 0 1 0 1.7 2.4V3h3.1Z'],
-		color: 'bg-secondary/10 text-secondary hover:bg-secondary hover:text-white',
 	},
 	{
 		label: 'Instagram',
 		href: 'https://www.instagram.com/mcoposiciones',
 		paths: ['M8 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Z', 'M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z', 'M17 7.2h.01'],
-		color: 'bg-secondary/10 text-secondary hover:bg-secondary hover:text-white',
 	},
 	{
 		label: 'YouTube',
 		href: 'https://www.youtube.com/@mcoposiciones',
 		paths: ['M21 12s0-3.2-.4-4.5c-.2-.8-.9-1.4-1.7-1.6C17.4 5.5 12 5.5 12 5.5s-5.4 0-6.9.4c-.8.2-1.5.8-1.7 1.6C3 8.8 3 12 3 12s0 3.2.4 4.5c.2.8.9 1.4 1.7 1.6 1.5.4 6.9.4 6.9.4s5.4 0 6.9-.4c.8-.2 1.5-.8 1.7-1.6.4-1.3.4-4.5.4-4.5Z', 'm10.3 14.7 4.5-2.7-4.5-2.7v5.4Z'],
-		color: 'bg-secondary/10 text-secondary hover:bg-secondary hover:text-white',
 	},
+];
+
+const formationLinks = [
+	{ href: '/oposiciones-administrativo-estado/', label: 'AGE C1' },
+	{ href: '/oposiciones-seguridad-social/', label: 'Seguridad Social C1' },
+	{ href: '/preparar-age-y-seguridad-social/', label: 'Pack AGE + SS' },
+	{ href: '/cursos-precios/', label: 'Cursos y precios' },
+];
+
+const resourceLinks = [
+	{ href: '/preparadora-oposiciones/', label: 'Sobre Mª Carmen' },
+	{ href: '/preparadora-age/', label: 'Preparadora AGE' },
+	{ href: '/preparadora-seguridad-social/', label: 'Preparadora SS' },
+	{ href: '/blog/', label: 'Blog' },
+	{ href: '/contacto/', label: 'Contacto' },
 ];
 ---
 
-<footer class="border-t border-primary/10 bg-bg-light">
+<footer class="border-t border-primary bg-primary text-white">
 	<div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-		<div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-start lg:gap-12">
-			<!-- Columna Marca -->
-			<div class="lg:col-span-4 flex flex-col h-full">
-				<a href="/" class="inline-block no-underline transition-transform hover:scale-[1.02]">
-					<img src="/logo.png" alt="MC Oposiciones" class="h-9 w-auto" />
+		<div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr] lg:items-start">
+			<div>
+				<a href="/" class="text-2xl font-extrabold tracking-tight text-white no-underline hover:text-white">
+					MC Oposiciones
 				</a>
-				<p class="mt-6 text-sm leading-relaxed text-text-muted max-w-sm">
-					Preparadora especializada en Administrativo del Estado y Seguridad Social. Método directo enfocado a resultados reales.
+				<p class="mt-5 max-w-sm text-sm leading-relaxed text-white/72">
+					Preparación online para Administrativo del Estado y Seguridad Social con clases en directo, grupos reducidos y seguimiento cercano.
 				</p>
-			</div>
-
-			<!-- Navegación Cursos -->
-			<div class="lg:col-span-2 flex flex-col gap-6">
-				<h3 class="text-[10px] font-black uppercase tracking-[0.25em] text-accent">Formación</h3>
-				<ul class="flex flex-col gap-3 text-sm font-bold text-primary">
-					<li><a href="/oposiciones-administrativo-estado/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">AGE C1</a></li>
-					<li><a href="/oposiciones-seguridad-social/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Seg. Social</a></li>
-					<li><a href="/preparadora-age/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Preparadora AGE</a></li>
-					<li><a href="/preparadora-seguridad-social/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Preparadora SS</a></li>
-					<li><a href="/preparar-age-y-seguridad-social/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Pack Doble</a></li>
-					<li><a href="/cursos-precios/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Planes</a></li>
-				</ul>
-			</div>
-
-			<!-- Navegación Info -->
-			<div class="lg:col-span-2 flex flex-col gap-6">
-				<h3 class="text-[10px] font-black uppercase tracking-[0.25em] text-accent">Recursos</h3>
-				<ul class="flex flex-col gap-3 text-sm font-bold text-primary">
-					<li><a href="/preparadora-oposiciones/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Sobre Mª Carmen</a></li>
-					<li><a href="/blog/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Blog</a></li>
-					<li><a href="/clases-muestra/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Muestras</a></li>
-					<li><a href="/contacto/" class="no-underline transition-all hover:text-secondary hover:translate-x-1 inline-block">Contacto</a></li>
-				</ul>
-			</div>
-
-			<!-- Contacto -->
-			<div class="lg:col-span-4 flex flex-col gap-6">
-				<h3 class="text-[10px] font-black uppercase tracking-[0.25em] text-accent">Atención Directa</h3>
-				<div class="flex flex-col gap-3">
-					<a href="mailto:infomcoposiciones@gmail.com" class="group flex items-center gap-3 no-underline">
-						<div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-secondary/5 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors border border-secondary/5">
-							<svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 7 9 6 9-6M4 5h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2z"/></svg>
-						</div>
-						<span class="text-xs font-bold text-primary">infomcoposiciones@gmail.com</span>
-					</a>
-					<a href="tel:+34642170664" class="group flex items-center gap-3 no-underline">
-						<div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-secondary/5 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors border border-secondary/5">
-							<svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-						</div>
-						<span class="text-xs font-bold text-primary">642 170 664</span>
-					</a>
-					<div class="mt-1 inline-flex items-center gap-2 rounded-xl bg-secondary/5 px-3 py-1.5 border border-secondary/10 w-fit">
-						<span class="h-1.5 w-1.5 rounded-full bg-secondary animate-pulse"></span>
-						<span class="text-[9px] font-black uppercase tracking-widest text-secondary">Plazas Abiertas 2026</span>
-					</div>
+				<div class="mt-6 inline-flex items-center gap-2 rounded-full border border-secondary/30 bg-white/6 px-4 py-2">
+					<span class="h-2 w-2 rounded-full bg-secondary"></span>
+					<span class="text-xs font-bold uppercase tracking-widest text-white/85">Grupos 2026 abiertos</span>
 				</div>
+			</div>
+
+			<nav aria-label="Formación">
+				<h2 class="text-xs font-extrabold uppercase tracking-widest text-secondary">Formación</h2>
+				<ul class="mt-5 space-y-3 text-sm">
+					{formationLinks.map((link) => (
+						<li>
+							<a href={link.href} class="text-white/76 no-underline transition-colors hover:text-white">
+								{link.label}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+
+			<nav aria-label="Recursos">
+				<h2 class="text-xs font-extrabold uppercase tracking-widest text-secondary">Recursos</h2>
+				<ul class="mt-5 space-y-3 text-sm">
+					{resourceLinks.map((link) => (
+						<li>
+							<a href={link.href} class="text-white/76 no-underline transition-colors hover:text-white">
+								{link.label}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+
+			<div>
+				<h2 class="text-xs font-extrabold uppercase tracking-widest text-secondary">Contacto directo</h2>
+				<div class="mt-5 space-y-3 text-sm">
+					<a href="mailto:infomcoposiciones@gmail.com" class="block text-white/76 no-underline transition-colors hover:text-white">
+						infomcoposiciones@gmail.com
+					</a>
+					<a href="tel:+34642170664" class="block text-white/76 no-underline transition-colors hover:text-white">
+						642 170 664
+					</a>
+				</div>
+				<a href="/contacto/" class="mt-6 inline-flex rounded-xl bg-secondary px-5 py-3 text-sm font-bold text-white no-underline transition-colors hover:bg-white hover:text-primary">
+					Consultar preparación
+				</a>
 			</div>
 		</div>
 
-		<!-- Barra Inferior: Ultra-Minimalista & Alineación de Precisión -->
-		<div class="mt-16 pt-8 border-t border-primary/5 flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-			<!-- Redes Sociales: Diseño "Cápsula Premium" Multicolor -->
-			<div class="flex items-center gap-3.5">
+		<div class="mt-14 flex flex-col gap-8 border-t border-white/12 pt-8 md:flex-row md:items-center md:justify-between">
+			<div class="flex items-center gap-3">
 				{socialLinks.map((social) => (
-					<a href={social.href} target="_blank" rel="noopener noreferrer" class:list={['flex h-11 w-11 items-center justify-center rounded-2xl shadow-sm border border-black/5 transition-all hover:-translate-y-1.5 hover:shadow-md active:scale-95', social.color]} aria-label={social.label}>
+					<a href={social.href} target="_blank" rel="noopener noreferrer" class="flex h-10 w-10 items-center justify-center rounded-xl border border-white/12 bg-white/6 text-white/80 no-underline transition-colors hover:border-secondary hover:bg-secondary hover:text-white" aria-label={social.label}>
 						<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
 							{social.paths.map((path) => <path d={path} />)}
 						</svg>
@@ -95,14 +102,12 @@ const socialLinks = [
 				))}
 			</div>
 
-			<!-- Copyright y Legal: Misma Línea Base Milimétrica -->
-			<div class="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted/80">
+			<div class="flex flex-col gap-4 text-xs font-semibold text-white/62 md:flex-row md:items-center">
 				<span>© 2026 MC Oposiciones</span>
-				<span class="w-1 h-1 rounded-full bg-primary/10"></span>
-				<div class="flex items-center gap-4">
-					<a href="/politica-privacidad/" class="no-underline hover:text-primary transition-colors">Privacidad</a>
-					<a href="/aviso-legal/" class="no-underline hover:text-primary transition-colors">Legal</a>
-					<a href="/politica-cookies/" class="no-underline hover:text-primary transition-colors">Cookies</a>
+				<div class="flex flex-wrap gap-4">
+					<a href="/politica-privacidad/" class="text-white/62 no-underline transition-colors hover:text-white">Privacidad</a>
+					<a href="/aviso-legal/" class="text-white/62 no-underline transition-colors hover:text-white">Legal</a>
+					<a href="/politica-cookies/" class="text-white/62 no-underline transition-colors hover:text-white">Cookies</a>
 				</div>
 			</div>
 		</div>
