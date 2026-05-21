@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
+import InfoStepsCard from '../components/InfoStepsCard.astro';
 import { createCoursePageSchema } from '../lib/schema';
 
 const schemaJson = JSON.stringify(createCoursePageSchema({
@@ -32,6 +33,21 @@ const preparationBlocks = [
 	{
 		title: 'Plan para aprovechar AGE',
 		text: 'Si ya vienes de Administrativo del Estado, se priorizan las diferencias reales para no duplicar estudio.',
+	},
+];
+
+const examStructure = [
+	{
+		title: 'Test general y específico',
+		text: '70 preguntas sobre la parte común administrativa y el bloque propio de Seguridad Social.',
+	},
+	{
+		title: 'Supuesto práctico',
+		text: '15 preguntas sobre casos de Seguridad Social para comprobar aplicación normativa y razonamiento.',
+	},
+	{
+		title: 'Examen en 120 minutos',
+		text: 'Una única sesión para resolver ambas partes con lectura precisa, control de tiempos y método.',
 	},
 ];
 
@@ -88,23 +104,7 @@ const faqItems = [
 							))}
 						</div>
 					</div>
-					<div class="rounded-2xl border border-primary/10 bg-bg-light/70 p-8 md:p-12">
-						<h3 class="text-xl font-bold text-primary">Estructura del examen</h3>
-						<ul class="mt-6 space-y-5">
-							<li class="flex gap-4 items-start">
-								<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark mt-0.5">01</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Parte test:</strong> 70 preguntas sobre temario general y específico.</p>
-							</li>
-							<li class="flex gap-4 items-start">
-								<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark mt-0.5">02</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Supuesto práctico:</strong> 15 preguntas sobre casos de Seguridad Social.</p>
-							</li>
-							<li class="flex gap-4 items-start">
-								<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark mt-0.5">03</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Tiempo:</strong> 120 minutos para completar ambas partes del ejercicio.</p>
-							</li>
-						</ul>
-					</div>
+					<InfoStepsCard title="Estructura del examen" eyebrow="Seguridad Social C1" items={examStructure} />
 				</div>
 			</div>
 		</section>

@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
+import InfoStepsCard from '../components/InfoStepsCard.astro';
 import { createDualCoursePageSchema } from '../lib/schema';
 
 const schemaJson = JSON.stringify(createDualCoursePageSchema({
@@ -30,6 +31,21 @@ const preparationBlocks = [
 	{
 		title: 'Bloque propio de Seguridad Social',
 		text: 'La parte específica y el supuesto práctico se preparan con ejemplos, casos y corrección guiada para consolidar criterio.',
+	},
+];
+
+const studyDistribution = [
+	{
+		title: 'Base común',
+		text: 'Se estudia una sola vez para aprovechar cada hora y construir una base administrativa sólida.',
+	},
+	{
+		title: 'Bloque AGE',
+		text: 'Se añade ofimática y entrenamiento específico del ejercicio de Administrativo del Estado.',
+	},
+	{
+		title: 'Bloque Seguridad Social',
+		text: 'Se incorpora temario propio y supuesto práctico con casos, ejemplos y corrección guiada.',
 	},
 ];
 
@@ -103,23 +119,7 @@ const faqItems = [
 							))}
 						</div>
 					</div>
-					<div class="rounded-2xl border border-primary/10 bg-bg-light/70 p-8 md:p-12">
-						<h3 class="text-xl font-bold text-primary">Cómo se reparte el estudio</h3>
-						<ul class="mt-6 space-y-5">
-							<li class="flex items-start gap-4">
-								<span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark">01</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Base común:</strong> se trabaja de forma conjunta para aprovechar cada hora de estudio.</p>
-							</li>
-							<li class="flex items-start gap-4">
-								<span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark">02</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>AGE:</strong> se añade ofimática y entrenamiento del tipo de ejercicio propio.</p>
-							</li>
-							<li class="flex items-start gap-4">
-								<span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark">03</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Seguridad Social:</strong> se incorpora temario específico y supuesto práctico con casos.</p>
-							</li>
-						</ul>
-					</div>
+					<InfoStepsCard title="Cómo se reparte el estudio" eyebrow="Plan combinado" items={studyDistribution} accent="orange" />
 				</div>
 			</div>
 		</section>

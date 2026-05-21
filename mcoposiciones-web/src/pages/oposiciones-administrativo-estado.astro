@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
+import InfoStepsCard from '../components/InfoStepsCard.astro';
 import { createCoursePageSchema } from '../lib/schema';
 
 const schemaJson = JSON.stringify(createCoursePageSchema({
@@ -32,6 +33,21 @@ const preparationBlocks = [
 	{
 		title: 'Test y simulacros',
 		text: 'Entrenamiento constante de preguntas, tiempos y supuestos para consolidar técnica de examen.',
+	},
+];
+
+const examStructure = [
+	{
+		title: 'Test general y ofimática',
+		text: '70 preguntas que combinan normativa, organización administrativa y herramientas de Microsoft 365.',
+	},
+	{
+		title: 'Supuesto práctico',
+		text: '20 preguntas aplicadas sobre los bloques del programa para medir comprensión y criterio de examen.',
+	},
+	{
+		title: 'Gestión del tiempo',
+		text: '100 minutos para resolver ambas partes con seguridad, estrategia de descarte y control de dudas.',
 	},
 ];
 
@@ -88,23 +104,7 @@ const faqItems = [
 							))}
 						</div>
 					</div>
-					<div class="rounded-2xl border border-primary/10 bg-bg-light/70 p-8 md:p-12">
-						<h3 class="text-xl font-bold text-primary">Detalles técnicos del examen</h3>
-						<ul class="mt-6 space-y-5">
-							<li class="flex gap-4 items-start">
-								<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark mt-0.5">01</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Parte test:</strong> 70 preguntas, combinando temario general y ofimática.</p>
-							</li>
-							<li class="flex gap-4 items-start">
-								<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark mt-0.5">02</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Parte práctica:</strong> supuesto de 20 preguntas sobre los bloques del programa.</p>
-							</li>
-							<li class="flex gap-4 items-start">
-								<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark mt-0.5">03</span>
-								<p class="text-sm leading-relaxed text-text-main"><strong>Tiempo:</strong> 100 minutos para realizar ambas partes del ejercicio.</p>
-							</li>
-						</ul>
-					</div>
+					<InfoStepsCard title="Detalles técnicos del examen" eyebrow="Estructura AGE" items={examStructure} />
 				</div>
 			</div>
 		</section>
