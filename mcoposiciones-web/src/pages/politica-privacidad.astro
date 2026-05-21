@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
 
 <BaseLayout
@@ -8,8 +9,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	canonicalUrl="https://mcoposiciones.com/politica-privacidad/"
 	noindex={true}
 >
-	<main class="px-4 py-16 sm:px-6 lg:px-8">
-		<article class="prose prose-lg mx-auto max-w-4xl">
+	<main class="overflow-x-hidden pt-24">
+		<section class="px-4 py-16 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Política de privacidad', href: '' }]} />
+				<article class="prose prose-lg mt-12 max-w-4xl [&_h1]:text-4xl [&_h1]:font-extrabold [&_h1]:leading-tight [&_h1]:text-primary md:[&_h1]:text-6xl">
 			<h1>Política de Privacidad</h1>
 			<p>Esta política de privacidad explica cómo se tratan los datos personales recogidos a través de mcoposiciones.com, conforme al Reglamento (UE) 2016/679 General de Protección de Datos (RGPD) y la normativa española aplicable.</p>
 
@@ -44,6 +48,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 			<h2>Actualización de la política</h2>
 			<p>Esta política puede actualizarse para adaptarse a cambios legales, técnicos o de funcionamiento del sitio web. La versión vigente será siempre la publicada en esta página.</p>
-		</article>
+				</article>
+			</div>
+		</section>
 	</main>
 </BaseLayout>

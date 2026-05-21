@@ -8,118 +8,198 @@ import { createDualCoursePageSchema } from '../lib/schema';
 const schemaJson = JSON.stringify(createDualCoursePageSchema({
 	url: 'https://mcoposiciones.com/preparar-age-y-seguridad-social/',
 	pageName: 'Preparar AGE y Seguridad Social a la vez',
-	pageDescription: 'Preparacion conjunta de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 aprovechando el temario comun.',
+	pageDescription: 'Preparación conjunta de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 aprovechando el temario común.',
 }));
+
+const examFacts = [
+	'Base común aprovechable',
+	'AGE incluye ofimática',
+	'Seguridad Social incluye supuesto específico',
+	'Plan semanal combinado',
+];
+
+const preparationBlocks = [
+	{
+		title: 'Base común una sola vez',
+		text: 'Constitución, organización administrativa, procedimiento, función pública y materias generales se trabajan con una planificación compartida.',
+	},
+	{
+		title: 'Bloque propio de AGE',
+		text: 'La ofimática y el enfoque del ejercicio de Administrativo del Estado se integran desde el principio para no dejarlos al final.',
+	},
+	{
+		title: 'Bloque propio de Seguridad Social',
+		text: 'La parte específica y el supuesto práctico se preparan con ejemplos, casos y corrección guiada para consolidar criterio.',
+	},
+];
+
+const includedItems = [
+	'Temario común organizado por bloques',
+	'Clases específicas de Seguridad Social',
+	'Ofimática completa para AGE',
+	'Test diferenciados por oposición',
+	'Supuestos prácticos y simulacros',
+	'Planificación semanal conjunta',
+];
+
+const comparisonRows = [
+	{ label: 'Preparación AGE', value: 'Temario general, supuesto y ofimática' },
+	{ label: 'Preparación Seguridad Social', value: 'Temario general, específico y supuesto propio' },
+	{ label: 'Pack conjunto', value: 'Aprovecha lo común y separa lo específico con orden', highlight: true },
+];
+
 const faqItems = [
-	{ question: '¿Se puede llevar bien el ritmo de preparar las dos oposiciones a la vez?', answer: 'Sí. El método está diseñado para ello. El temario compartido se estudia una sola vez. Solo hay que añadir las clases específicas de SS y la ofimática de AGE, que se trabajan de forma paralela y organizada.' },
-	{ question: '¿Los exámenes son el mismo día?', answer: 'No. El examen de Seguridad Social está fijado para el 28 de junio de 2026. El de AGE tiene fecha distinta. Puedes presentarte a los dos.' },
-	{ question: '¿Cuántas horas semanales necesito?', answer: 'Entre 18 y 25 horas semanales para llevar bien las dos preparaciones. Mª Carmen te diseña un plan personalizado.' },
-	{ question: '¿Qué pasa si apruebo la primera y no necesito presentarme a la segunda?', answer: 'Estupendo, ese es el objetivo. El acceso al curso se mantiene hasta el examen de cada oposición independientemente.' },
+	{ question: '¿Se puede llevar bien el ritmo de preparar las dos oposiciones a la vez?', answer: 'Sí, siempre que exista una planificación realista. El temario común se estudia una sola vez y después se separan los bloques propios de AGE y Seguridad Social.' },
+	{ question: '¿Cuántas horas semanales necesito?', answer: 'Lo recomendable es contar con una disponibilidad amplia y estable, normalmente entre 18 y 25 horas semanales. Si tienes menos tiempo, conviene valorar si es mejor concentrar primero el esfuerzo en una sola oposición.' },
+	{ question: '¿Qué pasa si más adelante quiero centrarme solo en una?', answer: 'Se puede reajustar el plan. La preparación conjunta parte de una base común, así que el trabajo inicial no se pierde aunque después decidas priorizar AGE o Seguridad Social.' },
+	{ question: '¿Es mejor preparar ambas o elegir una sola?', answer: 'Depende de tu disponibilidad, base previa y objetivo. Preparar ambas puede ampliar opciones, pero solo tiene sentido si puedes sostener el ritmo sin convertir el estudio en caos.' },
 ];
 ---
 
 <BaseLayout
-	title="Preparar AGE y Seguridad Social a la vez — Doble Oportunidad | MC Oposiciones"
-	description="El 75% del temario de AGE y Seguridad Social es idéntico. Prepara las dos oposiciones simultáneamente con Mª Carmen y multiplica tus opciones de plaza. Pack Doble exclusivo."
+	title="Preparar AGE y Seguridad Social a la vez | MC Oposiciones"
+	description="Preparación conjunta de Administrativo del Estado y Administrativo de la Seguridad Social. Aprovecha el temario común con un plan organizado, clases online y seguimiento de Mª Carmen."
 	canonicalUrl="https://mcoposiciones.com/preparar-age-y-seguridad-social/"
 	schemaJson={schemaJson}
 >
 	<main class="overflow-x-hidden pt-24">
 		<section class="px-4 py-16 sm:px-6 lg:px-8">
-			<div class="mx-auto max-w-6xl">
+			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Pack AGE + Seguridad Social', href: '' }]} />
-				<header class="mt-12 text-center lg:text-left">
-					<h1 class="text-4xl font-extrabold leading-tight text-primary md:text-6xl">Prepara AGE y Seguridad Social <span class="text-secondary">a la vez</span></h1>
+				<header class="mt-12 max-w-4xl">
+					<p class="text-sm font-bold uppercase tracking-widest text-secondary">Preparación conjunta C1</p>
+					<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">
+						Prepara AGE y <span class="text-secondary">Seguridad Social</span> con un solo plan
+					</h1>
 					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
-						Mismo temario, doble oportunidad de plaza. La estrategia más inteligente para opositores C1 en 2026.
+						Una opción pensada para opositores que quieren ampliar oportunidades sin estudiar dos preparaciones desconectadas.
 					</p>
-				</header>
-
-				<div class="mt-16 overflow-hidden rounded-[2.5rem] bg-accent/10 border border-accent/20 p-8 md:p-12 shadow-premium relative">
-					<div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-accent blur-3xl opacity-20"></div>
-					<div class="relative z-10">
-						<p class="text-2xl font-black text-primary md:text-3xl">El dato que lo cambia todo:</p>
-						<p class="mt-6 text-xl font-bold text-secondary">El 75% del temario de Administrativo del Estado y Administrativo de la Seguridad Social es IDÉNTICO.</p>
-						<p class="mt-6 text-lg leading-relaxed text-text-main md:text-xl">
-							Los 23 temas generales de Seguridad Social son prácticamente iguales a los bloques I-V del Estado. Solo cambian 13 temas específicos y la ofimática. Con mi método, aprovechas el esfuerzo compartido para presentarte a dos exámenes distintos.
-						</p>
+					<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+						<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
+							Ver cursos y precios
+						</a>
+						<a href="/contacto/" class="inline-flex justify-center rounded-xl border border-secondary px-6 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
+							Consultar si encaja conmigo
+						</a>
 					</div>
-				</div>
+				</header>
+			</div>
+		</section>
 
-				<div class="mt-32 space-y-32">
-					<section>
-						<h2 class="text-center text-3xl font-extrabold text-primary md:text-5xl">¿Qué incluye el Pack Doble?</h2>
-						<div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-							{[
-								'Todo el temario general compartido',
-								'Clases específicas de SS (13 temas)',
-								'Ofimática completa para AGE',
-								'Test diferenciados por oposición',
-								'Supuestos prácticos de ambos cuerpos',
-								'Simulacros cronometrados reales',
-								'Acceso hasta el último examen',
-								'Planificación combinada estratégica'
-							].map((item) => (
-								<div class="flex items-center gap-4 rounded-2xl bg-white p-6 shadow-premium border border-primary/5">
-									<span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary text-white font-bold">✓</span>
-									<span class="font-bold text-primary">{item}</span>
+		<section class="bg-white/50 px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+					<div>
+						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Por qué tiene sentido preparar ambas</h2>
+						<p class="mt-6 text-lg leading-relaxed text-text-muted">
+							AGE y Seguridad Social comparten una base administrativa importante. La clave no es duplicar horas, sino estudiar lo común con orden y reservar espacios claros para lo específico de cada oposición.
+						</p>
+						<div class="mt-10 grid gap-4 sm:grid-cols-2">
+							{examFacts.map((item, index) => (
+								<div class={`flex items-center gap-3 rounded-xl border border-primary/5 bg-white p-4 font-bold shadow-sm transition-all duration-300 hover:shadow-premium ${index === 0 ? 'text-secondary' : 'text-primary'}`}>
+									<span class={`h-2.5 w-2.5 shrink-0 rounded-full ${index === 0 ? 'bg-accent' : 'bg-secondary'}`}></span>
+									<span class="text-sm tracking-tight">{item}</span>
 								</div>
 							))}
 						</div>
-					</section>
-
-					<section>
-						<div class="grid gap-16 lg:grid-cols-2 lg:items-center">
-							<div>
-								<h2 class="text-3xl font-extrabold text-primary md:text-5xl">Doble oportunidad, <span class="text-secondary">mismo ahorro</span></h2>
-								<p class="mt-8 text-lg leading-relaxed text-text-muted">
-									Preparar por separado supone pagar dos cursos independientes. Con el Pack Doble, no solo ahorras cientos de euros, sino que optimizas cada hora de estudio.
-								</p>
-								<div class="mt-10 overflow-hidden rounded-3xl border border-primary/5 bg-white shadow-premium">
-									<table class="w-full text-left">
-										<tbody class="divide-y divide-primary/5">
-											<tr><th class="p-6 font-bold text-primary">Preparar por separado</th><td class="p-6 text-text-muted">950€</td></tr>
-											<tr class="bg-bg-dark/20"><th class="p-6 font-black text-primary">Pack Doble AGE + SS</th><td class="p-6 font-black text-secondary text-xl">699€</td></tr>
-											<tr class="bg-secondary/10"><th class="p-6 font-bold text-secondary">Tu ahorro directo</th><td class="p-6 font-black text-secondary">251€</td></tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="space-y-6">
-								<div class="rounded-[2rem] bg-white border border-primary/5 p-8 shadow-premium">
-									<h3 class="text-xl font-extrabold text-primary">Fechas clave 2026</h3>
-									<div class="mt-6 space-y-4">
-										<div class="rounded-xl bg-bg-light p-4 border-l-4 border-secondary">
-											<p class="text-sm font-bold text-primary">Examen Seguridad Social:</p>
-											<p class="text-lg font-black text-secondary">28 de junio de 2026</p>
-										</div>
-										<div class="rounded-xl bg-bg-light p-4 border-l-4 border-accent">
-											<p class="text-sm font-bold text-primary">Examen AGE:</p>
-											<p class="text-lg font-black text-accent">Próxima publicación</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="max-w-4xl mx-auto">
-						<h2 class="text-center text-3xl font-extrabold text-primary md:text-5xl">Preguntas del Pack Doble</h2>
-						<div class="mt-16">
-							<FAQAccordion items={faqItems} />
-						</div>
-					</section>
-
-					<section class="pb-24">
-						<CTABanner 
-							title="¿Doblamos tus opciones de plaza?" 
-							subtitle="Hablamos sobre cómo encajar este pack en tu disponibilidad diaria." 
-							ctaText="Información Pack Doble" 
-							ctaHref="/contacto/" 
-							variant="primary"
-						/>
-					</section>
+					</div>
+					<div class="rounded-2xl border border-primary/10 bg-bg-light/70 p-8 md:p-12">
+						<h3 class="text-xl font-bold text-primary">Cómo se reparte el estudio</h3>
+						<ul class="mt-6 space-y-5">
+							<li class="flex items-start gap-4">
+								<span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark">01</span>
+								<p class="text-sm leading-relaxed text-text-main"><strong>Base común:</strong> se trabaja de forma conjunta para aprovechar cada hora de estudio.</p>
+							</li>
+							<li class="flex items-start gap-4">
+								<span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark">02</span>
+								<p class="text-sm leading-relaxed text-text-main"><strong>AGE:</strong> se añade ofimática y entrenamiento del tipo de ejercicio propio.</p>
+							</li>
+							<li class="flex items-start gap-4">
+								<span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-black text-secondary-dark">03</span>
+								<p class="text-sm leading-relaxed text-text-main"><strong>Seguridad Social:</strong> se incorpora temario específico y supuesto práctico con casos.</p>
+							</li>
+						</ul>
+					</div>
 				</div>
+			</div>
+		</section>
+
+		<section class="px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="mb-12 max-w-3xl">
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Cómo se organiza la preparación conjunta</h2>
+					<p class="mt-4 text-text-muted">
+						La página explica el enfoque del pack. Las modalidades económicas se consultan en precios para mantener la información centralizada y evitar duplicidades.
+					</p>
+				</div>
+				<div class="grid gap-5 md:grid-cols-3">
+					{preparationBlocks.map((block) => (
+						<article class="rounded-2xl border border-primary/10 bg-white p-6">
+							<h3 class="text-xl font-extrabold text-primary">{block.title}</h3>
+							<p class="mt-4 leading-relaxed text-text-muted">{block.text}</p>
+						</article>
+					))}
+				</div>
+
+				<div class="mt-10 rounded-2xl border border-accent/30 bg-accent/10 p-6 md:flex md:items-center md:justify-between md:gap-8">
+					<div>
+						<p class="text-xs font-bold uppercase tracking-[0.18em] text-accent">Opción recomendada si tienes disponibilidad</p>
+						<h3 class="mt-2 text-2xl font-extrabold text-primary">Un plan para ampliar opciones sin estudiar a ciegas</h3>
+						<p class="mt-3 text-text-muted">
+							El pack conjunto encaja especialmente bien si puedes sostener una dedicación semanal estable y quieres aprovechar el temario común.
+						</p>
+					</div>
+					<a href="/cursos-precios/" class="mt-6 inline-flex rounded-xl bg-accent px-6 py-3 font-bold text-primary no-underline transition-colors hover:bg-primary hover:text-white md:mt-0">
+						Ver modalidad conjunta
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white/50 px-4 py-24 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl">
+				<div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+					<div>
+						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Qué incluye el pack</h2>
+						<p class="mt-6 text-lg leading-relaxed text-text-muted">
+							No se trata de sumar dos cursos sin más. La preparación conjunta necesita separar prioridades y trabajar cada oposición con su propia lógica.
+						</p>
+					</div>
+					<div class="grid gap-4 sm:grid-cols-2">
+						{includedItems.map((item) => (
+							<div class="flex items-center gap-3 rounded-xl border border-primary/5 bg-white p-4 font-bold text-primary shadow-sm transition-all duration-300 hover:shadow-premium">
+								<span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/10 text-sm font-black text-secondary">✓</span>
+								<span class="text-sm tracking-tight">{item}</span>
+							</div>
+						))}
+					</div>
+				</div>
+
+				<div class="mt-12 overflow-hidden rounded-2xl border border-primary/10 bg-white">
+					{comparisonRows.map((row) => (
+						<div class={`grid gap-3 border-b border-primary/5 p-6 last:border-b-0 md:grid-cols-[0.8fr_1.2fr] md:items-center ${row.highlight ? 'bg-accent/10' : ''}`}>
+							<p class={`font-extrabold ${row.highlight ? 'text-primary' : 'text-secondary'}`}>{row.label}</p>
+							<p class="leading-relaxed text-text-muted">{row.value}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<section class="px-4 py-20 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-4xl">
+				<h2 class="mb-10 text-center text-3xl font-extrabold text-primary md:text-4xl">Dudas sobre preparar AGE y Seguridad Social</h2>
+				<FAQAccordion items={faqItems} />
+			</div>
+
+			<div class="mx-auto mt-16 max-w-5xl">
+				<CTABanner
+					title="¿Quieres saber si te conviene preparar ambas?"
+					subtitle="Cuéntame tu disponibilidad, tu base y tu objetivo. Te diré con claridad si el pack conjunto tiene sentido para ti."
+					ctaText="Pedir orientación"
+					ctaHref="/contacto/"
+					variant="primary"
+				/>
 			</div>
 		</section>
 	</main>
