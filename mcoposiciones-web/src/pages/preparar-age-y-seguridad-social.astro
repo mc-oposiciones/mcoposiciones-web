@@ -176,23 +176,17 @@ const faqItems = [
 				</div>
 
 				<div class="mt-12 overflow-hidden rounded-2xl border border-primary/10 bg-white shadow-premium">
-					<div class="grid gap-2 border-b border-primary/10 bg-bg-light/60 px-6 py-4 text-[11px] font-extrabold uppercase tracking-[0.16em] text-primary/55 md:grid-cols-[0.78fr_1.22fr]">
-						<span>Modalidad</span>
-						<span>Enfoque de estudio</span>
-					</div>
-					<div class="divide-y divide-primary/8 p-3">
-						{comparisonRows.map((row) => (
-							<div class={`grid min-h-[92px] gap-3 rounded-xl px-5 py-5 md:grid-cols-[0.78fr_1.22fr] md:items-center ${row.highlight ? 'border border-accent/45 bg-accent/12 shadow-[0_16px_36px_rgba(204,121,57,0.12)]' : 'border border-transparent'}`}>
-								<div class="flex flex-wrap items-center gap-3">
-									<p class={`font-extrabold ${row.highlight ? 'text-accent' : 'text-secondary'}`}>{row.label}</p>
-									{row.highlight && (
-										<span class="rounded-full bg-accent px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-primary">Recomendado</span>
-									)}
-								</div>
-								<p class={`leading-relaxed ${row.highlight ? 'font-semibold text-primary' : 'text-text-muted'}`}>{row.value}</p>
+					{comparisonRows.map((row) => (
+						<div class={`grid min-h-[88px] gap-3 border-b border-primary/5 px-6 py-5 last:border-b-0 md:grid-cols-[0.8fr_1.2fr] md:items-center md:gap-8 ${row.highlight ? 'bg-accent/12 shadow-[inset_5px_0_0_rgba(204,121,57,0.95)]' : ''}`}>
+							<div class="flex items-center justify-between gap-4 md:justify-start">
+								<p class={`font-extrabold leading-tight ${row.highlight ? 'text-accent' : 'text-secondary'}`}>{row.label}</p>
+								{row.highlight && (
+									<span class="shrink-0 rounded-full border border-accent/35 bg-accent/18 px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-accent">Recomendado</span>
+								)}
 							</div>
-						))}
-					</div>
+							<p class={`leading-relaxed md:self-center ${row.highlight ? 'font-semibold text-primary' : 'text-text-muted'}`}>{row.value}</p>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>
