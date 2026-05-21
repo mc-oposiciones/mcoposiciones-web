@@ -177,14 +177,14 @@ const faqItems = [
 
 				<div class="mt-12 overflow-hidden rounded-2xl border border-primary/10 bg-white shadow-premium">
 					{comparisonRows.map((row) => (
-						<div class={`grid min-h-[88px] gap-3 border-b border-primary/5 px-6 py-5 last:border-b-0 md:grid-cols-[0.8fr_1.2fr] md:items-center md:gap-8 ${row.highlight ? 'bg-accent/12 shadow-[inset_5px_0_0_rgba(204,121,57,0.95)]' : ''}`}>
-							<div class="flex items-center justify-between gap-4 md:justify-start">
-								<p class={`font-extrabold leading-tight ${row.highlight ? 'text-accent' : 'text-secondary'}`}>{row.label}</p>
+						<div class={`grid min-h-[64px] items-center gap-2 border-b border-primary/5 px-6 py-3.5 last:border-b-0 sm:grid-cols-[0.8fr_1.2fr] sm:gap-8 ${row.highlight ? 'bg-accent/12 shadow-[inset_5px_0_0_rgba(204,121,57,0.95)]' : ''}`}>
+							<div class="flex min-h-0 items-center justify-between gap-4 sm:justify-start">
+								<p class={`m-0 font-extrabold leading-none ${row.highlight ? 'text-accent' : 'text-secondary'}`}>{row.label}</p>
 								{row.highlight && (
 									<span class="shrink-0 rounded-full border border-accent/35 bg-accent/18 px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-accent">Recomendado</span>
 								)}
 							</div>
-							<p class={`leading-relaxed md:self-center ${row.highlight ? 'font-semibold text-primary' : 'text-text-muted'}`}>{row.value}</p>
+							<p class={`m-0 flex min-h-0 items-center leading-snug ${row.highlight ? 'font-semibold text-primary' : 'text-text-muted'}`}>{row.value}</p>
 						</div>
 					))}
 				</div>
