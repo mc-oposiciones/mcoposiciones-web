@@ -1,79 +1,160 @@
 ---
-title: "Cómo preparar el Supuesto Práctico de Administrativo de la Seguridad Social 2026"
-description: "Guía completa para dominar el supuesto práctico de las oposiciones de Administrativo de la Seguridad Social C1: estructura, qué entra, cómo estudiarlo y trucos para el día del examen."
-pubDate: 2026-05-22
-author: "Mª Carmen"
+title: "Supuesto práctico Seguridad Social C1: cómo prepararlo con método"
+description: "Guía para preparar el supuesto práctico de Administrativo de la Seguridad Social C1: qué mide, cómo estudiar la parte específica y cómo entrenar casos."
+pubDate: 2026-05-04
 category: "Oposiciones Seguridad Social"
-h1: "Cómo preparar el Supuesto Práctico del Administrativo de la Seguridad Social — Guía Completa 2026"
-excerpt: "El supuesto práctico de Seguridad Social vale el 50% del examen y muchos opositores lo subestiman. Te explico exactamente qué entra, cómo prepararlo y qué estrategia usar el día del examen."
+h1: "Supuesto práctico Seguridad Social C1: cómo prepararlo con método"
+excerpt: "El supuesto práctico de Seguridad Social no se prepara al final. Necesita teoría entendida, casos, lectura activa y corrección de errores desde el principio."
 ---
 
-## Qué es y cómo funciona el supuesto práctico de Seguridad Social
+El supuesto práctico de Administrativo de la Seguridad Social es una de las partes que más respeto da a los opositores. Y con razón. No basta con memorizar temas. Hay que aplicar normas a una situación concreta, leer bien los datos y elegir la respuesta que encaja jurídicamente.
 
-El supuesto práctico de Administrativo de la Seguridad Social forma parte del ejercicio único y se realiza el mismo día que el test teórico. No es una prueba menor ni un añadido decorativo: puntúa de 0 a 50 puntos, igual que la parte de 70 preguntas. Para superarlo necesitas alcanzar al menos 25 puntos. Esto significa que puedes llevar bien la teoría general y aun así quedarte fuera si no has practicado la aplicación concreta de la normativa.
+Muchos alumnos empiezan pensando que primero estudiarán toda la teoría y, cuando la tengan “dominada”, pasarán a los supuestos. En mi experiencia, ese planteamiento suele llegar tarde. El supuesto no es una fase final decorativa. Es una forma de estudiar.
 
-El formato suele plantear una situación administrativa y varias preguntas tipo test asociadas. El opositor debe identificar datos relevantes, aplicar la norma correcta y evitar respuestas que parecen razonables pero no encajan con el caso. El tiempo total de la prueba es compartido, por lo que la gestión del reloj es parte de la preparación.
+## Qué mide realmente el supuesto práctico
 
-La dificultad del supuesto no está solo en conocer la ley, sino en leer bien. Un enunciado puede incluir fechas, sujetos obligados, periodos de cotización, situaciones familiares o datos laborales que modifican la respuesta. A veces una sola palabra cambia el sentido del caso. Por eso, desde el principio, conviene entrenar una lectura activa: marcar quién interviene, qué hecho ocurre, cuándo ocurre y qué consecuencia jurídica se pregunta.
+El supuesto práctico no mide solo si recuerdas una frase del tema. Mide si sabes usarla. Puede plantear una situación de afiliación, cotización, recaudación o prestaciones y pedirte que detectes la consecuencia correcta.
 
-## Qué materia entra en el supuesto práctico
+Esto exige tres cosas: conocer la norma, entender el supuesto y razonar con orden. Si falla una de las tres, aparecen los errores. A veces el alumno conoce la teoría, pero lee mal el dato. Otras veces entiende el caso, pero no recuerda la regla. Y otras responde por intuición, sin poder explicar por qué descarta las opciones.
 
-El supuesto práctico se centra en el Temario Específico de Seguridad Social: afiliación, altas, bajas, cotización, recaudación y prestaciones. También pueden aparecer cuestiones de régimen general, regímenes especiales, incapacidad temporal, nacimiento y cuidado de menor, jubilación, desempleo, muerte y supervivencia o ingreso mínimo vital.
+Por eso, quien prepara Seguridad Social solo con lectura teórica suele sentirse inseguro cuando llega al caso. Sabe cosas, pero no sabe dónde colocarlas.
 
-La clave no es memorizar artículos aislados, sino comprender los procesos. Por ejemplo: una persona inicia actividad, se produce el alta, nace la obligación de cotizar, puede haber una baja o una prestación, y la Administración debe tramitarlo conforme a reglas concretas. Cuando entiendes ese circuito, el supuesto deja de ser una colección de datos sueltos.
+## La teoría específica debe estudiarse con ejemplos
 
-Esta forma de estudiar evita uno de los grandes problemas de la Seguridad Social: aprender listas sin conexión. Si estudias afiliación por un lado, cotización por otro y prestaciones por otro, puedes aprobar preguntas sueltas, pero sufrirás cuando el supuesto mezcle materias. En cambio, si entiendes el sistema como una cadena, podrás ubicar cada dato del caso en su fase correspondiente.
+Seguridad Social tiene una parte específica muy técnica. Afiliación, altas, bajas, cotización, recaudación, prestaciones, incapacidad temporal, jubilación, desempleo o ingreso mínimo vital no se aprenden bien como listas aisladas.
 
-## Por qué el supuesto vale tanto como el test teórico
+Cuando estudias una prestación, por ejemplo, no basta con subrayar requisitos. Debes preguntarte:
 
-Una de las trampas más habituales es pensar que 15 preguntas pesan menos que 70. En esta oposición no es así. La parte práctica vale 50 puntos, exactamente lo mismo que el cuestionario teórico. Cada pregunta práctica tiene mucho peso relativo. Por eso no basta con hacer supuestos al final: hay que entrenarlos desde el primer mes.
+- quién puede solicitarla;
+- qué situación protege;
+- qué requisitos se exigen;
+- qué plazos o efectos aparecen;
+- qué dato cambiaría la respuesta en un supuesto.
 
-El supuesto mide algo distinto. El test teórico comprueba si reconoces conceptos. El práctico comprueba si sabes aplicar esos conceptos en una situación. Esa diferencia explica por qué muchos opositores con buena memoria fallan cuando el enunciado mezcla fechas, sujetos, obligaciones y excepciones.
+Este enfoque hace que el tema sea más lento al principio, pero más sólido después. Y en una oposición con supuesto práctico, la solidez importa más que la sensación rápida de haber leído mucho.
 
-Además, el valor de cada pregunta práctica obliga a ser prudente. No se puede entrar al supuesto agotado después de dedicar demasiado tiempo al test teórico. Tampoco conviene responderlo con prisas. Una estrategia eficaz es reservar tiempo suficiente, empezar por las preguntas que dependen de datos claros y dejar para una segunda vuelta aquellas en las que haya que calcular, comparar plazos o descartar opciones parecidas.
+## Cómo leer un supuesto práctico
 
-## Los 5 errores más frecuentes de los opositores en el supuesto práctico
+La lectura del supuesto se entrena. No es solo leer más despacio. Es leer con intención.
 
-El primer error es estudiar la teoría sin hacer casos. El segundo es leer el supuesto demasiado rápido y subrayar datos irrelevantes. El tercero es no dominar la estructura básica de afiliación, cotización y prestación. El cuarto es practicar solo preguntas sueltas, sin simular tiempo real. El quinto es cambiar la respuesta por inseguridad sin una razón jurídica clara.
+Antes de mirar las respuestas, conviene hacer cuatro pasos:
 
-Estos errores se corrigen con método. Cada tema específico debe terminar con preguntas aplicadas. Cada bloque debe cerrarse con un caso mixto. Y cada mes conviene hacer al menos un simulacro parcial para acostumbrar la mente a leer, ordenar y decidir bajo presión.
+1. Identificar la materia principal.
+2. Marcar fechas, sujetos y situaciones.
+3. Detectar qué pregunta exactamente el enunciado.
+4. Separar datos útiles de datos de relleno.
 
-También es frecuente corregir mal. Muchos opositores miran la solución, ven la letra correcta y pasan a la siguiente pregunta. Eso no sirve. Hay que anotar por qué fallaste: si no sabías la norma, si leíste mal, si confundiste un plazo, si dudaste por inseguridad o si respondiste demasiado rápido. Cada tipo de error requiere una solución distinta.
+Este método parece lento al principio, pero ahorra errores. Muchos fallos vienen de responder una pregunta que no era exactamente la que se planteaba.
 
-## Estrategia de preparación desde el primer mes
+También es importante no dejarse arrastrar por palabras conocidas. Ver “alta”, “cotización” o “prestación” no significa que ya sepamos la respuesta. Hay que mirar el contexto y la consecuencia jurídica.
 
-El primer mes debe servir para construir mapa mental: entidades, sujetos obligados, actos administrativos básicos y vocabulario. En el segundo y tercer mes conviene trabajar afiliación, altas, bajas y cotización con casos muy simples. A partir del cuarto mes se introducen prestaciones, recaudación y supuestos que mezclan materias.
+## No es solo hacer test
 
-Desde mitad de preparación, el supuesto debe aparecer todas las semanas. No hace falta hacer un examen completo cada día; es mejor alternar mini casos, preguntas razonadas y simulacros cronometrados. En la página de [oposiciones de Seguridad Social](/oposiciones-seguridad-social/) explico cómo se integra esta parte dentro de la preparación completa.
+Los test son necesarios, pero no sustituyen al supuesto. Una pregunta suelta puede medir un concepto. Un supuesto mide relación entre conceptos.
 
-Un cronograma razonable sería: primer mes para mapa general y conceptos básicos; segundo y tercer mes para afiliación, altas, bajas y cotización; cuarto y quinto para recaudación y prestaciones principales; a partir de ahí, casos mixtos y simulacros. Si el examen está cerca, el plan debe intensificar la práctica, pero sin abandonar el repaso teórico. El supuesto se alimenta de teoría bien comprendida.
+Por eso, durante la preparación, conviene combinar:
 
-## Cómo gestionar el tiempo durante el examen
+- preguntas de teoría;
+- test por bloques;
+- casos cortos;
+- supuestos completos;
+- corrección razonada.
 
-El día del examen no conviene llegar sin estrategia. Una referencia razonable es reservar un bloque claro para la parte práctica, leer primero el enunciado completo y después contestar las preguntas más directas. Las preguntas dudosas se marcan y se revisan al final.
+Si solo haces preguntas sueltas, puedes tener buena puntuación en teoría y aun así bloquearte cuando el caso mezcla varias materias.
 
-La penalización de 1/4 permite arriesgar algo más que en AGE, pero no convierte el examen en una lotería. Si puedes descartar dos opciones con seguridad, suele merecer la pena valorar responder. Si no entiendes el caso o dudas entre varias por completo, dejar en blanco puede proteger puntuación.
+## Cuándo empezar con los casos
 
-Una pauta práctica es no quedarse bloqueado. Si una pregunta exige mucho cálculo o lectura, se marca y se vuelve después. El objetivo es asegurar primero los puntos más claros. En un examen competitivo, perder cinco minutos en una pregunta dudosa puede hacer que respondas peor tres preguntas que sí sabías. La técnica de examen se entrena igual que el contenido.
+Mi recomendación es empezar pronto, pero con casos adecuados al nivel. No tiene sentido poner un supuesto largo cuando todavía no tienes base. Tampoco tiene sentido esperar hasta el final.
 
-## Tipos de situaciones que aparecen en el supuesto práctico
+Por ejemplo, después de trabajar afiliación, se pueden hacer casos básicos de altas, bajas y sujetos obligados. Después de cotización, casos de bases, periodos y responsabilidades. Después de prestaciones, situaciones protegidas y requisitos.
 
-Un caso de cotización puede preguntar por bases, tipos, sujetos responsables o periodos. Un caso de afiliación tardía puede obligarte a distinguir efectos del alta, responsabilidades y comunicaciones. Un caso de incapacidad temporal puede mezclar requisitos, duración, entidad responsable y cuantía. Lo importante es entrenar el razonamiento por fases: qué ocurre, quién interviene, qué plazo existe y qué consecuencia jurídica tiene.
+El supuesto completo llegará más adelante, pero la mentalidad práctica debe estar desde el inicio.
 
-Este enfoque también ayuda si preparas el [Pack Doble AGE + SS](/preparar-age-y-seguridad-social/), porque el temario común se aprovecha y la parte específica se trabaja con una metodología propia.
+## La corrección es parte del aprendizaje
 
-Por ejemplo, un caso de cotización puede presentar a una trabajadora con una variación de jornada, una baja médica y una base concreta. La pregunta puede pedir quién cotiza, qué periodo se toma como referencia o qué efecto tiene la situación sobre la prestación. Si has estudiado cada pieza aislada, el caso parece confuso. Si has entrenado el circuito completo, puedes ordenarlo paso a paso.
+Corregir no es mirar la plantilla y pasar página. La corrección es donde más se aprende.
 
-## Recursos para practicar: exámenes oficiales de convocatorias anteriores
+Cuando fallas una pregunta de supuesto, debes clasificar el error:
 
-Los exámenes oficiales de 2022 y 2024 son una referencia imprescindible. No deben usarse solo para “hacer preguntas”, sino para analizar estilo, tipo de enunciado, nivel de detalle y trampas frecuentes. Lo recomendable es resolverlos primero sin mirar soluciones, corregir con calma y anotar por qué cada error se produjo.
+- ¿he leído mal el enunciado?;
+- ¿no sabía la norma?;
+- ¿sabía la norma, pero no la he aplicado?;
+- ¿he dudado entre dos opciones?;
+- ¿he acertado sin seguridad?
 
-Después, cada fallo debe convertirse en una tarea de estudio: repasar el tema, hacer un esquema, buscar más preguntas similares y repetir el caso pasados unos días. Así el supuesto deja de ser un bloque intimidante y se convierte en una habilidad entrenable.
+Esta clasificación parece sencilla, pero cambia mucho el estudio. No se corrige igual un fallo de lectura que un fallo de base. Si no distingues el tipo de error, acabas repitiendo lo mismo.
 
-Mi consejo es crear un cuaderno de errores específico para supuestos. No tiene que ser bonito; tiene que ser útil. Anota el tema, el tipo de fallo, la explicación correcta y una frase breve que te recuerde la regla. Ese cuaderno, revisado cada semana, vale más que hacer decenas de preguntas sin corregirlas bien.
+También conviene apuntar los errores frecuentes. No para castigarte, sino para ver patrones. Si fallas siempre prestaciones, hay que reforzar prestaciones. Si fallas por precipitación, hay que entrenar lectura. Si fallas por comparar mal dos opciones, hay que trabajar descartes.
 
-También es útil repetir supuestos ya corregidos. Muchos opositores creen que repetir un ejercicio no sirve porque “ya saben la respuesta”, pero en realidad permite comprobar si han entendido el razonamiento. La segunda vuelta debe ser más rápida, más ordenada y con menos dudas. Si vuelves a fallar la misma cuestión, ahí hay una debilidad concreta que merece repaso.
+## Un ejemplo de razonamiento
 
-Por último, no esperes a dominar todo el temario para practicar. Si has estudiado afiliación, practica afiliación. Si has estudiado cotización, practica cotización. La seguridad se construye por capas. Cuando llegue el momento de mezclar materias, tu cabeza ya estará acostumbrada a aplicar normas y no solo a leerlas.
+Imagina un supuesto en el que se plantea una situación de alta, una baja posterior y una prestación solicitada por una persona trabajadora. El error habitual sería ir directamente a buscar una respuesta que “suene” familiar. El enfoque correcto es otro.
 
-Esa constancia es la que transforma el supuesto práctico en una parte controlable. No se trata de adivinar qué caso caerá, sino de llegar con una forma de razonar sólida para cualquier enunciado razonable.
+Primero debes ubicar la materia: ¿estamos ante afiliación, cotización, recaudación o prestaciones? Después debes localizar los datos que condicionan la respuesta: fecha de inicio, sujeto obligado, situación laboral, periodo cotizado, contingencia y plazo. Solo cuando esos datos están ordenados tiene sentido mirar las opciones.
+
+Este razonamiento parece muy básico, pero cambia la forma de estudiar. El opositor deja de memorizar frases sueltas y empieza a preguntarse: “¿qué consecuencia jurídica tiene este hecho?”. Esa pregunta es la que debe estar detrás de cada supuesto.
+
+## Cómo integrarlo en la semana de estudio
+
+No hace falta dedicar un día entero al supuesto desde el principio. De hecho, suele funcionar mejor introducirlo poco a poco.
+
+Una semana razonable podría incluir una clase o bloque de teoría, test del tema, corrección de errores y un caso corto relacionado con esa materia. Cuando ya hay varios temas estudiados, se puede hacer un supuesto mixto. Y cuando la convocatoria se acerca, entran los simulacros con tiempo.
+
+Lo importante es que el supuesto no aparezca como un bloque aislado al final del curso. Si lo trabajas así, genera inseguridad. Si lo incorporas de manera progresiva, se convierte en una herramienta para entender mejor la teoría.
+
+## Qué hacer si te bloqueas
+
+Bloquearse con el supuesto es normal, sobre todo al principio. No significa que no sirvas para esta oposición. Muchas veces significa que has estudiado la teoría de forma demasiado separada.
+
+Cuando ocurra, vuelve a preguntas simples:
+
+- ¿Qué materia estoy trabajando?
+- ¿Qué datos me da el enunciado?
+- ¿Qué norma o regla conecta con esos datos?
+- ¿Qué opciones puedo descartar con seguridad?
+
+Si no puedes responder a esas preguntas, no sigas acumulando casos al azar. Vuelve al tema, busca ejemplos y corrige el origen del bloqueo. Practicar más sin entender por qué fallas solo aumenta la frustración.
+
+## Explicar la respuesta mejora mucho
+
+Una técnica muy eficaz es obligarte a explicar por escrito por qué eliges una respuesta. No hace falta escribir una redacción larga. Basta con una frase: “elijo la B porque el sujeto obligado es...” o “descarto la C porque el plazo no encaja”.
+
+Este ejercicio descubre fallos que una corrección rápida no muestra. Si no puedes justificar una respuesta, probablemente no la dominas. Y si aciertas por intuición, debes tratarlo como una alerta, no como una victoria.
+
+Con el tiempo, este hábito mejora mucho la seguridad. El día del examen no puedes escribir razonamientos largos, pero sí puedes haber entrenado una forma de pensar más ordenada.
+
+## El factor tiempo
+
+El tiempo también se entrena. En un supuesto práctico no puedes quedarte atrapada diez minutos en una pregunta. Hay que aprender a avanzar, marcar dudas y volver.
+
+Una estrategia sencilla es hacer una primera vuelta para preguntas claras y una segunda vuelta para las que requieren más comparación. Esto evita que una duda te consuma la energía de todo el ejercicio.
+
+También conviene practicar con reloj, pero no desde el primer día. Primero se aprende el método; después se añade presión de tiempo.
+
+## El papel de la preparadora
+
+En esta parte, la preparación guiada ayuda mucho porque no siempre el alumno sabe por qué falla. Puede pensar que le falta estudiar más, cuando en realidad le falta leer mejor el supuesto. O puede creer que el problema es el caso, cuando el origen está en una laguna concreta de teoría.
+
+En la [preparación de Seguridad Social](/oposiciones-seguridad-social/) trabajamos la parte específica con esa idea: teoría entendida, test, casos y corrección. Y si vienes de AGE o quieres ampliar opciones, también puede tener sentido valorar la [preparación conjunta AGE + Seguridad Social](/preparar-age-y-seguridad-social/).
+
+## Preguntas frecuentes sobre el supuesto práctico
+
+### ¿Tengo que esperar a terminar el temario específico?
+
+No. Conviene empezar con casos sencillos cuando ya tienes una mínima base de cada materia. Esperar al final suele aumentar la inseguridad.
+
+### ¿Es suficiente hacer exámenes anteriores?
+
+Son muy útiles, pero no suficientes. También necesitas casos adaptados a cada fase de estudio, especialmente al principio.
+
+### ¿Y si fallo mucho al empezar?
+
+Es normal. El objetivo inicial no es acertar todo, sino aprender a razonar. Si corriges bien, los fallos se convierten en una guía de estudio.
+
+## Conclusión
+
+El supuesto práctico de Seguridad Social se prepara con método, no con improvisación. Necesita teoría, casos, lectura activa, corrección y práctica progresiva.
+
+Mi consejo es que no esperes a sentirte preparada al cien por cien para empezar a practicar. Esa seguridad no aparece antes de hacer supuestos; aparece precisamente al corregirlos bien y repetir el proceso. Empieza con casos pequeños, entiende tus errores y aumenta la dificultad poco a poco.
+
+Si lo trabajas desde el principio como una forma de entender la materia, deja de ser una amenaza final y se convierte en una parte más de la preparación.

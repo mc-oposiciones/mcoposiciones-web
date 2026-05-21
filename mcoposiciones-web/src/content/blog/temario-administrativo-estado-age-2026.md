@@ -1,97 +1,136 @@
 ---
-title: "Temario Administrativo del Estado AGE C1 2026 — Guía Completa por Bloques"
-description: "Descubre el temario completo de Administrativo del Estado AGE C1 2026: los 45 temas en 6 bloques explicados, qué pesa más en el examen, cómo preparar la ofimática y por dónde empezar."
-pubDate: 2026-05-29
-author: "Mª Carmen"
+title: "Temario Administrativo del Estado AGE C1: cómo estudiarlo sin perderte"
+description: "Guía útil sobre el temario de Administrativo del Estado AGE C1: bloques, ofimática, temas más exigentes, forma de estudiar y errores que conviene evitar."
+pubDate: 2026-05-07
 category: "Oposiciones AGE"
-h1: "Temario Administrativo del Estado AGE C1 2026 — Los 45 temas explicados por bloques"
-excerpt: "El temario del AGE C1 tiene 45 temas divididos en 6 bloques, incluyendo la temida ofimática. En esta guía te explico qué entra en cada bloque, cuánto pesa en el examen y cómo planificar el estudio."
+h1: "Temario Administrativo del Estado AGE C1: cómo estudiarlo sin perderte"
+excerpt: "El temario de AGE C1 se entiende mejor por bloques. Te explico cómo organizarlo, qué partes suelen costar más y cómo trabajarlo con método."
 ---
 
-## Estructura oficial del temario AGE C1 2026
+El temario de Administrativo del Estado suele impresionar al principio. No solo por el número de temas, sino porque mezcla materias muy distintas: Constitución, organización administrativa, procedimiento, función pública, gestión financiera, atención al ciudadano e informática. Si lo miras como una lista larga, agobia. Si lo miras por bloques, empieza a tener sentido.
 
-El temario de Administrativo del Estado C1 se organiza en 45 temas distribuidos en 6 bloques. Los cinco primeros bloques forman la parte jurídico-administrativa y el sexto corresponde a informática y ofimática. Esta estructura explica el formato del examen: 40 preguntas sobre los bloques I al V, 30 preguntas sobre el bloque VI y un supuesto práctico sobre los bloques II, III, IV y V.
+Mi objetivo en esta guía no es copiar el programa oficial. Para eso siempre hay que acudir a la convocatoria publicada. Lo que quiero es explicarte cómo se estudia de verdad el temario de AGE C1, qué partes suelen costar más y qué errores conviene evitar si quieres llegar al examen con opciones.
 
-No todos los bloques se estudian igual. Algunos requieren comprensión jurídica, otros memoria ordenada y otros práctica técnica. Por eso la preparación debe combinar lectura, esquemas, test y simulacros desde el principio. En la página de [oposiciones de Administrativo del Estado](/oposiciones-administrativo-estado/) tienes la visión general del curso.
+## El temario no es una lista, es un sistema
 
-Un error habitual es intentar avanzar tema tras tema sin construir una estructura. El temario AGE funciona mejor cuando entiendes qué papel cumple cada bloque dentro del examen. Los bloques jurídicos dan la base para el test y el supuesto. La ofimática aporta una parte muy cuantificable del primer ejercicio. Y los repasos conectan todo para que no olvides lo estudiado en los primeros meses.
+Una oposición administrativa se entiende mejor cuando conectas las materias. La Constitución explica la base del Estado. La organización administrativa te ayuda a ubicar órganos y competencias. El procedimiento administrativo te enseña cómo actúa la Administración. La función pública te acerca al puesto al que aspiras. La ofimática mide una competencia práctica que en AGE tiene mucho peso.
 
-## Bloque I: Organización política y constitucional
+Cuando el alumno estudia tema por tema sin relacionarlos, memoriza más de la cuenta y entiende menos. Eso se nota en los test. Puede acertar preguntas directas, pero falla cuando cambian el enfoque o cuando mezclan conceptos.
 
-Este bloque incluye la Constitución Española de 1978, la Corona, las Cortes Generales, el Gobierno, el Tribunal Constitucional, la organización territorial del Estado y la Unión Europea. Es un bloque de base. Conviene estudiarlo bien porque aparece también en otras oposiciones y ayuda a entender todo el sistema institucional.
+Por eso, desde el principio conviene estudiar con una idea clara: cada bloque tiene su función. No todo se trabaja igual. No todo se repasa igual. Y no todo exige el mismo tipo de memoria.
 
-La estrategia aquí es dominar conceptos, órganos, funciones y relaciones entre instituciones. No basta con leer: hay que hacer test para detectar confusiones entre competencias, mayorías, plazos y nombramientos.
+## Bloque constitucional y organización del Estado
 
-Este bloque también sirve para ganar confianza. Muchos conceptos aparecen en noticias, instituciones y lenguaje administrativo cotidiano. Si lo trabajas con esquemas claros, te dará una base sólida para entender después la organización administrativa y el funcionamiento de las Administraciones Públicas.
+No es el bloque más difícil, pero sí uno de los más importantes para construir base. Aquí aparecen muchos conceptos que después se repiten: competencias, órganos, mayorías, nombramientos, derechos, principios y relaciones entre instituciones.
 
-## Bloque II: Las Administraciones Públicas y el Derecho Administrativo
+La estrategia que mejor funciona es combinar esquema y test. Si solo lees, todo parece comprensible. El problema aparece cuando el test te pide distinguir entre Congreso y Senado, entre Gobierno y Administración, entre ley orgánica y ley ordinaria, o entre competencias del Estado y de las comunidades autónomas.
 
-El Bloque II es uno de los más importantes para el supuesto práctico. Incluye acto administrativo, procedimiento administrativo común, Ley 39/2015, Ley 40/2015, recursos, contratos del sector público y responsabilidad patrimonial. Es un bloque técnico, pero muy rentable si se trabaja con casos.
+Mi consejo es no hacer esquemas demasiado largos. En esta parte funcionan bien las tablas comparativas y los repasos cortos. El objetivo no es escribir un resumen bonito, sino poder volver muchas veces a lo importante.
 
-La recomendación es estudiar cada tema con esquema propio y practicar desde el principio preguntas aplicadas. El procedimiento administrativo no se memoriza bien si no se entiende como una secuencia.
+## Procedimiento administrativo: una parte clave
 
-En este bloque conviene aprender a pensar como la Administración: inicio, instrucción, resolución, recursos, efectos del silencio, validez de los actos y relación con los ciudadanos. Cuando esta lógica se entiende, muchas preguntas dejan de depender de memoria pura y se responden por razonamiento jurídico.
+El procedimiento administrativo es una de las partes más rentables del temario. También es una de las que más se atraganta si se estudia de memoria.
 
-## Bloque III: Personal al servicio de las Administraciones Públicas
+Aquí entran conceptos como acto administrativo, eficacia, validez, notificación, recursos, silencio, fases del procedimiento, responsabilidad patrimonial y relación electrónica con la Administración. Son materias muy preguntables y conectan con el supuesto práctico.
 
-Aquí se estudia función pública, TREBEP, derechos y deberes, situaciones administrativas, régimen disciplinario, igualdad y conciliación. Es un bloque muy preguntable y con muchos conceptos parecidos, por lo que conviene hacer cuadros comparativos.
+El error habitual es estudiar plazos y efectos como datos sueltos. Funciona mejor entender el recorrido: quién inicia, qué se tramita, cómo se notifica, qué efectos produce, qué puede hacer el interesado y qué recursos caben. Cuando tienes ese mapa, los detalles se colocan mejor.
 
-También es útil porque conecta con la realidad del puesto al que aspiras. Entender la carrera administrativa, las situaciones y los derechos del empleado público ayuda a fijar mejor el contenido.
+Esta parte debe trabajarse con preguntas desde pronto. No hace falta esperar a “sabérselo todo”. Precisamente los test ayudan a detectar qué no has entendido todavía.
 
-El Bloque III se presta muy bien a tablas. Derechos individuales, derechos colectivos, permisos, situaciones administrativas y régimen disciplinario se recuerdan mejor cuando se comparan. Si solo los lees, pueden parecer parecidos; si los ordenas, empiezan a diferenciarse.
+## Función pública: estudiar pensando en tu futuro puesto
 
-## Bloque IV: Gestión financiera y presupuestaria
+La función pública no es solo un bloque para aprobar. Es la materia que explica derechos, deberes, situaciones administrativas, incompatibilidades, régimen disciplinario y carrera profesional. Dicho de otra forma: parte de lo que estudiarás aquí afecta directamente a la vida laboral del empleado público.
 
-El Bloque IV suele imponer al principio porque incluye Presupuestos Generales del Estado, Ley General Presupuestaria y gestión financiera. No debe dejarse para el final. Tiene lógica interna y mejora mucho cuando se estudian fases, órganos y documentos de forma visual.
+Suele generar confusión porque muchos conceptos se parecen. Por ejemplo, no basta con leer una vez las situaciones administrativas. Hay que compararlas, ver cuándo se produce cada una y qué efectos tiene.
 
-Aquí los test son esenciales para distinguir conceptos próximos. También conviene repasar con frecuencia porque algunos detalles se olvidan rápido si no se vuelven a trabajar.
+En este bloque recomiendo trabajar con cuadros. No para memorizar sin sentido, sino para obligarte a distinguir. Si dos figuras se parecen, hay que colocarlas una al lado de la otra y ver en qué se diferencian.
 
-Aunque al principio parezca menos intuitivo, presupuestos es un bloque que mejora mucho con repetición. La clave es no memorizar frases sueltas, sino entender fases, competencias y documentos. Cada repaso debe simplificar el mapa, no hacerlo más pesado.
+## Gestión financiera y atención al público
 
-## Bloque V: Actividad administrativa, servicios al ciudadano y administración electrónica
+Estas materias suelen parecer menos atractivas al principio, pero no deben dejarse para el final. Presupuestos, gasto público, documentos administrativos, atención al ciudadano, transparencia, calidad y administración electrónica pueden aportar preguntas valiosas.
 
-Este bloque reúne atención al ciudadano, administración electrónica, transparencia, protección de datos, igualdad efectiva y violencia de género. Es un bloque actual y transversal. Muchas preguntas se resuelven mejor si entiendes la finalidad de la norma y no solo sus artículos.
+La gestión financiera suele resultar árida si se estudia solo leyendo. Ayuda mucho ordenar el proceso: presupuesto, fases del gasto, documentos, control y responsabilidades. Cuando se convierte en una secuencia, pierde parte de la dificultad.
 
-Además, comparte mucho contenido con Seguridad Social. Por eso puede ser muy interesante preparar ambas oposiciones con una estrategia común.
+La atención al público y la administración electrónica conviene estudiarlas con enfoque práctico. No son bloques para despreciar. En una oposición tipo test, una pregunta aparentemente sencilla puede marcar diferencia si otras personas la fallan por haberla dejado para el final.
 
-Administración electrónica y protección de datos son materias cada vez más presentes en el trabajo diario de un funcionario. No son temas accesorios. Ayudan a entender cómo se relaciona hoy la ciudadanía con la Administración y por qué el examen insiste en ellos.
+## Ofimática: no la dejes para “cuando toque”
 
-## Bloque VI: Informática y ofimática
+La ofimática es una de las grandes diferencias de AGE frente a otras oposiciones administrativas. Y es también una de las partes que más ansiedad genera.
 
-El Bloque VI incluye informática básica, Windows 10, Microsoft Word 365, Excel 365, Access 365, Outlook 365, Internet y correo electrónico. Son 30 preguntas del examen, así que no se puede improvisar. La ofimática asusta porque mezcla memoria de menús, práctica y detalle, pero se puede aprender desde cero con entrenamiento constante.
+El error más común es pensar: “yo uso Word y Excel, esto ya lo miraré”. Usar un programa no es lo mismo que preparar preguntas de examen. El examen puede preguntar opciones de menú, funciones, combinaciones, herramientas, configuraciones y detalles que no se usan todos los días.
 
-La clave es dedicarle tiempo semanal desde el principio. Si la dejas para el final, se convierte en una fuente de estrés. Si la trabajas poco a poco, puede convertirse en una parte muy rentable.
+La ofimática debe estudiarse con tres capas:
 
-La ofimática no se prepara igual que una ley. Hay que combinar teoría de menús, práctica real y preguntas tipo test. Excel requiere entender funciones y referencias; Word exige conocer herramientas; Access suele necesitar una explicación más guiada porque muchos opositores no lo han usado; Outlook parece sencillo, pero también tiene detalles preguntables.
+1. Entender la herramienta.
+2. Practicar funciones y menús.
+3. Hacer preguntas tipo examen.
 
-## ¿Por qué bloques empezar? La estrategia de estudio recomendada
+Si solo haces test, memorizarás respuestas sin entender. Si solo practicas el programa, quizá no sepas cómo te lo preguntan. Hay que combinar ambas cosas.
 
-Lo más razonable es empezar por los bloques jurídicos de base y alternar pronto con ofimática. Un plan equilibrado combina Bloque I y II al principio, introduce test desde la primera semana y reserva una sesión fija para informática. Después se incorporan función pública, presupuestos y actividad administrativa.
+## Cómo organizar el estudio del temario
 
-Si además te interesa Seguridad Social, conviene identificar desde el inicio los temas comunes. Puedes ver la propuesta completa en el [Pack AGE + SS](/preparar-age-y-seguridad-social/).
+Una planificación razonable debe mezclar avance y repaso. Si solo avanzas, olvidas. Si solo repasas, no terminas. La clave está en alternar.
 
-Una planificación equilibrada podría reservar tres bloques semanales a teoría, uno a ofimática, uno a test y uno a repaso. A medida que se acerca el examen, los simulacros ganan peso. Lo importante es que ninguna parte desaparezca durante semanas, porque lo que no se repasa se debilita.
+Una forma práctica de trabajar cada tema puede ser:
 
-## La ofimática del AGE: qué versiones entran, cómo practicar, cuánto tiempo dedicarle
+1. Primera lectura para entender estructura.
+2. Clase o explicación para ordenar lo importante.
+3. Segunda lectura activa, subrayando con criterio.
+4. Test inicial para detectar fallos.
+5. Corrección seria de errores.
+6. Repaso a los pocos días.
+7. Vuelta al tema dentro de un bloque más amplio.
 
-El examen toma como referencia Windows 10 y Microsoft 365. En Word se preguntan herramientas, formato, tablas, referencias y revisión. En Excel, funciones, fórmulas, gráficos y operaciones. En Access, conceptos de bases de datos, tablas, consultas e informes. En Outlook, correo, contactos, calendarios y tareas.
+Los simulacros deben llegar cuando ya hay base, pero no conviene esperar al último mes. El opositor necesita acostumbrarse a gestionar tiempo, cansancio y dudas.
 
-Una dedicación realista es una o dos sesiones semanales, más repasos intensivos cuando se acerque el examen. La práctica debe ser activa: abrir programas, localizar opciones, resolver preguntas y crear tus propios esquemas de menús.
+## Qué bloques suelen dar más problemas
 
-Si empiezas desde cero, no te compares con quien ya usa Excel o Access en el trabajo. La ofimática de examen es específica. Incluso personas que manejan programas a diario fallan preguntas porque el test exige saber nombres exactos, ubicaciones o comportamientos concretos. Se aprende, pero necesita método.
+Cada alumno tiene su dificultad, pero hay patrones que se repiten.
 
-## Enlace de descarga del tema de muestra
+Procedimiento administrativo suele costar porque tiene muchos plazos, efectos y fases. No se arregla memorizando una lista sin más. Se arregla entendiendo el recorrido del procedimiento y practicando preguntas aplicadas.
 
-Puedes descargar aquí el material gratuito: [Descargar tema de muestra del Bloque I](/resources/tema-muestra-age.pdf).
+Función pública suele generar confusiones entre situaciones administrativas, permisos, derechos y régimen disciplinario. Aquí ayudan mucho las tablas comparativas y los repasos breves.
 
-## Diferencias entre el temario AGE y el de Seguridad Social
+Ofimática preocupa por otro motivo: es una parte muy concreta y a veces el alumno no sabe si la está estudiando bien. Por eso conviene combinar manejo práctico y test. Si solo lees apuntes de ofimática, no es suficiente.
 
-El temario AGE incluye ofimática y más bloques organizados en 45 temas. Seguridad Social no tiene ofimática, pero añade 13 temas específicos de legislación de Seguridad Social. La base común es muy amplia, por eso merece la pena leer la comparativa completa: [AGE vs Seguridad Social](/blog/age-vs-seguridad-social/).
+Gestión financiera puede parecer árida, pero es más asumible cuando se estudia con un esquema claro: presupuesto, gasto, documentos, fases y control.
 
-Esta coincidencia permite una estrategia muy eficiente. Si preparas bien los bloques jurídicos de AGE, ya tienes avanzada una parte sustancial del temario general de Seguridad Social. Después solo habría que añadir la parte específica de SS. Por eso, para muchos opositores, preparar ambas oposiciones no significa duplicar trabajo, sino aprovechar mejor el mismo esfuerzo.
+## Resúmenes útiles, no apuntes infinitos
 
-La decisión de preparar solo AGE o combinar AGE con Seguridad Social debe tomarse con datos. Si tu principal dificultad es la ofimática, añadir SS puede darte una vía adicional sin esa prueba. Si te sientes cómodo con informática, AGE sigue siendo una opción muy fuerte por volumen de plazas. En cualquier caso, conocer el temario completo te permite organizar el estudio con menos ansiedad.
+Si tus esquemas son tan largos que no puedes repasarlos, no te están ayudando. En AGE necesitas materiales que permitan volver varias veces. El objetivo no es hacer apuntes bonitos, sino apuntes útiles.
 
-Mi recomendación es revisar el temario como un mapa. Marca qué bloques ya dominas, cuáles necesitan explicación, cuáles se olvidan más rápido y cuáles requieren práctica. Después convierte ese mapa en calendario. Un buen calendario no es una lista ideal de deseos: es una herramienta realista para llegar al examen con todas las partes trabajadas.
+Una técnica sencilla es anotar al final de cada tema tres cosas: lo que más cae, lo que más confundo y lo que tengo que repasar antes del siguiente test. Esa información vale mucho porque personaliza el estudio.
 
-Ese calendario debe incluir repasos desde el principio. El temario AGE es demasiado amplio para confiar en una sola vuelta. Cada bloque necesita volver varias veces: una primera para entender, una segunda para consolidar, una tercera para detectar fallos con test y una última para ganar velocidad. Cuando se estudia así, el volumen deja de ser una amenaza y se convierte en un proceso medible.
+También recomiendo tener listas de errores. No una lista genérica, sino tus errores. Si fallas siempre el mismo plazo, la misma competencia o el mismo recurso, ese dato debe volver a tu repaso. Estudiar sin mirar tus fallos es avanzar con los ojos cerrados.
+
+## El test no es el final del estudio
+
+El test no debe aparecer solo al final. Después de estudiar un tema, conviene hacer preguntas para comprobar si has entendido lo básico. Más adelante, los test por bloques sirven para mezclar materias y detectar si conservas lo estudiado.
+
+Lo importante es no medir solo la nota. Un 70% puede ser una buena señal si sabes por qué has fallado. Y un 90% puede engañar si has acertado muchas por descarte intuitivo. La corrección debe incluir siempre una pregunta: “¿qué tengo que cambiar en mi repaso para no repetir este fallo?”.
+
+Cuando el test se corrige así, deja de ser un examen pequeño y se convierte en una herramienta de estudio.
+
+## Errores frecuentes al estudiar AGE
+
+El primero es querer dominar el temario antes de hacer preguntas. En una oposición tipo test, necesitas ver cómo se pregunta. No para estudiar solo a base de test, sino para orientar la lectura.
+
+El segundo es cambiar constantemente de material. Tener cinco temarios no significa estar mejor preparada. Muchas veces significa estudiar con más ruido.
+
+El tercero es dejar ofimática para el final. Ya lo he dicho antes, pero merece repetirse: en AGE puede costar muchos puntos.
+
+El cuarto es estudiar sin calendario de repasos. La memoria no funciona por acumulación infinita. Necesita vueltas. Si no programas los repasos, dependerás de acordarte de repasar, y eso suele fallar.
+
+## Por dónde empezar si estás a cero
+
+Si empiezas desde cero, comienza por la estructura general. Entiende los bloques, ubica las materias y trabaja la base jurídica. No hace falta dominar todo en el primer mes. Hace falta construir una rutina.
+
+Si ya tienes base, empieza detectando lagunas. Puede que procedimiento te suene, pero no domines plazos. Puede que función pública te parezca sencilla, pero confundas situaciones. El diagnóstico inicial ahorra mucho tiempo.
+
+En la página de [oposiciones de Administrativo del Estado](/oposiciones-administrativo-estado/) tienes una visión general de la preparación. Y si estás valorando preparar también Seguridad Social, te recomiendo leer la comparativa [AGE o Seguridad Social](/blog/age-vs-seguridad-social/).
+
+## Conclusión
+
+El temario de AGE C1 es exigente, pero se puede trabajar con orden. No necesitas estudiar perfecto desde el primer día. Necesitas un método que combine comprensión, test, repasos y práctica de ofimática.
+
+Cuando el temario deja de ser una lista y se convierte en un mapa, la preparación cambia. Estudias con menos ansiedad y con más criterio.

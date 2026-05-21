@@ -24,6 +24,8 @@ const sameCategoryPosts = allPosts
 	.slice(0, 3);
 const fallbackPosts = allPosts.filter((post) => post.id !== entry.id && !sameCategoryPosts.some((relatedPost) => relatedPost.id === post.id));
 const relatedPosts = [...sameCategoryPosts, ...fallbackPosts].slice(0, 3);
+const categoryLabel = (category: string) =>
+	category === 'Preparacion y Estudio' ? 'Preparación y Estudio' : category;
 const courseLinks = [
 	{ href: '/oposiciones-administrativo-estado/', label: 'Preparación Administrativo del Estado (AGE C1)' },
 	{ href: '/oposiciones-seguridad-social/', label: 'Preparación Administrativo de la Seguridad Social' },
@@ -57,7 +59,7 @@ const schemaJson = JSON.stringify({
 			<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: entry.data.h1, href: '' }]} />
 			
 			<header class="py-12 md:py-16">
-				<p class="text-xs font-extrabold uppercase tracking-[0.2em] text-secondary">{entry.data.category}</p>
+				<p class="text-xs font-extrabold uppercase tracking-[0.2em] text-secondary">{categoryLabel(entry.data.category)}</p>
 				<h1 class="mt-6 text-balance text-4xl font-extrabold leading-tight text-primary md:text-6xl">{entry.data.h1}</h1>
 				<div class="mt-8 flex items-center gap-4 border-y border-primary/5 py-6">
 					<div class="h-12 w-12 rounded-full bg-bg-dark border-2 border-white shadow-sm"></div>
@@ -109,7 +111,7 @@ const schemaJson = JSON.stringify({
 					<div class="mt-10 grid gap-8 md:grid-cols-3">
 						{relatedPosts.map((post) => (
 							<a href={`/blog/${post.id}/`} class="group flex h-full flex-col rounded-2xl border border-primary/5 bg-white p-6 no-underline shadow-premium transition-all hover:-translate-y-1 hover:shadow-premium-hover">
-								<p class="text-[10px] font-extrabold uppercase tracking-widest text-secondary">{post.data.category}</p>
+								<p class="text-[10px] font-extrabold uppercase tracking-widest text-secondary">{categoryLabel(post.data.category)}</p>
 								<h3 class="mt-4 text-lg font-bold leading-snug text-primary group-hover:text-secondary transition-colors">{post.data.h1}</h3>
 								<span class="mt-auto pt-6 text-xs font-black text-secondary uppercase tracking-tighter">Leer más →</span>
 							</a>
