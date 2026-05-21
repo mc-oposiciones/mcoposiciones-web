@@ -19,10 +19,11 @@ const badgeClasses = isOrange
 const markerClasses = isOrange
 	? 'bg-accent text-primary shadow-[0_10px_22px_-14px_rgba(254,172,124,0.9)]'
 	: 'bg-secondary text-white shadow-[0_10px_22px_-14px_rgba(42,157,143,0.9)]';
+const topBarClass = isOrange ? 'bg-accent' : 'bg-secondary';
 ---
 
 <aside class="relative overflow-hidden rounded-2xl border border-primary/10 bg-white p-5 shadow-premium md:p-6">
-	<div class="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-secondary via-accent to-secondary"></div>
+	<div class={`pointer-events-none absolute inset-x-0 top-0 h-1 ${topBarClass}`}></div>
 	{eyebrow && (
 		<p class={`inline-flex rounded-full border px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest ${badgeClasses}`}>
 			{eyebrow}
