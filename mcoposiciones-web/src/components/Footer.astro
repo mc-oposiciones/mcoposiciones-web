@@ -25,7 +25,7 @@ const formationLinks = [
 ];
 
 const resourceLinks = [
-	{ href: '/preparadora-oposiciones/', label: 'Sobre Mª Carmen' },
+	{ href: '/preparadora-oposiciones/', label: 'Sobre Mª Carmen', reload: true },
 	{ href: '/preparadora-age/', label: 'Preparadora AGE' },
 	{ href: '/preparadora-seguridad-social/', label: 'Preparadora SS' },
 	{ href: '/blog/', label: 'Blog' },
@@ -37,7 +37,7 @@ const resourceLinks = [
 	<div class="mx-auto max-w-7xl px-6 pb-6 pt-10 lg:px-8">
 		<div class="grid grid-cols-2 gap-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr] lg:items-start">
 			<div class="col-span-2 lg:col-span-1">
-				<a href="/" class="text-2xl font-extrabold tracking-tight text-white no-underline hover:text-white">
+				<a href="/" class="text-2xl font-extrabold tracking-tight text-white no-underline hover:text-white" data-astro-reload>
 					MC Oposiciones
 				</a>
 				<p class="mt-4 max-w-sm text-sm leading-relaxed text-white/72">
@@ -54,7 +54,7 @@ const resourceLinks = [
 				<ul class="mt-3 space-y-1.5 text-sm">
 					{formationLinks.map((link) => (
 						<li>
-							<a href={link.href} class="text-white/76 no-underline transition-colors hover:text-white">
+							<a href={link.href} data-astro-reload={link.reload} class="text-white/76 no-underline transition-colors hover:text-white">
 								{link.label}
 							</a>
 						</li>
@@ -67,7 +67,7 @@ const resourceLinks = [
 				<ul class="mt-3 space-y-1.5 text-sm">
 					{resourceLinks.map((link) => (
 						<li>
-							<a href={link.href} class="text-white/76 no-underline transition-colors hover:text-white">
+							<a href={link.href} data-astro-reload={link.reload} class="text-white/76 no-underline transition-colors hover:text-white">
 								{link.label}
 							</a>
 						</li>
