@@ -56,17 +56,17 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 							</div>
 							<label class="block">
 								<span class="text-xs font-bold uppercase tracking-[0.15em] text-primary/50">¿En qué puedo ayudarte?</span>
-								<textarea name="message" required minlength="10" rows="5" placeholder="Cuéntame un poco sobre tu situación..." class="mt-2.5 w-full resize-none rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 placeholder:text-text-muted/40 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5"></textarea>
+								<textarea name="message" required rows="5" placeholder="Cuéntame un poco sobre tu situación..." class="mt-2.5 w-full resize-none rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 placeholder:text-text-muted/40 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5"></textarea>
 							</label>
-							<label class="flex items-start gap-3 text-sm text-text-muted/80">
-								<input type="checkbox" required class="mt-1 h-5 w-5 shrink-0 rounded border-primary/15 text-secondary transition-all focus:ring-secondary/20" />
+							<label class="flex items-center gap-3 text-sm text-text-muted/80">
+								<input type="checkbox" required class="h-4.5 w-4.5 shrink-0 rounded border-primary/20 accent-secondary transition-all focus:ring-2 focus:ring-secondary/20" />
 								<span class="leading-relaxed">Acepto el tratamiento de mis datos según la <a href="/politica-privacidad/" class="font-semibold text-secondary no-underline transition-colors hover:text-accent">política de privacidad</a>.</span>
 							</label>
 							<button type="submit" class="w-full rounded-xl bg-secondary py-4.5 text-base font-bold text-white shadow-button transition-all duration-300 hover:bg-primary hover:shadow-premium-hover active:scale-[0.98]">
 								Enviar mi consulta
 							</button>
 						</form>
-						<div id="contact-success" class="hidden rounded-2xl border border-secondary/20 bg-secondary/5 p-10 text-center animate-in fade-in zoom-in duration-700">
+						<div id="contact-success" class="hidden py-8 text-center animate-in fade-in zoom-in duration-700">
 							<div class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-secondary text-white shadow-button">
 								<svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
 							</div>
