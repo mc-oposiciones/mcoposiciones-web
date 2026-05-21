@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
+
 <BaseLayout
 	title="Contacto — MC Oposiciones | Preparadora AGE y Seguridad Social"
 	description="Contacta con Mª Carmen para resolver tus dudas sobre las oposiciones de AGE o Seguridad Social. Respuesta en menos de 24 horas en días laborables."
@@ -16,99 +17,95 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 					<p class="text-sm font-extrabold uppercase tracking-[0.2em] text-secondary/90">Estamos aquí para ayudarte</p>
 					<h1 class="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-primary md:text-6xl">Contacta con Mª Carmen</h1>
 					<p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted/90 md:text-xl">
-						Resuelvo tus dudas sobre la preparación, los grupos y el temario en menos de 24 horas (días laborables).
+						Resuelvo tus dudas sobre la preparación, los grupos y el temario en menos de 24 horas en días laborables.
 					</p>
 				</header>
 
 				<div class="grid gap-8 lg:grid-cols-[1fr_380px] lg:items-stretch">
-					<div class="rounded-2xl border border-primary/5 bg-white p-8 md:p-12 shadow-premium">
+					<div class="rounded-2xl border border-primary/5 bg-white p-8 shadow-premium md:p-12">
 						<form id="contact-form" action="https://formspree.io/f/[ENDPOINT]" method="POST" class="space-y-7">
 							<!-- TODO: Sustituir [ENDPOINT] por el endpoint real de Formspree. -->
 							<div class="grid gap-6 md:grid-cols-2">
 								<label class="block">
 									<span class="text-xs font-bold uppercase tracking-[0.15em] text-primary/50">Nombre completo</span>
-									<input name="nombre" type="text" required placeholder="Tu nombre" class="mt-2.5 w-full rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5 placeholder:text-text-muted/40" />
+									<input name="nombre" type="text" required placeholder="Tu nombre" class="mt-2.5 w-full rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 placeholder:text-text-muted/40 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5" />
 								</label>
 								<label class="block">
 									<span class="text-xs font-bold uppercase tracking-[0.15em] text-primary/50">Email de contacto</span>
-									<input name="email" type="email" required placeholder="ejemplo@correo.com" class="mt-2.5 w-full rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5 placeholder:text-text-muted/40" />
+									<input name="email" type="email" required placeholder="ejemplo@correo.com" class="mt-2.5 w-full rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 placeholder:text-text-muted/40 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5" />
 								</label>
 							</div>
 							<div class="grid gap-6 md:grid-cols-2">
 								<label class="block">
-									<span class="text-xs font-bold uppercase tracking-[0.15em] text-primary/50">Teléfono (opcional)</span>
-									<input name="telefono" type="tel" placeholder="600 000 000" class="mt-2.5 w-full rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5 placeholder:text-text-muted/40" />
+									<span class="text-xs font-bold uppercase tracking-[0.15em] text-primary/50">Teléfono opcional</span>
+									<input name="telefono" type="tel" placeholder="600 000 000" class="mt-2.5 w-full rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 placeholder:text-text-muted/40 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5" />
 								</label>
 								<label class="block">
 									<span class="text-xs font-bold uppercase tracking-[0.15em] text-primary/50">Oposición de interés</span>
 									<div class="relative">
 										<select name="oposicion" class="mt-2.5 w-full appearance-none rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5">
-											<option>Administrativo del Estado (AGE C1)</option>
+											<option>Administrativo del Estado AGE C1</option>
 											<option>Administrativo Seguridad Social C1</option>
 											<option>Pack AGE + Seguridad Social</option>
 											<option>Tengo una duda general</option>
 										</select>
 										<div class="pointer-events-none absolute inset-y-0 right-0 mt-2.5 flex items-center px-4 text-primary/40">
-											<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+											<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
 										</div>
 									</div>
 								</label>
 							</div>
 							<label class="block">
 								<span class="text-xs font-bold uppercase tracking-[0.15em] text-primary/50">¿En qué puedo ayudarte?</span>
-								<textarea name="mensaje" required minlength="10" rows="5" placeholder="Cuéntame un poco sobre tu situación..." class="mt-2.5 w-full rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5 placeholder:text-text-muted/40 resize-none"></textarea>
+								<textarea name="mensaje" required minlength="10" rows="5" placeholder="Cuéntame un poco sobre tu situación..." class="mt-2.5 w-full resize-none rounded-xl border border-primary/8 bg-bg-light/50 px-5 py-4 text-primary outline-none transition-all duration-300 placeholder:text-text-muted/40 focus:border-secondary/40 focus:bg-white focus:ring-4 focus:ring-secondary/5"></textarea>
 							</label>
 							<label class="flex items-start gap-3 text-sm text-text-muted/80">
-								<input type="checkbox" required class="mt-1 h-5 w-5 shrink-0 rounded border-primary/15 text-secondary focus:ring-secondary/20 transition-all" />
-								<span class="leading-relaxed">Acepto el tratamiento de mis datos según la <a href="/politica-privacidad/" class="font-semibold text-secondary no-underline hover:text-accent transition-colors">política de privacidad</a>.</span>
+								<input type="checkbox" required class="mt-1 h-5 w-5 shrink-0 rounded border-primary/15 text-secondary transition-all focus:ring-secondary/20" />
+								<span class="leading-relaxed">Acepto el tratamiento de mis datos según la <a href="/politica-privacidad/" class="font-semibold text-secondary no-underline transition-colors hover:text-accent">política de privacidad</a>.</span>
 							</label>
 							<button type="submit" class="w-full rounded-xl bg-secondary py-4.5 text-base font-bold text-white shadow-button transition-all duration-300 hover:bg-primary hover:shadow-premium-hover active:scale-[0.98]">
 								Enviar mi consulta
 							</button>
 						</form>
-						<div id="contact-success" class="hidden rounded-2xl bg-secondary/5 border border-secondary/20 p-10 text-center animate-in fade-in zoom-in duration-700">
-							<div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-secondary text-white shadow-button mb-5">
-								<svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+						<div id="contact-success" class="hidden rounded-2xl border border-secondary/20 bg-secondary/5 p-10 text-center animate-in fade-in zoom-in duration-700">
+							<div class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-secondary text-white shadow-button">
+								<svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
 							</div>
 							<p class="text-2xl font-extrabold tracking-tight text-secondary">¡Mensaje enviado!</p>
-							<p class="mt-3 text-primary/80 font-medium">Mª Carmen te responderá en menos de 24h.</p>
+							<p class="mt-3 font-medium text-primary/80">Mª Carmen te responderá en menos de 24 h.</p>
 						</div>
 					</div>
 
 					<aside class="flex flex-col">
-						<div class="rounded-2xl border border-primary/5 bg-gradient-to-br from-primary/5 to-bg-light/40 p-8 md:p-10 shadow-premium flex flex-col justify-between h-full">
-							<div>
-								<h2 class="text-lg font-extrabold tracking-tight text-primary">Contacto directo</h2>
-								<p class="mt-2 text-sm text-text-muted/70">Si lo prefieres, puedes escribir directamente:</p>
+						<div class="flex h-full flex-col rounded-2xl border border-primary/10 bg-white p-8 shadow-premium md:p-10">
+							<span class="h-1 w-14 rounded-full bg-secondary"></span>
+							<h2 class="mt-6 text-xl font-extrabold tracking-tight text-primary">Contacto directo</h2>
+							<p class="mt-2 text-sm leading-relaxed text-text-muted/80">Si lo prefieres, puedes escribir directamente y te responderé en días laborables.</p>
 
-								<div class="mt-8 space-y-6">
-									<a href="mailto:infomcoposiciones@gmail.com" class="group flex items-center gap-4 no-underline">
-										<span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-bg-light text-secondary transition-all duration-300 group-hover:bg-secondary group-hover:text-white group-hover:shadow-button">
-											<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 7 9 6 9-6M4 5h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2z"/></svg>
-										</span>
-										<div class="flex flex-col">
-											<span class="text-[10px] font-bold uppercase tracking-widest text-primary/40">Email</span>
-											<span class="text-sm font-semibold text-primary group-hover:text-secondary transition-colors truncate">infomcoposiciones@gmail.com</span>
-										</div>
-									</a>
-									<a href="tel:+34642170664" class="group flex items-center gap-4 no-underline">
-										<span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-bg-light text-secondary transition-all duration-300 group-hover:bg-secondary group-hover:text-white group-hover:shadow-button">
-											<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-										</span>
-										<div class="flex flex-col">
-											<span class="text-[10px] font-bold uppercase tracking-widest text-primary/40">Teléfono</span>
-											<span class="text-sm font-semibold text-primary group-hover:text-secondary transition-colors">642 170 664</span>
-										</div>
-									</a>
-								</div>
+							<div class="mt-8 divide-y divide-primary/10 border-y border-primary/10">
+								<a href="mailto:infomcoposiciones@gmail.com" class="group flex items-center gap-4 py-5 no-underline">
+									<span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-bg-light text-secondary transition-colors duration-300 group-hover:bg-secondary group-hover:text-white">
+										<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 7 9 6 9-6" /><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" /></svg>
+									</span>
+									<span class="min-w-0">
+										<span class="block text-[10px] font-bold uppercase tracking-widest text-primary/45">Email</span>
+										<span class="block truncate text-sm font-semibold text-primary transition-colors group-hover:text-secondary">infomcoposiciones@gmail.com</span>
+									</span>
+								</a>
+								<a href="https://wa.me/34642170664" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 py-5 no-underline">
+									<span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-bg-light text-secondary transition-colors duration-300 group-hover:bg-secondary group-hover:text-white">
+										<svg class="h-5.5 w-5.5" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path fill="currentColor" d="M16.02 3C8.86 3 3.03 8.82 3.03 15.98c0 2.28.6 4.52 1.73 6.49L3 29l6.68-1.76a12.88 12.88 0 0 0 6.34 1.64C23.18 28.88 29 23.06 29 15.9 29 8.76 23.18 3 16.02 3Zm0 23.7c-1.95 0-3.86-.52-5.54-1.5l-.39-.23-3.98 1.04 1.06-3.87-.26-.4a10.7 10.7 0 1 1 9.11 4.96Z" /><path fill="currentColor" d="M21.92 18.84c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.6-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.56.16-.19.22-.32.32-.53.11-.22.05-.4-.03-.56-.08-.16-.74-1.78-1.02-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.68s1.15 3.1 1.31 3.32c.16.22 2.26 3.46 5.48 4.85.77.33 1.37.53 1.84.68.77.25 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.3-.22-.62-.38Z" /></svg>
+									</span>
+									<span>
+										<span class="block text-[10px] font-bold uppercase tracking-widest text-primary/45">WhatsApp</span>
+										<span class="block text-sm font-semibold text-primary transition-colors group-hover:text-secondary">642 170 664</span>
+									</span>
+								</a>
+							</div>
 
-								<div class="mt-8 pt-8 border-t border-primary/5">
-									<div class="rounded-2xl bg-gradient-to-br from-secondary/5 via-bg-light to-accent/5 p-6 border border-secondary/10">
-										<svg class="h-6 w-6 text-secondary/40 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-										<p class="text-base font-bold leading-snug text-primary">"La mejor inversión es el tiempo que dedicas a prepararte bien."</p>
-										<p class="mt-3 text-xs font-semibold text-text-muted/60">— Mª Carmen, preparadora</p>
-									</div>
-								</div>
+							<div class="mt-auto pt-8">
+								<p class="border-l-4 border-secondary pl-5 text-base font-bold leading-snug text-primary">"La mejor inversión es el tiempo que dedicas a prepararte bien."</p>
+								<p class="mt-3 pl-6 text-xs font-semibold text-text-muted/60">— Mª Carmen, preparadora</p>
 							</div>
 						</div>
 					</aside>

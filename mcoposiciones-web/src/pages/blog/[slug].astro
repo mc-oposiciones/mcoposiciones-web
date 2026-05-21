@@ -3,7 +3,6 @@ import { getCollection, getEntry, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABanner from '../../components/CTABanner.astro';
-import LeadMagnet from '../../components/LeadMagnet.astro';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -90,10 +89,6 @@ const schemaJson = JSON.stringify({
 					))}
 				</div>
 			</section>
-
-			<div class="mt-20">
-				<LeadMagnet />
-			</div>
 
 			<div class="mt-20">
 				<CTABanner 
