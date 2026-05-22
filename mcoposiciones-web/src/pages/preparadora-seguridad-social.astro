@@ -4,39 +4,40 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CTABanner from '../components/CTABanner.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import TestimonialWidget from '../components/TestimonialWidget.astro';
-import { createPreparadoraLandingSchema } from '../lib/schema';
+import { createPreparadoraLandingSchema, withFAQSchema } from '../lib/schema';
 
 const canonicalUrl = 'https://mcoposiciones.com/preparadora-seguridad-social/';
-const schemaJson = JSON.stringify(createPreparadoraLandingSchema({
-	url: canonicalUrl,
-	name: 'Preparadora oposiciones Seguridad Social C1 online',
-	description: 'Preparacion online con Maria Carmen para las oposiciones de Administrativo de la Seguridad Social C1. Temario especifico, supuestos practicos, clases en directo y seguimiento cercano.',
-	courseName: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
-}));
 
 const faqItems = [
 	{
-		question: 'Que incluye la preparacion de Seguridad Social?',
-		answer: 'Incluye clases online en directo, grabaciones, temario comun y especifico, test, supuestos practicos y planificacion para llegar al examen con criterio.',
+		question: '¿Qué incluye la preparación de Seguridad Social?',
+		answer: 'Incluye clases online en directo, grabaciones, temario común y específico, test, supuestos prácticos y planificación para llegar al examen con criterio.',
 	},
 	{
-		question: 'La Seguridad Social tiene prueba de ofimatica?',
-		answer: 'No. La oposicion de Administrativo de la Seguridad Social no tiene la misma prueba de ofimatica que AGE. El peso esta en el temario y el supuesto practico.',
+		question: '¿La Seguridad Social tiene prueba de ofimática?',
+		answer: 'No. La oposición de Administrativo de la Seguridad Social no tiene la misma prueba de ofimática que AGE. El peso está en el temario y el supuesto práctico.',
 	},
 	{
-		question: 'El supuesto practico se prepara desde el principio?',
-		answer: 'Si. En esta oposicion el supuesto practico es clave, por eso se trabaja desde los primeros meses y no se deja para el final.',
+		question: '¿El supuesto práctico se prepara desde el principio?',
+		answer: 'Sí. En esta oposición el supuesto práctico es clave, por eso se trabaja desde los primeros meses y no se deja para el final.',
 	},
 	{
-		question: 'Puedo aprovechar lo estudiado para AGE?',
-		answer: 'Si. Gran parte del temario es comun. Si vienes de AGE, puedes centrarte en los temas especificos de Seguridad Social y el supuesto practico.',
+		question: '¿Puedo aprovechar lo estudiado para AGE?',
+		answer: 'Sí. Gran parte del temario es común. Si vienes de AGE, puedes centrarte en los temas específicos de Seguridad Social y el supuesto práctico.',
 	},
 ];
+
+const schemaJson = JSON.stringify(withFAQSchema(createPreparadoraLandingSchema({
+	url: canonicalUrl,
+	name: 'Preparadora oposiciones Seguridad Social C1 online',
+	description: 'Preparación online con Mª Carmen para las oposiciones de Administrativo de la Seguridad Social C1. Temario específico, supuestos prácticos, clases en directo y seguimiento cercano.',
+	courseName: 'Preparación oposiciones Administrativo de la Seguridad Social C1',
+}), faqItems));
 ---
 
 <BaseLayout
 	title="Preparadora Seguridad Social Online | Administrativo C1 | MC Oposiciones"
-	description="Preparadora de oposiciones de Administrativo de la Seguridad Social C1. Clases online en directo con Maria Carmen, temario especifico, supuestos practicos y grupos reducidos."
+	description="Prepara las oposiciones de Administrativo de la Seguridad Social con Mª Carmen. Clases en directo, temario actualizado 2026, supuesto práctico y grupos reducidos."
 	canonicalUrl={canonicalUrl}
 	schemaJson={schemaJson}
 >
@@ -46,28 +47,28 @@ const faqItems = [
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Preparadora Seguridad Social', href: '' }]} />
 				<div class="mt-12 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
 					<header>
-						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Preparacion online Seguridad Social C1</p>
+						<p class="text-sm font-extrabold uppercase tracking-widest text-secondary">Preparación online Seguridad Social C1</p>
 						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">
 							Preparadora de oposiciones de Seguridad Social
 						</h1>
 						<p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted md:text-xl">
-							Una landing para quien busca preparadora especializada. Aqui el foco esta en como se trabaja Seguridad Social: temario especifico, supuesto practico, planificacion y seguimiento cercano.
+							Una landing para quien busca preparadora especializada. Aquí el foco está en cómo se trabaja Seguridad Social: temario específico, supuesto práctico, planificación y seguimiento cercano.
 						</p>
 						<div class="mt-10 flex flex-col gap-4 sm:flex-row">
 							<a href="/contacto/" class="rounded-xl bg-secondary px-8 py-4 text-center font-bold text-white no-underline transition-colors hover:bg-primary">
-								Pedir informacion SS
+								Pedir información SS
 							</a>
 							<a href="/oposiciones-seguridad-social/" class="rounded-xl border border-secondary px-8 py-4 text-center font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
-								Ver detalles de la oposicion
+								Ver detalles de la oposición
 							</a>
 						</div>
 					</header>
 					<aside class="rounded-2xl border border-primary/10 bg-white p-8">
-						<h2 class="text-2xl font-extrabold text-primary">Por que preparar Seguridad Social?</h2>
+						<h2 class="text-2xl font-extrabold text-primary">¿Por qué preparar Seguridad Social?</h2>
 						<ul class="mt-6 space-y-4">
-							<li class="flex gap-3"><span class="font-black text-secondary">01</span><span>Es una oposicion C1 con temario muy conectado con AGE.</span></li>
-							<li class="flex gap-3"><span class="font-black text-secondary">02</span><span>No tiene prueba de ofimatica como Administrativo del Estado.</span></li>
-							<li class="flex gap-3"><span class="font-black text-secondary">03</span><span>El supuesto practico se puede entrenar con metodo desde el inicio.</span></li>
+							<li class="flex gap-3"><span class="font-black text-secondary">01</span><span>Es una oposición C1 con temario muy conectado con AGE.</span></li>
+							<li class="flex gap-3"><span class="font-black text-secondary">02</span><span>No tiene prueba de ofimática como Administrativo del Estado.</span></li>
+							<li class="flex gap-3"><span class="font-black text-secondary">03</span><span>El supuesto práctico se puede entrenar con método desde el inicio.</span></li>
 							<li class="flex gap-3"><span class="font-black text-secondary">04</span><span>Permite aprovechar parte del estudio si ya vienes de AGE.</span></li>
 						</ul>
 					</aside>
@@ -78,15 +79,15 @@ const faqItems = [
 		<section class="bg-white/50 px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<div class="mb-14 max-w-3xl">
-					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Preparacion especifica para Seguridad Social</h2>
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Preparación específica para Seguridad Social</h2>
 					<p class="mt-6 text-lg leading-relaxed text-text-muted">
-						La oposicion exige dominar el temario comun, la normativa propia de Seguridad Social y la aplicacion practica. Por eso la preparacion combina teoria, test y supuestos desde una planificacion ordenada.
+						La oposición exige dominar el temario común, la normativa propia de Seguridad Social y la aplicación práctica. Por eso la preparación combina teoría, test y supuestos desde una planificación ordenada.
 					</p>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 					{[
-						{ title: 'Temario especifico', text: 'Trabajo detallado de los temas propios de Seguridad Social.' },
-						{ title: 'Supuestos practicos', text: 'Entrenamiento constante para aplicar la ley en casos de examen.' },
+						{ title: 'Temario específico', text: 'Trabajo detallado de los temas propios de Seguridad Social.' },
+						{ title: 'Supuestos prácticos', text: 'Entrenamiento constante para aplicar la ley en casos de examen.' },
 						{ title: 'Test por bloques', text: 'Practica continua para detectar errores y consolidar conceptos.' },
 						{ title: 'Plan de estudio', text: 'Organizacion semanal adaptada al tiempo real disponible.' },
 					].map((item) => (
@@ -102,20 +103,20 @@ const faqItems = [
 		<section class="px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-start">
 				<div>
-					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">El supuesto practico no se improvisa</h2>
+					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">El supuesto práctico no se improvisa</h2>
 					<p class="mt-6 text-lg leading-relaxed text-text-muted">
 						En Seguridad Social no basta con haber leido el temario. Hay que saber aplicar conceptos a situaciones concretas y reconocer que pregunta realmente plantea el supuesto.
 					</p>
 					<p class="mt-4 text-lg leading-relaxed text-text-muted">
-						Por eso el metodo trabaja supuestos desde el principio, junto con test y explicaciones orientadas al examen.
+						Por eso el método trabaja supuestos desde el principio, junto con test y explicaciones orientadas al examen.
 					</p>
 				</div>
 				<div class="rounded-2xl border border-accent/30 bg-accent/10 p-8">
 					<h3 class="text-2xl font-extrabold text-primary">Si vienes de AGE, puedes aprovechar mucho</h3>
 					<p class="mt-4 leading-relaxed text-text-main">
-						El temario comun permite plantear una preparacion conjunta o una adaptacion especifica hacia Seguridad Social.
+						El temario común permite plantear una preparación conjunta o una adaptación específica hacia Seguridad Social.
 					</p>
-					<a href="/preparar-age-y-seguridad-social/" class="mt-6 inline-flex rounded-xl bg-accent px-5 py-3 font-bold text-primary no-underline transition-colors hover:bg-primary hover:text-white">Ver preparacion conjunta</a>
+					<a href="/preparar-age-y-seguridad-social/" class="mt-6 inline-flex rounded-xl bg-accent px-5 py-3 font-bold text-primary no-underline transition-colors hover:bg-primary hover:text-white">Ver preparación conjunta</a>
 				</div>
 			</div>
 		</section>
@@ -124,9 +125,9 @@ const faqItems = [
 			<div class="mx-auto max-w-7xl">
 				<div class="grid gap-8 rounded-2xl border border-primary/10 bg-bg-light/40 p-8 md:grid-cols-[1fr_auto] md:items-center">
 					<div>
-						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Antes de elegir preparadora, revisa la oposicion</h2>
+						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Antes de elegir preparadora, revisa la oposición</h2>
 						<p class="mt-4 leading-relaxed text-text-muted">
-							La pagina de Administrativo de la Seguridad Social resume convocatoria, examen y estructura de preparacion. Esta landing queda centrada en la eleccion de preparadora.
+							La página de Administrativo de la Seguridad Social resume convocatoria, examen y estructura de preparación. Esta landing queda centrada en la elección de preparadora.
 						</p>
 					</div>
 					<a href="/oposiciones-seguridad-social/" class="inline-flex justify-center rounded-xl border border-secondary px-6 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
@@ -151,9 +152,9 @@ const faqItems = [
 
 			<div class="mx-auto mt-16 max-w-5xl">
 				<CTABanner
-					title="Quieres preparar Seguridad Social con metodo?"
+					title="¿Quieres preparar Seguridad Social con método?"
 					subtitle="Escribeme y vemos si el grupo encaja con tu nivel, disponibilidad y objetivo de examen."
-					ctaText="Pedir informacion"
+					ctaText="Pedir información"
 					ctaHref="/contacto/"
 					variant="primary"
 				/>

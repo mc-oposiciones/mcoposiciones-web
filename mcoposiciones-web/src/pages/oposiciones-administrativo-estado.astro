@@ -4,15 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import InfoStepsCard from '../components/InfoStepsCard.astro';
-import { createCoursePageSchema } from '../lib/schema';
-
-const schemaJson = JSON.stringify(createCoursePageSchema({
-	url: 'https://mcoposiciones.com/oposiciones-administrativo-estado/',
-	pageName: 'Preparacion oposiciones Administrativo del Estado AGE C1',
-	pageDescription: 'Preparacion online para las oposiciones de Administrativo del Estado AGE C1 con clases en directo, temario actualizado, test, simulacros y ofimatica.',
-	courseName: 'Preparacion oposiciones Administrativo del Estado AGE C1',
-	courseDescription: 'Preparacion online en directo para Administrativo del Estado AGE C1. Incluye temario, test, simulacros, supuesto practico y ofimatica.',
-}));
+import { createCoursePageSchema, withFAQSchema } from '../lib/schema';
 
 const examFacts = [
 	'2.512 plazas totales',
@@ -57,11 +49,19 @@ const faqItems = [
 	{ question: '¿Cuándo es el examen de AGE 2026?', answer: 'La convocatoria se publica en el BOE. Puedes ver las últimas novedades en nuestro blog.' },
 	{ question: '¿Se puede preparar AGE y Seguridad Social a la vez?', answer: 'Sí. Una parte importante del temario es común, por eso puede tener sentido preparar ambas si quieres ampliar opciones sin duplicar todo el estudio.' },
 ];
+
+const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
+	url: 'https://mcoposiciones.com/oposiciones-administrativo-estado/',
+	pageName: 'Preparación oposiciones Administrativo del Estado AGE C1',
+	pageDescription: 'Preparación online para las oposiciones de Administrativo del Estado AGE C1 con clases en directo, temario actualizado, test, simulacros y ofimática.',
+	courseName: 'Preparación Oposiciones Administrativo del Estado AGE C1',
+	courseDescription: 'Preparación online en directo para las oposiciones de Administrativo del Estado (AGE C1) 2026. Clases en directo, 2.512 plazas convocadas, temario actualizado con ofimática incluida.',
+}), faqItems));
 ---
 
 <BaseLayout
 	title="Preparadora Oposiciones Administrativo del Estado AGE C1 2026 | MC Oposiciones"
-	description="Prepara con Mª Carmen las oposiciones de Administrativo del Estado (AGE C1) 2026. Clases online en directo, 2.512 plazas convocadas, temario actualizado con informática incluida. Sin compromiso de permanencia."
+	description="Prepara AGE C1 2026 con Mª Carmen. Clases online en directo, 2.512 plazas, temario actualizado con ofimática y grupos reducidos."
 	canonicalUrl="https://mcoposiciones.com/oposiciones-administrativo-estado/"
 	schemaJson={schemaJson}
 >

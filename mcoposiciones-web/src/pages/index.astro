@@ -6,9 +6,7 @@ import CTABanner from '../components/CTABanner.astro';
 import PreparationRouteCard from '../components/PreparationRouteCard.astro';
 import { Image } from 'astro:assets';
 import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
-import { createHomeSchema } from '../lib/schema';
-
-const schemaJson = JSON.stringify(createHomeSchema());
+import { createHomeSchema, withFAQSchema } from '../lib/schema';
 
 const routes = [
 	{
@@ -86,11 +84,13 @@ const faqItems = [
 		answer: 'Puedes elegir mensual, curso completo, módulos o preparación conjunta. Si tienes dudas, lo más razonable es consultar tu caso antes de matricularte.',
 	},
 ];
+
+const schemaJson = JSON.stringify(withFAQSchema(createHomeSchema(), faqItems));
 ---
 
 <BaseLayout
 	title="Preparadora de Oposiciones AGE y Seguridad Social Online | MC Oposiciones"
-	description="Prepara las oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social con Mª Carmen, preparadora especializada. Clases en directo, temario actualizado 2026 y grupos reducidos."
+	description="Preparadora online de oposiciones AGE y Seguridad Social C1 con Mª Carmen. Clases en directo, grupos reducidos y seguimiento real."
 	canonicalUrl="https://mcoposiciones.com/"
 	ogType="website"
 	schemaJson={schemaJson}
@@ -102,10 +102,10 @@ const faqItems = [
 					<div class="max-w-3xl">
 						<p class="text-sm font-extrabold uppercase tracking-[0.2em] text-secondary/90">Preparación online AGE y Seguridad Social</p>
 						<h1 class="mt-6 text-4xl font-extrabold leading-[1.1] text-primary md:text-6xl lg:text-7xl">
-							Prepara tu oposición C1 con una guía clara
+							Preparadora online de oposiciones AGE y Seguridad Social C1
 						</h1>
 						<p class="mt-8 text-lg leading-relaxed text-text-muted/90 md:text-xl lg:max-w-2xl">
-							Clases online en directo con Mª Carmen para Administrativo del Estado y Seguridad Social. Método estructurado y grupos reducidos para estudiar con criterio.
+							Prepara las oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social con Mª Carmen, preparadora especializada. Clases en directo, grupos reducidos y seguimiento real.
 						</p>
 						<div class="mt-10 flex flex-col gap-4 sm:flex-row">
 							<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl bg-secondary px-8 py-4.5 font-bold text-white no-underline shadow-button transition-all duration-300 hover:bg-primary hover:scale-[1.02] active:scale-[0.98]">

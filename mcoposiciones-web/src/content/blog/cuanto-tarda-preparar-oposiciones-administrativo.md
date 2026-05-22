@@ -148,3 +148,7 @@ Si quieres ver cómo planteo la preparación, puedes consultar las modalidades d
 Preparar una oposición de Administrativo C1 lleva tiempo, pero ese tiempo no depende solo del calendario. Depende de tus horas reales, tu base, tu oposición y tu método.
 
 No busques una cifra mágica. Busca un plan que puedas sostener. Si cada semana estudias con intención, corriges errores y repasas, el avance llega con más seguridad.
+
+---
+**¿Quieres preparar esta oposición con seguimiento real?**
+Consulta las modalidades de preparación con Mª Carmen: grupos reducidos, clases en directo y temario actualizado 2026. [Ver cursos y precios →](/cursos-precios/)

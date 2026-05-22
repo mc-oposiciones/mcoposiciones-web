@@ -158,3 +158,7 @@ El supuesto práctico de Seguridad Social se prepara con método, no con improvi
 Mi consejo es que no esperes a sentirte preparada al cien por cien para empezar a practicar. Esa seguridad no aparece antes de hacer supuestos; aparece precisamente al corregirlos bien y repetir el proceso. Empieza con casos pequeños, entiende tus errores y aumenta la dificultad poco a poco.
 
 Si lo trabajas desde el principio como una forma de entender la materia, deja de ser una amenaza final y se convierte en una parte más de la preparación.
+
+---
+**¿Quieres preparar Seguridad Social con seguimiento real?**
+Consulta la preparación de Administrativo de la Seguridad Social con Mª Carmen: grupos reducidos, clases en directo y temario actualizado 2026. [Ver preparación Seguridad Social →](/oposiciones-seguridad-social/)

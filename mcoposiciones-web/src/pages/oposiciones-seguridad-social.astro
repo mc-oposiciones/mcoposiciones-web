@@ -4,15 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import InfoStepsCard from '../components/InfoStepsCard.astro';
-import { createCoursePageSchema } from '../lib/schema';
-
-const schemaJson = JSON.stringify(createCoursePageSchema({
-	url: 'https://mcoposiciones.com/oposiciones-seguridad-social/',
-	pageName: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
-	pageDescription: 'Preparacion online para Administrativo de la Seguridad Social C1 con temario especifico, test, supuesto practico y clases en directo.',
-	courseName: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
-	courseDescription: 'Preparacion online en directo para Administrativo de la Seguridad Social C1. Incluye temario especifico, test, simulacros y supuesto practico.',
-}));
+import { createCoursePageSchema, withFAQSchema } from '../lib/schema';
 
 const examFacts = [
 	'1.456 plazas libres',
@@ -57,11 +49,19 @@ const faqItems = [
 	{ question: '¿Se puede preparar Seguridad Social a la vez que AGE?', answer: 'Sí. Es una opción muy interesante porque una parte importante del temario se aprovecha entre ambas oposiciones.' },
 	{ question: '¿Qué diferencia hay entre el temario de AGE y el de SS?', answer: 'El temario general es muy parecido. La diferencia principal es que AGE incluye ofimática y Seguridad Social tiene temario específico y supuesto práctico propio.' },
 ];
+
+const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
+	url: 'https://mcoposiciones.com/oposiciones-seguridad-social/',
+	pageName: 'Preparación oposiciones Administrativo de la Seguridad Social C1',
+	pageDescription: 'Preparación online para Administrativo de la Seguridad Social C1 con temario específico, test, supuesto práctico y clases en directo.',
+	courseName: 'Preparación Oposiciones Administrativo Seguridad Social C1',
+	courseDescription: 'Preparación online en directo para las oposiciones de Administrativo de la Seguridad Social C1 2026. Temario específico, supuesto práctico y planificación hasta el examen.',
+}), faqItems));
 ---
 
 <BaseLayout
 	title="Preparadora Oposiciones Administrativo Seguridad Social C1 2026 | MC Oposiciones"
-	description="Prepara con Mª Carmen las oposiciones de Administrativo de la Seguridad Social (C1) 2026. 1.456 plazas, sin ofimática, examen 28 junio 2026. Clases online en directo con temario específico SS actualizado."
+	description="Prepara Seguridad Social C1 2026 con Mª Carmen. 1.456 plazas, examen 28 junio, clases online en directo y temario específico actualizado."
 	canonicalUrl="https://mcoposiciones.com/oposiciones-seguridad-social/"
 	schemaJson={schemaJson}
 >

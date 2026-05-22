@@ -4,13 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import InfoStepsCard from '../components/InfoStepsCard.astro';
-import { createDualCoursePageSchema } from '../lib/schema';
-
-const schemaJson = JSON.stringify(createDualCoursePageSchema({
-	url: 'https://mcoposiciones.com/preparar-age-y-seguridad-social/',
-	pageName: 'Preparar AGE y Seguridad Social a la vez',
-	pageDescription: 'Preparación conjunta de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 aprovechando el temario común.',
-}));
+import { createDualCoursePageSchema, withFAQSchema } from '../lib/schema';
 
 const examFacts = [
 	'Base común aprovechable',
@@ -70,11 +64,17 @@ const faqItems = [
 	{ question: '¿Qué pasa si más adelante quiero centrarme solo en una?', answer: 'Se puede reajustar el plan. La preparación conjunta parte de una base común, así que el trabajo inicial no se pierde aunque después decidas priorizar AGE o Seguridad Social.' },
 	{ question: '¿Es mejor preparar ambas o elegir una sola?', answer: 'Depende de tu disponibilidad, base previa y objetivo. Preparar ambas puede ampliar opciones, pero solo tiene sentido si puedes sostener el ritmo sin convertir el estudio en caos.' },
 ];
+
+const schemaJson = JSON.stringify(withFAQSchema(createDualCoursePageSchema({
+	url: 'https://mcoposiciones.com/preparar-age-y-seguridad-social/',
+	pageName: 'Preparar AGE y Seguridad Social a la vez',
+	pageDescription: 'Preparación conjunta de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 aprovechando el temario común.',
+}), faqItems));
 ---
 
 <BaseLayout
 	title="Preparar AGE y Seguridad Social a la vez | MC Oposiciones"
-	description="Preparación conjunta de Administrativo del Estado y Administrativo de la Seguridad Social. Aprovecha el temario común con un plan organizado, clases online y seguimiento de Mª Carmen."
+	description="Prepara AGE y Seguridad Social a la vez aprovechando el temario común. Pack conjunto con Mª Carmen: clases en directo, grupos reducidos y planificación unificada."
 	canonicalUrl="https://mcoposiciones.com/preparar-age-y-seguridad-social/"
 	schemaJson={schemaJson}
 >

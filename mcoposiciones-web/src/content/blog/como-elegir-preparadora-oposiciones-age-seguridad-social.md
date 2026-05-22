@@ -142,3 +142,7 @@ Esa calma es importante porque una oposición no se gana en un día brillante. S
 Elegir preparadora no es buscar la frase más convincente. Es comprobar si hay método, claridad y acompañamiento real. Una buena preparación no elimina el esfuerzo, pero evita que estudies a ciegas.
 
 Si vas a invertir meses de tu vida en una oposición, merece la pena empezar con una decisión bien pensada.
+
+---
+**¿Quieres preparar esta oposición con seguimiento real?**
+Consulta las modalidades de preparación con Mª Carmen: grupos reducidos, clases en directo y temario actualizado 2026. [Ver cursos y precios →](/cursos-precios/)

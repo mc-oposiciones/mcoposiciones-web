@@ -34,14 +34,28 @@ const courseLinks = [
 const canonicalUrl = `https://mcoposiciones.com/blog/${entry.id}/`;
 const schemaJson = JSON.stringify({
 	'@context': 'https://schema.org',
-	'@type': 'BlogPosting',
+	'@type': 'Article',
 	headline: entry.data.h1,
 	description: entry.data.description,
-	author: { '@type': 'Person', name: entry.data.author },
+	author: {
+		'@type': 'Person',
+		name: 'Mª Carmen',
+		url: 'https://mcoposiciones.com/preparadora-oposiciones/',
+	},
 	datePublished: entry.data.pubDate.toISOString(),
 	dateModified: (entry.data.updatedDate ?? entry.data.pubDate).toISOString(),
-	publisher: { '@type': 'Organization', name: 'MC Oposiciones', url: 'https://mcoposiciones.com' },
-	mainEntityOfPage: canonicalUrl,
+	publisher: {
+		'@type': 'Organization',
+		name: 'MC Oposiciones',
+		logo: {
+			'@type': 'ImageObject',
+			url: 'https://mcoposiciones.com/logo-icon.png',
+		},
+	},
+	mainEntityOfPage: {
+		'@type': 'WebPage',
+		'@id': canonicalUrl,
+	},
 });
 ---
 

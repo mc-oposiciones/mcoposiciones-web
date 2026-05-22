@@ -9,17 +9,18 @@ const staticUrls = [
 	{ path: '/preparadora-age/', priority: '0.9' },
 	{ path: '/preparadora-seguridad-social/', priority: '0.9' },
 	{ path: '/preparar-age-y-seguridad-social/', priority: '0.9' },
-	{ path: '/cursos-precios/', priority: '0.9' },
+	{ path: '/preparadora-oposiciones/', priority: '0.9' },
+	{ path: '/cursos-precios/', priority: '0.8' },
 	{ path: '/blog/', priority: '0.8' },
-	{ path: '/preparadora-oposiciones/', priority: '0.7' },
 	{ path: '/clases-muestra/', priority: '0.7' },
+	{ path: '/contacto/', priority: '0.5' },
 ];
 
 export async function GET() {
 	const posts = await getCollection('blog');
 	const postUrls = posts.map((post) => ({
 		path: `/blog/${post.id}/`,
-		priority: '0.7',
+		priority: '0.8',
 	}));
 	const urls = [...staticUrls, ...postUrls];
 

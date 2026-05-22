@@ -134,3 +134,7 @@ En la página de [oposiciones de Administrativo del Estado](/oposiciones-adminis
 El temario de AGE C1 es exigente, pero se puede trabajar con orden. No necesitas estudiar perfecto desde el primer día. Necesitas un método que combine comprensión, test, repasos y práctica de ofimática.
 
 Cuando el temario deja de ser una lista y se convierte en un mapa, la preparación cambia. Estudias con menos ansiedad y con más criterio.
+
+---
+**¿Quieres preparar AGE con seguimiento real?**
+Consulta la preparación de Administrativo del Estado con Mª Carmen: grupos reducidos, clases en directo y temario actualizado 2026. [Ver preparación AGE →](/oposiciones-administrativo-estado/)

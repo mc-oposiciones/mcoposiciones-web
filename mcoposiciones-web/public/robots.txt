@@ -1,7 +1,7 @@
 User-agent: *
-Disallow: /contacto/
+Allow: /
 Disallow: /politica-privacidad/
 Disallow: /aviso-legal/
 Disallow: /politica-cookies/
-Allow: /
+
 Sitemap: https://mcoposiciones.com/sitemap.xml

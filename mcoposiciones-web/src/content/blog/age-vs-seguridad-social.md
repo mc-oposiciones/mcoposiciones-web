@@ -116,3 +116,7 @@ En MC Oposiciones trabajamos precisamente estas tres posibilidades: [Administrat
 AGE puede ser mejor si buscas una oposición administrativa amplia y estás dispuesta a trabajar ofimática. Seguridad Social puede encajar si prefieres centrarte en normativa específica y supuesto práctico. Preparar ambas puede ser una buena estrategia si tienes tiempo y necesitas ampliar opciones.
 
 No hay una respuesta única. Hay una respuesta adecuada para tu situación. Y esa es la que conviene encontrar antes de empezar.
+
+---
+**¿Quieres preparar esta oposición con seguimiento real?**
+Consulta las modalidades de preparación con Mª Carmen: grupos reducidos, clases en directo y temario actualizado 2026. [Ver cursos y precios →](/cursos-precios/)

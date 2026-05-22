@@ -1,5 +1,10 @@
 const siteUrl = 'https://mcoposiciones.com';
 
+type FAQItem = {
+	question: string;
+	answer: string;
+};
+
 const organization = {
 	'@type': 'EducationalOrganization',
 	'@id': `${siteUrl}/#organization`,
@@ -7,9 +12,15 @@ const organization = {
 	url: siteUrl,
 	logo: `${siteUrl}/logo-icon.png`,
 	description:
-		'Preparacion online para oposiciones de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1.',
+		'Preparación online para oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social C1. Clases en directo, grupos reducidos y seguimiento cercano.',
 	telephone: '+34642170664',
 	email: 'infomcoposiciones@gmail.com',
+	contactPoint: {
+		'@type': 'ContactPoint',
+		telephone: '+34-642-170-664',
+		contactType: 'customer service',
+		availableLanguage: 'Spanish',
+	},
 	sameAs: [
 		'https://www.youtube.com/@mcoposiciones',
 		'https://www.instagram.com/mcoposiciones',
@@ -20,11 +31,42 @@ const organization = {
 const person = {
 	'@type': 'Person',
 	'@id': `${siteUrl}/preparadora-oposiciones/#person`,
-	name: 'Maria Carmen',
-	jobTitle: 'Preparadora de oposiciones AGE y Seguridad Social',
+	name: 'Mª Carmen',
+	jobTitle: 'Preparadora de Oposiciones',
+	description:
+		'Preparadora especializada en oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social C1. Clases online en directo con grupos reducidos.',
 	url: `${siteUrl}/preparadora-oposiciones/`,
+	image: `${siteUrl}/_astro/maria-carmen.webp`,
 	worksFor: { '@id': `${siteUrl}/#organization` },
+	sameAs: [
+		'https://www.youtube.com/@mcoposiciones',
+		'https://www.instagram.com/mcoposiciones',
+		'https://www.tiktok.com/@mcoposiciones',
+	],
 };
+
+function createFAQNode(faqItems: FAQItem[]) {
+	return {
+		'@type': 'FAQPage',
+		'@id': `${siteUrl}/#faq`,
+		mainEntity: faqItems.map((item) => ({
+			'@type': 'Question',
+			name: item.question,
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: item.answer,
+			},
+		})),
+	};
+}
+
+export function withFAQSchema<T extends { '@graph'?: unknown[] }>(schema: T, faqItems: FAQItem[]) {
+	if (!faqItems.length) return schema;
+	return {
+		...schema,
+		'@graph': [...(schema['@graph'] ?? []), createFAQNode(faqItems)],
+	};
+}
 
 export function createHomeSchema() {
 	return {
@@ -46,7 +88,7 @@ export function createHomeSchema() {
 				url: `${siteUrl}/`,
 				name: 'Preparadora de Oposiciones AGE y Seguridad Social Online',
 				description:
-					'Preparacion online de oposiciones de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 con clases en directo.',
+					'Preparación online de oposiciones de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 con clases en directo.',
 				isPartOf: { '@id': `${siteUrl}/#website` },
 				about: [{ '@id': `${siteUrl}/#organization` }, { '@id': `${siteUrl}/preparadora-oposiciones/#person` }],
 				inLanguage: 'es',
@@ -65,9 +107,9 @@ export function createPersonSchema() {
 				'@type': 'WebPage',
 				'@id': `${siteUrl}/preparadora-oposiciones/#webpage`,
 				url: `${siteUrl}/preparadora-oposiciones/`,
-				name: 'Maria Carmen, preparadora de oposiciones AGE y Seguridad Social',
+				name: 'Mª Carmen, preparadora de oposiciones AGE y Seguridad Social',
 				description:
-					'Perfil de Maria Carmen, preparadora especializada en oposiciones de Administrativo del Estado y Seguridad Social.',
+					'Perfil de Mª Carmen, preparadora especializada en oposiciones de Administrativo del Estado y Seguridad Social.',
 				about: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
 				inLanguage: 'es',
 			},
@@ -108,7 +150,12 @@ export function createPreparadoraLandingSchema({
 				name: courseName,
 				description,
 				provider: { '@id': `${siteUrl}/#organization` },
+				instructor: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
+				educationalLevel: 'C1',
+				teaches: courseName,
+				courseMode: 'online',
 				inLanguage: 'es',
+				url,
 				offers: {
 					'@type': 'Offer',
 					price,
@@ -156,8 +203,12 @@ export function createCoursePageSchema({
 				name: courseName,
 				description: courseDescription,
 				provider: { '@id': `${siteUrl}/#organization` },
+				instructor: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
 				educationalLevel: 'C1',
+				teaches: courseName,
+				courseMode: 'online',
 				inLanguage: 'es',
+				url,
 				offers: {
 					'@type': 'Offer',
 					price,
@@ -190,29 +241,21 @@ export function createDualCoursePageSchema({
 				url,
 				name: pageName,
 				description: pageDescription,
-				about: [
-					{ '@id': `${siteUrl}/oposiciones-administrativo-estado/#course` },
-					{ '@id': `${siteUrl}/oposiciones-seguridad-social/#course` },
-				],
+				about: { '@id': `${url}#course` },
 				inLanguage: 'es',
 			},
 			{
 				'@type': 'Course',
-				'@id': `${siteUrl}/oposiciones-administrativo-estado/#course`,
-				name: 'Preparacion oposiciones Administrativo del Estado AGE C1',
-				description: 'Preparacion online para Administrativo del Estado AGE C1 con clases, temario, test, simulacros y ofimatica.',
+				'@id': `${url}#course`,
+				name: 'Pack Preparación Conjunta AGE y Seguridad Social',
+				description:
+					'Preparación conjunta online para oposiciones de Administrativo del Estado y Seguridad Social. Aprovecha el temario común y amplía opciones sin duplicar el estudio.',
 				provider: { '@id': `${siteUrl}/#organization` },
-				educationalLevel: 'C1',
+				instructor: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
+				teaches: 'Oposiciones AGE C1 y Seguridad Social C1',
+				courseMode: 'online',
 				inLanguage: 'es',
-			},
-			{
-				'@type': 'Course',
-				'@id': `${siteUrl}/oposiciones-seguridad-social/#course`,
-				name: 'Preparacion oposiciones Administrativo de la Seguridad Social C1',
-				description: 'Preparacion online para Administrativo de la Seguridad Social C1 con temario especifico, test y supuesto practico.',
-				provider: { '@id': `${siteUrl}/#organization` },
-				educationalLevel: 'C1',
-				inLanguage: 'es',
+				url,
 			},
 		],
 	};
@@ -224,7 +267,7 @@ export function createPricingPageSchema() {
 		{ name: 'Curso Mensual', price: '100', url },
 		{ name: 'Curso Completo', price: '475', url },
 		{ name: 'Parte General', price: '250', url },
-		{ name: 'Parte Especifica Seguridad Social', price: '300', url },
+		{ name: 'Parte Específica Seguridad Social', price: '300', url },
 		{ name: 'Pack AGE + Seguridad Social', url: `${siteUrl}/preparar-age-y-seguridad-social/` },
 	];
 
