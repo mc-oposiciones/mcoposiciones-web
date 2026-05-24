@@ -19,15 +19,18 @@ const trustItems = [
 const methodItems = [
 	{
 		title: 'Explicar antes de memorizar',
-		desc: 'El temario se trabaja con contexto y ejemplos para que puedas contestar con criterio, no solo repetir artículos.',
+		desc: 'Cada tema se trabaja con contexto, esquemas y ejemplos para que entiendas la lógica jurídica antes de pasar al test.',
+		icon: 'book',
 	},
 	{
-		title: 'Entrenar el examen desde el principio',
-		desc: 'Test, supuestos y repasos se integran en la preparación para llegar con técnica, ritmo y control del tiempo.',
+		title: 'Practicar con criterio de examen',
+		desc: 'Los test, supuestos y repasos no se dejan para el final: se integran en el estudio para ganar seguridad y detectar errores a tiempo.',
+		icon: 'clipboard',
 	},
 	{
-		title: 'Planificar con realismo',
-		desc: 'La preparación se adapta al tiempo disponible. El objetivo es sostener el estudio sin perder foco.',
+		title: 'Ordenar el estudio semana a semana',
+		desc: 'La planificación se adapta a tu disponibilidad real para avanzar con constancia, sin acumular material ni perder el foco.',
+		icon: 'calendar',
 	},
 ];
 
@@ -57,8 +60,8 @@ const routes = [
 ];
 ---
 <BaseLayout
-	title="Mª Carmen — Preparadora de Oposiciones AGE y Seguridad Social | MC Oposiciones"
-	description="Conoce a Mª Carmen, preparadora especializada en oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social (C1). Método riguroso, grupos reducidos y acompañamiento real."
+	title="Mª Carmen — Preparadora Online AGE y Seguridad Social | MC Oposiciones"
+	description="Conoce a Mª Carmen, preparadora online de oposiciones AGE C1 y Seguridad Social C1. Clases en directo, grupos reducidos y seguimiento cercano."
 	canonicalUrl="https://mcoposiciones.com/preparadora-oposiciones/"
 	schemaJson={schemaJson}
 >
@@ -74,9 +77,9 @@ const routes = [
 					</div>
 					<div>
 						<p class="text-sm font-extrabold uppercase tracking-[0.2em] text-secondary/90">Preparadora de oposiciones online</p>
-						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Hola, soy Mª Carmen</h1>
+						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Mª Carmen, preparadora de oposiciones AGE y Seguridad Social</h1>
 						<p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted/90 md:text-xl">
-							Preparo opositores de Administrativo del Estado y Seguridad Social con una metodología cercana, exigente y centrada en el examen real. Mi trabajo es ayudarte a estudiar con estructura y mantener una estrategia sólida hasta la convocatoria.
+							Preparo opositores de Administrativo del Estado y Seguridad Social con una metodología cercana, exigente y centrada en el examen real. Mi trabajo es ayudarte a estudiar con estructura, entender el temario y mantener una estrategia sólida hasta la convocatoria.
 						</p>
 						<div class="mt-10 grid gap-4">
 							{trustItems.map((item) => (
@@ -90,7 +93,7 @@ const routes = [
 						</div>
 						<div class="mt-10 flex flex-col gap-4 sm:flex-row">
 							<a href="/contacto/" class="inline-flex justify-center rounded-xl bg-secondary px-8 py-4 font-bold text-white no-underline shadow-button transition-all duration-300 hover:bg-primary hover:scale-[1.02] active:scale-[0.98]">
-								Contactar
+								Consultar preparación
 							</a>
 							<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl border border-secondary/30 px-8 py-4 font-bold text-secondary no-underline transition-all duration-300 hover:bg-secondary/5 hover:border-secondary hover:scale-[1.02] active:scale-[0.98]">
 								Ver cursos y precios
@@ -103,18 +106,42 @@ const routes = [
 
 		<section class="bg-white/50 px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-16 max-w-3xl">
+				<div class="mb-14 max-w-3xl">
 					<h2 class="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">Mi forma de preparar</h2>
-					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">La preparación combina explicación, práctica y seguimiento continuo. No se trata de acumular material, sino de saber qué estudiar y cómo entrenar el examen.</p>
+					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">La preparación combina explicación clara, práctica guiada y seguimiento continuo. No se trata de acumular apuntes, sino de saber qué estudiar, cómo repasarlo y cuándo entrenar el examen.</p>
 				</div>
-				<div class="grid gap-6 md:grid-cols-3">
+				<div class="grid overflow-hidden rounded-2xl border border-primary/8 bg-white shadow-premium md:grid-cols-3">
 					{methodItems.map((item) => (
-						<article class="group rounded-2xl border border-primary/5 bg-white p-8 shadow-premium transition-all duration-500 hover:-translate-y-2 hover:shadow-premium-hover hover:border-secondary/20">
-							<div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary/5 text-secondary transition-colors group-hover:bg-secondary group-hover:text-white">
-								<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+						<article class="group relative border-b border-primary/8 p-7 transition-colors duration-300 last:border-b-0 hover:bg-bg-light/55 md:border-b-0 md:border-r md:last:border-r-0 lg:p-8">
+							<div class="mb-7 flex h-13 w-13 items-center justify-center rounded-xl border border-secondary/15 bg-bg-light text-secondary transition-colors group-hover:border-secondary/25 group-hover:bg-secondary/10">
+								{item.icon === 'book' && (
+									<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+										<path d="M4 19.5V5.75A2.75 2.75 0 0 1 6.75 3H20v17H6.75A2.75 2.75 0 0 0 4 22.75" />
+										<path d="M8 7h7" />
+										<path d="M8 11h8" />
+									</svg>
+								)}
+								{item.icon === 'clipboard' && (
+									<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+										<path d="M9 4.5h6" />
+										<path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5V6H8V4.5A1.5 1.5 0 0 1 9.5 3Z" />
+										<path d="M7 5.5H6A2 2 0 0 0 4 7.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5a2 2 0 0 0-2-2h-1" />
+										<path d="m8.5 13 2 2 5-5" />
+									</svg>
+								)}
+								{item.icon === 'calendar' && (
+									<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+										<path d="M7 3v3" />
+										<path d="M17 3v3" />
+										<path d="M4.5 9h15" />
+										<rect x="4" y="5" width="16" height="16" rx="2.5" />
+										<path d="M8 13h3" />
+										<path d="M8 17h6" />
+									</svg>
+								)}
 							</div>
-							<h3 class="text-xl font-extrabold tracking-tight text-primary group-hover:text-secondary transition-colors">{item.title}</h3>
-							<p class="mt-4 leading-relaxed text-text-muted/80">{item.desc}</p>
+							<h3 class="text-xl font-extrabold tracking-tight text-primary transition-colors group-hover:text-secondary">{item.title}</h3>
+							<p class="mt-4 leading-relaxed text-text-muted/85">{item.desc}</p>
 						</article>
 					))}
 				</div>
