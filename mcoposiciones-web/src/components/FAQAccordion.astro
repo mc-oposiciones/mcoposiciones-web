@@ -1,6 +1,4 @@
 ---
-import SchemaOrg from './SchemaOrg.astro';
-
 interface FAQItem {
 	question: string;
 	answer: string;
@@ -9,15 +7,6 @@ interface Props {
 	items: FAQItem[];
 }
 const { items } = Astro.props;
-const faqSchema = {
-	'@context': 'https://schema.org',
-	'@type': 'FAQPage',
-	mainEntity: items.map((item) => ({
-		'@type': 'Question',
-		name: item.question,
-		acceptedAnswer: { '@type': 'Answer', text: item.answer },
-	})),
-};
 ---
 
 <div class="faq-accordion space-y-3">
@@ -37,7 +26,6 @@ const faqSchema = {
 		</div>
 	))}
 </div>
-<SchemaOrg schema={faqSchema} />
 <script>
 	document.querySelectorAll('.faq-accordion').forEach((accordion) => {
 		const triggers = accordion.querySelectorAll('.faq-trigger');

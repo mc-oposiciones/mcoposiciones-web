@@ -6,11 +6,14 @@ type FAQItem = {
 };
 
 const organization = {
-	'@type': 'EducationalOrganization',
+	'@type': ['Organization', 'EducationalOrganization'],
 	'@id': `${siteUrl}/#organization`,
 	name: 'MC Oposiciones',
 	url: siteUrl,
-	logo: `${siteUrl}/logo-icon.png`,
+	logo: {
+		'@type': 'ImageObject',
+		url: `${siteUrl}/logo-icon.png`,
+	},
 	description:
 		'Preparación online para oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social C1. Clases en directo, grupos reducidos y seguimiento cercano.',
 	telephone: '+34642170664',
@@ -36,7 +39,7 @@ const person = {
 	description:
 		'Preparadora especializada en oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social C1. Clases online en directo con grupos reducidos.',
 	url: `${siteUrl}/preparadora-oposiciones/`,
-	image: `${siteUrl}/_astro/maria-carmen.webp`,
+	image: `${siteUrl}/maria-carmen.jpg`,
 	worksFor: { '@id': `${siteUrl}/#organization` },
 	sameAs: [
 		'https://www.youtube.com/@mcoposiciones',
@@ -45,10 +48,10 @@ const person = {
 	],
 };
 
-function createFAQNode(faqItems: FAQItem[]) {
+function createFAQNode(faqItems: FAQItem[], pageId = `${siteUrl}/#faq`) {
 	return {
 		'@type': 'FAQPage',
-		'@id': `${siteUrl}/#faq`,
+		'@id': pageId,
 		mainEntity: faqItems.map((item) => ({
 			'@type': 'Question',
 			name: item.question,
@@ -62,9 +65,16 @@ function createFAQNode(faqItems: FAQItem[]) {
 
 export function withFAQSchema<T extends { '@graph'?: unknown[] }>(schema: T, faqItems: FAQItem[]) {
 	if (!faqItems.length) return schema;
+	const graph = schema['@graph'] ?? [];
+	const webPage = graph.find((node) => {
+		if (!node || typeof node !== 'object') return false;
+		const type = (node as { '@type'?: unknown })['@type'];
+		return type === 'WebPage';
+	}) as { '@id'?: string } | undefined;
+	const pageId = webPage?.['@id']?.replace(/#webpage$/, '#faq') ?? `${siteUrl}/#faq`;
 	return {
 		...schema,
-		'@graph': [...(schema['@graph'] ?? []), createFAQNode(faqItems)],
+		'@graph': [...graph, createFAQNode(faqItems, pageId)],
 	};
 }
 
@@ -263,6 +273,23 @@ export function createDualCoursePageSchema({
 
 export function createPricingPageSchema() {
 	const url = `${siteUrl}/cursos-precios/`;
+	const courses = [
+		{
+			name: 'Preparación Oposiciones Administrativo del Estado AGE C1',
+			description: 'Preparación online de AGE C1 con clases en directo.',
+			url: `${siteUrl}/oposiciones-administrativo-estado/`,
+		},
+		{
+			name: 'Preparación Oposiciones Administrativo Seguridad Social C1',
+			description: 'Preparación online de Seguridad Social C1.',
+			url: `${siteUrl}/oposiciones-seguridad-social/`,
+		},
+		{
+			name: 'Pack Preparación Conjunta AGE y Seguridad Social',
+			description: 'Preparación conjunta de AGE y Seguridad Social.',
+			url: `${siteUrl}/preparar-age-y-seguridad-social/`,
+		},
+	];
 	const offers = [
 		{ name: 'Curso Mensual', price: '100', url },
 		{ name: 'Curso Completo', price: '475', url },
@@ -283,6 +310,24 @@ export function createPricingPageSchema() {
 				description: 'Planes y precios para preparar Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1.',
 				about: { '@id': `${siteUrl}/#organization` },
 				inLanguage: 'es',
+			},
+			{
+				'@type': 'ItemList',
+				'@id': `${url}#course-list`,
+				name: 'Cursos de oposiciones AGE y Seguridad Social',
+				itemListElement: courses.map((course, index) => ({
+					'@type': 'ListItem',
+					position: index + 1,
+					url: course.url,
+					item: {
+						'@type': 'Course',
+						'@id': `${course.url}#course`,
+						name: course.name,
+						description: course.description,
+						url: course.url,
+						provider: { '@id': `${siteUrl}/#organization` },
+					},
+				})),
 			},
 			...offers.map((offer) => ({
 				'@type': 'Offer',
