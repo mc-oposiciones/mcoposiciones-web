@@ -121,7 +121,7 @@ El tercero es dejar ofimática para el final. Ya lo he dicho antes, pero merece 
 
 El cuarto es estudiar sin calendario de repasos. La memoria no funciona por acumulación infinita. Necesita vueltas. Si no programas los repasos, dependerás de acordarte de repasar, y eso suele fallar.
 
-## Por dónde empezar si estás a cero
+## Por dónde empezar si vas desde cero
 
 Si empiezas desde cero, comienza por la estructura general. Entiende los bloques, ubica las materias y trabaja la base jurídica. No hace falta dominar todo en el primer mes. Hace falta construir una rutina.
 

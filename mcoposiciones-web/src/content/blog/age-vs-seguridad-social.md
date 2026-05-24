@@ -69,16 +69,13 @@ Suele ser una opción interesante para personas con constancia, disponibilidad s
 
 ## Comparación rápida para orientarte
 
-| Aspecto | Administrativo del Estado | Seguridad Social |
-| --- | --- | --- |
-| Grupo | C1 | C1 |
-| Base común | Derecho administrativo y organización pública | Derecho administrativo y organización pública |
-| Tipo de dificultad | Temario amplio y ofimática | Temario específico y supuesto |
-| Parte que más preocupa | Ofimática | Aplicación práctica de normativa |
-| Perfil al que suele encajar | Quien acepta una preparación más variada | Quien prefiere profundizar en materia específica |
-| Riesgo habitual | Dejar informática para el final | Estudiar teoría sin casos |
+La diferencia se entiende mejor si no lo reducimos a una tabla. Las dos son oposiciones C1 y comparten una base importante de derecho administrativo, organización pública y procedimiento. La decisión no está tanto en el grupo o en la estabilidad, sino en el tipo de esfuerzo que vas a sostener.
 
-Esta tabla no decide por ti, pero ayuda a ver que no hablamos de una oposición “fácil” y otra “difícil”. Hablamos de dificultades diferentes.
+En Administrativo del Estado, el reto está en equilibrar un temario amplio con la ofimática. Es una preparación más variada y exige no dejar la parte práctica para el final.
+
+En Seguridad Social, el reto está en dominar la parte específica y aplicar la normativa a supuestos. No tener ofimática no significa que sea más sencilla: significa que la dificultad se concentra en otro sitio.
+
+Por eso no hablamos de una oposición “fácil” y otra “difícil”. Hablamos de dificultades distintas, y conviene elegir la que mejor encaja con tu forma de estudiar y tu disponibilidad real.
 
 ## Si empezara hoy, cómo lo pensaría
 
@@ -96,8 +93,8 @@ Antes de elegir, te propongo responder por escrito a estas preguntas:
 
 - ¿Cuántas horas reales puedo estudiar cada semana?
 - ¿Tolero mejor una materia amplia o una materia más específica?
-- ¿Estoy dispuesta a practicar ofimática desde el principio?
-- ¿Me siento cómoda aplicando normas a casos prácticos?
+- ¿Estoy dispuesto a practicar ofimática desde el principio?
+- ¿Me siento cómodo aplicando normas a casos prácticos?
 - ¿Necesito una preparación muy guiada o puedo organizarme sola?
 - ¿Quiero maximizar opciones aunque el plan sea más exigente?
 
@@ -113,7 +110,7 @@ En MC Oposiciones trabajamos precisamente estas tres posibilidades: [Administrat
 
 ## Resumen
 
-AGE puede ser mejor si buscas una oposición administrativa amplia y estás dispuesta a trabajar ofimática. Seguridad Social puede encajar si prefieres centrarte en normativa específica y supuesto práctico. Preparar ambas puede ser una buena estrategia si tienes tiempo y necesitas ampliar opciones.
+AGE puede ser mejor si buscas una oposición administrativa amplia y estás dispuesto a trabajar ofimática. Seguridad Social puede encajar si prefieres centrarte en normativa específica y supuesto práctico. Preparar ambas puede ser una buena estrategia si tienes tiempo y necesitas ampliar opciones.
 
 No hay una respuesta única. Hay una respuesta adecuada para tu situación. Y esa es la que conviene encontrar antes de empezar.
 
