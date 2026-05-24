@@ -291,11 +291,16 @@ export function createPricingPageSchema() {
 		},
 	];
 	const offers = [
-		{ name: 'Curso Mensual', price: '100', url },
-		{ name: 'Curso Completo', price: '475', url },
-		{ name: 'Parte General', price: '250', url },
-		{ name: 'Parte Específica Seguridad Social', price: '300', url },
-		{ name: 'Pack AGE + Seguridad Social', url: `${siteUrl}/preparar-age-y-seguridad-social/` },
+		{ name: 'AGE mensual', price: '100', url },
+		{ name: 'AGE curso completo', price: '475', url },
+		{ name: 'AGE parte general', price: '250', url },
+		{ name: 'AGE parte específica', price: '300', url },
+		{ name: 'Seguridad Social mensual', price: '100', url },
+		{ name: 'Seguridad Social curso completo', price: '475', url },
+		{ name: 'Seguridad Social parte general', price: '250', url },
+		{ name: 'Seguridad Social parte específica', price: '300', url },
+		{ name: 'Pack AGE + Seguridad Social mensual', price: '150', url: `${siteUrl}/preparar-age-y-seguridad-social/` },
+		{ name: 'Pack AGE + Seguridad Social curso completo', price: '650', url: `${siteUrl}/preparar-age-y-seguridad-social/` },
 	];
 
 	return {

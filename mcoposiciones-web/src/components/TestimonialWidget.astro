@@ -4,11 +4,9 @@ interface Props {
 }
 
 const { variant = 'slider' } = Astro.props;
-const widgetSrc = variant === 'grid'
-	? 'https://cdn.trustindex.io/loader.js?8215c7c72db2320b39167e0823a'
-	: 'https://cdn.trustindex.io/loader.js?d4cd7e27268d3191eb564e83a7b';
 ---
 
-<div class="trustindex-widget" data-review-widget={variant}>
-	<script defer async src={widgetSrc}></script>
+<div class="featurable-widget" data-review-widget={variant}>
+	<div id="featurable-6ad1c74f-aeee-4458-b04a-ab3853b7b914" data-featurable-async data-location-code="es"></div>
+	<script src="https://featurable.com/assets/bundle.js" defer charset="UTF-8"></script>
 </div>

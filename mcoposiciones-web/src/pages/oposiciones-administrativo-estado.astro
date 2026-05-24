@@ -76,8 +76,8 @@ const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 						Preparación online integral para una de las oposiciones con más plazas y recorrido dentro de la Administración Pública.
 					</p>
 					<div class="mt-8 flex flex-col gap-3 sm:flex-row">
-						<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
-							Ver cursos y precios
+						<a href="/cursos-precios/#age" class="inline-flex justify-center rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
+							Ver precios de AGE
 						</a>
 						<a href="/preparadora-age/" class="inline-flex justify-center rounded-xl border border-secondary px-6 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
 							Preparadora especializada en AGE
@@ -113,7 +113,7 @@ const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 			<div class="mx-auto max-w-7xl">
 				<div class="mb-12 max-w-3xl">
 					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Cómo se prepara AGE en MC Oposiciones</h2>
-					<p class="mt-4 text-text-muted">Esta página explica la oposición. Las modalidades y precios se concentran en una página aparte para evitar duplicidades.</p>
+					<p class="mt-4 text-text-muted">Esta página explica la oposición y te da una referencia rápida de precio. El detalle completo de modalidades está centralizado en la página de precios.</p>
 				</div>
 				<div class="grid gap-5 md:grid-cols-3">
 					{preparationBlocks.map((block) => (
@@ -122,6 +122,30 @@ const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 							<p class="mt-4 leading-relaxed text-text-muted">{block.text}</p>
 						</article>
 					))}
+				</div>
+				<div class="mt-10 rounded-2xl border border-secondary/20 bg-white p-6 shadow-sm md:flex md:items-center md:justify-between md:gap-8">
+					<div>
+						<p class="text-xs font-extrabold uppercase tracking-[0.18em] text-secondary">Modalidades AGE C1</p>
+						<h3 class="mt-2 text-2xl font-extrabold text-primary">Desde 100€/mes o 475€ el curso completo</h3>
+						<p class="mt-3 text-text-muted">
+							También puedes contratar solo la parte general o solo la parte específica si ya tienes una base previa.
+						</p>
+					</div>
+					<div class="mt-6 w-full md:mt-0 md:w-[22rem]">
+						<div class="grid grid-cols-2 divide-x divide-primary/10 border-y border-primary/8 py-4">
+							<div class="pr-5 text-center">
+								<p class="m-0 text-3xl font-black leading-none text-primary">100€</p>
+								<p class="m-0 mt-2 text-[11px] font-extrabold uppercase tracking-widest text-text-muted">mensual</p>
+							</div>
+							<div class="pl-5 text-center">
+								<p class="m-0 text-3xl font-black leading-none text-primary">475€</p>
+								<p class="m-0 mt-2 text-[11px] font-extrabold uppercase tracking-widest text-text-muted">curso completo</p>
+							</div>
+						</div>
+						<a href="/cursos-precios/#age" class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-secondary px-5 py-3 text-sm font-bold text-white no-underline transition-colors hover:bg-primary">
+							Ver detalle
+						</a>
+					</div>
 				</div>
 				<div class="mt-10 rounded-2xl border border-accent/30 bg-accent/10 p-6 md:flex md:items-center md:justify-between md:gap-8">
 					<div>

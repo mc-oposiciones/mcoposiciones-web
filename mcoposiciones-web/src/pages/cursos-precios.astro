@@ -6,59 +6,126 @@ import CTABanner from '../components/CTABanner.astro';
 import { createPricingPageSchema } from '../lib/schema';
 
 const schemaJson = JSON.stringify(createPricingPageSchema());
-const plans = [
+
+const pricingGroups = [
 	{
-		name: 'Mensual',
-		price: '100€',
-		detail: '/mes',
-		bestFor: 'Ritmo flexible',
-		description: 'Para empezar sin permanencia y mantener el control del ritmo de estudio.',
-		items: ['Clases online en directo', 'Grabaciones disponibles', 'Material y test por tema'],
-		href: '/contacto/',
+		id: 'age',
+		title: 'AGE',
+		subtitle: 'Administrativo del Estado C1',
+		description: 'Temario general, bloque propio de AGE y ofimática.',
+		tone: 'green',
+		rows: [
+			{
+				modality: 'Mensual',
+				price: '100€',
+				detail: '/mes',
+				includes: 'Preparación completa mes a mes',
+				note: 'Sin permanencia. Incluye clases en directo, grabaciones, material y test.',
+				href: '/contacto/',
+			},
+			{
+				modality: 'Curso completo',
+				price: '475€',
+				detail: 'pago único',
+				includes: 'Todo lo incluido en la modalidad mensual',
+				note: 'Acceso hasta el examen con material, clases, grabaciones, test y simulacros.',
+				href: '/contacto/',
+				highlight: true,
+			},
+			{
+				modality: 'Solo parte general',
+				price: '250€',
+				detail: 'pago único',
+				includes: 'Bloques comunes de la oposición',
+				note: 'Pensado para quien solo necesita reforzar la base general.',
+				href: '/contacto/',
+			},
+			{
+				modality: 'Solo parte específica',
+				price: '300€',
+				detail: 'pago único',
+				includes: 'Bloque propio de AGE y ofimática',
+				note: 'Para quienes ya tienen base general y quieren completar AGE.',
+				href: '/contacto/',
+			},
+		],
 	},
 	{
-		name: 'Completo',
-		price: '475€',
-		detail: 'pago único',
-		bestFor: 'Preparación estable',
-		description: 'La opción más rentable si tienes claro que vas a preparar hasta el examen.',
-		items: ['Acceso hasta el examen', 'Material completo incluido', 'Simulacros de examen real'],
-		href: '/contacto/',
-		highlight: true,
+		id: 'seguridad-social',
+		title: 'Seguridad Social',
+		subtitle: 'Administrativo de la Seguridad Social C1',
+		description: 'Temario general, parte específica y supuesto práctico.',
+		tone: 'green',
+		rows: [
+			{
+				modality: 'Mensual',
+				price: '100€',
+				detail: '/mes',
+				includes: 'Preparación completa mes a mes',
+				note: 'Sin permanencia. Incluye clases en directo, grabaciones, material y test.',
+				href: '/contacto/',
+			},
+			{
+				modality: 'Curso completo',
+				price: '475€',
+				detail: 'pago único',
+				includes: 'Todo lo incluido en la modalidad mensual',
+				note: 'Acceso hasta el examen con material, clases, grabaciones, test y simulacros.',
+				href: '/contacto/',
+				highlight: true,
+			},
+			{
+				modality: 'Solo parte general',
+				price: '250€',
+				detail: 'pago único',
+				includes: 'Bloques comunes de la oposición',
+				note: 'Pensado para quien solo necesita reforzar la base general.',
+				href: '/contacto/',
+			},
+			{
+				modality: 'Solo parte específica',
+				price: '300€',
+				detail: 'pago único',
+				includes: 'Temario específico y supuesto práctico',
+				note: 'Para quienes ya tienen base general o vienen de AGE.',
+				href: '/contacto/',
+			},
+		],
 	},
 	{
-		name: 'Pack AGE + SS',
-		price: 'Consultar',
-		detail: 'doble vía',
-		bestFor: 'Maximizar opciones',
-		description: 'Preparación conjunta para aprovechar el temario común y abrir dos oportunidades.',
-		items: ['Planificación conjunta', 'Temario común optimizado', 'Ahorro de tiempo de estudio'],
-		href: '/preparar-age-y-seguridad-social/',
-	},
-	{
-		name: 'Parte general',
-		price: '250€',
-		detail: 'pago único',
-		bestFor: 'Refuerzo concreto',
-		description: 'Bloques comunes para AGE o Seguridad Social cuando no necesitas el curso completo.',
-		items: ['Temario general', 'Batería de test', 'Clases grabadas'],
-		href: '/contacto/',
-	},
-	{
-		name: 'Parte específica SS',
-		price: '300€',
-		detail: 'pago único',
-		bestFor: 'Alumnos que vienen de AGE',
-		description: 'Los temas propios de Seguridad Social y el trabajo del supuesto práctico.',
-		items: ['Legislación específica SS', 'Supuestos prácticos', 'Esquemas de apoyo'],
-		href: '/contacto/',
+		id: 'pack-age-ss',
+		title: 'Pack AGE + Seguridad Social',
+		subtitle: 'Preparación conjunta',
+		description: 'Base común compartida y bloques propios de cada oposición.',
+		tone: 'orange',
+		rows: [
+			{
+				modality: 'Mensual',
+				price: '150€',
+				detail: '/mes',
+				includes: 'Preparación conjunta mes a mes',
+				note: 'Sin permanencia. Incluye base común, bloque AGE, bloque Seguridad Social y planificación conjunta.',
+				href: '/contacto/',
+			},
+			{
+				modality: 'Curso completo',
+				price: '650€',
+				detail: 'pago único',
+				includes: 'Todo lo incluido en la modalidad mensual conjunta',
+				note: 'Acceso hasta el examen con el plan completo para preparar ambas oposiciones.',
+				href: '/contacto/',
+				highlight: true,
+			},
+		],
 	},
 ];
 
 const faqItems = [
-	{ question: '¿Hay permanencia?', answer: 'No. La modalidad mensual no tiene compromiso de permanencia.' },
-	{ question: '¿Qué incluye el pago único?', answer: 'Incluye acceso al curso, clases en directo, grabaciones, material, test y simulacros hasta el examen.' },
-	{ question: '¿Puedo cambiar de modalidad?', answer: 'Sí, puedes consultar tu caso con Mª Carmen para elegir la modalidad que más te convenga.' },
+	{ question: '¿Hay permanencia?', answer: 'No. Las modalidades mensuales no tienen compromiso de permanencia.' },
+	{ question: '¿Qué incluye el curso completo?', answer: 'Incluye lo mismo que la modalidad mensual, pero en pago único y con acceso hasta el examen: clases en directo, grabaciones, material, test y simulacros.' },
+	{ question: '¿Puedo contratar solo una parte?', answer: 'Sí. Puedes contratar solo la parte general o solo la parte específica si ya tienes trabajada la otra parte.' },
+	{ question: '¿Qué diferencia hay entre el pack y preparar solo una oposición?', answer: 'El pack permite preparar AGE y Seguridad Social con una planificación común, aprovechando el temario compartido y separando los bloques propios de cada oposición.' },
+	{ question: '¿Qué modalidad me conviene?', answer: 'Depende de tu punto de partida, horas disponibles y objetivo. Si tienes dudas, puedes consultar tu caso antes de matricularte.' },
 ];
 ---
 <BaseLayout
@@ -71,103 +138,121 @@ const faqItems = [
 		<section class="px-4 py-16 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Cursos y precios', href: '' }]} />
-				<div class="mt-12 grid gap-12 lg:grid-cols-[1fr_24rem] lg:items-center">
-					<div class="max-w-4xl">
-						<p class="text-sm font-bold uppercase tracking-[0.2em] text-secondary/90">Modalidades de preparación</p>
-						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Planes y precios</h1>
-						<p class="mt-6 text-lg leading-relaxed text-text-muted/90 md:text-xl lg:max-w-2xl">
-							Todas las modalidades incluyen clases en directo, material actualizado y acompañamiento personalizado. Elige el formato que mejor encaje con tu ritmo.
-						</p>
-					</div>
-					<div class="rounded-[2rem] border border-primary/5 bg-white p-8 shadow-premium md:p-10">
-						<p class="text-xs font-bold uppercase tracking-widest text-primary/40">Desde solo</p>
-						<div class="mt-4 flex items-baseline gap-2">
-							<span class="text-5xl font-black tracking-tighter text-primary">100€</span>
-							<span class="text-lg font-bold text-text-muted/60">/mes</span>
-						</div>
-						<p class="mt-4 text-sm leading-relaxed text-text-muted/80 italic">Sin permanencia mínima. Cancela cuando quieras.</p>
-					</div>
-				</div>
+				<header class="mt-12 max-w-4xl">
+					<p class="text-sm font-bold uppercase tracking-[0.2em] text-secondary/90">Modalidades de preparación</p>
+					<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Planes y precios</h1>
+					<p class="mt-6 text-lg leading-relaxed text-text-muted/90 md:text-xl lg:max-w-3xl">
+						Elige entre preparación mensual, curso completo en pago único o módulos concretos. Las modalidades completas incluyen clases en directo, grabaciones, material actualizado y seguimiento.
+					</p>
+				</header>
 			</div>
 		</section>
 
-		<section class="bg-white/50 px-4 py-24 sm:px-6 lg:px-8">
+		<section class="bg-white/50 px-4 py-20 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="divide-y divide-primary/5 overflow-hidden rounded-[2.5rem] border border-primary/5 bg-white shadow-premium">
-					{plans.map((plan) => (
-						<article class={`grid gap-8 p-8 md:grid-cols-[1.4fr_0.8fr_1fr_auto] md:items-center md:p-12 transition-colors duration-500 hover:bg-secondary/[0.02] ${plan.highlight ? 'bg-secondary/[0.04] border-l-4 border-l-secondary' : 'border-l-4 border-l-transparent'}`}>
-							<div class="max-w-md">
-								<div class="flex flex-wrap items-center gap-3">
-									<h2 class="text-2xl font-extrabold tracking-tight text-primary">{plan.name}</h2>
-									{plan.highlight && (
-										<span class="rounded-full bg-secondary/15 border border-secondary/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-secondary">Más popular</span>
-									)}
-								</div>
-								<p class="mt-4 text-base leading-relaxed text-text-muted/90">{plan.description}</p>
-							</div>
-							<div>
-								<p class="text-[10px] font-bold uppercase tracking-widest text-primary/40">{plan.bestFor}</p>
-								<div class="mt-2 flex items-baseline gap-1">
-									<p class="text-4xl font-black tracking-tighter text-primary">{plan.price}</p>
-									<p class="text-sm font-bold text-text-muted/60">{plan.detail}</p>
+				<div class="space-y-10">
+					{pricingGroups.map((group) => (
+						<section id={group.id} class={`scroll-mt-28 overflow-hidden rounded-2xl border bg-white shadow-premium ${group.tone === 'orange' ? 'border-accent/35' : 'border-secondary/20'}`}>
+							<div class={`border-b px-6 py-6 md:px-8 ${group.tone === 'orange' ? 'border-accent/20 bg-accent/10' : 'border-secondary/15 bg-bg-light/55'}`}>
+								<div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+									<div>
+										<p class={`text-xs font-extrabold uppercase tracking-[0.18em] ${group.tone === 'orange' ? 'text-accent' : 'text-secondary'}`}>{group.subtitle}</p>
+										<h2 class="mt-2 text-2xl font-extrabold text-primary md:text-3xl">{group.title}</h2>
+									</div>
+									<p class={`inline-flex rounded-full border px-4 py-2 text-xs font-bold leading-none md:whitespace-nowrap ${group.tone === 'orange' ? 'border-accent/20 bg-white/65 text-accent' : 'border-secondary/20 bg-white/70 text-secondary'}`}>{group.description}</p>
 								</div>
 							</div>
-							<ul class="grid gap-3 py-2">
-								{plan.items.map((item) => (
-									<li class="flex items-center gap-3 text-sm font-medium text-text-main/80">
-										<span class="h-1.5 w-1.5 shrink-0 rounded-full bg-secondary shadow-[0_0_8px_rgba(42,157,143,0.4)]"></span>
-										<span>{item}</span>
-									</li>
+
+							<div class="hidden md:block">
+								<table class="w-full text-left">
+									<thead>
+										<tr class="border-b border-primary/6 text-xs font-extrabold uppercase tracking-widest text-primary/50">
+											<th class="px-8 py-4">Modalidad</th>
+											<th class="px-8 py-4">Incluye</th>
+											<th class="px-8 py-4">Precio</th>
+											<th class="px-8 py-4 text-right"><span class="sr-only">Acción</span></th>
+										</tr>
+									</thead>
+									<tbody class="divide-y divide-primary/6">
+										{group.rows.map((row) => (
+											<tr class={`transition-colors hover:bg-bg-light/45 ${row.highlight ? (group.tone === 'orange' ? 'bg-accent/8' : 'bg-secondary/6') : ''}`}>
+												<td class="px-8 py-6 align-top">
+													<div class="flex items-center gap-3">
+														<p class="m-0 font-extrabold text-primary">{row.modality}</p>
+														{row.highlight && (
+															<span class={`rounded-full border px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-widest ${group.tone === 'orange' ? 'border-accent/30 bg-accent/15 text-accent' : 'border-secondary/25 bg-secondary/10 text-secondary'}`}>Pago único</span>
+														)}
+													</div>
+													<p class="m-0 mt-2 text-sm leading-relaxed text-text-muted">{row.note}</p>
+												</td>
+												<td class="px-8 py-6 align-top">
+													<p class="m-0 max-w-md text-sm font-semibold leading-relaxed text-text-main/85">{row.includes}</p>
+												</td>
+												<td class="whitespace-nowrap px-8 py-6 align-top">
+													<div class="flex items-baseline gap-1">
+														<p class="m-0 text-3xl font-black tracking-tight text-primary">{row.price}</p>
+														<p class="m-0 text-sm font-bold text-text-muted/65">{row.detail}</p>
+													</div>
+												</td>
+												<td class="px-8 py-6 text-right align-top">
+													<a href={row.href} class={`inline-flex justify-center rounded-xl px-5 py-3 text-sm font-bold no-underline transition-colors ${group.tone === 'orange' ? 'bg-accent text-primary hover:bg-primary hover:text-white' : 'border border-secondary/25 text-secondary hover:bg-secondary hover:text-white'}`}>
+														Consultar
+													</a>
+												</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
+
+							<div class="grid gap-0 divide-y divide-primary/6 md:hidden">
+								{group.rows.map((row) => (
+									<article class={`p-6 ${row.highlight ? (group.tone === 'orange' ? 'bg-accent/8' : 'bg-secondary/6') : ''}`}>
+										<div class="flex items-start justify-between gap-4">
+											<div>
+												<h3 class="text-lg font-extrabold text-primary">{row.modality}</h3>
+												<p class="mt-2 text-sm leading-relaxed text-text-muted">{row.includes}</p>
+											</div>
+											{row.highlight && (
+												<span class={`shrink-0 rounded-full border px-2 py-1 text-[9px] font-extrabold uppercase tracking-widest ${group.tone === 'orange' ? 'border-accent/30 bg-accent/15 text-accent' : 'border-secondary/25 bg-secondary/10 text-secondary'}`}>Pago único</span>
+											)}
+										</div>
+										<p class="mt-4 text-sm leading-relaxed text-text-muted">{row.note}</p>
+										<div class="mt-5 flex items-center justify-between gap-4">
+											<div class="flex items-baseline gap-1">
+												<p class="m-0 text-3xl font-black tracking-tight text-primary">{row.price}</p>
+												<p class="m-0 text-sm font-bold text-text-muted/65">{row.detail}</p>
+											</div>
+											<a href={row.href} class={`inline-flex shrink-0 justify-center rounded-xl px-4 py-2.5 text-sm font-bold no-underline transition-colors ${group.tone === 'orange' ? 'bg-accent text-primary hover:bg-primary hover:text-white' : 'border border-secondary/25 text-secondary hover:bg-secondary hover:text-white'}`}>
+												Consultar
+											</a>
+										</div>
+									</article>
 								))}
-							</ul>
-							<div class="flex">
-								<a href={plan.href} class={`inline-flex w-full justify-center rounded-xl px-8 py-4 text-sm font-bold no-underline shadow-button transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] ${plan.highlight ? 'bg-secondary text-white hover:bg-primary' : 'border border-secondary/30 text-secondary hover:bg-secondary/5'}`}>
-									Consultar plan
-								</a>
 							</div>
-						</article>
+						</section>
 					))}
 				</div>
 			</div>
 		</section>
 
-		<section class="px-4 py-24 sm:px-6 lg:px-8">
+		<section class="px-4 py-20 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-16 max-w-3xl">
-					<h2 class="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">Comparativa detallada</h2>
-					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">Analiza qué incluye cada modalidad para tomar la decisión que mejor se adapte a tu preparación.</p>
-				</div>
-				<div class="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-text-muted/60 lg:hidden">
-					<svg class="h-4 w-4 animate-pulse text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-					<span>Desliza para ver la tabla completa</span>
-				</div>
-				<div class="overflow-hidden rounded-3xl border border-primary/5 bg-white shadow-premium">
-					<div class="overflow-x-auto">
-						<table class="w-full text-left">
-							<thead>
-								<tr class="bg-bg-light/40 border-b border-primary/5">
-									<th class="p-8 text-sm font-bold uppercase tracking-widest text-primary/60">Concepto</th>
-									<th class="p-8 text-sm font-extrabold text-primary md:text-lg">Mensual</th>
-									<th class="p-8 text-sm font-extrabold text-primary md:text-lg">Pago único</th>
-									<th class="p-8 text-sm font-extrabold text-primary md:text-lg">Módulos</th>
-								</tr>
-							</thead>
-							<tbody class="divide-y divide-primary/5">
-								{[
-									{ label: 'Clases en directo', m: 'Sí', u: 'Sí', mo: 'Grabadas' },
-									{ label: 'Resolución de dudas', m: 'Directa', u: 'Prioritaria', mo: 'Email' },
-									{ label: 'Acceso al material', m: 'Mes a mes', u: 'Hasta el examen', mo: 'Por módulo' },
-									{ label: 'Simulacros examen', m: 'Sí', u: 'Sí', mo: 'No incluidos' }
-								].map((row) => (
-									<tr class="transition-colors duration-200 odd:bg-white even:bg-bg-light/10 hover:bg-bg-light/20">
-										<td class="p-8 font-bold text-primary">{row.label}</td>
-										<td class="p-8 text-secondary font-bold">{row.m}</td>
-										<td class="p-8 text-secondary font-bold">{row.u}</td>
-										<td class="p-8 text-text-muted/70 font-semibold">{row.mo}</td>
-									</tr>
-								))}
-							</tbody>
-						</table>
+				<div class="grid gap-8 rounded-2xl border border-primary/8 bg-white p-6 shadow-premium md:grid-cols-3 md:p-8">
+					<div>
+						<p class="text-xs font-extrabold uppercase tracking-widest text-secondary">Mensual</p>
+						<h2 class="mt-2 text-xl font-extrabold text-primary">Flexibilidad</h2>
+						<p class="mt-3 text-sm leading-relaxed text-text-muted">Pagas mes a mes y puedes cancelar cuando lo necesites. Es la opción más flexible.</p>
+					</div>
+					<div>
+						<p class="text-xs font-extrabold uppercase tracking-widest text-secondary">Curso completo</p>
+						<h2 class="mt-2 text-xl font-extrabold text-primary">Pago único</h2>
+						<p class="mt-3 text-sm leading-relaxed text-text-muted">Incluye todo lo de la mensual y acceso hasta el examen con una única matrícula.</p>
+					</div>
+					<div>
+						<p class="text-xs font-extrabold uppercase tracking-widest text-accent">Pack AGE + SS</p>
+						<h2 class="mt-2 text-xl font-extrabold text-primary">Doble preparación</h2>
+						<p class="mt-3 text-sm leading-relaxed text-text-muted">Pensado para aprovechar el temario común y trabajar de forma separada los bloques propios.</p>
 					</div>
 				</div>
 			</div>
