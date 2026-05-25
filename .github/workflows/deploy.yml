@@ -1,4 +1,4 @@
-name: Deploy staging to GitHub Pages
+name: Deploy production to GitHub Pages
 
 on:
   push:
@@ -38,8 +38,6 @@ jobs:
       - name: Build with Astro
         working-directory: mcoposiciones-web
         run: npm run build
-        env:
-          PUBLIC_SITE_ENV: staging
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

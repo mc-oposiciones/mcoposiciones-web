@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { createBlogIndexSchema } from '../../lib/schema';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
@@ -17,12 +18,14 @@ const categorySlug = (category: string) =>
 		.replace(/^-|-$/g, '');
 const categoryLabel = (category: string) =>
 	category === 'Preparacion y Estudio' ? 'Preparación y Estudio' : category;
+const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 ---
 
 <BaseLayout
 	title="Blog sobre Oposiciones AGE y Seguridad Social | MC Oposiciones"
 	description="Artículos sobre las oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social. Temario, convocatorias, supuestos prácticos y consejos de preparación."
 	canonicalUrl="https://mcoposiciones.com/blog/"
+	schemaJson={schemaJson}
 >
 	<main class="overflow-x-hidden pt-24">
 		<section class="px-4 py-16 sm:px-6 lg:px-8">

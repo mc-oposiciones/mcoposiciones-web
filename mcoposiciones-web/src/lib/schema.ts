@@ -346,3 +346,94 @@ export function createPricingPageSchema() {
 		],
 	};
 }
+
+export function createBlogIndexSchema(posts: Array<{ id: string; data: { h1: string; description: string; pubDate: Date; updatedDate?: Date } }>) {
+	const url = `${siteUrl}/blog/`;
+	return {
+		'@context': 'https://schema.org',
+		'@graph': [
+			organization,
+			person,
+			{
+				'@type': 'CollectionPage',
+				'@id': `${url}#webpage`,
+				url,
+				name: 'Blog sobre oposiciones AGE y Seguridad Social',
+				description:
+					'Guias y articulos sobre oposiciones de Administrativo del Estado, Administrativo de la Seguridad Social, temario, estudio y preparacion online.',
+				isPartOf: { '@id': `${siteUrl}/#website` },
+				about: [{ '@id': `${siteUrl}/#organization` }, { '@id': `${siteUrl}/preparadora-oposiciones/#person` }],
+				inLanguage: 'es',
+				mainEntity: { '@id': `${url}#item-list` },
+			},
+			{
+				'@type': 'ItemList',
+				'@id': `${url}#item-list`,
+				name: 'Articulos de oposiciones AGE y Seguridad Social',
+				itemListElement: posts.map((post, index) => ({
+					'@type': 'ListItem',
+					position: index + 1,
+					url: `${siteUrl}/blog/${post.id}/`,
+					item: {
+						'@type': 'BlogPosting',
+						'@id': `${siteUrl}/blog/${post.id}/#article`,
+						headline: post.data.h1,
+						description: post.data.description,
+						datePublished: post.data.pubDate.toISOString(),
+						dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+						url: `${siteUrl}/blog/${post.id}/`,
+						author: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
+						publisher: { '@id': `${siteUrl}/#organization` },
+					},
+				})),
+			},
+		],
+	};
+}
+
+export function createSampleClassesSchema() {
+	const url = `${siteUrl}/clases-muestra/`;
+	return {
+		'@context': 'https://schema.org',
+		'@graph': [
+			organization,
+			person,
+			{
+				'@type': 'WebPage',
+				'@id': `${url}#webpage`,
+				url,
+				name: 'Clases de muestra gratuitas de oposiciones AGE y Seguridad Social',
+				description:
+					'Clases de muestra y temas gratis para valorar el metodo de preparacion online de AGE C1 y Seguridad Social C1.',
+				about: [{ '@id': `${siteUrl}/#organization` }, { '@id': `${siteUrl}/preparadora-oposiciones/#person` }],
+				inLanguage: 'es',
+				mainEntity: { '@id': `${url}#resources` },
+			},
+			{
+				'@type': 'ItemList',
+				'@id': `${url}#resources`,
+				name: 'Recursos gratuitos de oposiciones AGE y Seguridad Social',
+				itemListElement: [
+					{
+						'@type': 'ListItem',
+						position: 1,
+						url: `${url}#clases`,
+						name: 'Clases de muestra en video',
+					},
+					{
+						'@type': 'ListItem',
+						position: 2,
+						url: `${siteUrl}/resources/tema-muestra-age.pdf`,
+						name: 'Tema de muestra AGE',
+					},
+					{
+						'@type': 'ListItem',
+						position: 3,
+						url: `${siteUrl}/resources/tema-muestra-seguridad-social.pdf`,
+						name: 'Tema de muestra Seguridad Social',
+					},
+				],
+			},
+		],
+	};
+}

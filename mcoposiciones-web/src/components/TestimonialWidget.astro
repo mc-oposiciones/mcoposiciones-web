@@ -8,5 +8,40 @@ const { variant = 'slider' } = Astro.props;
 
 <div class="featurable-widget" data-review-widget={variant}>
 	<div id="featurable-6ad1c74f-aeee-4458-b04a-ab3853b7b914" data-featurable-async data-location-code="es"></div>
-	<script src="https://featurable.com/assets/bundle.js" defer charset="UTF-8"></script>
 </div>
+
+<script is:inline>
+	(() => {
+		const loadReviews = () => {
+			if (window.__mcFeaturableLoaded) return;
+			window.__mcFeaturableLoaded = true;
+
+			const script = document.createElement('script');
+			script.src = 'https://featurable.com/assets/bundle.js';
+			script.defer = true;
+			script.charset = 'UTF-8';
+			document.head.appendChild(script);
+		};
+
+		const initReviewWidget = () => {
+			const widget = document.querySelector('.featurable-widget');
+			if (!widget) return;
+
+			if (!('IntersectionObserver' in window)) {
+				loadReviews();
+				return;
+			}
+
+			const observer = new IntersectionObserver((entries) => {
+				if (!entries.some((entry) => entry.isIntersecting)) return;
+				observer.disconnect();
+				loadReviews();
+			}, { rootMargin: '320px 0px' });
+
+			observer.observe(widget);
+		};
+
+		document.addEventListener('astro:page-load', initReviewWidget);
+		initReviewWidget();
+	})();
+</script>

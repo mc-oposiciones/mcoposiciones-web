@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import CTABanner from '../components/CTABanner.astro';
+import { createSampleClassesSchema } from '../lib/schema';
+
 const videos = [
 	{ id: '-sMHGWjsHiI', title: 'Cómo hacer un supuesto práctico — Oposiciones Seguridad Social', category: 'SS', text: 'Clase centrada en el supuesto práctico, una parte decisiva del examen de Seguridad Social.' },
 	{ id: '22FfcbV_1X8', title: 'El Delegado y Subdelegado del Gobierno — Temario AGE', category: 'AGE y SS', text: 'Tema común dentro de organización administrativa, útil tanto para AGE como para Seguridad Social.' },
@@ -23,11 +25,13 @@ const sampleTopics = [
 		href: '/resources/tema-muestra-seguridad-social.pdf',
 	},
 ];
+const schemaJson = JSON.stringify(createSampleClassesSchema());
 ---
 <BaseLayout
 	title="Clases de Muestra Gratuitas — Oposiciones AGE y Seguridad Social | MC Oposiciones"
 	description="Accede gratis a clases de muestra de las oposiciones AGE y Seguridad Social con Mª Carmen. Comprueba el método antes de inscribirte."
 	canonicalUrl="https://mcoposiciones.com/clases-muestra/"
+	schemaJson={schemaJson}
 >
 	<main class="overflow-x-hidden pt-24">
 		<section class="px-4 py-16 sm:px-6 lg:px-8">

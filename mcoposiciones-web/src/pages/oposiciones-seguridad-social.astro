@@ -7,7 +7,8 @@ import InfoStepsCard from '../components/InfoStepsCard.astro';
 import { createCoursePageSchema, withFAQSchema } from '../lib/schema';
 
 const examFacts = [
-	'1.456 plazas libres',
+	'1.056 plazas libres',
+	'400 promoción interna',
 	'Examen: 28 junio 2026',
 	'Sin méritos: solo nota',
 	'Sin prueba de ofimática',
@@ -55,13 +56,13 @@ const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 	pageName: 'Preparación oposiciones Administrativo de la Seguridad Social C1',
 	pageDescription: 'Preparación online para Administrativo de la Seguridad Social C1 con temario específico, test, supuesto práctico y clases en directo.',
 	courseName: 'Preparación Oposiciones Administrativo Seguridad Social C1',
-	courseDescription: 'Preparación online en directo para las oposiciones de Administrativo de la Seguridad Social C1 2026. Temario específico, supuesto práctico y planificación hasta el examen.',
+	courseDescription: 'Preparación online en directo para las oposiciones de Administrativo de la Seguridad Social C1 2026. 1.056 plazas de acceso libre, temario específico, supuesto práctico y planificación hasta el examen.',
 }), faqItems));
 ---
 
 <BaseLayout
 	title="Preparadora Oposiciones Administrativo Seguridad Social C1 2026 | MC Oposiciones"
-	description="Prepara Seguridad Social C1 2026 con Mª Carmen. 1.456 plazas, examen 28 junio, clases online en directo y temario específico actualizado."
+	description="Prepara Seguridad Social C1 2026 con Mª Carmen. 1.056 plazas libres, examen 28 junio, clases online en directo y temario específico actualizado."
 	canonicalUrl="https://mcoposiciones.com/oposiciones-seguridad-social/"
 	schemaJson={schemaJson}
 >
