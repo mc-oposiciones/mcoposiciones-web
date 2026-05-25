@@ -26,8 +26,6 @@
 	--transition-premium: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* TODO: Añadir @font-face local cuando existan /public/fonts/montserrat.woff2 e /public/fonts/inter.woff2. */
-
 @layer base {
 	html {
 		scroll-behavior: smooth;
@@ -119,5 +117,26 @@
 		padding: 1.5rem;
 		font-style: italic;
 		color: var(--color-text-muted);
+	}
+
+	.featurable-widget {
+		margin-block: -0.75rem;
+		overflow: hidden;
+	}
+
+	.featurable-widget > div {
+		margin-block: 0 !important;
+		padding-block: 0 !important;
+	}
+
+	.featurable-widget iframe,
+	.featurable-widget [data-featurable-async],
+	.featurable-widget [class*="featurable"] {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	.featurable-widget[data-review-widget="slider"] {
+		margin-block: -1.25rem;
 	}
 }

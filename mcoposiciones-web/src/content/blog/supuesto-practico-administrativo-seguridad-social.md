@@ -155,7 +155,7 @@ Es normal. El objetivo inicial no es acertar todo, sino aprender a razonar. Si c
 
 El supuesto práctico de Seguridad Social se prepara con método, no con improvisación. Necesita teoría, casos, lectura activa, corrección y práctica progresiva.
 
-Mi consejo es que no esperes a sentirte preparada al cien por cien para empezar a practicar. Esa seguridad no aparece antes de hacer supuestos; aparece precisamente al corregirlos bien y repetir el proceso. Empieza con casos pequeños, entiende tus errores y aumenta la dificultad poco a poco.
+Mi consejo es que no esperes a sentirte preparado al cien por cien para empezar a practicar. Esa seguridad no aparece antes de hacer supuestos; aparece precisamente al corregirlos bien y repetir el proceso. Empieza con casos pequeños, entiende tus errores y aumenta la dificultad poco a poco.
 
 Si lo trabajas desde el principio como una forma de entender la materia, deja de ser una amenaza final y se convierte en una parte más de la preparación.
 

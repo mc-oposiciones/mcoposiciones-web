@@ -36,15 +36,21 @@ const routes = [
 const method = [
 	{
 		title: 'Clases en directo',
-		text: 'Explicaciones online, grabaciones y resolución de dudas para avanzar con estructura.',
+		text: 'Explicaciones online para entender la ley, resolver el enfoque de cada tema y saber qué exige realmente el examen.',
+		detail: 'Las clases quedan grabadas para que puedas repasar sin perder el ritmo.',
+		icon: 'video',
 	},
 	{
 		title: 'Material actualizado',
-		text: 'Temario, test, esquemas y simulacros ajustados al programa de AGE y Seguridad Social.',
+		text: 'Temario, test, esquemas, flashcards y simulacros ajustados al programa de AGE y Seguridad Social.',
+		detail: 'Trabajas con recursos ordenados, no con una acumulación de documentos sueltos.',
+		icon: 'book',
 	},
 	{
 		title: 'Seguimiento cercano',
-		text: 'Grupos reducidos y planificación realista según tu punto de partida y disponibilidad.',
+		text: 'Grupos reducidos y planificación realista según tu punto de partida, disponibilidad y fecha objetivo.',
+		detail: 'La preparación se organiza semana a semana para avanzar con constancia.',
+		icon: 'calendar',
 	},
 ];
 
@@ -81,7 +87,7 @@ const faqItems = [
 	},
 	{
 		question: '¿Qué modalidad me conviene?',
-		answer: 'Puedes elegir mensual, curso completo, módulos o preparación conjunta. Si tienes dudas, lo más razonable es consultar tu caso antes de matricularte.',
+		answer: 'Puedes elegir mensual, curso completo, módulos o preparación conjunta. Si tienes dudas, lo más razonable es consultar tu caso antes de inscribirte.',
 	},
 ];
 
@@ -195,21 +201,55 @@ const schemaJson = JSON.stringify(withFAQSchema(createHomeSchema(), faqItems));
 
 		<section class="px-4 py-20 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+				<div class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
 					<div>
 						<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Un método pensado para estudiar con orden</h2>
 						<p class="mt-6 text-lg leading-relaxed text-text-muted">
 							Preparar una oposición no es acumular PDFs. Es entender el temario, practicar de forma constante y saber dónde poner el esfuerzo cada semana.
 						</p>
+						<div class="mt-8 grid gap-3 border-l-2 border-secondary/20 pl-5">
+							<p class="text-sm font-bold uppercase tracking-[0.16em] text-secondary">La idea es sencilla</p>
+							<p class="text-base leading-relaxed text-text-muted/90">Cada clase, material y simulacro tiene una función dentro del plan: explicar, consolidar, repasar o entrenar examen.</p>
+						</div>
 						<a href="/preparadora-oposiciones/" data-astro-reload class="mt-8 inline-flex rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
 							Conoce a Mª Carmen
 						</a>
 					</div>
 					<div class="grid gap-4">
 						{method.map((item) => (
-							<article class="rounded-2xl border border-primary/10 bg-white p-6">
-								<h3 class="text-xl font-extrabold text-primary">{item.title}</h3>
-								<p class="mt-3 leading-relaxed text-text-muted">{item.text}</p>
+							<article class="group rounded-2xl border border-primary/10 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-secondary/25 hover:shadow-premium">
+								<div class="flex gap-5">
+									<div class="flex h-13 w-13 shrink-0 items-center justify-center rounded-xl border border-secondary/15 bg-bg-light text-secondary transition-colors group-hover:bg-secondary group-hover:text-white">
+										{item.icon === 'video' && (
+											<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+												<path d="m16 13 5.2 3.5a.5.5 0 0 0 .8-.4V7.9a.5.5 0 0 0-.8-.4L16 11" />
+												<rect x="3" y="6" width="13" height="12" rx="2" />
+											</svg>
+										)}
+										{item.icon === 'book' && (
+											<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+												<path d="M4 19.5V5.8A2.8 2.8 0 0 1 6.8 3H20v17H6.8A2.8 2.8 0 0 0 4 22.8" />
+												<path d="M8 7h7" />
+												<path d="M8 11h8" />
+											</svg>
+										)}
+										{item.icon === 'calendar' && (
+											<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+												<path d="M7 3v3" />
+												<path d="M17 3v3" />
+												<rect x="4" y="5" width="16" height="16" rx="2.5" />
+												<path d="M4.5 9h15" />
+												<path d="M8 14h3" />
+												<path d="M8 18h6" />
+											</svg>
+										)}
+									</div>
+									<div>
+										<h3 class="text-xl font-extrabold text-primary">{item.title}</h3>
+										<p class="mt-2 leading-relaxed text-text-muted">{item.text}</p>
+										<p class="mt-3 text-sm font-semibold leading-relaxed text-primary/80">{item.detail}</p>
+									</div>
+								</div>
 							</article>
 						))}
 					</div>
@@ -219,9 +259,9 @@ const schemaJson = JSON.stringify(withFAQSchema(createHomeSchema(), faqItems));
 
 		<section id="opiniones" class="bg-white/50 px-4 py-20 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-12 max-w-3xl">
+				<div class="mb-8 max-w-3xl">
 					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Opiniones de alumnos</h2>
-					<p class="mt-4 text-lg leading-relaxed text-text-muted">La prueba social debe verse pronto y sin adornos innecesarios. Estas reseñas están conectadas con Google.</p>
+					<p class="mt-4 text-lg leading-relaxed text-text-muted">Opiniones reales conectadas con Google Reviews de alumnos que han preparado AGE y Seguridad Social con una metodología cercana, organizada y orientada al examen.</p>
 				</div>
 				<div class="mx-auto max-w-[980px]">
 					<TestimonialWidget />

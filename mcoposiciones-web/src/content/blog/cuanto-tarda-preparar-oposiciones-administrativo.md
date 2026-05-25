@@ -37,11 +37,11 @@ Puede haber personas que avancen más rápido porque ya tienen base jurídica, p
 
 Lo importante es no usar la excepción como norma. Siempre hay alguien que aprueba en muy poco tiempo. También hay quien estudia durante años sin organizarse bien. Ni un caso ni el otro deben ser tu referencia principal.
 
-## Horas de calidad frente a horas apuntadas
+## Horas de calidad frente a horas acumuladas
 
 Muchos opositores cuentan horas de estudio como si todas valieran igual. Pero no es lo mismo leer un tema con sueño que corregir un test con atención. No es lo mismo ver una clase mientras haces otras cosas que sentarte a trabajar el tema con papel, test y repaso.
 
-Una hora útil suele incluir intención. Sabes qué tema vas a trabajar, qué parte toca repasar y qué resultado esperas. Una hora poco útil se parece más a “me siento a ver qué hago”.
+Una hora útil suele incluir atención. Sabes qué tema vas a trabajar, qué parte toca repasar y qué resultado esperas. Una hora poco útil se parece más a “me siento a ver qué hago”.
 
 Esto no significa que todas las sesiones tengan que ser perfectas. Nadie estudia perfecto siempre. Pero si la mayoría de tus horas son dispersas, el calendario se alarga mucho.
 
@@ -65,7 +65,7 @@ Una buena preparación con más tiempo debe incluir repaso desde el principio. N
 
 Si empiezas desde cero, los primeros meses son especialmente importantes. No porque tengas que aprenderlo todo rápido, sino porque estás construyendo hábitos. Tienes que acostumbrarte al lenguaje jurídico, al tipo de pregunta, al repaso y a la corrección de errores.
 
-Al principio es normal ir más lento. Un tema de procedimiento administrativo puede costar mucho si nunca has visto esos conceptos. La Constitución puede parecer fácil en una primera lectura, pero después el test te exige precisión. La ofimática de AGE puede sorprender si la tratas como algo doméstico.
+Al principio es normal ir más lento. Un tema de procedimiento administrativo puede costar mucho si nunca has visto esos conceptos. La Constitución puede parecer fácil en una primera lectura, pero después el test te exige precisión. La ofimática de AGE puede sorprender si la tratas como una parte secundaria.
 
 No debes medir tu futuro por las primeras semanas. Debes medir si estás creando una rutina que puedes sostener.
 
@@ -81,7 +81,7 @@ Con base previa, lo más útil es detectar lagunas y adaptar el plan. Repetir to
 
 En [Administrativo del Estado](/oposiciones-administrativo-estado/), la ofimática exige presencia desde pronto. No hace falta dedicarle media semana al inicio, pero sí incluirla en el plan. Si la dejas para el final, el tiempo se estrecha.
 
-En [Seguridad Social](/oposiciones-seguridad-social/), la parte específica y el supuesto práctico requieren otro tipo de maduración. No basta con leer prestaciones o cotización. Hay que aplicar conceptos a casos y corregir razonamientos.
+En [Seguridad Social](/oposiciones-seguridad-social/), la parte específica y el supuesto práctico requieren otro tipo de enfoque. No basta con leer prestaciones o cotización. Hay que aplicar conceptos a casos y corregir razonamientos.
 
 Por eso, aunque ambas sean C1, el tiempo de preparación no se distribuye igual. AGE pide equilibrio entre varias materias. Seguridad Social pide profundidad en un bloque propio y práctica aplicada.
 
@@ -91,7 +91,7 @@ Preparar AGE y Seguridad Social a la vez puede ser inteligente si tienes disponi
 
 El peligro es querer abarcar todo sin separar prioridades. Un plan conjunto debe diferenciar materia común, parte propia de AGE y parte propia de Seguridad Social. También debe reservar semanas para consolidar, no solo para avanzar.
 
-Si estudias pocas horas, quizá conviene empezar por una y valorar después. Si estudias bastantes horas y quieres maximizar opciones, la [preparación conjunta AGE + Seguridad Social](/preparar-age-y-seguridad-social/) puede tener mucho sentido.
+Si quieres maximizar opciones desde el principio, la [preparación conjunta AGE + Seguridad Social](/preparar-age-y-seguridad-social/) puede tener mucho sentido porque permite aprovechar el temario común y ordenar los bloques específicos sin duplicar el estudio.
 
 ## Cómo saber si vas a buen ritmo
 
@@ -137,7 +137,7 @@ Antes de concluir “no valgo para esto”, revisa el método. Muchas veces el p
 
 ## Cuándo pedir ayuda
 
-Pedir ayuda no significa que no puedas hacerlo sola. Significa que quieres ahorrar ruido. Una preparadora puede ayudarte a ordenar temas, priorizar, corregir errores y ajustar el ritmo.
+Pedir ayuda no significa que no puedas hacerlo solo. Significa que quieres ahorrar ruido. Un preparador puede ayudarte a ordenar temas, priorizar, corregir errores y ajustar el ritmo.
 
 Esto es especialmente útil cuando llevas tiempo estudiando y no avanzas, cuando no sabes si tus test son buenos, cuando dudas entre AGE y Seguridad Social o cuando necesitas una planificación más concreta.
 
@@ -147,7 +147,7 @@ Si quieres ver cómo planteo la preparación, puedes consultar las modalidades d
 
 Preparar una oposición de Administrativo C1 lleva tiempo, pero ese tiempo no depende solo del calendario. Depende de tus horas reales, tu base, tu oposición y tu método.
 
-No busques una cifra mágica. Busca un plan que puedas sostener. Si cada semana estudias con intención, corriges errores y repasas, el avance llega con más seguridad.
+No busques una cifra mágica. Busca un plan que puedas sostener. Si cada semana estudias con atención, corriges errores y repasas, el avance llega con más seguridad.
 
 ---
 **¿Quieres preparar esta oposición con seguimiento real?**

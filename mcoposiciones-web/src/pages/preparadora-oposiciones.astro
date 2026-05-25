@@ -69,7 +69,7 @@ const routes = [
 		<section class="px-4 py-16 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Preparadora de oposiciones', href: '' }]} />
-				<div class="mt-12 grid gap-16 lg:grid-cols-[440px_1fr] lg:items-center">
+				<div class="mt-12 grid gap-16 lg:grid-cols-[440px_1fr] lg:items-start">
 					<div class="relative max-w-md">
 						<div class="relative overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium">
 							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones AGE y Seguridad Social" width={600} height={750} loading="eager" fetchpriority="high" class="aspect-[4/5] h-full w-full object-cover object-[center_30%] transition-transform duration-700 hover:scale-105" />
@@ -77,13 +77,16 @@ const routes = [
 					</div>
 					<div>
 						<p class="text-sm font-extrabold uppercase tracking-[0.2em] text-secondary/90">Preparadora de oposiciones online</p>
-						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Soy Mª Carmen</h1>
-						<p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted/90 md:text-xl">
-							Trabajo con grupos reducidos de Administrativo del Estado y Seguridad Social para que estudies con orden, entiendas el temario y llegues al examen con una estrategia clara.
-						</p>
-						<div class="mt-10 grid gap-4">
+						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Hola, opositores</h1>
+						<div class="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-text-muted/90 md:text-lg">
+							<p>Soy Mª Carmen, preparadora especializada en las oposiciones del Cuerpo Administrativo C1 de la Seguridad Social y C1 del Estado. A lo largo de los últimos años he acompañado a decenas de opositores en su camino hacia una plaza fija, con una preparación rigurosa, estructurada y adaptada a las necesidades reales del alumno.</p>
+							<p>Mi formación es completamente online. Trabajo con temarios actualizados, clases explicativas, material complementario como esquemas y flashcards, supuestos prácticos y simulacros reales de examen.</p>
+							<p>Conozco bien el proceso, sus fases, su exigencia y también la satisfacción de ver a mis alumnos lograr su objetivo. Por eso, mi método no solo se basa en el contenido, sino también en la motivación, la constancia y la planificación.</p>
+							<p class="font-bold text-primary">¿Te animas a prepararte conmigo?</p>
+						</div>
+						<div class="mt-8 grid gap-3">
 							{trustItems.map((item) => (
-								<div class="flex items-center gap-4 rounded-xl border border-primary/5 bg-white px-5 py-4 text-sm font-bold text-primary shadow-sm transition-all duration-300 hover:shadow-premium hover:-translate-y-0.5">
+								<div class="flex items-center gap-3 rounded-xl border border-primary/5 bg-white px-4 py-3 text-sm font-bold text-primary shadow-sm transition-all duration-300 hover:shadow-premium hover:-translate-y-0.5">
 									<span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/10 text-secondary">
 										<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" /></svg>
 									</span>
@@ -140,7 +143,7 @@ const routes = [
 									</svg>
 								)}
 							</div>
-							<h3 class="text-xl font-extrabold tracking-tight text-primary transition-colors group-hover:text-secondary">{item.title}</h3>
+							<h3 class="flex min-h-0 items-start text-xl font-extrabold tracking-tight text-primary transition-colors group-hover:text-secondary md:min-h-[3.25rem]">{item.title}</h3>
 							<p class="mt-4 leading-relaxed text-text-muted/85">{item.desc}</p>
 						</article>
 					))}
@@ -150,7 +153,7 @@ const routes = [
 
 		<section class="px-4 py-24 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
-				<div class="mb-16 max-w-3xl">
+				<div class="mb-10 max-w-3xl">
 					<h2 class="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">Elige tu camino</h2>
 					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">Cada oposición tiene una página específica para consultar estructura, enfoque y modalidades.</p>
 				</div>
@@ -166,12 +169,12 @@ const routes = [
 			<div class="mx-auto max-w-7xl">
 				<div class="mb-16 max-w-3xl">
 					<h2 class="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">Lo que dicen los alumnos</h2>
-					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">Las reseñas ayudan a contrastar el método con experiencias reales.</p>
+					<p class="mt-5 text-lg leading-relaxed text-text-muted/90">Opiniones reales conectadas con Google Reviews para que puedas valorar la experiencia de otros alumnos antes de elegir preparación.</p>
 				</div>
 				<div class="mx-auto max-w-6xl">
 					<TestimonialWidget variant="grid" />
 				</div>
-				<div class="mx-auto mt-16 max-w-5xl">
+				<div class="mx-auto mt-10 max-w-5xl">
 					<CTABanner
 						title="¿Quieres que preparemos tu plaza?"
 						subtitle="Hablamos sobre tu situación y vemos qué modalidad encaja mejor con tu punto de partida."
