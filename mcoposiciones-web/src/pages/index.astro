@@ -5,7 +5,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import PreparationRouteCard from '../components/PreparationRouteCard.astro';
 import { Image } from 'astro:assets';
-import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
+import mariaCarmenImage from '../assets/images/foto-inicio.webp';
 import { createHomeSchema, withFAQSchema } from '../lib/schema';
 
 const routes = [
@@ -102,10 +102,10 @@ const schemaJson = JSON.stringify(withFAQSchema(createHomeSchema(), faqItems));
 					<div class="max-w-3xl">
 						<p class="text-sm font-extrabold uppercase tracking-[0.2em] text-secondary/90">Preparación online AGE y Seguridad Social</p>
 						<h1 class="mt-6 text-4xl font-extrabold leading-[1.1] text-primary md:text-6xl lg:text-7xl">
-							Preparadora online de oposiciones AGE y Seguridad Social C1
+							Prepara AGE y Seguridad Social con Mª Carmen
 						</h1>
 						<p class="mt-8 text-lg leading-relaxed text-text-muted/90 md:text-xl lg:max-w-2xl">
-							Prepara las oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social con Mª Carmen, preparadora especializada. Clases en directo, grupos reducidos y seguimiento real.
+							Oposiciones de Administrativo del Estado y Seguridad Social C1 con clases en directo, grupos reducidos y una preparación cercana, clara y bien organizada.
 						</p>
 						<div class="mt-10 flex flex-col gap-4 sm:flex-row">
 							<a href="/cursos-precios/" class="inline-flex justify-center rounded-xl bg-secondary px-8 py-4.5 font-bold text-white no-underline shadow-button transition-all duration-300 hover:bg-primary hover:scale-[1.02] active:scale-[0.98]">
@@ -148,7 +148,7 @@ const schemaJson = JSON.stringify(withFAQSchema(createHomeSchema(), faqItems));
 					<div class="lg:pl-8">
 						<div class="relative">
 							<div class="relative overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium">
-								<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones AGE y Seguridad Social" width={600} height={600} loading="eager" fetchpriority="high" class="aspect-[4/3] h-full w-full object-cover transition-transform duration-700 hover:scale-105 lg:aspect-square" />
+								<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones AGE y Seguridad Social" width={600} height={750} loading="eager" fetchpriority="high" class="aspect-[4/5] h-full w-full object-cover object-[center_28%] transition-transform duration-700 hover:scale-105" />
 							</div>
 							
 							<!-- Nuevo bloque de disponibilidad refinado -->

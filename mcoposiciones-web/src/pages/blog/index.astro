@@ -67,23 +67,54 @@ const categoryLabel = (category: string) =>
 			</div>
 		</section>
 	</main>
-	<script>
-		const params = new URLSearchParams(window.location.search);
-		const selected = params.get('categoria');
-		
-		// 1. Filtrar las tarjetas del blog
-		if (selected) {
-			document.querySelectorAll('.blog-card').forEach((card) => {
-				card.classList.toggle('hidden', card.getAttribute('data-category') !== selected);
-			});
-		}
+	<script is:inline>
+		const applyBlogFilter = (selectedCategory) => {
+			const selected = selectedCategory || 'all';
 
-		// 2. Estilizar el botón activo del filtro
-		const activeFilter = selected || 'all';
-		const activeBtn = document.querySelector(`[data-category-filter="${activeFilter}"]`);
-		if (activeBtn) {
-			activeBtn.classList.remove('bg-white', 'text-primary', 'border-primary/5');
-			activeBtn.classList.add('bg-secondary', 'text-white', 'border-secondary', 'shadow-premium-hover');
-		}
+			document.querySelectorAll('.blog-card').forEach((card) => {
+				const shouldShow = selected === 'all' || card.getAttribute('data-category') === selected;
+				card.classList.toggle('hidden', !shouldShow);
+			});
+
+			document.querySelectorAll('[data-category-filter]').forEach((button) => {
+				const isActive = button.getAttribute('data-category-filter') === selected;
+				button.classList.toggle('bg-white', !isActive);
+				button.classList.toggle('text-primary', !isActive);
+				button.classList.toggle('border-primary/5', !isActive);
+				button.classList.toggle('bg-secondary', isActive);
+				button.classList.toggle('text-white', isActive);
+				button.classList.toggle('border-secondary', isActive);
+				button.classList.toggle('shadow-premium-hover', isActive);
+				button.setAttribute('aria-pressed', String(isActive));
+			});
+		};
+
+		const getSelectedBlogCategory = () => new URLSearchParams(window.location.search).get('categoria') || 'all';
+
+		const initBlogFilters = () => {
+			const filterBar = document.querySelector('[aria-label="Filtrar por categoría"]');
+			if (!filterBar || filterBar.dataset.bound === 'true') {
+				applyBlogFilter(getSelectedBlogCategory());
+				return;
+			}
+
+			filterBar.dataset.bound = 'true';
+			filterBar.addEventListener('click', (event) => {
+				const link = event.target instanceof Element ? event.target.closest('[data-category-filter]') : null;
+				if (!(link instanceof HTMLAnchorElement)) return;
+
+				event.preventDefault();
+				const selected = link.getAttribute('data-category-filter') || 'all';
+				const nextUrl = selected === 'all' ? '/blog/' : `/blog/?categoria=${selected}`;
+				window.history.pushState({}, '', nextUrl);
+				applyBlogFilter(selected);
+			});
+
+			applyBlogFilter(getSelectedBlogCategory());
+		};
+
+		document.addEventListener('astro:page-load', initBlogFilters);
+		window.addEventListener('popstate', () => applyBlogFilter(getSelectedBlogCategory()));
+		initBlogFilters();
 	</script>
 </BaseLayout>

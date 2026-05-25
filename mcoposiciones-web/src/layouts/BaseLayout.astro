@@ -4,7 +4,6 @@ import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';
 import SchemaOrg from '../components/SchemaOrg.astro';
 import CookieBanner from '../components/CookieBanner.astro';
-import { ClientRouter } from 'astro:transitions';
 
 interface Props {
 	title: string;
@@ -20,7 +19,7 @@ const {
 	title,
 	description,
 	canonicalUrl,
-	ogImage = '/og-default.jpg',
+	ogImage = '/og-default.webp',
 	ogType = 'website',
 	schemaJson = '',
 	noindex = false,
@@ -36,7 +35,7 @@ const absoluteOgImage = ogImage.startsWith('http')
 ---
 
 <!doctype html>
-<html lang="es" transition:name="root" transition:animate="none">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,14 +58,15 @@ const absoluteOgImage = ogImage.startsWith('http')
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={absoluteOgImage} />
 		<meta name="robots" content={robotsContent} />
-		<link rel="preload" as="image" href="/logo-icon.png" fetchpriority="high" />
-		<link rel="icon" type="image/png" href="/logo-icon.png" />
+		<link rel="preload" as="image" href="/logo-icon.webp" type="image/webp" fetchpriority="high" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="apple-touch-icon" href="/logo-icon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
 		<link rel="dns-prefetch" href="https://img.youtube.com" />
-		<ClientRouter fallback="swap" />
 		<!-- TODO: Preload /fonts/montserrat.woff2 y /fonts/inter.woff2 cuando se incorporen los archivos reales. -->
 		<!-- El CSS global se importa en este layout para que Astro lo procese y lo incluya en todas las paginas. -->
 		<SchemaOrg schema={parsedSchema} />

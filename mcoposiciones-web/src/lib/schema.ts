@@ -12,7 +12,7 @@ const organization = {
 	url: siteUrl,
 	logo: {
 		'@type': 'ImageObject',
-		url: `${siteUrl}/logo-icon.png`,
+		url: `${siteUrl}/logo-icon.webp`,
 	},
 	description:
 		'Preparación online para oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social C1. Clases en directo, grupos reducidos y seguimiento cercano.',
@@ -39,7 +39,7 @@ const person = {
 	description:
 		'Preparadora especializada en oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social C1. Clases online en directo con grupos reducidos.',
 	url: `${siteUrl}/preparadora-oposiciones/`,
-	image: `${siteUrl}/maria-carmen.jpg`,
+	image: `${siteUrl}/foto-sobremi.webp`,
 	worksFor: { '@id': `${siteUrl}/#organization` },
 	sameAs: [
 		'https://www.youtube.com/@mcoposiciones',

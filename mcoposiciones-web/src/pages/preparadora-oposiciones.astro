@@ -5,7 +5,7 @@ import TestimonialWidget from '../components/TestimonialWidget.astro';
 import CTABanner from '../components/CTABanner.astro';
 import PreparationRouteCard from '../components/PreparationRouteCard.astro';
 import { Image } from 'astro:assets';
-import mariaCarmenImage from '../assets/images/maria-carmen.jpg';
+import mariaCarmenImage from '../assets/images/foto-sobremi.webp';
 import { createPersonSchema } from '../lib/schema';
 
 const schemaJson = JSON.stringify(createPersonSchema());
@@ -69,17 +69,17 @@ const routes = [
 		<section class="px-4 py-16 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Preparadora de oposiciones', href: '' }]} />
-				<div class="mt-12 grid gap-16 lg:grid-cols-[420px_1fr] lg:items-center">
+				<div class="mt-12 grid gap-16 lg:grid-cols-[440px_1fr] lg:items-center">
 					<div class="relative max-w-md">
 						<div class="relative overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-premium">
-							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones AGE y Seguridad Social" width={600} height={600} loading="eager" fetchpriority="high" class="aspect-square h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+							<Image src={mariaCarmenImage} alt="Mª Carmen, preparadora de oposiciones AGE y Seguridad Social" width={600} height={750} loading="eager" fetchpriority="high" class="aspect-[4/5] h-full w-full object-cover object-[center_30%] transition-transform duration-700 hover:scale-105" />
 						</div>
 					</div>
 					<div>
 						<p class="text-sm font-extrabold uppercase tracking-[0.2em] text-secondary/90">Preparadora de oposiciones online</p>
-						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Mª Carmen, preparadora de oposiciones AGE y Seguridad Social</h1>
+						<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Soy Mª Carmen</h1>
 						<p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted/90 md:text-xl">
-							Preparo opositores de Administrativo del Estado y Seguridad Social con una metodología cercana, exigente y centrada en el examen real. Mi trabajo es ayudarte a estudiar con estructura, entender el temario y mantener una estrategia sólida hasta la convocatoria.
+							Trabajo con grupos reducidos de Administrativo del Estado y Seguridad Social para que estudies con orden, entiendas el temario y llegues al examen con una estrategia clara.
 						</p>
 						<div class="mt-10 grid gap-4">
 							{trustItems.map((item) => (
