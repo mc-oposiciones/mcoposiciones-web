@@ -5,6 +5,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import InfoStepsCard from '../components/InfoStepsCard.astro';
 import { createDualCoursePageSchema, withFAQSchema } from '../lib/schema';
+import pricing from '../data/pricing.json';
 
 const examFacts = [
 	'Base común aprovechable',
@@ -53,8 +54,8 @@ const includedItems = [
 ];
 
 const packPrices = [
-	{ label: 'Modalidad mensual', price: '150€', detail: '/mes', saving: 'Ahorro de 50€/mes frente a contratar ambas por separado.' },
-	{ label: 'Curso completo', price: '650€', detail: 'pago único', saving: 'Ahorro de 300€ frente a dos cursos completos individuales.' },
+	{ label: 'Modalidad mensual', price: `${pricing.pack.mensual}€`, detail: '/mes', saving: 'Ahorro de 50€/mes frente a contratar ambas por separado.' },
+	{ label: 'Curso completo', price: `${pricing.pack.completo}€`, detail: 'pago único', saving: 'Ahorro de 300€ frente a dos cursos completos individuales.' },
 ];
 
 const comparisonRows = [

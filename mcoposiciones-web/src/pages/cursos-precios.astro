@@ -4,6 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import { createPricingPageSchema } from '../lib/schema';
+import pricing from '../data/pricing.json';
 
 const schemaJson = JSON.stringify(createPricingPageSchema());
 
@@ -17,7 +18,7 @@ const pricingGroups = [
 		rows: [
 			{
 				modality: 'Mensual',
-				price: '100€',
+				price: `${pricing.age.mensual}€`,
 				detail: '/mes',
 				includes: 'Preparación completa mes a mes',
 				note: 'Sin permanencia. Incluye clases en directo, grabaciones, material, test y simulacros.',
@@ -25,7 +26,7 @@ const pricingGroups = [
 			},
 			{
 				modality: 'Curso completo',
-				price: '475€',
+				price: `${pricing.age.completo}€`,
 				detail: 'pago único',
 				includes: 'Todo lo incluido en la modalidad mensual',
 				note: 'Acceso hasta el examen con todo el material, clases, grabaciones, test y simulacros.',
@@ -34,7 +35,7 @@ const pricingGroups = [
 			},
 			{
 				modality: 'Solo parte general',
-				price: '250€',
+				price: `${pricing.age.general}€`,
 				detail: 'pago único',
 				includes: 'Bloques comunes de la oposición',
 				note: 'Pensado para quien solo necesita reforzar la base general.',
@@ -42,7 +43,7 @@ const pricingGroups = [
 			},
 			{
 				modality: 'Solo parte específica',
-				price: '300€',
+				price: `${pricing.age.especifica}€`,
 				detail: 'pago único',
 				includes: 'Bloque propio de AGE y ofimática',
 				note: 'Para quienes ya tienen base general y quieren completar AGE.',
@@ -59,7 +60,7 @@ const pricingGroups = [
 		rows: [
 			{
 				modality: 'Mensual',
-				price: '100€',
+				price: `${pricing.seguridadSocial.mensual}€`,
 				detail: '/mes',
 				includes: 'Preparación completa mes a mes',
 				note: 'Sin permanencia. Incluye clases en directo, grabaciones, material, test y simulacros.',
@@ -67,7 +68,7 @@ const pricingGroups = [
 			},
 			{
 				modality: 'Curso completo',
-				price: '475€',
+				price: `${pricing.seguridadSocial.completo}€`,
 				detail: 'pago único',
 				includes: 'Todo lo incluido en la modalidad mensual',
 				note: 'Acceso hasta el examen con todo el material, clases, grabaciones, test y simulacros.',
@@ -76,7 +77,7 @@ const pricingGroups = [
 			},
 			{
 				modality: 'Solo parte general',
-				price: '250€',
+				price: `${pricing.seguridadSocial.general}€`,
 				detail: 'pago único',
 				includes: 'Bloques comunes de la oposición',
 				note: 'Pensado para quien solo necesita reforzar la base general.',
@@ -84,7 +85,7 @@ const pricingGroups = [
 			},
 			{
 				modality: 'Solo parte específica',
-				price: '300€',
+				price: `${pricing.seguridadSocial.especifica}€`,
 				detail: 'pago único',
 				includes: 'Temario específico y supuesto práctico',
 				note: 'Para quienes ya tienen base general o vienen de AGE.',
@@ -101,7 +102,7 @@ const pricingGroups = [
 		rows: [
 			{
 				modality: 'Mensual',
-				price: '150€',
+				price: `${pricing.pack.mensual}€`,
 				detail: '/mes',
 				includes: 'Preparación conjunta mes a mes',
 				note: 'Sin permanencia. Incluye base común, bloque AGE, bloque Seguridad Social y planificación conjunta.',
@@ -109,7 +110,7 @@ const pricingGroups = [
 			},
 			{
 				modality: 'Curso completo',
-				price: '650€',
+				price: `${pricing.pack.completo}€`,
 				detail: 'pago único',
 				includes: 'Todo lo incluido en la modalidad mensual conjunta',
 				note: 'Acceso hasta el examen con el plan completo para preparar ambas oposiciones.',

@@ -14,6 +14,8 @@ const staticUrls = [
 	{ path: '/cursos-precios/', priority: '0.8', lastmod },
 	{ path: '/blog/', priority: '0.8', lastmod },
 	{ path: '/clases-muestra/', priority: '0.7', lastmod },
+	{ path: '/resources/tema1age.pdf', priority: '0.5', lastmod },
+	{ path: '/resources/tema2ss.pdf', priority: '0.5', lastmod },
 ];
 
 export async function GET() {

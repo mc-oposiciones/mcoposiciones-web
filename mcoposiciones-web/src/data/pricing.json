@@ -1,0 +1,18 @@
+{
+  "age": {
+    "mensual": 100,
+    "completo": 475,
+    "general": 250,
+    "especifica": 300
+  },
+  "seguridadSocial": {
+    "mensual": 100,
+    "completo": 475,
+    "general": 250,
+    "especifica": 300
+  },
+  "pack": {
+    "mensual": 150,
+    "completo": 650
+  }
+}

@@ -1,3 +1,5 @@
+import pricing from '../data/pricing.json';
+
 const siteUrl = 'https://mcoposiciones.com';
 
 type FAQItem = {
@@ -132,7 +134,7 @@ export function createPreparadoraLandingSchema({
 	name,
 	description,
 	courseName,
-	price = '100',
+	price,
 }: {
 	url: string;
 	name: string;
@@ -140,6 +142,7 @@ export function createPreparadoraLandingSchema({
 	courseName: string;
 	price?: string;
 }) {
+	const finalPrice = price || (url.includes('seguridad-social') ? pricing.seguridadSocial.mensual.toString() : pricing.age.mensual.toString());
 	return {
 		'@context': 'https://schema.org',
 		'@graph': [
@@ -168,7 +171,7 @@ export function createPreparadoraLandingSchema({
 				url,
 				offers: {
 					'@type': 'Offer',
-					price,
+					price: finalPrice,
 					priceCurrency: 'EUR',
 					availability: 'https://schema.org/InStock',
 					url,
@@ -184,7 +187,7 @@ export function createCoursePageSchema({
 	pageDescription,
 	courseName,
 	courseDescription,
-	price = '100',
+	price,
 }: {
 	url: string;
 	pageName: string;
@@ -193,6 +196,7 @@ export function createCoursePageSchema({
 	courseDescription: string;
 	price?: string;
 }) {
+	const finalPrice = price || (url.includes('seguridad-social') ? pricing.seguridadSocial.mensual.toString() : pricing.age.mensual.toString());
 	return {
 		'@context': 'https://schema.org',
 		'@graph': [
@@ -221,7 +225,7 @@ export function createCoursePageSchema({
 				url,
 				offers: {
 					'@type': 'Offer',
-					price,
+					price: finalPrice,
 					priceCurrency: 'EUR',
 					availability: 'https://schema.org/InStock',
 					url,
@@ -291,16 +295,16 @@ export function createPricingPageSchema() {
 		},
 	];
 	const offers = [
-		{ name: 'AGE mensual', price: '100', url },
-		{ name: 'AGE curso completo', price: '475', url },
-		{ name: 'AGE parte general', price: '250', url },
-		{ name: 'AGE parte específica', price: '300', url },
-		{ name: 'Seguridad Social mensual', price: '100', url },
-		{ name: 'Seguridad Social curso completo', price: '475', url },
-		{ name: 'Seguridad Social parte general', price: '250', url },
-		{ name: 'Seguridad Social parte específica', price: '300', url },
-		{ name: 'Pack AGE + Seguridad Social mensual', price: '150', url: `${siteUrl}/preparar-age-y-seguridad-social/` },
-		{ name: 'Pack AGE + Seguridad Social curso completo', price: '650', url: `${siteUrl}/preparar-age-y-seguridad-social/` },
+		{ name: 'AGE mensual', price: pricing.age.mensual.toString(), url },
+		{ name: 'AGE curso completo', price: pricing.age.completo.toString(), url },
+		{ name: 'AGE parte general', price: pricing.age.general.toString(), url },
+		{ name: 'AGE parte específica', price: pricing.age.especifica.toString(), url },
+		{ name: 'Seguridad Social mensual', price: pricing.seguridadSocial.mensual.toString(), url },
+		{ name: 'Seguridad Social curso completo', price: pricing.seguridadSocial.completo.toString(), url },
+		{ name: 'Seguridad Social parte general', price: pricing.seguridadSocial.general.toString(), url },
+		{ name: 'Seguridad Social parte específica', price: pricing.seguridadSocial.especifica.toString(), url },
+		{ name: 'Pack AGE + Seguridad Social mensual', price: pricing.pack.mensual.toString(), url: `${siteUrl}/preparar-age-y-seguridad-social/` },
+		{ name: 'Pack AGE + Seguridad Social curso completo', price: pricing.pack.completo.toString(), url: `${siteUrl}/preparar-age-y-seguridad-social/` },
 	];
 
 	return {
@@ -423,13 +427,13 @@ export function createSampleClassesSchema() {
 					{
 						'@type': 'ListItem',
 						position: 2,
-						url: `${siteUrl}/resources/tema-muestra-age.pdf`,
+						url: `${siteUrl}/resources/tema1age.pdf`,
 						name: 'Tema de muestra AGE',
 					},
 					{
 						'@type': 'ListItem',
 						position: 3,
-						url: `${siteUrl}/resources/tema-muestra-seguridad-social.pdf`,
+						url: `${siteUrl}/resources/tema2ss.pdf`,
 						name: 'Tema de muestra Seguridad Social',
 					},
 				],
