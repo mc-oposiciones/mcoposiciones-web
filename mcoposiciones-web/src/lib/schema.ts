@@ -7,7 +7,7 @@ type FAQItem = {
 	answer: string;
 };
 
-const organization = {
+export const organization = {
 	'@type': ['Organization', 'EducationalOrganization'],
 	'@id': `${siteUrl}/#organization`,
 	name: 'MC Oposiciones',
@@ -65,6 +65,16 @@ function createFAQNode(faqItems: FAQItem[], pageId = `${siteUrl}/#faq`) {
 	};
 }
 
+function createOnlineCourseInstance(url: string) {
+	return {
+		'@type': 'CourseInstance',
+		'@id': `${url}#course-instance-online`,
+		courseMode: 'online',
+		eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+		instructor: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
+	};
+}
+
 export function withFAQSchema<T extends { '@graph'?: unknown[] }>(schema: T, faqItems: FAQItem[]) {
 	if (!faqItems.length) return schema;
 	const graph = schema['@graph'] ?? [];
@@ -98,9 +108,9 @@ export function createHomeSchema() {
 				'@type': 'WebPage',
 				'@id': `${siteUrl}/#webpage`,
 				url: `${siteUrl}/`,
-				name: 'Preparadora de Oposiciones AGE y Seguridad Social Online',
+				name: 'Preparar oposiciones AGE y Seguridad Social',
 				description:
-					'Preparación online de oposiciones de Administrativo del Estado AGE C1 y Administrativo de la Seguridad Social C1 con clases en directo.',
+					'Preparación online de oposiciones AGE y Seguridad Social C1 con clases en directo, grupos reducidos y seguimiento cercano.',
 				isPartOf: { '@id': `${siteUrl}/#website` },
 				about: [{ '@id': `${siteUrl}/#organization` }, { '@id': `${siteUrl}/preparadora-oposiciones/#person` }],
 				inLanguage: 'es',
@@ -166,7 +176,7 @@ export function createPreparadoraLandingSchema({
 				instructor: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
 				educationalLevel: 'C1',
 				teaches: courseName,
-				courseMode: 'online',
+				hasCourseInstance: createOnlineCourseInstance(url),
 				inLanguage: 'es',
 				url,
 				offers: {
@@ -220,7 +230,7 @@ export function createCoursePageSchema({
 				instructor: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
 				educationalLevel: 'C1',
 				teaches: courseName,
-				courseMode: 'online',
+				hasCourseInstance: createOnlineCourseInstance(url),
 				inLanguage: 'es',
 				url,
 				offers: {
@@ -267,7 +277,7 @@ export function createDualCoursePageSchema({
 				provider: { '@id': `${siteUrl}/#organization` },
 				instructor: { '@id': `${siteUrl}/preparadora-oposiciones/#person` },
 				teaches: 'Oposiciones AGE C1 y Seguridad Social C1',
-				courseMode: 'online',
+				hasCourseInstance: createOnlineCourseInstance(url),
 				inLanguage: 'es',
 				url,
 			},
@@ -362,9 +372,9 @@ export function createBlogIndexSchema(posts: Array<{ id: string; data: { h1: str
 				'@type': 'CollectionPage',
 				'@id': `${url}#webpage`,
 				url,
-				name: 'Blog sobre oposiciones AGE y Seguridad Social',
+				name: 'Blog oposiciones AGE Seguridad Social',
 				description:
-					'Guias y articulos sobre oposiciones de Administrativo del Estado, Administrativo de la Seguridad Social, temario, estudio y preparacion online.',
+					'Guías y artículos sobre oposiciones AGE y Seguridad Social, temario, convocatorias, test, supuestos prácticos y preparación online.',
 				isPartOf: { '@id': `${siteUrl}/#website` },
 				about: [{ '@id': `${siteUrl}/#organization` }, { '@id': `${siteUrl}/preparadora-oposiciones/#person` }],
 				inLanguage: 'es',

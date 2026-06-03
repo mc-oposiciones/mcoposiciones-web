@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { createBlogIndexSchema } from '../../lib/schema';
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('blog')).filter((post) => !post.data.draft).sort(
 	(a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
 );
 
@@ -22,9 +22,11 @@ const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 ---
 
 <BaseLayout
-	title="Blog sobre Oposiciones AGE y Seguridad Social | MC Oposiciones"
-	description="Artículos sobre las oposiciones de Administrativo del Estado (AGE C1) y Administrativo de la Seguridad Social. Temario, convocatorias, supuestos prácticos y consejos de preparación."
+	title="Blog oposiciones AGE Seguridad Social | MC Oposiciones"
+	description="Blog oposiciones AGE seguridad social con guías de temario, convocatorias, test, supuestos y consejos para preparar C1 online con método. Lee el blog."
 	canonicalUrl="https://mcoposiciones.com/blog/"
+	ogTitle="Guías para preparar oposiciones AGE y Seguridad Social"
+	ogDescription="Consejos claros sobre temario, convocatorias, test, supuestos prácticos y estudio de oposiciones C1."
 	schemaJson={schemaJson}
 >
 	<main class="overflow-x-hidden pt-24">
@@ -32,9 +34,9 @@ const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 			<div class="mx-auto max-w-7xl">
 				<Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Blog', href: '' }]} />
 				<header class="mt-12 max-w-4xl">
-					<h1 class="text-4xl font-extrabold text-primary md:text-6xl">Blog Oposiciones</h1>
+					<h1 class="text-4xl font-extrabold text-primary md:text-6xl">Blog oposiciones AGE Seguridad Social</h1>
 					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
-						Recursos, guías y consejos estratégicos para dominar el temario y aprobar tu examen de Administrativo (AGE y SS).
+						Recursos, guías y consejos estratégicos para dominar el temario, entrenar test y preparar tu examen de Administrativo del Estado o Seguridad Social C1.
 					</p>
 				</header>
 

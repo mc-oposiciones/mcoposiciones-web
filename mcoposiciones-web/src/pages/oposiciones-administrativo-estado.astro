@@ -53,7 +53,7 @@ const faqItems = [
 
 const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 	url: 'https://mcoposiciones.com/oposiciones-administrativo-estado/',
-	pageName: 'Preparación oposiciones Administrativo del Estado AGE C1',
+	pageName: 'Preparar oposiciones administrativo del Estado',
 	pageDescription: 'Preparación online para las oposiciones de Administrativo del Estado AGE C1 con clases en directo, temario actualizado, test, simulacros y ofimática.',
 	courseName: 'Preparación Oposiciones Administrativo del Estado AGE C1',
 	courseDescription: 'Preparación online en directo para las oposiciones de Administrativo del Estado (AGE C1) 2026. Clases en directo, 2.512 plazas convocadas, temario actualizado con ofimática incluida.',
@@ -61,9 +61,11 @@ const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 ---
 
 <BaseLayout
-	title="Preparadora Oposiciones Administrativo del Estado AGE C1 2026 | MC Oposiciones"
-	description="Prepara AGE C1 2026 con Mª Carmen. Clases online en directo, 2.512 plazas, temario actualizado con ofimática y grupos reducidos."
+	title="Preparar oposiciones administrativo Estado | MC Oposiciones"
+	description="Preparar oposiciones administrativo del estado online con clases en directo, temario AGE C1 2026, ofimática y grupos reducidos. Consulta plazas hoy."
 	canonicalUrl="https://mcoposiciones.com/oposiciones-administrativo-estado/"
+	ogTitle="Prepara Administrativo del Estado AGE C1 online"
+	ogDescription="Temario actualizado, ofimática, test y clases en directo para preparar AGE C1 con seguimiento cercano."
 	schemaJson={schemaJson}
 >
 	<main class="overflow-x-hidden pt-24">
@@ -74,14 +76,14 @@ const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 					<p class="text-sm font-bold uppercase tracking-widest text-secondary">Administración General del Estado</p>
 					<h1 class="mt-4 text-4xl font-extrabold leading-tight text-primary md:text-6xl">Administrativo del Estado <span class="text-secondary">(AGE C1)</span></h1>
 					<p class="mt-6 text-lg leading-relaxed text-text-muted md:text-xl">
-						Preparación online integral para una de las oposiciones con más plazas y recorrido dentro de la Administración Pública.
+						Preparación online integral para AGE C1, una de las oposiciones con más plazas y recorrido dentro de la Administración Pública.
 					</p>
 					<div class="mt-8 flex flex-col gap-3 sm:flex-row">
 						<a href="/cursos-precios/#age" class="inline-flex justify-center rounded-xl bg-secondary px-6 py-3 font-bold text-white no-underline transition-colors hover:bg-primary">
 							Ver precios de AGE
 						</a>
 						<a href="/preparadora-age/" class="inline-flex justify-center rounded-xl border border-secondary px-6 py-3 font-bold text-secondary no-underline transition-colors hover:bg-secondary hover:text-white">
-							Preparadora especializada en AGE
+							Preparación AGE con Mª Carmen
 						</a>
 					</div>
 				</header>
@@ -114,7 +116,7 @@ const schemaJson = JSON.stringify(withFAQSchema(createCoursePageSchema({
 			<div class="mx-auto max-w-7xl">
 				<div class="mb-12 max-w-3xl">
 					<h2 class="text-3xl font-extrabold text-primary md:text-4xl">Cómo se prepara AGE en MC Oposiciones</h2>
-					<p class="mt-4 text-text-muted">Esta página explica la oposición y te da una referencia rápida de precio. El detalle completo de modalidades está centralizado en la página de precios.</p>
+					<p class="mt-4 text-text-muted">Aquí tienes una visión clara de cómo trabajamos AGE: temario explicado, test, simulacros, ofimática y seguimiento para que sepas qué hacer cada semana. También verás una referencia de precio; si quieres comparar todas las modalidades, puedes hacerlo en la página de precios.</p>
 				</div>
 				<div class="grid gap-5 md:grid-cols-3">
 					{preparationBlocks.map((block) => (

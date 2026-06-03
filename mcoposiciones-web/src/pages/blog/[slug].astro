@@ -5,19 +5,21 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABanner from '../../components/CTABanner.astro';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
+	const posts = (await getCollection('blog')).filter((post) => !post.data.draft);
 	return posts.map((post) => ({ params: { slug: post.id } }));
 }
 
 const slug = Astro.params.slug ?? '';
 const entry = await getEntry('blog', slug);
 
-if (!entry) {
+if (!entry || entry.data.draft) {
 	return Astro.redirect('/blog/');
 }
 
 const { Content } = await render(entry);
-const allPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const allPosts = (await getCollection('blog'))
+	.filter((post) => !post.data.draft)
+	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 const sameCategoryPosts = allPosts
 	.filter((post) => post.id !== entry.id && post.data.category === entry.data.category)
 	.slice(0, 3);
@@ -37,24 +39,18 @@ const articleImage = entry.data.image
 	: 'https://mcoposiciones.com/og-default.webp';
 const schemaJson = JSON.stringify({
 	'@context': 'https://schema.org',
-	'@type': 'Article',
+	'@type': 'BlogPosting',
+	'@id': `${canonicalUrl}#article`,
 	headline: entry.data.h1,
 	description: entry.data.description,
 	image: articleImage,
 	author: {
-		'@type': 'Person',
-		name: 'Mª Carmen',
-		url: 'https://mcoposiciones.com/preparadora-oposiciones/',
+		'@id': 'https://mcoposiciones.com/preparadora-oposiciones/#person',
 	},
 	datePublished: entry.data.pubDate.toISOString(),
 	dateModified: (entry.data.updatedDate ?? entry.data.pubDate).toISOString(),
 	publisher: {
-		'@type': 'Organization',
-		name: 'MC Oposiciones',
-		logo: {
-			'@type': 'ImageObject',
-			url: 'https://mcoposiciones.com/logo-icon.webp',
-		},
+		'@id': 'https://mcoposiciones.com/#organization',
 	},
 	mainEntityOfPage: {
 		'@type': 'WebPage',
@@ -79,7 +75,7 @@ const schemaJson = JSON.stringify({
 				<p class="text-xs font-extrabold uppercase tracking-[0.2em] text-secondary">{categoryLabel(entry.data.category)}</p>
 				<h1 class="mt-6 text-balance text-4xl font-extrabold leading-tight text-primary md:text-6xl">{entry.data.h1}</h1>
 				<div class="mt-8 flex items-center gap-5 border-y border-primary/5 py-5">
-					<img src="/foto-perfil-blog.webp" alt="Mª Carmen, preparadora de oposiciones" width="112" height="112" loading="eager" class="h-14 w-14 rounded-full border-2 border-white object-cover shadow-sm md:h-16 md:w-16" />
+					<img src="/foto-perfil-blog.webp" alt="Mª Carmen, preparadora de oposiciones AGE y Seguridad Social" width="112" height="112" loading="lazy" class="h-14 w-14 rounded-full border-2 border-white object-cover shadow-sm md:h-16 md:w-16" />
 					<div class="flex min-h-14 flex-col justify-center text-sm leading-tight md:min-h-16">
 						<p class="m-0 font-bold leading-none text-primary">{entry.data.author}</p>
 						<p class="m-0 mt-1 text-text-muted">Actualizado el {entry.data.pubDate.toLocaleDateString('es-ES')}</p>

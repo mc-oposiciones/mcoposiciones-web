@@ -10,6 +10,7 @@ const blog = defineCollection({
 			description: z.string().min(120).max(260),
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
+			draft: z.boolean().default(false),
 			author: z.string().default('Mª Carmen'),
 			category: z.enum([
 				'Oposiciones AGE',

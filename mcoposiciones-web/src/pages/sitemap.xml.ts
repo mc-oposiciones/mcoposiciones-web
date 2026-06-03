@@ -19,7 +19,7 @@ const staticUrls = [
 ];
 
 export async function GET() {
-	const posts = await getCollection('blog');
+	const posts = (await getCollection('blog')).filter((post) => !post.data.draft);
 	const postUrls = posts.map((post) => ({
 		path: `/blog/${post.id}/`,
 		priority: '0.8',

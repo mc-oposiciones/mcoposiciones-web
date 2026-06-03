@@ -4,11 +4,14 @@ import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';
 import SchemaOrg from '../components/SchemaOrg.astro';
 import CookieBanner from '../components/CookieBanner.astro';
+import { organization } from '../lib/schema';
 
 interface Props {
 	title: string;
 	description: string;
 	canonicalUrl: string;
+	ogTitle?: string;
+	ogDescription?: string;
 	ogImage?: string;
 	ogType?: 'website' | 'article' | string;
 	schemaJson?: string;
@@ -19,6 +22,8 @@ const {
 	title,
 	description,
 	canonicalUrl,
+	ogTitle = title,
+	ogDescription = description,
 	ogImage = '/og-default.webp',
 	ogType = 'website',
 	schemaJson = '',
@@ -26,6 +31,40 @@ const {
 } = Astro.props;
 
 const parsedSchema = schemaJson ? JSON.parse(schemaJson) : null;
+const isObject = (value: unknown): value is Record<string, unknown> =>
+	typeof value === 'object' && value !== null && !Array.isArray(value);
+const hasOrganizationNode = (node: unknown) => {
+	if (!isObject(node)) return false;
+	if (node['@id'] === organization['@id']) return true;
+	const type = node['@type'];
+	return Array.isArray(type) ? type.includes('Organization') : type === 'Organization';
+};
+const withGlobalOrganization = (schema: unknown) => {
+	if (!schema) {
+		return {
+			'@context': 'https://schema.org',
+			'@graph': [organization],
+		};
+	}
+	if (!isObject(schema)) return schema;
+
+	const graph = Array.isArray(schema['@graph']) ? schema['@graph'] : [schema];
+	if (graph.some(hasOrganizationNode)) return schema;
+
+	if (Array.isArray(schema['@graph'])) {
+		return {
+			...schema,
+			'@graph': [organization, ...schema['@graph']],
+		};
+	}
+
+	const { '@context': context = 'https://schema.org', ...schemaNode } = schema;
+	return {
+		'@context': context,
+		'@graph': [organization, schemaNode],
+	};
+};
+const finalSchema = withGlobalOrganization(parsedSchema);
 const isStagingBuild = import.meta.env.PUBLIC_SITE_ENV === 'staging';
 const robotsContent =
 	import.meta.env.PUBLIC_ROBOTS_META ?? ((noindex || isStagingBuild) ? 'noindex, nofollow' : 'index, follow');
@@ -45,8 +84,8 @@ const absoluteOgImage = ogImage.startsWith('http')
 		<link rel="canonical" href={canonicalUrl} />
 		<link rel="alternate" hreflang="es" href={canonicalUrl} />
 		<link rel="alternate" hreflang="x-default" href={canonicalUrl} />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
+		<meta property="og:title" content={ogTitle} />
+		<meta property="og:description" content={ogDescription} />
 		<meta property="og:url" content={canonicalUrl} />
 		<meta property="og:image" content={absoluteOgImage} />
 		<meta property="og:image:width" content="1200" />
@@ -55,11 +94,10 @@ const absoluteOgImage = ogImage.startsWith('http')
 		<meta property="og:site_name" content="MC Oposiciones" />
 		<meta property="og:locale" content="es_ES" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content={description} />
+		<meta name="twitter:title" content={ogTitle} />
+		<meta name="twitter:description" content={ogDescription} />
 		<meta name="twitter:image" content={absoluteOgImage} />
 		<meta name="robots" content={robotsContent} />
-		<link rel="preload" as="image" href="/logo-icon.webp" type="image/webp" fetchpriority="high" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96" />
 		<link rel="icon" href="/favicon.ico" sizes="any" />
@@ -69,7 +107,7 @@ const absoluteOgImage = ogImage.startsWith('http')
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
 		<link rel="dns-prefetch" href="https://img.youtube.com" />
 		<!-- El CSS global se importa en este layout para que Astro lo procese y lo incluya en todas las paginas. -->
-		<SchemaOrg schema={parsedSchema} />
+		<SchemaOrg schema={finalSchema} />
 	</head>
 	<body class="min-h-screen bg-bg-light text-text-main font-body selection:bg-secondary/20 selection:text-secondary">
 		<Navbar />
