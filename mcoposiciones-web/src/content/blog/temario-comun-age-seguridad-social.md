@@ -58,12 +58,12 @@ El problema aparece cuando todo se mezcla. Si una semana estudias un poco de cad
 
 Una organización más clara sería:
 
-- días o bloques para temario común;
-- un bloque fijo de ofimática AGE;
-- un bloque específico de Seguridad Social;
-- test diferenciados;
-- repasos de base común;
-- simulacros separados cuando haya materia suficiente.
+- Días o bloques para temario común
+- Un bloque fijo de ofimática AGE
+- Un bloque específico de Seguridad Social
+- Test diferenciados
+- Repasos de base común
+- Simulacros separados cuando haya materia suficiente
 
 La clave no es hacerlo todo a la vez. Es hacerlo con orden.
 
@@ -73,11 +73,11 @@ El repaso de la base común debe estar programado. Si estudias Constitución, pr
 
 Una forma útil de repasar es alternar:
 
-- test cortos de temas ya vistos;
-- lectura de esquemas;
-- revisión de errores;
-- preguntas acumulativas;
-- repasos antes de entrar en bloques específicos.
+- Test cortos de temas ya vistos
+- Lectura de esquemas
+- Revisión de errores
+- Preguntas acumulativas
+- Repasos antes de entrar en bloques específicos
 
 No hace falta que todos los repasos sean largos. A veces veinte minutos bien dirigidos evitan olvidar un concepto clave. Lo importante es que el repaso no dependa de si sobra tiempo, porque normalmente no sobra.
 
@@ -87,12 +87,12 @@ También conviene que los errores comunes se corrijan con una mirada amplia. Si 
 
 Un ejemplo de semana para una preparación conjunta podría ser:
 
-- un bloque de temario común;
-- un bloque de test acumulativo;
-- un bloque de ofimática AGE;
-- un bloque de Seguridad Social específica;
-- un bloque de supuesto o caso corto;
-- un repaso breve de errores.
+- Un bloque de temario común
+- Un bloque de test acumulativo
+- Un bloque de ofimática AGE
+- Un bloque de Seguridad Social específica
+- Un bloque de supuesto o caso corto
+- Un repaso breve de errores
 
 Este esquema debe adaptarse a cada persona. Quien trabaja quizá necesite una versión más ligera. Quien tiene más disponibilidad puede ampliar simulacros y repasos. Lo importante es mantener presencia de las tres zonas: común, AGE y Seguridad Social.
 
@@ -102,11 +102,11 @@ Si una semana solo avanzas en lo común y abandonas lo específico, el plan se d
 
 Preparar ambas oposiciones puede tener sentido si:
 
-- tienes disponibilidad semanal suficiente;
-- puedes seguir una planificación;
-- quieres ampliar oportunidades;
-- no te bloquea trabajar materias distintas;
-- tienes una base o estás dispuesto a construirla con calma.
+- Tienes disponibilidad semanal suficiente.
+- Puedes seguir una planificación.
+- Quieres ampliar oportunidades.
+- No te bloquea trabajar materias distintas.
+- Tienes una base o estás dispuesto a construirla con calma.
 
 No tiene tanto sentido si apenas tienes horas, si todavía no has creado hábito de estudio o si preparar dos caminos te genera ansiedad constante.
 
@@ -144,12 +144,12 @@ Mª Carmen trabaja con clases en directo, grupos reducidos y seguimiento cercano
 
 Si tienes dudas, mira tu situación real:
 
-- cuántas horas puedes estudiar;
-- si trabajas;
-- si tienes base jurídica;
-- si la ofimática te preocupa;
-- si los casos prácticos te resultan difíciles;
-- si necesitas una preparación muy guiada.
+- Cuántas horas puedes estudiar.
+- Si trabajas.
+- Si tienes base jurídica.
+- Si la ofimática te preocupa.
+- Si los casos prácticos te resultan difíciles.
+- Si necesitas una preparación muy guiada.
 
 No elijas el pack conjunto solo porque parezca más completo. Elige si puedes sostenerlo. Una buena decisión debe darte claridad, no presión.
 
@@ -159,11 +159,11 @@ Aunque el plan semanal esté bien diseñado, conviene revisar prioridades cada c
 
 Una revisión mensual puede responder a preguntas sencillas:
 
-- qué bloque ha avanzado menos;
-- qué errores se repiten;
-- qué materia está generando más dudas;
-- si el repaso está funcionando;
-- si la carga semanal sigue siendo realista.
+- Qué bloque ha avanzado menos.
+- Qué errores se repiten.
+- Qué materia está generando más dudas.
+- Si el repaso está funcionando.
+- Si la carga semanal sigue siendo realista.
 
 Esta revisión evita estudiar por inercia. No se trata de cambiar de plan cada semana, sino de ajustar con criterio. Si AGE empieza a quedarse sin ofimática, se corrige. Si Seguridad Social acumula teoría sin casos, se incorporan supuestos. Si la base común se olvida, se refuerzan repasos.
 

@@ -37,10 +37,10 @@ Muchas preguntas de test se fallan antes de mirar las opciones. Se fallan en la 
 
 Por eso, en el examen tipo test de AGE C1 conviene entrenar una lectura muy concreta:
 
-- identifica si la pregunta pide afirmación correcta o incorrecta;
-- localiza si hay palabras absolutas como "siempre", "nunca", "en todo caso";
-- mira si la pregunta se refiere a plazo, órgano, competencia, efecto o excepción;
-- no respondas solo porque una opción "suena" familiar.
+- Identifica si la pregunta pide afirmación correcta o incorrecta.
+- Localiza si hay palabras absolutas como "siempre", "nunca", "en todo caso".
+- Mira si la pregunta se refiere a plazo, órgano, competencia, efecto o excepción.
+- No respondas solo porque una opción "suena" familiar.
 
 Este hábito parece lento al principio, pero ahorra errores. La velocidad buena no es leer rápido sin control. Es leer con método hasta que el método se vuelve automático.
 
@@ -50,12 +50,12 @@ Corregir un test no es mirar la plantilla y sumar aciertos. Esa es solo la parte
 
 Puedes clasificar tus errores así:
 
-- fallo de lectura;
-- fallo de concepto;
-- fallo de memoria;
-- confusión entre dos figuras;
-- acierto sin seguridad;
-- precipitación por tiempo.
+- Fallo de lectura
+- Fallo de concepto
+- Fallo de memoria
+- Confusión entre dos figuras
+- Acierto sin seguridad
+- Precipitación por tiempo
 
 Cada tipo de error pide una respuesta distinta. Si fallas por lectura, necesitas entrenar enunciados. Si fallas por concepto, necesitas volver a la explicación. Si fallas por memoria, necesitas repaso. Si aciertas sin seguridad, no lo des por dominado.
 
@@ -103,11 +103,11 @@ Lo razonable es introducir simulacros parciales cuando ya se han trabajado vario
 
 Después del simulacro, la corrección vuelve a ser clave. No basta con saber la nota. Hay que mirar:
 
-- qué materias fallan más;
-- si los errores son de lectura o de contenido;
-- si el tiempo se reparte mal;
-- si hay preguntas acertadas sin seguridad;
-- qué repasos deben entrar en la semana siguiente.
+- Qué materias fallan más.
+- Si los errores son de lectura o de contenido.
+- Si el tiempo se reparte mal.
+- Si hay preguntas acertadas sin seguridad.
+- Qué repasos deben entrar en la semana siguiente.
 
 Un simulacro bien corregido puede ordenar mucho la preparación.
 
@@ -125,13 +125,13 @@ El cuarto error es no entrenar preguntas mezcladas. El examen no avisa de qué t
 
 Una semana razonable para AGE puede incluir:
 
-- una clase o bloque de tema nuevo;
-- lectura activa y esquema breve;
-- test del tema;
-- corrección de errores;
-- repaso de temas anteriores;
-- bloque de ofimática;
-- pequeña tanda de preguntas acumulativas.
+- Una clase o bloque de tema nuevo.
+- Lectura activa y esquema breve.
+- Test del tema.
+- Corrección de errores.
+- Repaso de temas anteriores.
+- Bloque de ofimática.
+- Pequeña tanda de preguntas acumulativas.
 
 No hace falta que todas las semanas sean perfectas. Lo importante es que haya equilibrio entre avanzar y consolidar. Si solo avanzas, olvidas. Si solo repasas, no terminas. Si solo haces test, puedes aprender respuestas sin entender materia.
 

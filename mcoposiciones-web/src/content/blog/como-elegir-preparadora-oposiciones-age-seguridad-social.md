@@ -65,13 +65,13 @@ También importa el trato. Hay alumnos que necesitan poder preguntar sin sentirs
 
 Hay señales que suelen indicar que una preparación está bien planteada:
 
-- explica el método antes de venderte el curso;
-- diferencia AGE, Seguridad Social y preparación conjunta;
-- habla de repaso, test y corrección de errores;
-- no promete resultados garantizados;
-- muestra opiniones reales;
-- informa con claridad de precios y condiciones;
-- permite saber quién está detrás de la preparación.
+- Explica el método antes de venderte el curso.
+- Diferencia AGE, Seguridad Social y preparación conjunta.
+- Habla de repaso, test y corrección de errores.
+- No promete resultados garantizados.
+- Muestra opiniones reales.
+- Informa con claridad de precios y condiciones.
+- Permite saber quién está detrás de la preparación.
 
 También es buena señal que la web no esconda información básica: modalidades, precios, contacto, enfoque de la preparación y opiniones reales.
 

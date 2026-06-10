@@ -34,16 +34,16 @@ No conviene estudiar desde la euforia. Conviene estudiar desde la planificación
 
 La convocatoria no es solo el número de plazas. Debes revisar varios puntos:
 
-- requisitos de titulación;
-- sistema selectivo;
-- temario;
-- estructura del examen;
-- plazos de solicitud;
-- tasas y exenciones;
-- criterios de corrección;
-- listas de admitidos;
-- posibles fechas orientativas;
-- instrucciones oficiales posteriores.
+- Requisitos de titulación
+- Sistema selectivo
+- Temario
+- Estructura del examen
+- Plazos de solicitud
+- Tasas y exenciones
+- Criterios de corrección
+- Listas de admitidos
+- Posibles fechas orientativas
+- Instrucciones oficiales posteriores
 
 Muchos opositores se quedan solo con el número de plazas y la fecha de examen. Eso es insuficiente. La convocatoria te dice qué se espera de ti y cómo se va a medir.
 
@@ -61,13 +61,13 @@ Cuando la convocatoria está publicada o el examen empieza a acercarse, la plani
 
 Una estructura razonable incluye:
 
-1. Diagnóstico inicial.
-2. Bloques de temario nuevo.
-3. Repasos programados.
-4. Test por tema y por bloque.
-5. Ofimática semanal.
-6. Simulacros parciales.
-7. Simulacros completos cuando haya base.
+1. Diagnóstico inicial
+2. Bloques de temario nuevo
+3. Repasos programados
+4. Test por tema y por bloque
+5. Ofimática semanal
+6. Simulacros parciales
+7. Simulacros completos cuando haya base
 
 El diagnóstico inicial es clave. No estudia igual una persona que empieza desde cero que alguien que viene de Auxiliar Administrativo, Derecho, Gestión o una convocatoria anterior.
 
@@ -79,12 +79,12 @@ Desde el punto de vista del estudio, ese momento también es importante. La inst
 
 Un buen ajuste sería:
 
-- fijar bloques de repaso semanal;
-- aumentar progresivamente test acumulativos;
-- reservar tiempo estable para ofimática;
-- revisar errores de temas ya vistos;
-- no abandonar temas difíciles;
-- introducir simulacros cuando tengas base suficiente.
+- Fijar bloques de repaso semanal.
+- Aumentar progresivamente test acumulativos.
+- Reservar tiempo estable para ofimática.
+- Revisar errores de temas ya vistos.
+- No abandonar temas difíciles.
+- Introducir simulacros cuando tengas base suficiente.
 
 No hace falta vivir pendiente de cada rumor sobre fechas. Sí hace falta tener un sistema para revisar información oficial y seguir estudiando mientras llega la siguiente fase.
 
@@ -118,13 +118,13 @@ El número de plazas influye, pero no garantiza nada. La competencia depende de 
 
 Por eso, no tiene sentido obsesionarse con cálculos externos. Es mejor centrarte en lo que sí controlas:
 
-- horas reales de estudio;
-- calidad de repasos;
-- corrección de errores;
-- constancia;
-- entrenamiento de test;
-- preparación de ofimática;
-- simulacros con tiempo.
+- Horas reales de estudio
+- Calidad de repasos
+- Corrección de errores
+- Constancia
+- Entrenamiento de test
+- Preparación de ofimática
+- Simulacros con tiempo
 
 La plaza no se gana leyendo noticias sobre plazas. Se gana acumulando semanas bien trabajadas.
 

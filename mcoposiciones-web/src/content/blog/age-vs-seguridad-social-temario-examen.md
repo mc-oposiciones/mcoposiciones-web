@@ -66,10 +66,10 @@ Preparar AGE y Seguridad Social a la vez tiene sentido cuando se cumplen tres co
 
 No tiene sentido si se convierte en acumular más PDFs, más clases y más tareas sin orden. La preparación conjunta debe tener una estructura limpia:
 
-- base administrativa común;
-- bloque propio de AGE, con ofimática y enfoque de examen;
-- bloque propio de Seguridad Social, con temario específico y supuesto práctico;
-- repasos y simulacros separados.
+- Base administrativa común
+- Bloque propio de AGE, con ofimática y enfoque de examen
+- Bloque propio de Seguridad Social, con temario específico y supuesto práctico
+- Repasos y simulacros separados
 
 Cuando se organiza así, el opositor no siente que estudia dos oposiciones desconectadas. Siente que construye una base y después abre dos caminos.
 

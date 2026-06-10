@@ -44,12 +44,12 @@ En AGE C1, la ofimática es una parte clave. Word, Excel, Access, Outlook y Wind
 
 Por eso, un preparador AGE online debe explicar cómo se trabaja la ofimática:
 
-- teoría clara;
-- práctica de herramientas;
-- preguntas tipo examen;
-- corrección de errores;
-- repasos;
-- simulacros.
+- Teoría clara
+- Práctica de herramientas
+- Preguntas tipo examen
+- Corrección de errores
+- Repasos
+- Simulacros
 
 Si la ofimática aparece como "ya se verá al final", conviene preguntar más.
 
@@ -79,13 +79,13 @@ En AGE, además, conviene que el material diferencie bien bloques: parte jurídi
 
 El seguimiento no debería ser una frase comercial. Debe traducirse en algo concreto:
 
-- planificación;
-- resolución de dudas;
-- orientación cuando te atrasas;
-- revisión de errores;
-- avisos sobre convocatoria;
-- recomendaciones de repaso;
-- simulacros.
+- Planificación
+- Resolución de dudas
+- Orientación cuando te atrasas
+- Revisión de errores
+- Avisos sobre convocatoria
+- Recomendaciones de repaso
+- Simulacros
 
 La oposición tiene semanas difíciles. El seguimiento sirve para que esas semanas no rompan el proceso.
 
@@ -99,15 +99,15 @@ La honestidad también implica decirte si tu plan no es realista. Si tienes poca
 
 Algunas señales positivas:
 
-- explica el método con claridad;
-- muestra quién está detrás;
-- ofrece precios y modalidades claras;
-- trabaja ofimática;
-- incluye test y simulacros;
-- permite resolver dudas;
-- no promete resultados imposibles;
-- tiene opiniones reales;
-- diferencia AGE, Seguridad Social y preparación conjunta.
+- Explica el método con claridad.
+- Muestra quién está detrás.
+- Ofrece precios y modalidades claras.
+- Trabaja ofimática.
+- Incluye test y simulacros.
+- Permite resolver dudas.
+- No promete resultados imposibles.
+- Tiene opiniones reales.
+- Diferencia AGE, Seguridad Social y preparación conjunta.
 
 Puedes conocer mejor el enfoque de Mª Carmen en la página de [preparadora de oposiciones AGE y Seguridad Social](/preparadora-oposiciones/).
 
@@ -117,15 +117,15 @@ Antes de elegir preparación, conviene hacer preguntas concretas. No para descon
 
 Puedes preguntar:
 
-- cuántas clases hay y con qué frecuencia;
-- si las clases son en directo y si quedan grabadas;
-- cómo se trabaja la ofimática;
-- qué tipo de test se incluyen;
-- si hay simulacros;
-- cómo se resuelven dudas;
-- qué seguimiento existe si te atrasas;
-- si el plan sirve para alguien que trabaja;
-- qué diferencia hay entre preparar AGE solo o junto con Seguridad Social.
+- Cuántas clases hay y con qué frecuencia.
+- Si las clases son en directo y si quedan grabadas.
+- Cómo se trabaja la ofimática.
+- Qué tipo de test se incluyen.
+- Si hay simulacros.
+- Cómo se resuelven dudas.
+- Qué seguimiento existe si te atrasas.
+- Si el plan sirve para alguien que trabaja.
+- Qué diferencia hay entre preparar AGE solo o junto con Seguridad Social.
 
 Las respuestas deberían darte una imagen clara de la preparación. Si después de preguntar sigues sin entender cómo se organiza el curso, probablemente no tengas suficiente información para decidir.
 

@@ -25,11 +25,11 @@ Seguridad Social tiene una parte específica muy técnica. Afiliación, altas, b
 
 Cuando estudias una prestación, por ejemplo, no basta con subrayar requisitos. Debes preguntarte:
 
-- quién puede solicitarla;
-- qué situación protege;
-- qué requisitos se exigen;
-- qué plazos o efectos aparecen;
-- qué dato cambiaría la respuesta en un supuesto.
+- Quién puede solicitarla.
+- Qué situación protege.
+- Qué requisitos se exigen.
+- Qué plazos o efectos aparecen.
+- Qué dato cambiaría la respuesta en un supuesto.
 
 Este enfoque hace que el tema sea más lento al principio, pero más sólido después. Y en una oposición con supuesto práctico, la solidez importa más que la sensación rápida de haber leído mucho.
 
@@ -54,11 +54,11 @@ Los test son necesarios, pero no sustituyen al supuesto. Una pregunta suelta pue
 
 Por eso, durante la preparación, conviene combinar:
 
-- preguntas de teoría;
-- test por bloques;
-- casos cortos;
-- supuestos completos;
-- corrección razonada.
+- Preguntas de teoría
+- Test por bloques
+- Casos cortos
+- Supuestos completos
+- Corrección razonada
 
 Si solo haces preguntas sueltas, puedes tener buena puntuación en teoría y aun así bloquearte cuando el caso mezcla varias materias.
 
@@ -76,11 +76,11 @@ Corregir no es mirar la plantilla y pasar página. La corrección es donde más 
 
 Cuando fallas una pregunta de supuesto, debes clasificar el error:
 
-- ¿he leído mal el enunciado?;
-- ¿no sabía la norma?;
-- ¿sabía la norma, pero no la he aplicado?;
-- ¿he dudado entre dos opciones?;
-- ¿he acertado sin seguridad?
+- ¿He leído mal el enunciado?
+- ¿No sabía la norma?
+- ¿Sabía la norma, pero no la he aplicado?
+- ¿He dudado entre dos opciones?
+- ¿He acertado sin seguridad?
 
 Esta clasificación parece sencilla, pero cambia mucho el estudio. No se corrige igual un fallo de lectura que un fallo de base. Si no distingues el tipo de error, acabas repitiendo lo mismo.
 

@@ -19,13 +19,13 @@ Decir “tardo un año” o “tardo seis meses” no significa mucho si no sabe
 
 Por eso, cuando valoro un caso, no pregunto solo desde cuándo estudias. Pregunto:
 
-- cuántas horas reales tienes;
-- si puedes mantenerlas cada semana;
-- si vienes de otra oposición;
-- si tienes base jurídica;
-- si trabajas a jornada completa;
-- si puedes asistir a clases o necesitas grabaciones;
-- si estudias con método o vas cambiando de material.
+- Cuántas horas reales tienes.
+- Si puedes mantenerlas cada semana.
+- Si vienes de otra oposición.
+- Si tienes base jurídica.
+- Si trabajas a jornada completa.
+- Si puedes asistir a clases o necesitas grabaciones.
+- Si estudias con método o vas cambiando de material.
 
 El calendario importa, pero la consistencia importa más.
 
@@ -97,12 +97,12 @@ Si quieres maximizar opciones desde el principio, la [preparación conjunta AGE 
 
 No basta con mirar cuántos temas llevas. Puedes llevar muchos temas mal asentados o pocos temas muy trabajados. El ritmo se mide con varias señales:
 
-- recuerdas lo estudiado semanas después;
-- tus errores se repiten cada vez menos;
-- entiendes por qué fallas;
-- puedes hacer test mezclados sin hundirte;
-- no dependes de releerlo todo desde cero;
-- sabes explicar los conceptos principales.
+- Recuerdas lo estudiado semanas después.
+- Tus errores se repiten cada vez menos.
+- Entiendes por qué fallas.
+- Puedes hacer test mezclados sin hundirte.
+- No dependes de releerlo todo desde cero.
+- Sabes explicar los conceptos principales.
 
 Si solo avanzas en número de páginas, es fácil engañarse. La oposición no premia haber leído mucho. Premia llegar al examen con conocimientos disponibles.
 

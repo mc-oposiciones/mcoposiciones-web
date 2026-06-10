@@ -30,15 +30,15 @@ La ventaja es que se puede preparar con método. No es una oposición oral. El a
 
 Cuando revises la convocatoria, no te quedes solo con el número de plazas. Comprueba:
 
-- requisitos de titulación;
-- sistema selectivo;
-- temario;
-- estructura del ejercicio;
-- plazos de presentación;
-- criterios de corrección;
-- órganos convocantes;
-- posibles notas informativas posteriores;
-- fecha, hora y lugar de examen cuando se publiquen oficialmente.
+- Requisitos de titulación
+- Sistema selectivo
+- Temario
+- Estructura del ejercicio
+- Plazos de presentación
+- Criterios de corrección
+- Órganos convocantes
+- Posibles notas informativas posteriores
+- Fecha, hora y lugar de examen cuando se publiquen oficialmente
 
 La convocatoria es el marco. La preparación es el trabajo diario.
 
@@ -48,12 +48,12 @@ El temario oficial no debe leerse como una lista fría de epígrafes. Es una gu�
 
 En Seguridad Social, una lectura útil distingue:
 
-- base constitucional y administrativa;
-- organización y funcionamiento de la Administración;
-- procedimiento y régimen jurídico;
-- materias específicas de Seguridad Social;
-- prestaciones, cotización, recaudación y gestión;
-- contenido que puede aparecer en supuesto práctico.
+- Base constitucional y administrativa
+- Organización y funcionamiento de la Administración
+- Procedimiento y régimen jurídico
+- Materias específicas de Seguridad Social
+- Prestaciones, cotización, recaudación y gestión
+- Contenido que puede aparecer en supuesto práctico
 
 Esta separación ayuda a entender qué partes puedes aprovechar si vienes de AGE y qué partes necesitan un estudio específico. También evita una sensación frecuente: creer que todo pesa igual. No todo exige el mismo tipo de trabajo.
 
@@ -89,13 +89,13 @@ También ayuda alternar lectura, test y casos cortos. Si solo lees, puedes tener
 
 Una planificación razonable para Seguridad Social debería incluir:
 
-1. Base común administrativa.
-2. Temario específico.
-3. Test por temas.
-4. Casos prácticos progresivos.
-5. Corrección razonada.
-6. Repasos programados.
-7. Simulacros cuando haya base suficiente.
+1. Base común administrativa
+2. Temario específico
+3. Test por temas
+4. Casos prácticos progresivos
+5. Corrección razonada
+6. Repasos programados
+7. Simulacros cuando haya base suficiente
 
 No sirve avanzar sin repasar. Tampoco sirve hacer supuestos sin corregirlos bien. La clave está en que cada tarea tenga una función.
 
@@ -121,13 +121,13 @@ El número de plazas es una buena noticia, pero no garantiza el resultado. Habr�
 
 Lo que puedes controlar es tu preparación:
 
-- horas reales;
-- asistencia o revisión de clases;
-- corrección de test;
-- repasos;
-- supuestos;
-- constancia;
-- descanso.
+- Horas reales
+- Asistencia o revisión de clases
+- Corrección de test
+- Repasos
+- Supuestos
+- Constancia
+- Descanso
 
 Una oposición no se gana con un pico de motivación. Se gana acumulando semanas razonables.
 
