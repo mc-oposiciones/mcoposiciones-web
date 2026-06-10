@@ -119,6 +119,38 @@
 		color: var(--color-text-muted);
 	}
 
+	.prose :where(ul) {
+		margin-top: 1.25rem;
+		margin-bottom: 1.25rem;
+		padding-left: 1.5rem;
+		list-style-type: none;
+	}
+
+	.prose :where(ul > li) {
+		position: relative;
+		margin-bottom: 0.5rem;
+	}
+
+	.prose :where(ul > li)::before {
+		content: "-";
+		position: absolute;
+		left: -1.25rem;
+		color: var(--color-primary);
+		font-weight: 700;
+	}
+
+	.prose :where(ol) {
+		margin-top: 1.25rem;
+		margin-bottom: 1.25rem;
+		padding-left: 1.5rem;
+		list-style-type: decimal;
+	}
+
+	.prose :where(ol > li)::marker {
+		color: var(--color-primary);
+		font-weight: 700;
+	}
+
 	.featurable-widget {
 		margin-block: -0.75rem;
 		overflow: hidden;
