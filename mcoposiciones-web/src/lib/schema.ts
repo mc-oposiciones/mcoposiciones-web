@@ -361,7 +361,7 @@ export function createPricingPageSchema() {
 	};
 }
 
-export function createBlogIndexSchema(posts: Array<{ id: string; data: { h1: string; description: string; pubDate: Date; updatedDate?: Date } }>) {
+export function createBlogIndexSchema(posts: Array<{ id: string; data: { h1: string; description: string; pubDate: Date; updatedDate?: Date; image?: string } }>) {
 	const url = `${siteUrl}/blog/`;
 	return {
 		'@context': 'https://schema.org',
@@ -393,6 +393,7 @@ export function createBlogIndexSchema(posts: Array<{ id: string; data: { h1: str
 						'@id': `${siteUrl}/blog/${post.id}/#article`,
 						headline: post.data.h1,
 						description: post.data.description,
+						...(post.data.image ? { image: new URL(post.data.image, siteUrl).toString() } : {}),
 						datePublished: post.data.pubDate.toISOString(),
 						dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
 						url: `${siteUrl}/blog/${post.id}/`,

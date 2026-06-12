@@ -6,6 +6,8 @@ draft: false
 category: "Preparacion y Estudio"
 h1: "Cómo estudiar oposiciones trabajando"
 excerpt: "Preparar oposiciones trabajando es posible, pero exige una planificación realista. No puedes estudiar como quien tiene todo el día libre."
+image: "/blog/como-estudiar-oposiciones-trabajando.webp"
+imageAlt: "Planificación para estudiar oposiciones trabajando con repasos y test semanales"
 ---
 
 Estudiar oposiciones trabajando es posible, pero no se puede plantear como si tuvieras todo el día disponible. Eso es lo primero que hay que asumir. No es pesimismo. Es realismo. Si trabajas, tienes menos horas, más cansancio y menos margen para improvisar. Por eso necesitas un plan que puedas sostener.

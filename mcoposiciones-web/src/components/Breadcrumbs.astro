@@ -22,18 +22,18 @@ const schema = {
 ---
 
 <nav aria-label="Migas de pan" class="text-xs font-semibold uppercase tracking-wider text-text-muted/70">
-	<ol class="flex flex-wrap items-center gap-2">
+	<ol class="flex min-w-0 flex-wrap items-center gap-2">
 		{items.map((item, index) => (
-			<li class="flex items-center gap-2">
+			<li class="flex min-w-0 max-w-full items-center gap-2">
 				{index > 0 && (
 					<span aria-hidden="true" class="text-text-muted/30">
 						<svg class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
 					</span>
 				)}
 				{index === items.length - 1 || !item.href ? (
-					<span class="text-primary" aria-current="page">{item.label}</span>
+					<span class="min-w-0 break-words text-primary" aria-current="page">{item.label}</span>
 				) : (
-					<a href={item.href} class="no-underline text-text-muted hover:text-secondary transition-colors duration-200">
+					<a href={item.href} class="min-w-0 break-words text-text-muted no-underline transition-colors duration-200 hover:text-secondary">
 						{item.label}
 					</a>
 				)}

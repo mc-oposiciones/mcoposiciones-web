@@ -5,6 +5,8 @@ pubDate: 2026-05-10
 category: "Preparacion y Estudio"
 h1: "AGE o Seguridad Social: qué oposición preparar si buscas una plaza C1"
 excerpt: "AGE y Seguridad Social comparten base administrativa, pero no exigen exactamente lo mismo. Esta guía te ayuda a elegir con criterio."
+image: "/blog/age-vs-seguridad-social-c1.webp"
+imageAlt: "Comparativa entre oposiciones AGE y Seguridad Social C1 para elegir preparación"
 ---
 
 Elegir oposición no es elegir una etiqueta. Es decidir dónde vas a poner muchas horas de estudio durante meses. Por eso, cuando alguien me pregunta si le conviene preparar Administrativo del Estado o Administrativo de la Seguridad Social, no suelo contestar con un “esta es mejor” o “esta es más fácil”. Esa respuesta sería cómoda, pero no sería honesta.

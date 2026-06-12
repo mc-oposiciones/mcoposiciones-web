@@ -5,6 +5,8 @@ pubDate: 2026-05-04
 category: "Oposiciones Seguridad Social"
 h1: "Supuesto práctico Seguridad Social C1: cómo prepararlo con método"
 excerpt: "El supuesto práctico de Seguridad Social no se prepara al final. Necesita teoría entendida, casos, lectura activa y corrección de errores desde el principio."
+image: "/blog/supuesto-practico-administrativo-seguridad-social-c1.webp"
+imageAlt: "Supuesto práctico de Administrativo de la Seguridad Social C1 con método de preparación"
 ---
 
 El supuesto práctico de Administrativo de la Seguridad Social es una de las partes que más respeto da a los opositores. Y con razón. No basta con memorizar temas. Hay que aplicar normas a una situación concreta, leer bien los datos y elegir la respuesta que encaja jurídicamente.

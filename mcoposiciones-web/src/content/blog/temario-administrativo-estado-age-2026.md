@@ -5,6 +5,8 @@ pubDate: 2026-05-07
 category: "Oposiciones AGE"
 h1: "Temario Administrativo del Estado AGE C1: cómo estudiarlo sin perderte"
 excerpt: "El temario de AGE C1 se entiende mejor por bloques. Te explico cómo organizarlo, qué partes suelen costar más y cómo trabajarlo con método."
+image: "/blog/temario-administrativo-estado-age-2026.webp"
+imageAlt: "Temario de Administrativo del Estado AGE C1 2026 organizado por bloques de estudio"
 ---
 
 El temario de Administrativo del Estado suele impresionar al principio. No solo por el número de temas, sino porque mezcla materias muy distintas: Constitución, organización administrativa, procedimiento, función pública, gestión financiera, atención al ciudadano e informática. Si lo miras como una lista larga, agobia. Si lo miras por bloques, empieza a tener sentido.

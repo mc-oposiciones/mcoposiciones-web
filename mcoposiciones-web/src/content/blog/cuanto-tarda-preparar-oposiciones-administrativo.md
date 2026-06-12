@@ -5,6 +5,8 @@ pubDate: 2026-05-01
 category: "Preparacion y Estudio"
 h1: "Cuánto se tarda en preparar una oposición de Administrativo C1"
 excerpt: "No hay una cifra mágica. El tiempo para preparar una oposición C1 depende de tu base, tus horas reales y la calidad del método."
+image: "/blog/cuanto-tarda-preparar-oposiciones-administrativo-c1.webp"
+imageAlt: "Tiempo de preparación de oposiciones de Administrativo C1 según base y horas de estudio"
 ---
 
 Una de las preguntas que más escucho es: “¿cuánto se tarda en preparar una oposición de Administrativo?”. Es una pregunta lógica. Antes de empezar, necesitas saber si hablamos de meses, de un año o de un proyecto más largo. También necesitas organizar tu vida: trabajo, familia, descanso, dinero y energía.
