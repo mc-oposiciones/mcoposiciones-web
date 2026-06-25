@@ -1,47 +1,30 @@
 ---
 title: "Errores comunes en el supuesto práctico de Seguridad Social C1"
-description: "Errores frecuentes al preparar el supuesto práctico de Seguridad Social C1: lectura precipitada, teoría aislada, mala corrección y falta de método."
-pubDate: 2026-06-03
-draft: true
+description: "Errores frecuentes al preparar y resolver el supuesto práctico de Seguridad Social C1: lectura del enunciado, corrección, tiempo, dudas y aplicación de la norma."
+pubDate: 2026-06-25
+draft: false
 category: "Oposiciones Seguridad Social"
 h1: "Errores comunes en el supuesto práctico de Seguridad Social C1"
-excerpt: "El supuesto práctico de Seguridad Social no falla solo por falta de estudio. Muchas veces falla por lectura, método, corrección y aplicación de la norma."
+excerpt: "El supuesto práctico de Seguridad Social C1 suele fallar por lectura, método, tiempo y aplicación de la norma, incluso cuando has estudiado teoría."
+image: "/blog/errores-supuesto-practico-seguridad-social-c1.webp"
+imageAlt: "Errores comunes en el supuesto práctico de Seguridad Social C1 y cómo evitarlos"
 ---
 
-El supuesto práctico de Seguridad Social C1 no se prepara solo haciendo casos. Hacer supuestos es necesario, pero no basta. Si no sabes por qué fallas, puedes repetir el mismo error durante semanas. Y si corriges solo mirando la respuesta correcta, te pierdes lo más importante del proceso.
+El supuesto práctico de Seguridad Social C1 suele preocupar porque no depende solo de memorizar el tema. Puedes saber teoría y, aun así, fallar al leer el enunciado, al elegir qué dato importa o al aplicar la norma a una situación concreta.
 
-En Administrativo de la Seguridad Social, el supuesto exige algo más que memoria. Hay que leer bien, detectar la materia, seleccionar los datos relevantes y aplicar la norma. Por eso muchos opositores que han estudiado bastante teoría se sienten inseguros cuando llegan a los casos.
+Por eso conviene mirar los errores desde dos ángulos. Primero, los que aparecen mientras estás resolviendo el examen: lectura, tiempo, dudas y opciones de respuesta. Después, los que vienen de la preparación: estudiar sin ejemplos, corregir mal, dejar el supuesto para el final o no saber de dónde salen los fallos.
 
-En esta guía no voy a repetir una explicación general del supuesto. Para eso tienes la guía sobre [cómo preparar el supuesto práctico de Seguridad Social](/blog/supuesto-practico-administrativo-seguridad-social/). Aquí vamos a centrarnos en los errores más frecuentes y en cómo corregirlos.
+En la guía sobre [cómo preparar el supuesto práctico de Seguridad Social](/blog/supuesto-practico-administrativo-seguridad-social/) explico el método general de estudio. Aquí vamos a centrarnos en los errores más frecuentes al prepararlo y al resolverlo, para que puedas detectarlos antes de repetirlos una y otra vez.
 
-## Error 1: dejar el supuesto para el final
+## Errores al resolver el supuesto práctico en el examen
 
-Este es uno de los errores más comunes. El opositor piensa: "primero estudio todo el temario y después haré supuestos". Parece lógico, pero suele salir mal. Cuando llegas al final, el supuesto aparece como una prueba nueva, con otro lenguaje y otra exigencia.
+Estos son los fallos que más daño hacen durante el ejercicio. A veces el problema no es que no sepas nada, sino que lees demasiado rápido, te dejas arrastrar por una palabra conocida o gestionas mal las preguntas dudosas.
 
-El supuesto no debe ser una fase final. Debe entrar de forma progresiva. Después de estudiar afiliación, puedes trabajar casos sencillos de altas y bajas. Después de cotización, casos sobre bases, sujetos obligados o periodos. Después de prestaciones, situaciones protegidas, requisitos y efectos.
+### Error 1: leer el enunciado demasiado rápido
 
-No hace falta empezar con supuestos largos. Lo importante es introducir la mentalidad práctica desde el principio. Así, la teoría no se queda como una lista: se convierte en una herramienta para resolver situaciones.
+Muchos fallos nacen antes de llegar a la norma. Ves una palabra conocida, crees que ya sabes por dónde va la pregunta y respondes demasiado pronto. En el supuesto práctico, ese impulso puede costar caro.
 
-## Error 2: estudiar la teoría sin ejemplos
-
-Seguridad Social tiene una parte específica técnica. Si estudias conceptos como afiliación, cotización, incapacidad temporal, jubilación o recaudación solo con lectura lineal, es fácil que parezcan abstractos.
-
-Cada tema debería ir acompañado de preguntas prácticas:
-
-- Quién interviene.
-- Qué situación se protege.
-- Qué requisito decide la respuesta.
-- Qué plazo importa.
-- Qué efecto se produce.
-- Qué dato podría cambiar la solución.
-
-Cuando estudias así, el supuesto deja de ser algo separado. Lees la teoría pensando en casos, y eso cambia completamente la forma en que entiendes la materia.
-
-## Error 3: leer el enunciado demasiado rápido
-
-Muchos fallos no nacen en la norma, sino en la lectura. El opositor ve una palabra conocida, cree que ya sabe de qué va el supuesto y responde demasiado pronto.
-
-La lectura del supuesto debe ser activa. Antes de mirar las respuestas, conviene identificar:
+La lectura del enunciado debe ser activa. Antes de mirar las respuestas, conviene localizar:
 
 1. Materia principal.
 2. Sujetos que intervienen.
@@ -49,110 +32,178 @@ La lectura del supuesto debe ser activa. Antes de mirar las respuestas, conviene
 4. Situación jurídica.
 5. Pregunta exacta que se plantea.
 
-Solo después tiene sentido valorar opciones. Si miras las respuestas antes de entender el caso, las opciones pueden arrastrarte hacia una interpretación equivocada.
+Cuando miras las opciones antes de entender el supuesto, las respuestas pueden arrastrarte hacia una interpretación equivocada. Primero entiende qué te están preguntando. Después compara.
 
-## Error 4: no separar datos útiles de datos de relleno
+### Error 2: no fijarte en qué te están preguntando exactamente
 
-Un supuesto puede incluir información que no decide la respuesta. Eso forma parte de la dificultad. No todo lo que aparece en el enunciado tiene el mismo peso.
+En el supuesto práctico puede aparecer mucha información y, aun así, la pregunta final ser muy concreta. El error aparece cuando contestas al tema general en lugar de responder a lo que se pide.
 
-El opositor debe entrenar la capacidad de distinguir. Una fecha puede ser decisiva. Una condición laboral puede cambiar todo. Un dato descriptivo puede no servir para nada. Si tratas todos los datos igual, el caso se vuelve confuso.
+Puede que el enunciado hable de una prestación, pero la pregunta vaya sobre el plazo, el sujeto responsable, la compatibilidad o el efecto de una fecha. Si respondes con lo primero que recuerdas del tema, puedes caer en una opción que suena bien pero no encaja.
 
-Una técnica útil es subrayar mentalmente o en papel tres tipos de información: sujetos, fechas y acción principal. Eso ayuda a ordenar el supuesto antes de entrar en las opciones.
+Antes de elegir, reformula la pregunta con tus palabras: "me piden desde cuándo produce efectos", "me preguntan quién está obligado", "tengo que marcar la incorrecta" o "quieren saber qué dato cambia la respuesta". Esa comprobación ocupa poco y evita muchos errores.
 
-## Error 5: corregir solo con la plantilla
+### Error 3: no distinguir datos importantes y datos de relleno
 
-La plantilla te dice qué respuesta es correcta. No te dice qué debes cambiar en tu estudio. Esa parte depende de la corrección.
+Un enunciado puede incluir información que no decide la respuesta. Forma parte de la dificultad. Una fecha puede ser clave, una condición laboral puede cambiarlo todo y un dato descriptivo puede estar ahí solo para despistar.
+
+Si tratas todos los datos igual, el supuesto se vuelve confuso. Por eso conviene entrenar una lectura ordenada: sujetos, fechas, acción principal y pregunta final.
+
+Este hábito ayuda mucho en el examen. Subrayar sirve cuando te ayuda a localizar qué dato manda. A veces la diferencia entre dos opciones está en una palabra, una fecha o quién realiza la actuación.
+
+### Error 4: no leer todas las opciones antes de responder
+
+En preguntas de supuesto práctico, una opción puede parecer buena hasta que lees la siguiente. Si marcas demasiado pronto, corres el riesgo de quedarte con una respuesta incompleta o con una opción que solo encaja en parte.
+
+Conviene leer todas las opciones antes de decidir, aunque una te suene clara desde el principio. A veces dos respuestas son parecidas y la diferencia está en un matiz: el plazo, el sujeto, el momento en que produce efectos o la consecuencia jurídica.
+
+Esto no significa darle vueltas eternas a cada pregunta. Significa comparar antes de marcar. En el examen, muchas veces no gana la opción que suena familiar, sino la que encaja exactamente con el enunciado.
+
+### Error 5: cambiar respuestas por inseguridad
+
+Cambiar una respuesta puede estar bien si has visto un dato que antes pasaste por alto. Otra cosa distinta es cambiarla porque te entra miedo al revisar.
+
+En los test y simulacros, fíjate en este patrón. Si sueles cambiar respuestas correctas por inseguridad, necesitas una regla clara: solo cambio si puedo explicar el motivo.
+
+Esa regla te obliga a buscar una razón real: una fecha, un sujeto, una norma, una incompatibilidad, un plazo. Si no hay motivo, quizá no sea revisión, sino nervios.
+
+### Error 6: gestionar igual todas las preguntas dudosas
+
+En el examen habrá dudas. Lo raro sería que no las hubiera. El problema no es dudar, sino gestionar todas las dudas igual.
+
+Una duda leve no merece el mismo tiempo que una pregunta que no sabes por dónde coger. Si durante el ejercicio marcas las preguntas de forma útil, la revisión final será más limpia.
+
+Puedes distinguir entre:
+
+- Pregunta casi clara.
+- Duda entre dos opciones.
+- Pregunta que prefieres dejar para el final.
+
+Si dudas entre dos opciones y puedes descartar las demás con un motivo claro, merece la pena volver a esa pregunta en la segunda vuelta. Ahí sí puedes comparar con calma: qué opción responde mejor al enunciado, cuál encaja con la fecha, qué sujeto interviene o qué consecuencia jurídica se pide.
+
+Si dudas entre todas, la situación es distinta. En ese caso no conviene quedarte peleando demasiado pronto con la pregunta. Márcala, sigue avanzando y déjala para el final. Dado que los errores penalizan, evita contestar al azar cuando no has podido descartar ninguna opción con un motivo real.
+
+Esta clasificación evita una revisión caótica. Cuando quedan pocos minutos, saber dónde mirar primero es importante.
+
+### Error 7: dejar que una pregunta te coma el tiempo
+
+El tiempo también forma parte del supuesto práctico. Puedes saber resolver una pregunta con calma y bloquearte cuando tienes el reloj encima. El problema durante el examen aparece cuando una duda te frena tanto que condiciona todo lo demás.
+
+Una estrategia sencilla es hacer una primera vuelta de preguntas claras y dejar marcadas las dudosas. Si una pregunta necesita una tercera lectura y sigues sin avanzar, márcala y continúa. Volver a ella más tarde suele ser mejor que gastar ahí varios minutos mientras dejas sin mirar preguntas que quizá sí sabías.
+
+También ayuda vigilar el avance por bloques. Si ha pasado una parte importante del tiempo y apenas has avanzado, toca acelerar con cabeza: leer bien, decidir antes y no permitir que el examen se concentre en tres preguntas difíciles. El objetivo es llegar al final con margen para revisar las marcadas, no descubrir en los últimos minutos que quedan preguntas sin leer.
+
+## Errores durante la preparación del supuesto práctico
+
+Estos errores suelen aparecer antes del examen. No siempre se notan al principio, porque puedes sentir que estás estudiando mucho. El problema llega cuando haces supuestos, corriges y ves que los fallos se repiten.
+
+### Error 8: dejar la preparación del supuesto práctico para el final
+
+Es uno de los errores más habituales. El opositor piensa: "primero estudio todo el temario y después haré supuestos". Parece ordenado, pero suele salir mal. Cuando llega el momento, el supuesto práctico aparece como una prueba nueva, con otro lenguaje y otra forma de razonar.
+
+El supuesto debe entrar poco a poco en la preparación. Después de estudiar afiliación, puedes trabajar un supuesto sencillo de altas y bajas. Después de cotización, preguntas sobre bases, sujetos obligados o periodos. Después de prestaciones, situaciones protegidas, requisitos y efectos.
+
+Al principio no necesitas ejercicios largos. Necesitas acostumbrarte a leer la teoría con mentalidad práctica. Así el temario deja de ser una lista de apartados y empieza a convertirse en una herramienta para resolver preguntas.
+
+### Error 9: estudiar Seguridad Social sin ejemplos
+
+La parte específica de Seguridad Social puede resultar muy técnica si se estudia solo leyendo. Afiliación, cotización, recaudación, incapacidad temporal, jubilación, desempleo o ingreso mínimo vital no se entienden bien como conceptos aislados.
+
+Cada tema debería llevarte a preguntas concretas:
+
+- Quién interviene.
+- Qué situación se protege.
+- Qué requisito cambia la respuesta.
+- Qué plazo importa.
+- Qué efecto produce una fecha.
+- Qué dato del enunciado puede modificar la solución.
+
+Este enfoque hace que el estudio sea más lento al principio, pero mucho más útil después. En el supuesto práctico no te preguntan solo si recuerdas una frase. Te piden que sepas usarla.
+
+### Error 10: hacer muchos supuestos sin consolidar
+
+Cuando esta parte preocupa, es normal querer hacer muchos ejercicios. El problema aparece cuando haces un supuesto, miras la plantilla, pasas al siguiente y no consolidas nada.
+
+Hacer más no siempre significa mejorar más. A veces es preferible trabajar menos preguntas y corregirlas bien. El objetivo no es llenar una lista de supuestos hechos, sino entender por qué has acertado o fallado.
+
+Una práctica útil es convertir algunos errores en notas breves. No hace falta copiar el enunciado entero. Basta con apuntar la regla, el dato que no viste y el motivo del fallo. Si esa nota te ayuda a no repetir el error, ya cumple su función.
+
+### Error 11: corregir solo mirando la respuesta correcta
+
+La plantilla te dice qué opción era correcta, pero no te explica qué debes cambiar en tu forma de estudiar. Esa parte sale de una buena corrección.
 
 Después de cada fallo, pregúntate:
 
-- ¿No sabía la norma?
-- ¿Sabía la norma, pero no la apliqué?
+- ¿Faltaba teoría?
+- ¿Sabía la norma, pero no la apliqué bien?
 - ¿Leí mal el enunciado?
-- ¿Confundí dos conceptos?
-- ¿Me precipité?
-- ¿Acerté otra pregunta sin seguridad?
+- ¿Me salté una fecha?
+- ¿Confundí dos conceptos parecidos?
+- ¿Respondí demasiado rápido?
+- ¿Acerté sin estar seguro?
 
-Esta clasificación cambia el plan. Si no sabes la norma, toca estudiar. Si la sabes pero no la aplicas, toca trabajar casos. Si lees mal, toca entrenar lectura. Si te precipitas, toca estrategia de examen.
+No todos los errores se corrigen igual. Si el problema es teoría, toca volver al tema. Si el problema es lectura, toca entrenar enunciados. Si el problema es precipitación, necesitas trabajar estrategia. Meter todos los fallos en la misma bolsa hace que estudies más, pero no necesariamente mejor.
 
-Corregir bien no es perder tiempo. Es lo que te ahorra repetir los mismos fallos una y otra vez.
+### Error 12: memorizar requisitos sin entender consecuencias
 
-## Error 6: hacer demasiados casos sin consolidar
+En Seguridad Social, muchas preguntas no se resuelven solo recordando una definición. Hay que entender qué consecuencia produce una situación.
 
-Cuando el supuesto preocupa, algunos opositores intentan resolverlo haciendo muchos casos. El problema es que, si no consolidas lo que fallas, solo acumulas frustración.
+Por ejemplo, saber los requisitos de una prestación ayuda, pero también tienes que saber qué pasa si falta uno, desde cuándo produce efectos, quién puede solicitarla, qué plazo cuenta o qué dato del enunciado cambia la respuesta.
 
-Es mejor hacer menos casos y corregirlos mejor que hacer muchos sin análisis. El objetivo no es llenar una lista de ejercicios. El objetivo es mejorar el razonamiento.
+Durante el estudio, una buena pregunta es: "¿qué ocurre en esta situación?". Esa forma de pensar se parece mucho más al examen que repetir el tema de memoria.
 
-Una buena práctica es seleccionar algunos fallos importantes y convertirlos en tarjetas de repaso o notas breves. No hace falta copiar todo. Basta con escribir la regla, el motivo del error y un ejemplo.
+### Error 13: estudiar Seguridad Social como si fuera AGE
 
-## Error 7: memorizar frases sin entender consecuencias
+AGE y Seguridad Social comparten una base administrativa, pero el supuesto práctico de Seguridad Social exige entrar en su propia lógica. Sujetos, regímenes, cotización, recaudación, prestaciones y efectos tienen mucho peso.
 
-En Seguridad Social, muchas preguntas no se resuelven recordando una frase exacta. Se resuelven entendiendo qué consecuencia produce una situación.
+Si vienes de AGE, esa base común te ayuda, pero no sustituye el trabajo específico. Seguridad Social necesita precisión. No basta con tener memoria administrativa general si después no sabes aplicar la normativa propia.
 
-Por ejemplo, no basta con memorizar requisitos de una prestación. Hay que saber qué ocurre si falta uno, desde cuándo produce efectos, quién puede solicitarla o qué dato del supuesto modifica la respuesta.
+Cuando se preparan ambas oposiciones, conviene separar bien lo común y lo específico. La [preparación conjunta AGE y Seguridad Social](/preparar-age-y-seguridad-social/) tiene sentido cuando esa separación está clara y no se mezclan materias sin orden.
 
-Este cambio de enfoque es importante. La pregunta que debes hacerte no es solo "qué dice el tema", sino "qué pasa en este caso".
+### Error 14: estudiar sin seguimiento cuando no sabes por qué fallas
 
-## Error 8: no entrenar el tiempo
+Hay opositores que trabajan mucho, hacen test, estudian teoría y aun así no avanzan en el supuesto práctico. A veces el problema no es la falta de esfuerzo, sino no saber de dónde viene el fallo.
 
-Primero se aprende el método. Después se añade reloj. Pero el reloj tiene que aparecer. Si nunca has practicado con tiempo, el día del examen puede cambiar tu forma de responder.
+Puedes pensar que "se te da mal el supuesto", cuando en realidad fallas por lectura. O creer que necesitas más horas de teoría, cuando lo que falta es entrenar aplicación. También puede ocurrir al revés: haces muchos ejercicios, pero tienes lagunas en una prestación concreta.
 
-La presión hace que leas peor, que saltes pasos y que dudes más. Por eso conviene introducir tandas cronometradas cuando ya tienes base. No para correr desde el primer día, sino para aprender a mantener el método con presión.
+Aquí el seguimiento ayuda mucho. Una preparación guiada puede detectar si el fallo viene de base, de lectura, de razonamiento, de tiempo o de estrategia de examen. Esa diferencia cambia por completo la forma de estudiar.
 
-Una estrategia razonable es hacer una primera vuelta de preguntas claras y dejar las dudosas para una segunda vuelta. Quedarte bloqueado demasiado pronto puede afectar al resto del ejercicio.
+En la [preparación de Seguridad Social C1](/oposiciones-seguridad-social/) se trabaja el supuesto práctico desde el inicio con clases en directo, materiales ordenados, práctica y corrección. La idea no es darte más contenido sin más, sino ayudarte a saber qué hacer con cada error.
 
-## Error 9: estudiar Seguridad Social como si fuera AGE
+## Cómo corregir mejor el supuesto práctico
 
-AGE y Seguridad Social comparten base, pero no son idénticas. Si vienes de AGE, tienes una ventaja en la parte común. Pero esa ventaja no sustituye el trabajo específico.
+Una corrección útil debería dejarte una tarea clara. No basta con saber que has fallado la pregunta 4. Tienes que saber qué toca hacer después.
 
-Seguridad Social exige entrar en su propia lógica: sujetos, regímenes, prestaciones, cotización, recaudación y procedimientos. Si intentas resolverlo solo con memoria administrativa general, te faltará precisión.
+Puedes usar una clasificación sencilla:
 
-Por eso, cuando se prepara de forma conjunta, el plan debe separar lo común y lo propio. La [preparación conjunta AGE y Seguridad Social](/preparar-age-y-seguridad-social/) funciona cuando esa separación está clara.
+- Fallo de teoría: volver al apartado concreto.
+- Fallo de lectura: repetir el enunciado y localizar el dato que se escapó.
+- Fallo de aplicación: buscar ejercicios parecidos.
+- Fallo de tiempo: entrenar tandas cronometradas.
+- Fallo de inseguridad: revisar cambios de respuesta.
 
-## Cómo corregir estos errores
+Con el tiempo, esta forma de corregir te enseña mucho sobre tu preparación. Si siempre fallas por el mismo motivo, ya sabes dónde intervenir. Si mezclas todos los errores, acabas estudiando a ciegas.
 
-La solución no es estudiar más a lo loco. La solución es estudiar mejor. Un plan razonable para el supuesto debería incluir:
+## Qué revisar antes de un simulacro
 
-- Teoría explicada con ejemplos.
-- Casos cortos desde fases tempranas.
-- Test por bloques.
-- Supuestos mezclados cuando haya base.
-- Corrección razonada.
-- Lista de errores.
-- Simulacros con tiempo.
+Antes de hacer un simulacro o una tanda de supuesto práctico, conviene llegar con una intención. No siempre tienes que practicar lo mismo.
 
-También ayuda trabajar con una preparadora que detecte si el fallo viene de teoría, lectura o razonamiento. Muchas veces el alumno no identifica bien el origen del problema.
+Puedes centrarte en:
 
-En la [preparación de Seguridad Social](/oposiciones-seguridad-social/) se trabaja el supuesto desde el inicio, con clases en directo, grupos reducidos y seguimiento para que no se convierta en un bloque final improvisado.
+- Leer mejor los enunciados.
+- Controlar el tiempo.
+- Justificar por qué descartas opciones.
+- Revisar plazos y efectos.
+- Evitar cambios de respuesta sin motivo.
 
-## Cómo llevar un cuaderno de errores
+Después, corrige según ese objetivo. Si estabas entrenando lectura, no mires solo la nota. Mira si has localizado bien sujetos, fechas y pregunta. Si estabas entrenando tiempo, revisa dónde te has quedado bloqueado.
 
-El cuaderno de errores no tiene que ser bonito ni muy largo. Tiene que ser útil. Después de corregir un supuesto, anota solo lo que te ayude a no repetir el fallo.
-
-Una estructura sencilla puede ser:
-
-- Materia del caso.
-- Dato que no viste.
-- Norma o regla que decidía la respuesta.
-- Motivo del fallo.
-- Frase breve para recordar el criterio.
-
-No copies el supuesto completo. Si haces eso, el cuaderno se vuelve pesado y acabas sin revisarlo. Es mejor escribir una nota clara de tres o cuatro líneas que puedas repasar antes de un simulacro.
-
-También conviene separar errores de conocimiento y errores de método. No es lo mismo fallar porque no sabías una prestación que fallar porque leíste mal una fecha. Si mezclas todos los fallos, no sabrás qué corregir.
-
-## Cuándo pasar a supuestos más largos
-
-Al principio, los casos cortos son muy útiles. Permiten ver una materia concreta sin saturarte. Pero llega un momento en el que debes entrenar supuestos más completos, con materias mezcladas y tiempo limitado.
-
-La transición debe hacerse cuando ya reconoces las materias principales, corriges con cierta autonomía y puedes explicar por qué una respuesta es correcta. Si todavía fallas por no entender el enunciado, no tiene sentido saltar a supuestos largos. Primero necesitas reforzar lectura y base.
-
-Cuando empieces con supuestos más largos, no midas solo aciertos. Mide también el proceso: si localizas bien la materia, si ordenas datos, si descartas opciones con criterio y si sabes justificar tus respuestas. Esa forma de corregir te prepara mejor para el examen.
+Así el simulacro deja de ser una prueba aislada y se convierte en una herramienta de mejora.
 
 ## Conclusión
 
-El supuesto práctico de Seguridad Social C1 no se domina a base de cantidad. Se domina con método. Hay que estudiar teoría, sí, pero también aprender a leer casos, detectar datos relevantes, aplicar normas y corregir errores.
+Los errores en el supuesto práctico de Seguridad Social C1 no siempre vienen de estudiar poco. Muchas veces aparecen en el propio examen: leer deprisa, responder sin comparar opciones, cambiar respuestas por nervios o no saber gestionar las dudas.
 
-Si fallas mucho al principio, no te desanimes. Eso no quiere decir que no puedas con esta oposición. Quiere decir que necesitas ordenar el proceso. El supuesto no es una amenaza si lo integras pronto en el estudio: al contrario, te ayuda a entender mejor la materia.
+La preparación también influye. Si corriges mal, dejas el supuesto para el final o estudias Seguridad Social sin ejemplos, es fácil repetir fallos aunque dediques muchas horas. Por eso necesitas teoría, práctica, corrección y un método claro para saber qué hacer cuando fallas.
 
 ---
 **¿Quieres preparar el supuesto práctico con seguimiento?**  
