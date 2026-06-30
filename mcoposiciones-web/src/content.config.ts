@@ -22,6 +22,14 @@ const blog = defineCollection({
 			excerpt: z.string().min(1),
 			image: z.string().optional(),
 			imageAlt: z.string().optional(),
+			faqs: z
+				.array(
+					z.object({
+						question: z.string().min(1),
+						answer: z.string().min(1),
+					}),
+				)
+				.optional(),
 		})
 		.superRefine((data, ctx) => {
 			if (data.image && !data.imageAlt) {

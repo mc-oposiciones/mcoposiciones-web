@@ -40,25 +40,44 @@ const articleImage = entry.data.image
 	? new URL(entry.data.image, 'https://mcoposiciones.com').toString()
 	: 'https://mcoposiciones.com/og-default.webp';
 const displayDate = entry.data.updatedDate ?? entry.data.pubDate;
+const faqSchema = entry.data.faqs?.length
+	? {
+			'@type': 'FAQPage',
+			'@id': `${canonicalUrl}#faq`,
+			mainEntity: entry.data.faqs.map((item) => ({
+				'@type': 'Question',
+				name: item.question,
+				acceptedAnswer: {
+					'@type': 'Answer',
+					text: item.answer,
+				},
+			})),
+		}
+	: null;
 const schemaJson = JSON.stringify({
 	'@context': 'https://schema.org',
-	'@type': 'BlogPosting',
-	'@id': `${canonicalUrl}#article`,
-	headline: entry.data.h1,
-	description: entry.data.description,
-	image: articleImage,
-	author: {
-		'@id': 'https://mcoposiciones.com/preparadora-oposiciones/#person',
-	},
-	datePublished: entry.data.pubDate.toISOString(),
-	dateModified: displayDate.toISOString(),
-	publisher: {
-		'@id': 'https://mcoposiciones.com/#organization',
-	},
-	mainEntityOfPage: {
-		'@type': 'WebPage',
-		'@id': canonicalUrl,
-	},
+	'@graph': [
+		{
+			'@type': 'BlogPosting',
+			'@id': `${canonicalUrl}#article`,
+			headline: entry.data.h1,
+			description: entry.data.description,
+			image: articleImage,
+			author: {
+				'@id': 'https://mcoposiciones.com/preparadora-oposiciones/#person',
+			},
+			datePublished: entry.data.pubDate.toISOString(),
+			dateModified: displayDate.toISOString(),
+			publisher: {
+				'@id': 'https://mcoposiciones.com/#organization',
+			},
+			mainEntityOfPage: {
+				'@type': 'WebPage',
+				'@id': canonicalUrl,
+			},
+		},
+		...(faqSchema ? [faqSchema] : []),
+	],
 });
 ---
 

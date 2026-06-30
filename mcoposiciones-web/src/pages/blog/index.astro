@@ -70,16 +70,16 @@ const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 								)}
 								<div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
 							</a>
-							<div class="flex flex-col p-7 sm:p-8 lg:p-7 xl:p-8">
+							<div class="flex flex-col p-7 sm:p-8 lg:p-5 xl:p-6">
 								<div class="flex flex-wrap items-center gap-3">
 									<span class="rounded-lg bg-secondary/10 px-3 py-1.5 text-xs font-extrabold tracking-[0.16em] text-secondary">{categoryLabel(featuredPost.data.category)}</span>
 									<span class="text-sm font-semibold text-text-muted">{formatDate(featuredPost.data.pubDate)}</span>
 								</div>
-								<h2 class="mt-5 text-balance text-2xl font-extrabold leading-[1.08] text-primary transition-colors duration-150 ease-out group-hover:text-secondary sm:text-3xl xl:text-4xl">
+								<h2 class="mt-3 text-balance text-2xl font-extrabold leading-[1.1] text-primary transition-colors duration-150 ease-out group-hover:text-secondary sm:text-3xl lg:text-[1.75rem] xl:text-[2rem]">
 									<a href={`/blog/${featuredPost.id}/`} class="text-inherit no-underline transition-none hover:text-inherit">{featuredPost.data.h1}</a>
 								</h2>
-								<p class="mt-4 line-clamp-2 text-sm leading-7 text-text-muted xl:text-base">{featuredPost.data.excerpt}</p>
-								<a href={`/blog/${featuredPost.id}/`} class="mt-6 inline-flex w-fit items-center rounded-xl bg-secondary px-5 py-3 text-sm font-black text-white no-underline shadow-button transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-dark hover:text-white active:translate-y-0">
+								<p class="mt-3 line-clamp-2 text-sm leading-6 text-text-muted">{featuredPost.data.excerpt}</p>
+								<a href={`/blog/${featuredPost.id}/`} class="mt-4 inline-flex w-fit items-center rounded-xl bg-secondary px-5 py-3 text-sm font-black text-white no-underline shadow-button transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-dark hover:text-white active:translate-y-0">
 									Leer artículo
 								</a>
 							</div>
