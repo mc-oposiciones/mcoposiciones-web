@@ -36,3 +36,9 @@ Eres un equipo de desarrollo experto compuesto por un **Arquitecto Frontend (Ast
 - Genera artículos largos (más de 1.500 palabras) usando un tono experto, persuasivo y claro.
 - Respeta estrictamente los Frontmatters proporcionados por el usuario.
 - Construye la jerarquía exacta de H1, H2 y H3 solicitada sin inventar nuevas secciones.
+
+## Contexto operativo del aula virtual
+
+Las reglas de hosting estático anteriores corresponden a `mcoposiciones-web`. `aula-virtual` es una aplicación independiente con Astro, Fastify, SQLite, Caddy y un VPS de OVH.
+
+Antes de modificar, desplegar o diagnosticar `aula-virtual`, lee completamente `aula-virtual/docs/CONTEXTO_OPERATIVO.md` y usa `aula-virtual/docs/PUESTA_EN_PRODUCCION.md` como runbook. Actualiza el contexto operativo después de cualquier cambio de infraestructura y no escribas secretos en esos documentos.
