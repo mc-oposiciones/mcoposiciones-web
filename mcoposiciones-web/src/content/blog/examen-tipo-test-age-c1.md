@@ -1,154 +1,127 @@
 ---
-title: "Examen tipo test AGE C1: cómo prepararlo"
-description: "Guía para preparar el examen tipo test de AGE C1: estructura, técnica de respuesta, gestión del tiempo, ofimática, simulacros y errores frecuentes."
-pubDate: 2026-06-03
-draft: true
+title: "Examen Administrativo del Estado: cómo preparar el test AGE C1"
+description: "Cómo es el examen de Administrativo del Estado y cómo preparar el test AGE C1: preguntas, penalización, ofimática, supuesto práctico y simulacros."
+pubDate: 2026-08-17
+draft: false
 category: "Oposiciones AGE"
-h1: "Examen tipo test AGE C1: cómo prepararlo"
-excerpt: "El test de AGE C1 no se prepara solo leyendo temas. Necesita técnica, repasos, corrección de errores, ofimática y simulacros con tiempo."
+h1: "Examen Administrativo del Estado: cómo preparar el test AGE C1"
+excerpt: "Cómo trabajar los test, corregir los fallos y preparar la ofimática y el supuesto práctico de AGE C1 con vistas al examen."
+image: "/blog/examen-tipo-test-administrativo-estado-age-c1.webp"
+imageAlt: "Preparación del examen tipo test de Administrativo del Estado AGE C1"
+faqs:
+  - question: "¿Cómo es el examen de Administrativo del Estado C1?"
+    answer: "El examen consta de un ejercicio único con dos partes obligatorias y eliminatorias. La primera tiene 70 preguntas y la segunda es un supuesto práctico de 20 preguntas a elegir entre dos. El tiempo total es de 100 minutos."
+  - question: "¿Cuántas preguntas de ofimática hay en el test AGE C1?"
+    answer: "La primera parte incluye 30 preguntas de ofimática y 40 preguntas de los bloques I a V del programa."
+  - question: "¿Cuánto penalizan los fallos en el examen de AGE C1?"
+    answer: "Cada respuesta incorrecta descuenta un tercio del valor de una respuesta correcta y las preguntas en blanco no penalizan."
+  - question: "¿Conviene responder una pregunta dudosa en el test?"
+    answer: "Si dudas entre dos opciones, normalmente compensa responder. Si no puedes descartar ninguna, contestar al azar no te beneficia porque cada fallo resta un tercio."
+  - question: "¿Se corrige el supuesto práctico si no apruebo la primera parte?"
+    answer: "Solo se corrige el supuesto práctico de quienes alcanzan la puntuación directa mínima exigida en la primera parte. Las dos partes deben superarse por separado."
 ---
 
-El examen tipo test de AGE C1 parece, a primera vista, más manejable que una prueba oral o de desarrollo. Esa impresión puede ser engañosa. Un test no exige redactar, pero exige precisión. La pregunta puede parecer sencilla, las opciones pueden parecer familiares y aun así el fallo aparece por una palabra, un plazo, una excepción o una lectura precipitada.
+Cuando corrijo un test, no me fijo solo en la nota. Dos alumnos con el mismo resultado pueden necesitar repasos muy distintos. A uno quizá le falta estudiar mejor un tema y el otro ha perdido puntos por leer deprisa o cambiar respuestas que tenía bien.
 
-Preparar el examen tipo test de Administrativo del Estado no consiste en hacer miles de preguntas sin orden. Consiste en entender el temario, practicar con intención y corregir de manera útil. Si solo haces test para ver una nota, pierdes una parte importante del aprendizaje. Si solo lees teoría y dejas el test para el final, llegas tarde a la forma real del examen.
+En el examen de Administrativo del Estado hay que dominar el temario, trabajar la ofimática y saber aplicar lo estudiado en el supuesto práctico. También hay que leer con cuidado y repartir bien el tiempo. Todo se hace en la misma sesión, así que merece la pena entrenarlo como un examen completo bastante antes de que llegue la fecha.
 
-En esta guía te explico cómo preparar el test de AGE C1 con un método práctico, sin promesas fáciles y sin convertir el estudio en una acumulación de materiales.
+## Cómo fue el último examen de Administrativo del Estado
 
-## Entender antes de memorizar
+La última convocatoria publicada para ingreso libre estableció un ejercicio único con dos partes obligatorias y eliminatorias:
 
-El primer paso para hacer buenos test no es hacer test. Es entender qué estás estudiando. En AGE hay materias que se pueden memorizar parcialmente, pero incluso esas materias necesitan contexto. Constitución, procedimiento administrativo, función pública, organización del Estado u ofimática tienen preguntas muy concretas, pero se responden mejor cuando sabes dónde encaja cada concepto.
+- **Primera parte:** 70 preguntas. De ellas, 40 correspondían a los bloques I a V del programa y 30 al bloque VI de ofimática. Pueden añadirse 5 preguntas de reserva.
+- **Segunda parte:** un supuesto práctico de 20 preguntas a elegir entre dos, con otras 5 posibles preguntas de reserva. Los supuestos se referían a los bloques II, III, IV y V.
+- **Tiempo total:** 100 minutos para las dos partes.
+- **Penalización:** cada fallo restaba un tercio del valor de un acierto. Las preguntas en blanco no penalizaban.
 
-Un error frecuente es empezar una batería de preguntas justo después de una lectura superficial. Puede darte la sensación de que "estás practicando", pero si no has entendido el tema, el test se convierte en una sucesión de aciertos por intuición y fallos frustrantes.
+Las dos partes se calificaron por separado de 0 a 50 puntos. El supuesto solo se corrigió a quienes alcanzaron la puntuación directa mínima fijada para la primera parte. Después había que superar también el supuesto.
 
-La secuencia más útil suele ser esta:
+Estos datos corresponden a la última convocatoria, no a la siguiente, que todavía no se ha publicado. Puedes consultar las bases en el <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262" target="_blank" rel="noopener noreferrer">BOE</a>. Cuando salga una nueva convocatoria habrá que revisar la estructura, el programa y los criterios de corrección.
 
-1. Lectura inicial para ubicar el tema.
-2. Clase o explicación que ordene lo importante.
-3. Segunda lectura activa.
-4. Primer test para detectar fallos.
-5. Corrección razonada.
-6. Repaso breve antes de avanzar.
+## Cuándo empezar a hacer test
 
-No hace falta que todo sea perfecto antes del primer test. Pero sí conviene que el test tenga una función: comprobar, detectar y ajustar.
+No esperaría a terminar el temario. Después de estudiar y entender un tema, un test corto ayuda a comprobar si distingues bien los conceptos y si recuerdas los datos que suelen confundirse.
 
-## Cómo leer una pregunta de test
+Al principio tiene sentido trabajar por temas. Más adelante hay que mezclarlos. Saber que todas las preguntas son de procedimiento administrativo facilita mucho la respuesta, porque ya estás buscando plazos, recursos o fases del procedimiento. En el examen, en cambio, una pregunta de función pública puede aparecer justo después de otra de Excel.
 
-Muchas preguntas de test se fallan antes de mirar las opciones. Se fallan en la lectura. El opositor va rápido, reconoce una palabra y responde a lo que cree que se pregunta, no a lo que realmente se pregunta.
+Cuando lleves varios temas, empieza a mezclarlos. Después puedes pasar a los test por bloques y a las preguntas de todo lo estudiado. Las tandas con tiempo y los simulacros completos llegarán más adelante, cuando ya tengas materia suficiente para que el resultado te sirva de referencia.
 
-Por eso, en el examen tipo test de AGE C1 conviene entrenar una lectura muy concreta:
+## La corrección merece tiempo
 
-- Identifica si la pregunta pide afirmación correcta o incorrecta.
-- Localiza si hay palabras absolutas como "siempre", "nunca", "en todo caso".
-- Mira si la pregunta se refiere a plazo, órgano, competencia, efecto o excepción.
-- No respondas solo porque una opción "suena" familiar.
+Hacer muchos test sirve de poco si la corrección consiste en mirar la plantilla y contar los fallos. Cuando corrijo, me interesa saber qué ha ocurrido en cada pregunta dudosa o incorrecta.
 
-Este hábito parece lento al principio, pero ahorra errores. La velocidad buena no es leer rápido sin control. Es leer con método hasta que el método se vuelve automático.
+Puede faltar un dato del tema, haber una confusión entre dos conceptos o simplemente haberse leído demasiado rápido. También conviene revisar los aciertos que se han contestado sin seguridad. Si has elegido una opción casi al azar y era correcta, esa materia aún necesita repaso.
 
-## La corrección es donde más se aprende
+Para llevar un control sencillo, puedes clasificar los fallos así:
 
-Corregir un test no es mirar la plantilla y sumar aciertos. Esa es solo la parte superficial. La corrección útil responde a una pregunta: por qué he fallado.
+- **No sabía la respuesta:** vuelve al apartado concreto del tema.
+- **Confundí dos opciones:** anota la diferencia que no tenías clara.
+- **Leí mal la pregunta:** localiza la palabra que cambió el sentido.
+- **Me bloqueé o cambié la respuesta:** revisa cómo estás gestionando las dudas.
 
-Puedes clasificar tus errores así:
+No hace falta copiar preguntas enteras ni preparar un cuaderno enorme. Basta con guardar los errores que se repiten y revisarlos antes de otro test. Esa lista tiene que ayudarte a estudiar, no darte más trabajo del necesario.
 
-- Fallo de lectura
-- Fallo de concepto
-- Fallo de memoria
-- Confusión entre dos figuras
-- Acierto sin seguridad
-- Precipitación por tiempo
+## Leer bien antes de responder
 
-Cada tipo de error pide una respuesta distinta. Si fallas por lectura, necesitas entrenar enunciados. Si fallas por concepto, necesitas volver a la explicación. Si fallas por memoria, necesitas repaso. Si aciertas sin seguridad, no lo des por dominado.
+En un test se puede fallar aun sabiendo el contenido. Ocurre al pasar por alto un “incorrecta”, confundir el órgano que se pregunta o responder sobre la regla general cuando el enunciado pide una excepción.
 
-Una lista de errores bien llevada vale más que muchas horas de test sin revisar. No hace falta que sea compleja. Puede ser una tabla con materia, pregunta, tipo de fallo y acción de repaso.
+Lee primero qué te están pidiendo y después compara todas las alternativas. Las palabras “siempre”, “nunca” o “en todo caso” pueden llamar la atención, pero no convierten una respuesta en falsa automáticamente. Tiene que serlo de acuerdo con el temario.
 
-## No todos los test sirven para lo mismo
+También recomiendo cambiar una respuesta solo cuando encuentres un motivo. Puede ser un plazo que no habías visto, una competencia o una opción que encaja mejor con la norma. Cambiarla únicamente porque al revisar te entra inseguridad suele acabar mal.
 
-Durante la preparación conviene usar distintos tipos de test. No todos tienen la misma función.
+## Qué hacer con las preguntas dudosas
 
-El test por tema sirve para comprobar si has entendido lo trabajado recientemente. Es útil al principio, pero puede engañar porque tienes la materia fresca.
+La puntuación directa se calcula restando un tercio de punto por cada error:
 
-El test por bloque mezcla temas relacionados. Sirve para ver si conservas lo estudiado y si puedes distinguir materias parecidas.
+> **Puntuación directa = aciertos − (errores ÷ 3)**
 
-El test acumulativo mezcla temas de distintas partes del programa. Es más exigente porque obliga a recuperar información sin aviso.
+Esta fórmula no da directamente la nota de 0 a 50. Calcula la puntuación directa, que después se transforma conforme a los criterios de la Comisión Permanente de Selección.
 
-El simulacro reproduce presión de tiempo, cansancio y estrategia de examen. No debería aparecer solo al final, pero tampoco tiene sentido hacerlo cuando todavía no tienes base.
+Por ejemplo, con 40 aciertos y 9 errores, la puntuación directa sería 37. Las preguntas en blanco no entran en el cálculo.
 
-La preparación se vuelve más sólida cuando estos formatos se introducen de forma progresiva.
+Si dudas entre dos respuestas, normalmente compensa contestar. Incluso cuando has descartado solo una de las cuatro opciones, la probabilidad está a tu favor. Si no puedes eliminar ninguna, responder al azar no te beneficia: con cuatro opciones, un acierto queda compensado por tres fallos.
 
-## Gestionar el tiempo sin precipitarse
+Mi consejo es que compruebes en los simulacros cómo resuelves estas dudas. Hay alumnos que dejan demasiadas preguntas en blanco aunque habían descartado dos opciones. Otros contestan por una simple corazonada. Saber en cuál de los dos extremos estás ayuda a ajustar la estrategia.
 
-El tiempo importa, pero no se entrena de golpe. Al principio, si estás aprendiendo un tema, no necesitas correr. Necesitas entender por qué una respuesta es correcta y por qué las otras no.
+## Cómo preparar la ofimática
 
-Cuando ya hay base, sí conviene introducir reloj. Primero en tandas cortas. Después en bloques más largos. Y más adelante en simulacros completos.
+La ofimática tiene un peso importante en la prueba: 30 de las 70 preguntas de la primera parte. Haber usado Word o Excel en el trabajo ayuda, pero no cubre todo lo que se pregunta en una oposición.
 
-Una estrategia sencilla para el examen es hacer una primera vuelta con preguntas claras, marcar dudas y volver después. Quedarse atrapado demasiado tiempo en una pregunta puede costar varios puntos. También conviene aprender a abandonar una duda cuando ya no está aportando nada.
+Como referencia, el último programa incluyó conceptos informáticos básicos, Windows, Explorador de archivos, Word, Excel, Access, Outlook e Internet. Pueden preguntar funciones, menús, atajos, referencias de celdas, consultas o herramientas que apenas utilizas en el día a día.
 
-La gestión del tiempo no significa responder a toda velocidad. Significa repartir la energía.
+Esta parte se trabaja mejor combinando explicación, práctica y test. Abre el programa, localiza las opciones y prueba las funciones mientras estudias. Después haz preguntas para acostumbrarte a distinguir respuestas muy parecidas.
 
-## El papel de la ofimática
+Revisa también la fecha de los materiales. En ofimática, una pregunta preparada para una versión antigua puede enseñarte una ruta o un nombre que ya ha cambiado.
 
-En AGE C1, la ofimática no es un añadido menor. Puede marcar diferencias. Word, Excel, Access, Outlook o Windows se preparan con una combinación de teoría, práctica y preguntas tipo examen.
+## Preparar el supuesto práctico
 
-Usar Word o Excel en el trabajo no garantiza dominar la ofimática de oposición. El examen puede preguntar detalles de menús, funciones, opciones de configuración o comportamientos que no usas a diario.
+En la segunda parte tendrás que elegir uno de los dos supuestos propuestos. Antes de decidir, mira las preguntas de ambos. El primero puede empezar con una materia que te gusta y complicarse después, así que no conviene elegir solo por el enunciado inicial.
 
-Por eso, la ofimática debe entrar en el plan desde fases relativamente tempranas. No hace falta dedicarle todo el tiempo al principio, pero sí trabajarla de forma constante. Si la dejas para el final, suele generar una sensación incómoda: sabes que es importante, pero no tienes margen para asentarla.
+Para preparar esta parte, practica con fechas, órganos, plazos y situaciones administrativas. Acostúmbrate a separar los datos que influyen en la respuesta de los que solo dan contexto al supuesto. Y recuerda marcar bien en la hoja de respuestas cuál has elegido. No se corrige la segunda parte si no se señala ningún supuesto, se marcan los dos o la marca no es válida.
 
-En la [preparación de Administrativo del Estado](/oposiciones-administrativo-estado/) se trabaja la ofimática con enfoque práctico, para que no sea un bloque aislado ni una sorpresa final.
+## Tiempo y simulacros
 
-## Simulacros: cuándo empezar
+Cada alumno acaba encontrando un reparto distinto de los 100 minutos. Como primera prueba, puedes reservar unos 55 o 60 minutos para las 70 preguntas, alrededor de 30 para elegir y resolver el supuesto y dejar los minutos restantes para revisar.
 
-Los simulacros son necesarios, pero hay que usarlos bien. Si haces un simulacro demasiado pronto, puede desmotivarte porque todavía no tienes materia suficiente. Si esperas al último mes, llegas sin entrenamiento real de examen.
+Haz una primera vuelta con las preguntas claras y marca las dudosas para volver después. Si una pregunta te lleva varias lecturas y sigues sin verlo, continúa. Quedarte bloqueado puede dejarte sin tiempo para otras que sí sabes responder.
 
-Lo razonable es introducir simulacros parciales cuando ya se han trabajado varios bloques. Más adelante, los simulacros completos ayudan a entrenar ritmo, lectura, resistencia y estrategia.
+No dejes tampoco todas las marcas de la hoja para el final. Es fácil desplazarse una línea cuando vas con prisa. Y responde las preguntas de reserva, ya que se utilizan por orden si se anula alguna de las ordinarias.
 
-Después del simulacro, la corrección vuelve a ser clave. No basta con saber la nota. Hay que mirar:
+Los exámenes oficiales son una buena referencia para comprobar el nivel real. El último examen ordinario se celebró el 23 de mayo de 2026. Aquí puedes descargar el <a href="https://sede.inap.gob.es/sites/sede/files/public/2026-05/Cuestionario-ADVO-L-ModeloA.pdf" target="_blank" rel="noopener noreferrer">modelo A</a> y el <a href="https://sede.inap.gob.es/sites/sede/files/public/2026-05/Cuestionario-ADVO-L-ModeloB.pdf" target="_blank" rel="noopener noreferrer">modelo B</a>. Las plantillas y las posibles actualizaciones están en la <a href="https://sede.inap.gob.es/es/procedimientos-y-servicios/seleccion/procesos-selectivos-de-cuerpos-y-escalas-generales/cuerpo-general-administrativo-de-la-administracion-del-estado-ingreso-libre-convocatoria-2025" target="_blank" rel="noopener noreferrer">página oficial del proceso selectivo del INAP</a>.
 
-- Qué materias fallan más.
-- Si los errores son de lectura o de contenido.
-- Si el tiempo se reparte mal.
-- Si hay preguntas acertadas sin seguridad.
-- Qué repasos deben entrar en la semana siguiente.
+Haz alguno con el tiempo real y sin consultar apuntes. Al corregirlo, revisa las preguntas que has fallado y también aquellas en las que dudaste. Así sabrás si necesitas repasar contenido o trabajar mejor el tiempo y la forma de responder.
 
-Un simulacro bien corregido puede ordenar mucho la preparación.
+## Cómo encajarlo en la semana
 
-## Errores frecuentes al preparar el test
+Una semana de estudio debería incluir tema nuevo, repaso, test y un bloque de ofimática. Según el momento de la preparación, puedes añadir un supuesto o un simulacro. La cantidad dependerá de tus horas, pero intentaría que ninguna de estas partes desaparezca durante semanas.
 
-El primer error es estudiar sin repasar. Puedes avanzar muchos temas y aun así no tenerlos disponibles. El test mezcla, recupera y exige memoria activa. Sin repasos, la sensación de avance se deshace.
+En mi [preparación de Administrativo del Estado](/oposiciones-administrativo-estado/) trabajamos el temario junto con la ofimática, los test y los supuestos. Cuando un resultado baja, revisamos de dónde vienen los fallos antes de limitar la solución a estudiar más horas. A veces falta teoría. Otras veces hay que cambiar el repaso, corregir con más atención o practicar con tiempo.
 
-El segundo error es medir solo el porcentaje. Un 80% no significa lo mismo si has acertado con seguridad que si has acertado varias por intuición. La nota importa, pero el análisis importa más.
+Si estás empezando y todavía necesitas ordenar las materias, también puedes consultar la guía sobre el [temario de Administrativo del Estado](/blog/temario-administrativo-estado-age-2026/).
 
-El tercer error es cambiar de material constantemente. Tener muchas fuentes puede parecer seguridad, pero a menudo genera ruido. Es mejor trabajar un temario claro, buenos test y una corrección constante.
-
-El cuarto error es no entrenar preguntas mezcladas. El examen no avisa de qué tema viene. Por eso, conforme avanza la preparación, hay que salir del test por tema.
-
-## Una semana de estudio orientada al test
-
-Una semana razonable para AGE puede incluir:
-
-- Una clase o bloque de tema nuevo.
-- Lectura activa y esquema breve.
-- Test del tema.
-- Corrección de errores.
-- Repaso de temas anteriores.
-- Bloque de ofimática.
-- Pequeña tanda de preguntas acumulativas.
-
-No hace falta que todas las semanas sean perfectas. Lo importante es que haya equilibrio entre avanzar y consolidar. Si solo avanzas, olvidas. Si solo repasas, no terminas. Si solo haces test, puedes aprender respuestas sin entender materia.
-
-## Cómo ayuda una preparación guiada
-
-Un preparador puede ayudarte a saber qué hacer con tus errores. Muchas veces el opositor piensa que "le falta estudiar más", cuando en realidad necesita cambiar la forma de corregir, introducir repasos o practicar lectura de enunciados.
-
-También ayuda tener una planificación realista. No todas las personas tienen las mismas horas ni la misma base. Una persona que trabaja a jornada completa necesita un plan distinto a otra con más disponibilidad.
-
-Mª Carmen trabaja con grupos reducidos, clases en directo y seguimiento cercano. Eso permite detectar bloqueos antes de que se conviertan en abandono.
-
-## Conclusión
-
-El examen tipo test de AGE C1 se prepara con método. Hay que entender el temario, practicar preguntas, corregir errores, repasar y entrenar ofimática desde el principio.
-
-No necesitas hacer test sin parar. Necesitas hacerlos con intención. Cada pregunta debe ayudarte a saber qué dominas, qué confundes y qué debes repasar. Cuando el test se convierte en una herramienta de estudio, la preparación gana claridad.
+El día del examen ya tendrás bastante con concentrarte en las preguntas. El reparto del tiempo, la forma de revisar y la elección del supuesto deberían llegar practicados de casa. Cuantas menos decisiones tengas que improvisar allí, mejor.
 
 ---
-**¿Quieres preparar AGE C1 con una planificación clara?**  
-Revisa la [preparación de Administrativo del Estado](/oposiciones-administrativo-estado/) o consulta las modalidades en [cursos y precios](/cursos-precios/).
+**¿Estás preparando Administrativo del Estado y tienes dudas sobre cómo organizar los test y la ofimática?**
+
+Puedes consultar la [preparación de AGE C1](/oposiciones-administrativo-estado/) o escribirme para contarme en qué punto estás.
