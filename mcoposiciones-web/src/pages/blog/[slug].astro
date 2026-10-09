@@ -3,22 +3,23 @@ import { getCollection, getEntry, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABanner from '../../components/CTABanner.astro';
+import { isBlogPostVisible } from '../../lib/blog';
 
 export async function getStaticPaths() {
-	const posts = (await getCollection('blog')).filter((post) => !post.data.draft);
+	const posts = (await getCollection('blog')).filter(isBlogPostVisible);
 	return posts.map((post) => ({ params: { slug: post.id } }));
 }
 
 const slug = Astro.params.slug ?? '';
 const entry = await getEntry('blog', slug);
 
-if (!entry || entry.data.draft) {
+if (!entry || !isBlogPostVisible(entry)) {
 	return Astro.redirect('/blog/');
 }
 
 const { Content } = await render(entry);
 const allPosts = (await getCollection('blog'))
-	.filter((post) => !post.data.draft)
+	.filter(isBlogPostVisible)
 	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 const sameCategoryPosts = allPosts
 	.filter((post) => post.id !== entry.id && post.data.category === entry.data.category)
@@ -88,6 +89,7 @@ const schemaJson = JSON.stringify({
 	ogType="article"
 	ogImage={entry.data.image}
 	schemaJson={schemaJson}
+	noindex={entry.data.draft}
 >
 	<main class="overflow-x-hidden pt-24">
 		<article class="max-w-full overflow-x-hidden px-4 py-16 sm:px-6 lg:px-8">
@@ -119,7 +121,7 @@ const schemaJson = JSON.stringify({
 								loading="eager"
 								fetchpriority="high"
 								decoding="async"
-								class="aspect-[16/9] w-full object-cover md:aspect-[2/1]"
+								class="aspect-[40/21] w-full object-cover"
 							/>
 						</figure>
 					)}
@@ -175,7 +177,7 @@ const schemaJson = JSON.stringify({
 										height="630"
 										loading="lazy"
 										decoding="async"
-										class="aspect-[40/21] w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"
+										class="aspect-[40/21] w-full object-cover"
 									/>
 								)}
 								<div class="flex flex-1 flex-col p-6">

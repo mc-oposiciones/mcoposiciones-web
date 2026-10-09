@@ -3,8 +3,9 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { createBlogIndexSchema } from '../../lib/schema';
+import { isBlogPostVisible, isBlogPreviewEnabled } from '../../lib/blog';
 
-const posts = (await getCollection('blog')).filter((post) => !post.data.draft).sort(
+const posts = (await getCollection('blog')).filter(isBlogPostVisible).sort(
 	(a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
 );
 
@@ -31,6 +32,7 @@ const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 	ogTitle="Guías para preparar oposiciones AGE y Seguridad Social"
 	ogDescription="Consejos claros sobre temario, convocatorias, test, supuestos prácticos y estudio de oposiciones C1."
 	schemaJson={schemaJson}
+	noindex={isBlogPreviewEnabled}
 >
 	<main class="overflow-x-hidden pt-24">
 		<section class="relative px-4 py-16 sm:px-6 lg:px-8">
@@ -55,7 +57,7 @@ const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 
 				{featuredPost && (
 					<section class="mt-14" aria-label="Artículo destacado">
-						<article class="blog-card group grid overflow-hidden rounded-[1.75rem] bg-white shadow-premium ring-1 ring-primary/5 transition-all duration-500 hover:-translate-y-1 hover:shadow-premium-hover lg:grid-cols-[minmax(0,1.28fr)_minmax(19rem,0.72fr)]" data-category={categorySlug(featuredPost.data.category)}>
+						<article class="blog-card group grid overflow-hidden rounded-[1.75rem] bg-white shadow-premium ring-1 ring-primary/5 transition-all duration-500 hover:-translate-y-1 hover:shadow-premium-hover xl:grid-cols-[minmax(0,1.28fr)_minmax(19rem,0.72fr)]" data-category={categorySlug(featuredPost.data.category)}>
 							<a href={`/blog/${featuredPost.id}/`} class="relative block aspect-[40/21] overflow-hidden bg-bg-dark no-underline" aria-label={`Leer ${featuredPost.data.h1}`}>
 								{featuredPost.data.image && (
 									<img
@@ -65,7 +67,7 @@ const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 										height="630"
 										loading="lazy"
 										decoding="async"
-										class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
+										class="h-full w-full object-cover"
 									/>
 								)}
 							</a>
@@ -98,7 +100,7 @@ const schemaJson = JSON.stringify(createBlogIndexSchema(posts));
 										height="630"
 										loading="lazy"
 										decoding="async"
-										class="aspect-[40/21] w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"
+										class="aspect-[40/21] w-full object-cover"
 									/>
 								)}
 							</a>
